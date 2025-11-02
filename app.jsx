@@ -746,14 +746,24 @@ const WoWGraphVisualizer = () => {
               onChange={(e) => {
                 const newRegion = e.target.value;
                 setRegion(newRegion);
-                // Reset season and key level when region changes
-                const seasons = availableConfigs.seasons[newRegion] || [];
-                if (seasons.length > 0) {
-                  const firstSeason = seasons[0];
-                  setSeason(firstSeason);
-                  const key = `${newRegion}-${firstSeason}`;
-                  const levels = availableConfigs.keyLevels[key] || [];
-                  if (levels.length > 0) setKeyLevel(levels[0]);
+
+                const availableSeasons = availableConfigs.seasons[newRegion] || [];
+
+                if (availableSeasons.length === 0) return;
+
+                let newSeason = season;
+                if (!availableSeasons.includes(season)) {
+                  newSeason = availableSeasons[0];
+                }
+                setSeason(newSeason);
+
+                const key = `${newRegion}-${newSeason}`;
+                const availableLevels = availableConfigs.keyLevels[key] || [];
+
+                if (availableLevels.includes(keyLevel)) {
+                  setKeyLevel(keyLevel);
+                } else if (availableLevels.length > 0) {
+                  setKeyLevel(availableLevels[0]);
                 }
               }}
               className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none"
@@ -770,10 +780,14 @@ const WoWGraphVisualizer = () => {
               onChange={(e) => {
                 const newSeason = e.target.value;
                 setSeason(newSeason);
-                // Reset key level when season changes
+                
                 const key = `${region}-${newSeason}`;
                 const levels = availableConfigs.keyLevels[key] || [];
-                if (levels.length > 0) setKeyLevel(levels[0]);
+                if (levels.includes(keyLevel)) {
+                  setKeyLevel(keyLevel);
+                } else if (levels.length > 0) {
+                  setKeyLevel(levels[0]);
+                }
               }}
               disabled={!region}
               className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
