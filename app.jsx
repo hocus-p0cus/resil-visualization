@@ -55,6 +55,11 @@ const WoWGraphVisualizer = () => {
     'tww-season2': 'season-tww-2',
     'tww-season3': 'season-tww-3',
   };
+
+  const regionMapping = {
+    'us': 'na',
+    'eu': 'eu'
+  };
   
   // Data state
   const [timestamps, setTimestamps] = useState(null);
@@ -457,37 +462,48 @@ const WoWGraphVisualizer = () => {
   }, [graph, zoom, pan]);
 
   const parseRioLink = (input) => {
-    const match = input.match(/^(?:https?:\/\/)?raider\.io\/characters\/(eu|us|kr|tw|cn)\/([^\/]+)\/([^\/?#]+)/i);
+    const match = input.match(/^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i);
     
     if (match && slugMapping) {
+
+      const linkRegion = regionMapping[match[1].toLowerCase()];
+
       const slug = decodeURIComponent(match[2]).toLowerCase();
       const name = decodeURIComponent(match[3]);
       
       const realm = slugMapping[slug];
-      
+      const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+
       if (!realm) {
         alert(`Realm slug "${slug}" not found in mapping. Using slug as-is.`);
         const fallbackRealm = slug.split('-').map(word => 
           word.charAt(0).toUpperCase() + word.slice(1)
         ).join(' ');
-        const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-        return `${capitalizedName}-${fallbackRealm}`;
+        return { charId: `${capitalizedName}-${fallbackRealm}`, region: linkRegion };
       }
       
-      const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-      return `${capitalizedName}-${realm}`;
+      return { charId: `${capitalizedName}-${realm}`, region: linkRegion };
     }
     
-    return input.trim();
+    return { charId: input.trim(), region: null };
   };
 
   const handleSearch = () => {
     if (!searchTerm.trim()) return;
-    const parsedChar = parseRioLink(searchTerm);
-    setTargetChar(parsedChar);
-    buildGraph(parsedChar);
+
+    const parsed = parseRioLink(searchTerm);
+
+    if (parsed.region && parsed.region !== region) {
+
+      setRegion(parsed.region);
+    }
+
+    setTargetChar(parsed.charId);
+    buildGraph(parsed.charId);
+
     setZoom(1);
     setPan({ x: 0, y: 0 });
+
   };
 
   // Rebuild graph when toggle changes
@@ -588,7 +604,7 @@ const WoWGraphVisualizer = () => {
     <div className="flex flex-col h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white">
       {/* Header */}
       <div className="bg-slate-800/50 backdrop-blur border-b border-slate-700 p-4">
-        <h1 className="text-2xl font-bold mb-4">WoW M+ Resilient Key Graph Visualizer</h1>
+        <h1 className="text-2xl font-bold mb-4">Resilient key Relations Visualizer</h1>
         
         {/* Configuration Section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-4">
@@ -664,19 +680,21 @@ const WoWGraphVisualizer = () => {
           </div>
         </div>
 
-        {loading && (
-          <div className="mb-4 text-yellow-400 text-sm">Loading data...</div>
-        )}
-        
-        {loadError && (
-          <div className="mb-4 text-red-400 text-sm">Error: {loadError}</div>
-        )}
-        
-        {dataLoaded && (
-          <div className="mb-4 text-green-400 text-xs">
-            ✓ Data loaded for {region.toUpperCase()} - {season} - Level {keyLevel}
-          </div>
-        )}
+        <div className="mb-4 h-5">
+          {loading && (
+            <div className="text-yellow-400 text-sm">Loading data...</div>
+          )}
+          
+          {!loading && loadError && (
+            <div className="text-red-400 text-sm">Error: {loadError}</div>
+          )}
+          
+          {!loading && !loadError && dataLoaded && (
+            <div className="text-green-400 text-xs">
+              ✓ Data loaded for {region.toUpperCase()} - {season} - Level {keyLevel}
+            </div>
+          )}
+        </div>
 
         {/* Search Section */}
         <div className="flex gap-2">
