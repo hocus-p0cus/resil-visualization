@@ -87,6 +87,8 @@ const WoWGraphVisualizer = () => {
   const [hoveredEdge, setHoveredEdge] = useState(null);
   const [selectedEdge, setSelectedEdge] = useState(null);
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
+  const [hoveredNode, setHoveredNode] = useState(null);
+  const [nodeTooltipPos, setNodeTooltipPos] = useState({ x: 0, y: 0 });
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -533,6 +535,12 @@ const WoWGraphVisualizer = () => {
       setSelectedEdge(hoveredEdge);
       return;
     }
+
+    if (hoveredNode) {
+      window.open('https://hocus-p0cus.github.io/', '_blank');
+      return;
+    }
+
     setIsDragging(true);
     setDragStart({ x: e.clientX - pan.x, y: e.clientY - pan.y });
   };
@@ -546,7 +554,7 @@ const WoWGraphVisualizer = () => {
       return;
     }
 
-    // Check for edge hover
+    // Check for edge and node hover
     if (!graph || !canvasRef.current) return;
     
     const canvas = canvasRef.current;
@@ -557,6 +565,41 @@ const WoWGraphVisualizer = () => {
     // Transform mouse coordinates to canvas coordinates
     const canvasX = (mouseX - rect.width / 2 - pan.x) / zoom;
     const canvasY = (mouseY - rect.height / 2 - pan.y) / zoom;
+
+     // Check for node hover first (higher priority)
+
+    let foundNode = null;
+    for (const node of graph.nodes) {
+      const pos = graph.positions[node];
+      const label = node.split('-')[0];
+
+      // Approximate node dimensions
+      const ctx = canvas.getContext('2d');
+      ctx.font = '12px sans-serif';
+
+      const metrics = ctx.measureText(label);
+      const padding = 8;
+      const boxWidth = metrics.width + padding * 2;
+      const boxHeight = 24;
+
+      // Check if mouse is within node bounds
+
+      if (canvasX >= pos.x - boxWidth / 2 && 
+          canvasX <= pos.x + boxWidth / 2 &&
+          canvasY >= pos.y - boxHeight / 2 && 
+          canvasY <= pos.y + boxHeight / 2) {
+        foundNode = node;
+        break;
+      }
+    }
+
+    if (foundNode) {
+      setHoveredNode(foundNode);
+      setHoveredEdge(null);
+      setNodeTooltipPos({ x: e.clientX, y: e.clientY });
+      canvas.style.cursor = 'pointer';
+      return;
+    }
     
     // Check each edge
     let foundEdge = null;
@@ -593,6 +636,8 @@ const WoWGraphVisualizer = () => {
       setHoveredEdge(null);
       canvas.style.cursor = isDragging ? 'grabbing' : 'grab';
     }
+
+    setHoveredNode(null);
   };
 
   const handleMouseUp = () => {
@@ -740,7 +785,7 @@ const WoWGraphVisualizer = () => {
               onWheel={handleWheel}
             />
             
-            {/* Hover Tooltip */}
+            {/* Hover Tooltip for edges*/}
             {hoveredEdge && !selectedEdge && (
               <div
                 className="fixed bg-slate-900/95 backdrop-blur border border-slate-600 rounded px-3 py-2 text-xs pointer-events-none z-50"
@@ -755,6 +800,22 @@ const WoWGraphVisualizer = () => {
                 <div className="text-slate-400 text-[10px]">Click to view runs</div>
               </div>
             )}
+
+            {/* Hover Tooltip for Nodes */}
+            {hoveredNode && !selectedEdge && (
+              <div
+                className="fixed bg-slate-900/95 backdrop-blur border border-slate-600 rounded px-3 py-2 text-xs pointer-events-none z-50"
+                style={{
+                  left: nodeTooltipPos.x + 15,
+                  top: nodeTooltipPos.y + 15,
+                }}
+              >
+                <div className="font-semibold mb-1">
+                  Click to see character report
+                </div>
+                <div className="text-slate-400 text-[10px]">Is it resilient?</div>
+              </div>
+            )}
             
             {/* Modal for run links */}
             {selectedEdge && (
@@ -762,7 +823,10 @@ const WoWGraphVisualizer = () => {
                 {/* Backdrop */}
                 <div 
                   className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
-                  onClick={() => setSelectedEdge(null)}
+                  onClick={() => {
+                          setSelectedEdge(null);
+                          setHoveredEdge(null);
+                  }}
                 />
                 
                 {/* Modal */}
@@ -773,7 +837,10 @@ const WoWGraphVisualizer = () => {
                         {selectedEdge.from.split('-')[0]} → {selectedEdge.to.split('-')[0]}
                       </h3>
                       <button
-                        onClick={() => setSelectedEdge(null)}
+                        onClick={() => {
+                          setSelectedEdge(null);
+                          setHoveredEdge(null);
+                        }}
                         className="text-slate-400 hover:text-white text-2xl leading-none"
                       >
                         ×
@@ -884,7 +951,7 @@ const WoWGraphVisualizer = () => {
             </div>
           </>
         ) : (
-          <div className="flex items-center justify-center h-full text-slate-400">
+          <div className="flex items-center justify-center h-full text-slate-400">  
             <div className="text-center">
               <Upload size={48} className="mx-auto mb-4 opacity-50" />
               <p>Select region, season, and key level, then search for a character</p>
