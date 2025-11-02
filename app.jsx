@@ -560,7 +560,19 @@ const WoWGraphVisualizer = () => {
     }
 
     if (hoveredNode) {
-      window.open('https://hocus-p0cus.github.io/', '_blank');
+      // Parse character name and realm from node format "CharName-Realm"
+      const [characterName, ...realmParts] = hoveredNode.split('-');
+      const realmName = realmParts.join('-'); // In case realm has hyphens
+      
+      // Construct the URL with query parameters
+      const params = new URLSearchParams({
+        region: region,
+        season: season,
+        character: characterName.toLowerCase(),
+        realm: realmName.toLowerCase()
+      });
+      
+      window.open(`https://hocus-p0cus.github.io/?${params.toString()}`, '_blank');
       return;
     }
 
