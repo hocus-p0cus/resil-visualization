@@ -470,12 +470,34 @@ const WoWGraphVisualizer = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [graph, zoom, pan]);
 
+  const findNodeInGraph = (searchStr) => {
+    const searchLower = searchStr.toLowerCase();
+    
+    if (!downEdges || !nonResilEdges) return null;
+    
+    const allNodes = new Set();
+    
+    downEdges.forEach(e => {
+      allNodes.add(e.source);
+      allNodes.add(e.target);
+    });
+    
+    nonResilEdges.forEach(e => {
+      allNodes.add(e.source);
+      allNodes.add(e.target);
+    });
+    
+    const foundNode = Array.from(allNodes).find(node => node.toLowerCase() === searchLower);
+    
+    return foundNode || null;
+  };
+
   const parseRioLink = (input) => {
     const match = input.match(/^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i);
     
     if (match && slugMapping) {
 
-      const linkRegion = regionMapping[match[1].toLowerCase()];
+      const linkRegion = regionMapping[match[1]];
 
       const slug = decodeURIComponent(match[2]).toLowerCase();
       const name = decodeURIComponent(match[3]);
@@ -494,7 +516,8 @@ const WoWGraphVisualizer = () => {
       return { charId: `${capitalizedName}-${realm}`, region: linkRegion };
     }
     
-    return { charId: input.trim(), region: null };
+    const foundNode = findNodeInGraph(input.trim());
+    return { charId: foundNode || input.trim(), region: null };
   };
 
   const handleSearch = () => {
