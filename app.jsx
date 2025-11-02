@@ -13,11 +13,6 @@ const Search = ({ size = 24, ...props }) => (
   </svg>
 );
 
-const Info = ({ size = 24, ...props }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-    <circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>
-  </svg>
-);
 
 const ZoomIn = ({ size = 24, ...props }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
@@ -89,6 +84,8 @@ const WoWGraphVisualizer = () => {
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
   const [hoveredNode, setHoveredNode] = useState(null);
   const [nodeTooltipPos, setNodeTooltipPos] = useState({ x: 0, y: 0 });
+  const [nearbyEdges, setNearbyEdges] = useState([]);
+  const [edgeOptions, setEdgeOptions] = useState([]);
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -590,9 +587,17 @@ const WoWGraphVisualizer = () => {
       return;
     }
 
-    if (hoveredEdge && e.button !== 2) {
+    if (nearbyEdges.length > 0 && e.button !== 2) {
       // Click on edge - open modal
-      setSelectedEdge(hoveredEdge);
+      //setSelectedEdge(hoveredEdge);
+
+      if (nearbyEdges.length === 1) {
+        // Only one edge nearby → open its modal directly
+        setSelectedEdge(nearbyEdges[0]);
+      } else {
+        // Multiple overlapping edges → show selection list
+        setEdgeOptions(nearbyEdges);
+      }
       return;
     }
 
@@ -668,13 +673,14 @@ const WoWGraphVisualizer = () => {
     if (foundNode) {
       setHoveredNode(foundNode);
       setHoveredEdge(null);
+      setNearbyEdges([]);
       setNodeTooltipPos({ x: e.clientX, y: e.clientY });
       canvas.style.cursor = 'pointer';
       return;
     }
     
     // Check each edge
-    let foundEdge = null;
+    const edgesNear = [];
     const threshold = 10 / zoom; // Hit detection threshold
     
     for (const edge of graph.edges) {
@@ -695,17 +701,18 @@ const WoWGraphVisualizer = () => {
       const distance = Math.sqrt((canvasX - projX) ** 2 + (canvasY - projY) ** 2);
       
       if (distance < threshold) {
-        foundEdge = edge;
-        break;
+        edgesNear.push(edge);
       }
     }
     
-    if (foundEdge) {
-      setHoveredEdge(foundEdge);
+    if (edgesNear.length > 0) {
+      setHoveredEdge(edgesNear[0]);   // the closest one
+      setNearbyEdges(edgesNear);      // all nearby
       setTooltipPos({ x: e.clientX, y: e.clientY });
       canvas.style.cursor = 'pointer';
     } else {
       setHoveredEdge(null);
+      setNearbyEdges([]);
       canvas.style.cursor = isDragging ? 'grabbing' : 'grab';
     }
 
@@ -889,6 +896,52 @@ const WoWGraphVisualizer = () => {
               </div>
             )}
             
+            {/* Edge selection dropdown when multiple edges overlap */}
+            {!hoveredNode && edgeOptions.length > 0 && (
+              <>
+                {/* Backdrop */}
+                <div
+                  className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
+                  onClick={() => setEdgeOptions([])}
+                />
+
+                {/* Small centered selection box */}
+                <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                                bg-slate-800 border border-slate-600 rounded-lg shadow-2xl
+                                z-50 max-w-sm w-full mx-4">
+                  <div className="p-4 border-b border-slate-700 flex justify-between items-center">
+                    <h3 className="text-lg font-semibold">Select an edge</h3>
+                    <button
+                      onClick={() => setEdgeOptions([])}
+                      className="text-slate-400 hover:text-white text-2xl leading-none"
+                    >
+                      ×
+                    </button>
+                  </div>
+
+                  <div className="p-3 max-h-80 overflow-y-auto">
+                    {edgeOptions.map((edge, i) => (
+                      <div
+                        key={i}
+                        className="flex justify-between items-center px-3 py-2 mb-2 rounded-md border border-slate-700 hover:border-blue-500 hover:bg-slate-700/40 transition-colors cursor-pointer"
+                        onClick={() => {
+                          setSelectedEdge(edge);
+                          setEdgeOptions([]); // close selector
+                        }}
+                      >
+                        <span className="font-medium">
+                          {edge.from.split('-')[0]} → {edge.to.split('-')[0]}
+                        </span>
+                        <span className="text-xs text-slate-400">
+                          {edge.type === 'resil' ? 'Resilient' : 'Non-resilient'}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
+
             {/* Modal for run links */}
             {selectedEdge && (
               <>
