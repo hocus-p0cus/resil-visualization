@@ -60,6 +60,13 @@ const WoWGraphVisualizer = () => {
     'us': 'na',
     'eu': 'eu'
   };
+
+  const getDungeonCode = (runId) => {
+    if (runId.includes('#')) {
+      return runId.split('#')[0].trim();
+    }
+    return null;
+  };
   
   // Data state
   const [timestamps, setTimestamps] = useState(null);
@@ -700,7 +707,7 @@ const WoWGraphVisualizer = () => {
         <div className="flex gap-2">
           <input
             type="text"
-            placeholder="Paste RIO profile link or Character-Server (e.g., Kyrasis-Area 52)"
+            placeholder="Paste RIO profile link or Character-Server (e.g., Graliboar-Outland)"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
@@ -784,6 +791,7 @@ const WoWGraphVisualizer = () => {
 
                           const numericId = runId.includes('#') ? runId.split('#').pop().trim() : runId.trim();
 
+                          const dungeonCode = getDungeonCode(runId);
                           const seasonSlug = seasonSlugs[season] || season;
                           const runUrl = `https://raider.io/mythic-plus-runs/${seasonSlug}/${numericId}`;
                           return (
@@ -792,15 +800,27 @@ const WoWGraphVisualizer = () => {
                               href={runUrl}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="block px-4 py-3 bg-slate-700 hover:bg-slate-600 rounded border border-slate-600 hover:border-blue-500 transition-colors"
+                              className="block relative rounded border border-slate-600 hover:border-blue-500 transition-colors overflow-hidden group h-20"
                             >
-                              <div className="flex items-center justify-between">
-                                <span className="font-medium">Run {i + 1}</span>
-                                <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                                </svg>
+                              {dungeonCode && (
+                                <img 
+                                  src={`images/${dungeonCode}.jpg`}
+                                  alt={dungeonCode}
+                                  className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
+                                  onError={(e) => {
+                                    e.target.style.display = 'none';
+                                  }}
+                                />
+                              )}
+                              <div className="relative z-10 px-4 py-3 h-full flex flex-col justify-center bg-gradient-to-r from-slate-900/80 to-transparent">
+                                <div className="flex items-center justify-between">
+                                  <span className="font-medium text-white drop-shadow-lg">{dungeonCode || 'Run'}</span>
+                                  <svg className="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                  </svg>
+                                </div>
+                                <div className="text-xs text-slate-300 mt-1 truncate drop-shadow">ID: {numericId}</div>
                               </div>
-                              <div className="text-xs text-slate-400 mt-1 truncate">ID: {runId}</div>
                             </a>
                           );
                         })}
