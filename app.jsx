@@ -175,6 +175,16 @@ const WoWGraphVisualizer = () => {
     loadData();
   }, [region, season, keyLevel]);
 
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const disableContextMenu = e => e.preventDefault();
+    canvas.addEventListener('contextmenu', disableContextMenu);
+
+    return () => canvas.removeEventListener('contextmenu', disableContextMenu);
+  }, [canvasRef.current, graph]); 
+
   const collectNodes = (target, edges) => {
     const adj = {};
     edges.forEach(([a, b]) => {
@@ -548,12 +558,39 @@ const WoWGraphVisualizer = () => {
   // Rebuild graph when season or key level changes
   useEffect(() => {
     if (targetChar && dataLoaded) {
-      buildGraph(targetChar);
+      const foundNode = findNodeInGraph(targetChar);
+
+      if (foundNode) {
+
+        setTargetChar(foundNode);
+        buildGraph(foundNode);
+
+      } else {
+
+        buildGraph(targetChar);
+      }
     }
   }, [season, keyLevel, timestamps, downEdges, nonResilEdges]);
 
   const handleMouseDown = (e) => {
-    if (hoveredEdge) {
+
+    if (e.button === 2) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    if (e.button === 2 && hoveredNode) {
+      setTargetChar(hoveredNode);
+      buildGraph(hoveredNode);
+      setZoom(1);
+      setPan({ x: 0, y: 0 });
+      setSearchTerm(hoveredNode);
+
+      setHoveredNode(null);
+      return;
+    }
+
+    if (hoveredEdge && e.button !== 2) {
       // Click on edge - open modal
       setSelectedEdge(hoveredEdge);
       return;
