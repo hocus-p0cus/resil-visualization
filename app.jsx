@@ -405,10 +405,10 @@ const WoWGraphVisualizer = () => {
       ctx.lineTo(lineEndX, lineEndY);
 
       if (edge.type === 'resil') {
-        ctx.strokeStyle = 'rgba(100, 100, 100, 0.3)';
+        ctx.strokeStyle = 'rgba(100, 100, 100, 0.6)';
         ctx.lineWidth = 1.5;
       } else {
-        ctx.strokeStyle = 'rgba(150, 150, 150, 0.4)';
+        ctx.strokeStyle = 'rgba(150, 150, 150, 0.3)';
         ctx.lineWidth = 1;
       }
       ctx.stroke();
@@ -569,6 +569,22 @@ const WoWGraphVisualizer = () => {
       }
     }
   }, [season, keyLevel, timestamps, downEdges, nonResilEdges]);
+
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+        e.preventDefault(); // Prevent page scroll
+        setZoom(1);
+        setPan({ x: 0, y: 0 });
+        setHoveredNode(null);
+        setHoveredEdge(null);
+        setNearbyEdges([]);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []);
 
   const handleMouseDown = (e) => {
 
@@ -1086,19 +1102,6 @@ const WoWGraphVisualizer = () => {
                 <div className="text-slate-300 text-xs mt-1">
                   {graph.nodes.length} nodes • {graph.edges.length} edges
                 </div>
-              </div>
-            </div>
-
-            {/* Legend */}
-            <div className="absolute bottom-4 right-4 bg-slate-800/80 backdrop-blur rounded px-4 py-2 text-xs z-10">
-              <div className="mb-2 font-semibold">Legend</div>
-              <div className="flex items-center gap-2 mb-1">
-                <div className="w-6 h-0.5 bg-gray-500"></div>
-                <span>Resilient</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-6 h-0.5 bg-gray-400 opacity-30"></div>
-                <span>Non-resilient</span>
               </div>
             </div>
           </>
