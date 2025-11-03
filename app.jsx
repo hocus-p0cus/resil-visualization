@@ -1,3 +1,4 @@
+// vibecoding was a mistake
 const { useState, useRef, useEffect } = React;
 
 // Inline SVG icons
@@ -916,7 +917,12 @@ const WoWGraphVisualizer = () => {
                 {/* Backdrop */}
                 <div
                   className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
-                  onClick={() => setEdgeOptions([])}
+                  onClick={() => {
+                    setSelectedEdge(null);
+                    setHoveredEdge(null);
+                    setNearbyEdges([]);
+                    setEdgeOptions([])
+                  }}
                 />
 
                 {/* Small centered selection box */}
@@ -926,7 +932,12 @@ const WoWGraphVisualizer = () => {
                   <div className="p-4 border-b border-slate-700 flex justify-between items-center">
                     <h3 className="text-lg font-semibold">Select an edge</h3>
                     <button
-                      onClick={() => setEdgeOptions([])}
+                      onClick={() => {
+                          setSelectedEdge(null);
+                          setHoveredEdge(null);
+                          setNearbyEdges([]);
+                          setEdgeOptions([]);
+                      }}
                       className="text-slate-400 hover:text-white text-2xl leading-none"
                     >
                       ×
@@ -965,6 +976,7 @@ const WoWGraphVisualizer = () => {
                   onClick={() => {
                           setSelectedEdge(null);
                           setHoveredEdge(null);
+                          setNearbyEdges([]);
                   }}
                 />
                 
@@ -979,6 +991,7 @@ const WoWGraphVisualizer = () => {
                         onClick={() => {
                           setSelectedEdge(null);
                           setHoveredEdge(null);
+                          setNearbyEdges([]);
                         }}
                         className="text-slate-400 hover:text-white text-2xl leading-none"
                       >
