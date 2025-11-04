@@ -90,6 +90,8 @@ const WoWGraphVisualizer = () => {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
 
+  const [viridis256, setViridis256] = useState(null);
+
   // Load slug mapping on mount
   useEffect(() => {
     fetch('slug_mapping.json')
@@ -97,6 +99,13 @@ const WoWGraphVisualizer = () => {
       .then(data => setSlugMapping(data))
       .catch(err => console.error('Failed to load slug mapping:', err));
   }, []);
+
+  useEffect(() => {
+  fetch('viridis256.json')
+    .then(res => res.json())
+    .then(data => setViridis256(data))
+    .catch(err => console.error('Failed to load viridis256.json:', err));
+}, []);
 
   // Discover available configurations on mount
   useEffect(() => {
@@ -423,10 +432,12 @@ const WoWGraphVisualizer = () => {
 
     const getColor = (charId) => {
       if (!parsedTimes[charId]) return 'rgba(128, 128, 128, 0.4)';
+
       const t = (parsedTimes[charId] - minTime) / (maxTime - minTime);
-      const r = Math.floor(68 + t * (253 - 68));
-      const g = Math.floor(1 + t * (231 - 1));
-      const b = Math.floor(84 + t * (37 - 84));
+      const clampedT = Math.min(Math.max(t, 0), 1);
+      const idx = Math.floor(clampedT * (viridis256.length - 1));
+
+      const [r, g, b] = viridis256[idx];
       return `rgb(${r}, ${g}, ${b})`;
     };
 
