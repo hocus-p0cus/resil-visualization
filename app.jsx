@@ -183,6 +183,49 @@ const WoWGraphVisualizer = () => {
     return () => canvas.removeEventListener('contextmenu', disableContextMenu);
   }, [canvasRef.current, graph]); 
 
+  useEffect(() => {
+  const handlePaste = async (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+      return;
+    }
+
+    const pastedText = e.clipboardData?.getData('text') || '';
+    
+    const rioLinkPattern = /^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i;
+    
+    if (rioLinkPattern.test(pastedText.trim())) {
+      e.preventDefault();
+      if (!dataLoaded) return;
+      
+      setSearchTerm(pastedText.trim());
+      const parsed = parseRioLink(pastedText.trim());
+
+      if (parsed.region && parsed.region !== region) {
+        setRegion(parsed.region);
+
+        const newRegion = parsed.region;
+        setRegion(newRegion);
+        const key = `${newRegion}-${season}`;
+        const availableLevels = availableConfigs.keyLevels[key] || [];
+        
+        if (!availableLevels.includes(keyLevel) && availableLevels.length > 0) {
+          setKeyLevel(availableLevels[0]);
+        }
+      }
+
+      setTargetChar(parsed.charId);
+      
+      buildGraph(parsed.charId);
+
+      setZoom(1);
+      setPan({ x: 0, y: 0 });
+    }
+  };
+
+  window.addEventListener('paste', handlePaste);
+  return () => window.removeEventListener('paste', handlePaste);
+}, [region, dataLoaded, downEdges, nonResilEdges, showNonResil]);
+
   const collectNodes = (target, edges) => {
     const adj = {};
     edges.forEach(([a, b]) => {
