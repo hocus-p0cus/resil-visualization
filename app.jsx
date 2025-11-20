@@ -63,6 +63,18 @@ const WoWGraphVisualizer = () => {
     }
     return null;
   };
+
+  function readUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+
+  return {
+    region: params.get("region")?.toLowerCase() || null,
+    season: params.get("season") || null,
+    character: params.get("character")?.toLowerCase() || null,
+    realm: params.get("realm")?.toLowerCase() || null,
+    level: params.get("level") ? Number(params.get("level")) : null,
+  };
+}
   
   // Data state
   const [timestamps, setTimestamps] = useState(null);
@@ -139,6 +151,38 @@ const WoWGraphVisualizer = () => {
     
     discoverConfigs();
   }, []);
+
+  useEffect(() => {
+    if (!availableConfigs.regions.length) return;
+
+    const qp = readUrlParams();
+
+    if (qp.region && availableConfigs.regions.includes(qp.region)) {
+      setRegion(qp.region);
+    }
+
+    if (qp.season && availableConfigs.seasons[qp.region || region]?.includes(qp.season)) {
+      setSeason(qp.season);
+    }
+
+    const levelKey = `${qp.region || region}-${qp.season || season}`;
+    if (qp.level && availableConfigs.keyLevels[levelKey]?.includes(qp.level)) {
+      setKeyLevel(qp.level);
+    }
+
+    if (qp.character && qp.realm) {
+      const displayName =
+        qp.character.charAt(0).toUpperCase() + qp.character.slice(1).toLowerCase();
+
+      if (slugMapping && slugMapping[qp.realm]) {
+        const realmName = slugMapping[qp.realm];
+        const targetId = `${displayName}-${realmName}`;
+        setSearchTerm(targetId);
+        setTargetChar(targetId);
+        buildGraph(targetId);
+      }
+    }
+  }, [availableConfigs, slugMapping]);
 
   // Load data files when region/season/keyLevel changes
   useEffect(() => {
