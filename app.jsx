@@ -477,6 +477,12 @@ const WoWGraphVisualizer = () => {
     const getColor = (charId) => {
       if (!parsedTimes[charId]) return 'rgba(128, 128, 128, 0.4)';
 
+      if (maxTime === minTime) {
+
+        const [r0, g0, b0] = viridis256[0];
+        return `rgb(${r0}, ${g0}, ${b0})`;
+      }
+
       const t = (parsedTimes[charId] - minTime) / (maxTime - minTime);
       const clampedT = Math.min(Math.max(t, 0), 1);
       const idx = Math.floor(clampedT * (viridis256.length - 1));
