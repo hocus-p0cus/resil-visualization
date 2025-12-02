@@ -442,6 +442,7 @@
       "HoA#36565216",
       "STRT#36651633",
       "ARA#36677295",
+      "ECO#37223640",
       "GMBT#36552069"
     ]
   },
@@ -461,7 +462,15 @@
       "HoA#36565216",
       "STRT#36651633",
       "ARA#36677295",
+      "ECO#37223640",
       "GMBT#36552069"
+    ]
+  },
+  {
+    "source": "Mocpapiezash-Burning Legion",
+    "target": "Beatepump-Tichondrius",
+    "labels": [
+      "ECO#37223640"
     ]
   },
   {
@@ -520,6 +529,7 @@
     "labels": [
       "HoA#37038520",
       "STRT#37070047",
+      "ARA#37235019",
       "ECO#37051242",
       "GMBT#36956590"
     ]
@@ -536,6 +546,7 @@
     "target": "Bitas-Drak'thul",
     "labels": [
       "HoA#37038520",
+      "ARA#37235019",
       "GMBT#36956590"
     ]
   },
@@ -544,6 +555,7 @@
     "target": "Bitas-Drak'thul",
     "labels": [
       "STRT#37070047",
+      "ARA#37235019",
       "ECO#37051242"
     ]
   },
@@ -553,6 +565,13 @@
     "labels": [
       "STRT#37070047",
       "ECO#37051242"
+    ]
+  },
+  {
+    "source": "Dlkeydh-Stormscale",
+    "target": "Bitas-Drak'thul",
+    "labels": [
+      "ARA#37235019"
     ]
   },
   {
@@ -864,6 +883,20 @@
     ]
   },
   {
+    "source": "Sushihunt-Tarren Mill",
+    "target": "Carlosmx-Tarren Mill",
+    "labels": [
+      "ECO#37198977"
+    ]
+  },
+  {
+    "source": "Oldgodx-Silvermoon",
+    "target": "Carlosmx-Tarren Mill",
+    "labels": [
+      "ECO#37198977"
+    ]
+  },
+  {
     "source": "Vicentius-Silvermoon",
     "target": "Cashdk-Tarren Mill",
     "labels": [
@@ -992,9 +1025,11 @@
     "target": "Crimsf-Draenor",
     "labels": [
       "HoA#36899206",
+      "PSF#37172806",
       "DAWN#36758391",
       "ARA#36770432",
-      "FLOOD#36894322"
+      "FLOOD#36894322",
+      "ECO#37184936"
     ]
   },
   {
@@ -1002,9 +1037,11 @@
     "target": "Crimsf-Draenor",
     "labels": [
       "HoA#36899206",
+      "PSF#37172806",
       "DAWN#36758391",
       "ARA#36770432",
-      "FLOOD#36894322"
+      "FLOOD#36894322",
+      "ECO#37184936"
     ]
   },
   {
@@ -1015,6 +1052,14 @@
       "DAWN#36758391",
       "ARA#36770432",
       "FLOOD#36894322"
+    ]
+  },
+  {
+    "source": "Tmy-Dentarg",
+    "target": "Crimsf-Draenor",
+    "labels": [
+      "PSF#37172806",
+      "ECO#37184936"
     ]
   },
   {
@@ -1164,10 +1209,27 @@
     ]
   },
   {
+    "source": "Vennychain-Draenor",
+    "target": "Daghboos-Draenor",
+    "labels": [
+      "DAWN#37228739"
+    ]
+  },
+  {
+    "source": "Sushihunt-Tarren Mill",
+    "target": "Deadlavy-Draenor",
+    "labels": [
+      "HoA#37184741",
+      "ECO#37198977"
+    ]
+  },
+  {
     "source": "Oldgodx-Silvermoon",
     "target": "Deadlavy-Draenor",
     "labels": [
+      "HoA#37184741",
       "STRT#37077225",
+      "ECO#37198977",
       "GMBT#36733540"
     ]
   },
@@ -1419,14 +1481,30 @@
     "source": "Nâmï-Silvermoon",
     "target": "Eclimw-Hyjal",
     "labels": [
-      "STRT#36571096"
+      "STRT#36571096",
+      "ARA#37185132"
     ]
   },
   {
     "source": "Dwarfmanesh-Ravencrest",
     "target": "Eclimw-Hyjal",
     "labels": [
-      "STRT#36571096"
+      "STRT#36571096",
+      "ARA#37185132"
+    ]
+  },
+  {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Eclimw-Hyjal",
+    "labels": [
+      "ARA#37185132"
+    ]
+  },
+  {
+    "source": "Nightvp-Kazzak",
+    "target": "Eclimw-Hyjal",
+    "labels": [
+      "ARA#37185132"
     ]
   },
   {
@@ -1552,6 +1630,13 @@
     ]
   },
   {
+    "source": "Vennychain-Draenor",
+    "target": "Epiroul-Hyjal",
+    "labels": [
+      "DAWN#37228739"
+    ]
+  },
+  {
     "source": "Sadfrexa-Tarren Mill",
     "target": "Ervinpog-Silvermoon",
     "labels": [
@@ -1644,6 +1729,7 @@
     "source": "Artasham-Ravencrest",
     "target": "Feigndead-Kazzak",
     "labels": [
+      "HoA#37215385",
       "STRT#36080440",
       "ARA#36098550",
       "ECO#36804274",
@@ -1654,6 +1740,7 @@
     "source": "Dwarfmanesh-Ravencrest",
     "target": "Feigndead-Kazzak",
     "labels": [
+      "HoA#37215385",
       "STRT#36080440",
       "ARA#36098550",
       "ECO#36804274",
@@ -1665,6 +1752,20 @@
     "target": "Feliskuf-Silvermoon",
     "labels": [
       "GMBT#32424787"
+    ]
+  },
+  {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Fenixflexin-Ravencrest",
+    "labels": [
+      "ECO#37212688"
+    ]
+  },
+  {
+    "source": "Champdruid-Hyjal",
+    "target": "Fenixflexin-Ravencrest",
+    "labels": [
+      "ECO#37212688"
     ]
   },
   {
@@ -1924,6 +2025,7 @@
     "source": "Artasham-Ravencrest",
     "target": "Frozenbladë-Ravencrest",
     "labels": [
+      "HoA#37215385",
       "STRT#36080440",
       "ECO#36804274"
     ]
@@ -1932,6 +2034,7 @@
     "source": "Dwarfmanesh-Ravencrest",
     "target": "Frozenbladë-Ravencrest",
     "labels": [
+      "HoA#37215385",
       "STRT#36080440",
       "ECO#36804274"
     ]
@@ -1948,6 +2051,13 @@
     "target": "Fêng-Twisting Nether",
     "labels": [
       "ECO#36955885"
+    ]
+  },
+  {
+    "source": "Rstoshmn-Eredar",
+    "target": "Gangmän-Stormreaver",
+    "labels": [
+      "FLOOD#37225687"
     ]
   },
   {
@@ -2010,6 +2120,13 @@
     ]
   },
   {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Hillbert-Drak'thul",
+    "labels": [
+      "ARA#37206079"
+    ]
+  },
+  {
     "source": "Manga-Tarren Mill",
     "target": "Hofgodx-Kazzak",
     "labels": [
@@ -2060,7 +2177,9 @@
     "labels": [
       "HoA#35185036",
       "DAWN#35715312",
-      "ARA#33886303"
+      "ARA#33886303",
+      "ECO#37213021",
+      "GMBT#37217229"
     ]
   },
   {
@@ -2069,14 +2188,26 @@
     "labels": [
       "HoA#35185036",
       "DAWN#35715312",
-      "ARA#33886303"
+      "ARA#33886303",
+      "ECO#37213021",
+      "GMBT#37217229"
     ]
   },
   {
     "source": "Malegusdk-Twisting Nether",
     "target": "Humblegød-Ragnaros",
     "labels": [
-      "DAWN#35715312"
+      "DAWN#35715312",
+      "ECO#37213021",
+      "GMBT#37217229"
+    ]
+  },
+  {
+    "source": "Shellymonk-Sylvanas",
+    "target": "Humraii-Kazzak",
+    "labels": [
+      "HoA#37224684",
+      "ECO#35852595"
     ]
   },
   {
@@ -2091,13 +2222,6 @@
     "target": "Humraii-Kazzak",
     "labels": [
       "STRT#37089768"
-    ]
-  },
-  {
-    "source": "Shellymonk-Sylvanas",
-    "target": "Humraii-Kazzak",
-    "labels": [
-      "ECO#35852595"
     ]
   },
   {
@@ -2161,14 +2285,16 @@
     "source": "Uglylabubu-Draenor",
     "target": "Hèisènbèrg-Draenor",
     "labels": [
-      "HoA#36751042"
+      "HoA#36751042",
+      "ECO#37234214"
     ]
   },
   {
     "source": "Shellymonk-Sylvanas",
     "target": "Hèisènbèrg-Draenor",
     "labels": [
-      "HoA#36751042"
+      "HoA#36751042",
+      "ECO#37234214"
     ]
   },
   {
@@ -2176,6 +2302,13 @@
     "target": "Hèisènbèrg-Draenor",
     "labels": [
       "ARA#36947818"
+    ]
+  },
+  {
+    "source": "Jixsham-Kazzak",
+    "target": "Hèisènbèrg-Draenor",
+    "labels": [
+      "ECO#37234214"
     ]
   },
   {
@@ -2393,6 +2526,27 @@
     "target": "Isuu-Kazzak",
     "labels": [
       "GMBT#34881883"
+    ]
+  },
+  {
+    "source": "Vicentius-Silvermoon",
+    "target": "Izánagi-Twisting Nether",
+    "labels": [
+      "HoA#37194799"
+    ]
+  },
+  {
+    "source": "Outiso-Kazzak",
+    "target": "Izánagi-Twisting Nether",
+    "labels": [
+      "HoA#37194799"
+    ]
+  },
+  {
+    "source": "Luciferhunt-Ragnaros",
+    "target": "Izánagi-Twisting Nether",
+    "labels": [
+      "HoA#37194799"
     ]
   },
   {
@@ -2641,16 +2795,31 @@
     ]
   },
   {
-    "source": "Tartexd-Pozzo dell'Eternità",
+    "source": "Uglylabubu-Draenor",
     "target": "Kiizz-Silvermoon",
     "labels": [
+      "HoA#37190114",
       "STRT#37089768",
       "ECO#37074817",
       "GMBT#37069872"
     ]
   },
   {
-    "source": "Uglylabubu-Draenor",
+    "source": "Dwarfthegoat-Kazzak",
+    "target": "Kiizz-Silvermoon",
+    "labels": [
+      "HoA#37190114"
+    ]
+  },
+  {
+    "source": "Shalidh-Silvermoon",
+    "target": "Kiizz-Silvermoon",
+    "labels": [
+      "HoA#37190114"
+    ]
+  },
+  {
+    "source": "Tartexd-Pozzo dell'Eternità",
     "target": "Kiizz-Silvermoon",
     "labels": [
       "STRT#37089768",
@@ -2718,6 +2887,13 @@
     "target": "Kimilis-Stormscale",
     "labels": [
       "GMBT#35267594"
+    ]
+  },
+  {
+    "source": "Vennychain-Draenor",
+    "target": "Kinkul-Silvermoon",
+    "labels": [
+      "DAWN#37228739"
     ]
   },
   {
@@ -2808,6 +2984,13 @@
     ]
   },
   {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Kriswar-Sanguino",
+    "labels": [
+      "HoA#37196225"
+    ]
+  },
+  {
     "source": "Artasham-Ravencrest",
     "target": "Kuliz-Eredar",
     "labels": [
@@ -2819,6 +3002,13 @@
     "target": "Kuliz-Eredar",
     "labels": [
       "GMBT#36778726"
+    ]
+  },
+  {
+    "source": "Rstoshmn-Eredar",
+    "target": "Kurdrwprot-Medivh",
+    "labels": [
+      "FLOOD#37225687"
     ]
   },
   {
@@ -3048,6 +3238,13 @@
     "target": "Limitik-Draenor",
     "labels": [
       "GMBT#33563391"
+    ]
+  },
+  {
+    "source": "Vennychain-Draenor",
+    "target": "Lindha-Tarren Mill",
+    "labels": [
+      "DAWN#37228739"
     ]
   },
   {
@@ -3286,6 +3483,21 @@
     ]
   },
   {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Melan-Sanguino",
+    "labels": [
+      "ARA#37206079",
+      "ECO#37212688"
+    ]
+  },
+  {
+    "source": "Champdruid-Hyjal",
+    "target": "Melan-Sanguino",
+    "labels": [
+      "ECO#37212688"
+    ]
+  },
+  {
     "source": "Vicentius-Silvermoon",
     "target": "Mentaldeadx-Ravencrest",
     "labels": [
@@ -3304,6 +3516,13 @@
     "target": "Mentaldeadx-Ravencrest",
     "labels": [
       "GMBT#34674563"
+    ]
+  },
+  {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Merlindk-Draenor",
+    "labels": [
+      "ARA#37206079"
     ]
   },
   {
@@ -3445,6 +3664,34 @@
     ]
   },
   {
+    "source": "Dlkeydh-Stormscale",
+    "target": "Mineo-Ragnaros",
+    "labels": [
+      "DAWN#37215342"
+    ]
+  },
+  {
+    "source": "Ojix-Kazzak",
+    "target": "Mineo-Ragnaros",
+    "labels": [
+      "DAWN#37215342"
+    ]
+  },
+  {
+    "source": "Waytoosick-Kazzak",
+    "target": "Mineo-Ragnaros",
+    "labels": [
+      "DAWN#37215342"
+    ]
+  },
+  {
+    "source": "Andromedac-Kazzak",
+    "target": "Mineo-Ragnaros",
+    "labels": [
+      "DAWN#37215342"
+    ]
+  },
+  {
     "source": "Хавокмета-Howling Fjord",
     "target": "Mineo-Ragnaros",
     "labels": [
@@ -3518,6 +3765,20 @@
     ]
   },
   {
+    "source": "Artasham-Ravencrest",
+    "target": "Moonsprîng-Blackmoore",
+    "labels": [
+      "HoA#37215385"
+    ]
+  },
+  {
+    "source": "Dwarfmanesh-Ravencrest",
+    "target": "Moonsprîng-Blackmoore",
+    "labels": [
+      "HoA#37215385"
+    ]
+  },
+  {
     "source": "Rstoshmn-Eredar",
     "target": "Moosewr-Ragnaros",
     "labels": [
@@ -3543,6 +3804,27 @@
     "target": "Moosewr-Ragnaros",
     "labels": [
       "GMBT#36316368"
+    ]
+  },
+  {
+    "source": "Uglylabubu-Draenor",
+    "target": "Moróz-Twisting Nether",
+    "labels": [
+      "ARA#37210202"
+    ]
+  },
+  {
+    "source": "Dwarfthegoat-Kazzak",
+    "target": "Moróz-Twisting Nether",
+    "labels": [
+      "ARA#37210202"
+    ]
+  },
+  {
+    "source": "Shalidh-Silvermoon",
+    "target": "Moróz-Twisting Nether",
+    "labels": [
+      "ARA#37210202"
     ]
   },
   {
@@ -3650,6 +3932,13 @@
     "target": "Mzh-Stormscale",
     "labels": [
       "HoA#37098503"
+    ]
+  },
+  {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Mørtha-Zul'jin",
+    "labels": [
+      "HoA#37196225"
     ]
   },
   {
@@ -3762,6 +4051,13 @@
       "HoA#35750396",
       "ECO#35582888",
       "GMBT#35590268"
+    ]
+  },
+  {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Noctorix-Ravencrest",
+    "labels": [
+      "HoA#37196225"
     ]
   },
   {
@@ -3931,6 +4227,20 @@
     "target": "Núdêl-Eredar",
     "labels": [
       "HoA#37098503"
+    ]
+  },
+  {
+    "source": "Utsumi-Kazzak",
+    "target": "Olø-Burning Legion",
+    "labels": [
+      "GMBT#37218291"
+    ]
+  },
+  {
+    "source": "Dwarfthegoat-Kazzak",
+    "target": "Olø-Burning Legion",
+    "labels": [
+      "GMBT#37218291"
     ]
   },
   {
@@ -4293,6 +4603,27 @@
     ]
   },
   {
+    "source": "Uglylabubu-Draenor",
+    "target": "Raiv-Silvermoon",
+    "labels": [
+      "ARA#37206893"
+    ]
+  },
+  {
+    "source": "Dwarfthegoat-Kazzak",
+    "target": "Raiv-Silvermoon",
+    "labels": [
+      "ARA#37206893"
+    ]
+  },
+  {
+    "source": "Shalidh-Silvermoon",
+    "target": "Raiv-Silvermoon",
+    "labels": [
+      "ARA#37206893"
+    ]
+  },
+  {
     "source": "Oldgodx-Silvermoon",
     "target": "Rammoskebab-Eredar",
     "labels": [
@@ -4313,7 +4644,8 @@
     "labels": [
       "HoA#36797870",
       "ARA#36802121",
-      "ECO#36794218"
+      "ECO#36794218",
+      "GMBT#37229008"
     ]
   },
   {
@@ -4323,7 +4655,8 @@
       "HoA#36797870",
       "STRT#36787438",
       "ARA#36802121",
-      "ECO#36794218"
+      "ECO#36794218",
+      "GMBT#37229008"
     ]
   },
   {
@@ -4338,6 +4671,13 @@
     "target": "Rampagebonk-Draenor",
     "labels": [
       "ARA#36802121"
+    ]
+  },
+  {
+    "source": "Waytoosick-Kazzak",
+    "target": "Rampagebonk-Draenor",
+    "labels": [
+      "GMBT#37229008"
     ]
   },
   {
@@ -4381,6 +4721,13 @@
     "target": "Razkrus-Stormscale",
     "labels": [
       "ECO#37093331"
+    ]
+  },
+  {
+    "source": "Rstoshmn-Eredar",
+    "target": "Rebelious-Stormscale",
+    "labels": [
+      "FLOOD#37225687"
     ]
   },
   {
@@ -4454,6 +4801,44 @@
     "target": "Rebornv-Tarren Mill",
     "labels": [
       "ARA#36211392"
+    ]
+  },
+  {
+    "source": "Tartexd-Pozzo dell'Eternità",
+    "target": "Reilink-Argent Dawn",
+    "labels": [
+      "HoA#37220577"
+    ]
+  },
+  {
+    "source": "Jisoô-Twisting Nether",
+    "target": "Reilink-Argent Dawn",
+    "labels": [
+      "HoA#37220577",
+      "ECO#37222831"
+    ]
+  },
+  {
+    "source": "Uglylabubu-Draenor",
+    "target": "Reilink-Argent Dawn",
+    "labels": [
+      "HoA#37220577",
+      "ECO#37222831"
+    ]
+  },
+  {
+    "source": "Shinhunt-Kazzak",
+    "target": "Reilink-Argent Dawn",
+    "labels": [
+      "HoA#37220577",
+      "ECO#37222831"
+    ]
+  },
+  {
+    "source": "Waytoosick-Kazzak",
+    "target": "Reilink-Argent Dawn",
+    "labels": [
+      "ECO#37222831"
     ]
   },
   {
@@ -5143,6 +5528,7 @@
     "target": "Sinjastral-Tarren Mill",
     "labels": [
       "HoA#36349128",
+      "ARA#37218999",
       "GMBT#35186659"
     ]
   },
@@ -5151,7 +5537,15 @@
     "target": "Sinjastral-Tarren Mill",
     "labels": [
       "HoA#36349128",
+      "ARA#37218999",
       "GMBT#35186659"
+    ]
+  },
+  {
+    "source": "Tmy-Dentarg",
+    "target": "Sinjastral-Tarren Mill",
+    "labels": [
+      "ARA#37218999"
     ]
   },
   {
@@ -5159,44 +5553,6 @@
     "target": "Sivixdh-Draenor",
     "labels": [
       "ECO#32799896"
-    ]
-  },
-  {
-    "source": "Roiiben-Blackhand",
-    "target": "Sjeledk-Twisting Nether",
-    "labels": [
-      "HoA#28834208",
-      "DAWN#36758391",
-      "ARA#29100433",
-      "FLOOD#36894322",
-      "GMBT#35032619"
-    ]
-  },
-  {
-    "source": "Cazualaddict-Kazzak",
-    "target": "Sjeledk-Twisting Nether",
-    "labels": [
-      "HoA#28834208",
-      "DAWN#36758391",
-      "ARA#29100433",
-      "FLOOD#36894322"
-    ]
-  },
-  {
-    "source": "Megingjörð-Tarren Mill",
-    "target": "Sjeledk-Twisting Nether",
-    "labels": [
-      "HoA#28834208",
-      "DAWN#36758391",
-      "ARA#29100433",
-      "FLOOD#36894322"
-    ]
-  },
-  {
-    "source": "Dwarfthegoat-Kazzak",
-    "target": "Skyh-Draenor",
-    "labels": [
-      "PSF#35760266"
     ]
   },
   {
@@ -5786,25 +6142,18 @@
     ]
   },
   {
-    "source": "Sadfrexa-Tarren Mill",
+    "source": "Uglylabubu-Draenor",
     "target": "Unførgivenz-Kazzak",
     "labels": [
-      "STRT#36794880"
+      "HoA#37190114"
     ]
   },
   {
     "source": "Dwarfthegoat-Kazzak",
     "target": "Unførgivenz-Kazzak",
     "labels": [
+      "HoA#37190114",
       "STRT#36794880",
-      "ARA#36808886",
-      "ECO#36802113"
-    ]
-  },
-  {
-    "source": "Utsumi-Kazzak",
-    "target": "Unførgivenz-Kazzak",
-    "labels": [
       "ARA#36808886",
       "ECO#36802113"
     ]
@@ -5813,7 +6162,23 @@
     "source": "Shalidh-Silvermoon",
     "target": "Unførgivenz-Kazzak",
     "labels": [
+      "HoA#37190114",
       "ARA#36808886"
+    ]
+  },
+  {
+    "source": "Sadfrexa-Tarren Mill",
+    "target": "Unførgivenz-Kazzak",
+    "labels": [
+      "STRT#36794880"
+    ]
+  },
+  {
+    "source": "Utsumi-Kazzak",
+    "target": "Unførgivenz-Kazzak",
+    "labels": [
+      "ARA#36808886",
+      "ECO#36802113"
     ]
   },
   {
@@ -6056,6 +6421,34 @@
     "target": "Visiønhammer-Nemesis",
     "labels": [
       "GMBT#34488485"
+    ]
+  },
+  {
+    "source": "Vicentius-Silvermoon",
+    "target": "Volltreffer-Blackmoore",
+    "labels": [
+      "HoA#37232173",
+      "STRT#37222851",
+      "ECO#37213021",
+      "GMBT#37217229"
+    ]
+  },
+  {
+    "source": "Outiso-Kazzak",
+    "target": "Volltreffer-Blackmoore",
+    "labels": [
+      "HoA#37232173",
+      "STRT#37222851",
+      "ECO#37213021",
+      "GMBT#37217229"
+    ]
+  },
+  {
+    "source": "Malegusdk-Twisting Nether",
+    "target": "Volltreffer-Blackmoore",
+    "labels": [
+      "ECO#37213021",
+      "GMBT#37217229"
     ]
   },
   {
@@ -6387,6 +6780,20 @@
     ]
   },
   {
+    "source": "Sushihunt-Tarren Mill",
+    "target": "Yagami-Kilrogg",
+    "labels": [
+      "HoA#37184741"
+    ]
+  },
+  {
+    "source": "Oldgodx-Silvermoon",
+    "target": "Yagami-Kilrogg",
+    "labels": [
+      "HoA#37184741"
+    ]
+  },
+  {
     "source": "Utsumi-Kazzak",
     "target": "Yeshua-Teldrassil",
     "labels": [
@@ -6694,6 +7101,13 @@
     ]
   },
   {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Кайранас-Howling Fjord",
+    "labels": [
+      "HoA#37196225"
+    ]
+  },
+  {
     "source": "Jisoô-Twisting Nether",
     "target": "Капитально-Soulflayer",
     "labels": [
@@ -6824,6 +7238,7 @@
     "source": "Vicentius-Silvermoon",
     "target": "Мейншунс-Howling Fjord",
     "labels": [
+      "HoA#37194799",
       "GMBT#36801186"
     ]
   },
@@ -6831,6 +7246,7 @@
     "source": "Outiso-Kazzak",
     "target": "Мейншунс-Howling Fjord",
     "labels": [
+      "HoA#37194799",
       "GMBT#36801186"
     ]
   },
@@ -6838,6 +7254,7 @@
     "source": "Luciferhunt-Ragnaros",
     "target": "Мейншунс-Howling Fjord",
     "labels": [
+      "HoA#37194799",
       "GMBT#36801186"
     ]
   },
@@ -6937,14 +7354,16 @@
     "source": "Tmy-Dentarg",
     "target": "Теомматрр-Howling Fjord",
     "labels": [
-      "HoA#33900854"
+      "HoA#33900854",
+      "ARA#37218999"
     ]
   },
   {
     "source": "Fanalol-Kazzak",
     "target": "Теомматрр-Howling Fjord",
     "labels": [
-      "HoA#33900854"
+      "HoA#33900854",
+      "ARA#37218999"
     ]
   },
   {
@@ -6959,6 +7378,13 @@
     "target": "Теомматрр-Howling Fjord",
     "labels": [
       "STRT#34143998"
+    ]
+  },
+  {
+    "source": "Kfccustomer-Drak'thul",
+    "target": "Теомматрр-Howling Fjord",
+    "labels": [
+      "ARA#37218999"
     ]
   },
   {
