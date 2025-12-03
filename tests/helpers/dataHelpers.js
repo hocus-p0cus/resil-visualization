@@ -11,14 +11,13 @@ export async function loadEdges({ region, season, keyLevel }) {
     ]);
     
     return {
-      downEdges: downJson.default.map(e => [e.source, e.target]),
-      nonResilEdges: nonResilJson.default.map(e => [e.source, e.target]),
+      downEdges: downJson.default.map(e => [e.source.toLowerCase(), e.target.toLowerCase()]),
+      nonResilEdges: nonResilJson.default.map(e => [e.source.toLowerCase(), e.target.toLowerCase()]),
     };
   } catch (error) {
     throw new Error(`Failed to load edges for ${region}/${season}/level ${keyLevel}: ${error.message}`);
   }
 }
-
 
 export function assertNodeType({ type, target, downEdges, nonResilEdges }) {
   const validTypes = ["top", "bottom", "isolated", "mid"];

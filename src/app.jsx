@@ -1,6 +1,8 @@
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
+import { parseCharacterInput } from "./parseCharacterInput";
+import { findNode } from "./parseCharacterInput";
 
 // vibecoding was a mistake
 const { useState, useRef, useEffect } = React;
@@ -53,11 +55,6 @@ const WoWGraphVisualizer = () => {
   const seasonSlugs = {
     'tww-season2': 'season-tww-2',
     'tww-season3': 'season-tww-3',
-  };
-
-  const regionMapping = {
-    'us': 'na',
-    'eu': 'eu'
   };
   
   // Data state
@@ -155,12 +152,10 @@ const WoWGraphVisualizer = () => {
     }
 
     if (qp.character && qp.realm) {
-      const displayName =
-        qp.character.charAt(0).toUpperCase() + qp.character.slice(1).toLowerCase();
 
       if (slugMapping && slugMapping[qp.realm]) {
-        const realmName = slugMapping[qp.realm];
-        const targetId = `${displayName}-${realmName}`;
+        const realmName = slugMapping[qp.realm].toLowerCase();
+        const targetId = `${qp.character}-${realmName}`;
         setSearchTerm(targetId);
         setTargetChar(targetId);
         buildGraph(targetId);
@@ -196,9 +191,25 @@ const WoWGraphVisualizer = () => {
           nonResilEdgesRes.json()
         ]);
         
-        setTimestamps(timestampsData);
-        setDownEdges(downEdgesData);
-        setNonResilEdges(nonResilEdgesData);
+        setTimestamps(
+          Object.fromEntries(
+            Object.entries(timestampsData).map(([name, date]) => [
+              name.toLowerCase(),
+              date
+            ])
+          )
+        );
+        setDownEdges(downEdgesData.map(e => ({
+          source: e.source.toLowerCase(),
+          target: e.target.toLowerCase(),
+          labels: e.labels
+        })));
+        setNonResilEdges(nonResilEdgesData.map(e => ({
+          source: e.source.toLowerCase(),
+          target: e.target.toLowerCase(),
+          labels: e.labels
+        })));
+
         setLoading(false);
       } catch (err) {
         setLoadError(err.message);
@@ -235,7 +246,12 @@ const WoWGraphVisualizer = () => {
       if (!dataLoaded) return;
       
       setSearchTerm(pastedText.trim());
-      const parsed = parseRioLink(pastedText.trim());
+      const parsed = parseCharacterInput(
+        pastedText.trim(),
+        slugMapping,
+        downEdges,
+        nonResilEdges
+      );
 
       if (parsed.region && parsed.region !== region) {
         setRegion(parsed.region);
@@ -261,7 +277,17 @@ const WoWGraphVisualizer = () => {
 
   window.addEventListener('paste', handlePaste);
   return () => window.removeEventListener('paste', handlePaste);
-}, [region, dataLoaded, downEdges, nonResilEdges, showNonResil]);
+}, [
+  region,
+  dataLoaded,
+  downEdges,
+  nonResilEdges,
+  showNonResil,
+  slugMapping,
+  availableConfigs,
+  keyLevel,
+  season
+]);
 
   const buildGraph = (target) => {
     const graph = buildGraphCore({
@@ -418,60 +444,15 @@ const WoWGraphVisualizer = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [graph, zoom, pan]);
 
-  const findNodeInGraph = (searchStr) => {
-    const searchLower = searchStr.toLowerCase();
-    
-    if (!downEdges || !nonResilEdges) return null;
-    
-    const allNodes = new Set();
-    
-    downEdges.forEach(e => {
-      allNodes.add(e.source);
-      allNodes.add(e.target);
-    });
-    
-    nonResilEdges.forEach(e => {
-      allNodes.add(e.source);
-      allNodes.add(e.target);
-    });
-    
-    const foundNode = Array.from(allNodes).find(node => node.toLowerCase() === searchLower);
-    
-    return foundNode || null;
-  };
-
-  const parseRioLink = (input) => {
-    const match = input.match(/^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i);
-    
-    if (match && slugMapping) {
-
-      const linkRegion = regionMapping[match[1]];
-
-      const slug = decodeURIComponent(match[2]).toLowerCase();
-      const name = decodeURIComponent(match[3]);
-      
-      const realm = slugMapping[slug];
-      const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-
-      if (!realm) {
-        alert(`Realm slug "${slug}" not found in mapping. Using slug as-is.`);
-        const fallbackRealm = slug.split('-').map(word => 
-          word.charAt(0).toUpperCase() + word.slice(1)
-        ).join(' ');
-        return { charId: `${capitalizedName}-${fallbackRealm}`, region: linkRegion };
-      }
-      
-      return { charId: `${capitalizedName}-${realm}`, region: linkRegion };
-    }
-    
-    const foundNode = findNodeInGraph(input.trim());
-    return { charId: foundNode || input.trim(), region: null };
-  };
-
   const handleSearch = () => {
     if (!searchTerm.trim()) return;
 
-    const parsed = parseRioLink(searchTerm);
+    const parsed = parseCharacterInput(
+        searchTerm,
+        slugMapping,
+        downEdges,
+        nonResilEdges
+      );
 
     if (parsed.region && parsed.region !== region) {
 
@@ -496,17 +477,21 @@ const WoWGraphVisualizer = () => {
   // Rebuild graph when season or key level changes
   useEffect(() => {
     if (targetChar && dataLoaded) {
-      const foundNode = findNodeInGraph(targetChar);
+      const foundNode = findNode(targetChar, downEdges, nonResilEdges);
 
-      if (foundNode) {
+      // when did this happen ???
+      // I think this had to do something re-drawing the graph on keylevel/season change
+      //if (foundNode) {
 
-        setTargetChar(foundNode);
-        buildGraph(foundNode);
+      //  setTargetChar(foundNode);
+      //  buildGraph(foundNode);
 
-      } else {
+      //} else {
 
-        buildGraph(targetChar);
-      }
+      //  buildGraph(targetChar);
+      //}
+
+      buildGraph(targetChar);
     }
   }, [season, keyLevel, timestamps, downEdges, nonResilEdges]);
 
@@ -567,8 +552,8 @@ const WoWGraphVisualizer = () => {
       const params = new URLSearchParams({
         region: region,
         season: season,
-        character: characterName.toLowerCase(),
-        realm: realmName.toLowerCase()
+        character: characterName,
+        realm: realmName
       });
       
       window.open(`https://hocus-p0cus.github.io/?${params.toString()}`, '_blank');

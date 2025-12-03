@@ -3,7 +3,7 @@ export function readUrlParams() {
 
   return {
     region: params.get("region")?.toLowerCase() || null,
-    season: params.get("season") || null,
+    season: params.get("season")?.toLowerCase() || null,
     character: params.get("character")?.toLowerCase() || null,
     realm: params.get("realm")?.toLowerCase() || null,
     level: params.get("level") ? Number(params.get("level")) : null,
