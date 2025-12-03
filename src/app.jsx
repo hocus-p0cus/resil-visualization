@@ -376,15 +376,20 @@ const WoWGraphVisualizer = () => {
     return { pos, layers: Object.values(layers) };
   };
 
-  const buildGraph = (target) => {
-    if (!downEdges || !nonResilEdges || !target) return;
-
+  function buildGraphCore({
+    target,
+    downEdges,
+    nonResilEdges,
+    showNonResil
+  }) {
+    if (!downEdges || !nonResilEdges || !target) return null;
+  
     const downEdgesList = downEdges.map(e => [e.source, e.target]);
     const nonResilEdgesList = nonResilEdges.map(e => [e.source, e.target]);
     
     const upEdges = downEdgesList.map(([a, b]) => [b, a]);
     const upNonResilEdges = nonResilEdgesList.map(([a, b]) => [b, a]);
-
+  
     // When going up, always include both resilient and non-resilient edges
     const upNodes = collectNodes(target, [...upEdges, ...upNonResilEdges]);
     
@@ -395,7 +400,7 @@ const WoWGraphVisualizer = () => {
     const downNodes = collectNodes(target, downEdgesForCollection);
     
     const allNodes = new Set([...upNodes, ...downNodes, target]);
-
+  
     const filteredEdges = [];
     
     downEdges.forEach(e => {
@@ -427,20 +432,35 @@ const WoWGraphVisualizer = () => {
         });
       }
     });
-
+  
     const allEdgesForLayout = filteredEdges.map(e => [e.from, e.to]);
     const layout = hierarchicalLayout(Array.from(allNodes), allEdgesForLayout);
     
     if (!layout) {
-      alert('Graph contains cycles - cannot create hierarchical layout');
-      return;
+      return null; // Caller handles the error (alert in UI, throw in tests, etc.)
     }
-
-    setGraph({
+  
+    return {
       nodes: Array.from(allNodes),
       edges: filteredEdges,
       positions: layout.pos
-    });
+    };
+  }
+
+  const buildGraph = (target) => {
+    const graph = buildGraphCore({
+      target, 
+      downEdges, 
+      nonResilEdges, 
+      showNonResil
+  });
+  
+    if (!graph) {
+      alert('Graph contains cycles - cannot create hierarchical layout');
+      return;
+    }
+    
+    setGraph(graph);
   };
 
   const drawGraph = () => {
