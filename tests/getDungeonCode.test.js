@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { getDungeonCode } from "../src/testables";
+import { getDungeonCode } from "../src/getDungeonCode";
 
 describe("getDungeonCode", () => {
   test("extracts dungeon code before hash", () => {

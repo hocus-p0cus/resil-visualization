@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { buildGraphCore } from "../src/testables";
+import { buildGraphCore } from "../src/buildGraphCore";
 import { loadEdges } from "./helpers/dataHelpers";
 import { realDataTestCases } from "./fixtures/testCases";
 

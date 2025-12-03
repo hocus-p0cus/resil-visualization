@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { collectNodes } from "../src/testables";
+import { collectNodes } from "../src/collectNodes";
 import { loadEdges, assertNodeType } from "./helpers/dataHelpers";
 import { realDataTestCases } from "./fixtures/testCases";
 

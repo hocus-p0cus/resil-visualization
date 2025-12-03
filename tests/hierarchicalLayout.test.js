@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { hierarchicalLayout, topologicalSort } from "../src/testables";
+import { hierarchicalLayout } from "../src/hierarchicalLayout";
 
 // Helper: verify layering correctness
 function assertLayering(layout, edges) {

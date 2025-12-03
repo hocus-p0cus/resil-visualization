@@ -1,5 +1,5 @@
 import { describe, test, expect, beforeEach } from "vitest";
-import { readUrlParams } from "../src/testables";
+import { readUrlParams } from "../src/readUrlParams";
 
 function setSearch(search) {
   Object.defineProperty(window, "location", {

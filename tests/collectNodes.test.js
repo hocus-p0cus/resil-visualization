@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { collectNodes } from '../src/testables';
+import { collectNodes } from '../src/collectNodes';
 
 describe("collectNodes", () => {
   test("collects reachable nodes in a simple chain", () => {

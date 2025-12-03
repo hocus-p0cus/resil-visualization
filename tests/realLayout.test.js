@@ -1,5 +1,6 @@
 import { describe, test, expect } from "vitest";
-import { hierarchicalLayout, collectNodes } from "../src/testables";
+import { hierarchicalLayout } from "../src/hierarchicalLayout";
+import { collectNodes } from "../src/collectNodes";
 import { loadEdges } from "./helpers/dataHelpers";
 import { realDataTestCases } from "./fixtures/testCases";
 
