@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 
 import { Upload, Search, ZoomIn, ZoomOut, Maximize2 } from "./components/icons_index";
 
@@ -61,11 +61,27 @@ const WoWGraphVisualizer = () => {
   const { slugMapping, error: slugError } = useSlugMapping();
   const { viridis: viridis256, error: viridisError } = useViridis();
 
+  const buildGraph = useCallback((target) => {
+  const graph = buildGraphCore({
+      target, 
+      downEdges, 
+      nonResilEdges, 
+      showNonResil
+  });
+  
+    if (!graph) {
+      alert('Graph contains cycles - cannot create hierarchical layout');
+      return;
+    }
+    
+    setGraph(graph);
+  }, [downEdges, nonResilEdges, showNonResil]);
+
   const hasInitialized = useRef(false);
   useEffect(() => {
-    if (!availableConfigs.regions.length) return;
-    if (!slugMapping) return;
-    if (!downEdges || !nonResilEdges) return;
+      if (!availableConfigs.regions.length) return;
+      if (!slugMapping) return;
+      if (!downEdges || !nonResilEdges) return;
     // is there a race condition here somewhere ?
 
     if (hasInitialized.current) return;
@@ -93,7 +109,6 @@ const WoWGraphVisualizer = () => {
         const targetId = `${qp.character}-${realmName}`;
         setSearchTerm(targetId);
         setTargetChar(targetId);
-        buildGraph(targetId);
       }
     }
   }, [availableConfigs, slugMapping, downEdges, nonResilEdges]);
@@ -106,16 +121,14 @@ const WoWGraphVisualizer = () => {
     canvas.addEventListener('contextmenu', disableContextMenu);
 
     return () => canvas.removeEventListener('contextmenu', disableContextMenu);
-  }, [canvasRef.current, graph]); 
+  }, [canvasRef.current, graph]);
 
-  useEffect(() => {
-  const handlePaste = async (e) => {
+  const handlePaste = useCallback((e) => {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
       return;
     }
 
     const pastedText = e.clipboardData?.getData('text') || '';
-    
     const rioLinkPattern = /^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i;
     
     if (rioLinkPattern.test(pastedText.trim())) {
@@ -131,7 +144,6 @@ const WoWGraphVisualizer = () => {
       );
 
       if (parsed.region && parsed.region !== region) {
-
         const newRegion = parsed.region;
         setRegion(newRegion);
         const key = `${newRegion}-${season}`;
@@ -143,43 +155,24 @@ const WoWGraphVisualizer = () => {
       }
 
       setTargetChar(parsed.charId);
-      
-      buildGraph(parsed.charId);
-
       setZoom(1);
       setPan({ x: 0, y: 0 });
     }
-  };
+  }, [
+    region,
+    dataLoaded,
+    slugMapping,
+    downEdges,
+    nonResilEdges,
+    availableConfigs,
+    keyLevel,
+    season
+  ]);
 
-  window.addEventListener('paste', handlePaste);
-  return () => window.removeEventListener('paste', handlePaste);
-}, [
-  region,
-  dataLoaded,
-  downEdges,
-  nonResilEdges,
-  showNonResil,
-  slugMapping,
-  availableConfigs,
-  keyLevel,
-  season
-]);
-
-  const buildGraph = (target) => {
-    const graph = buildGraphCore({
-      target, 
-      downEdges, 
-      nonResilEdges, 
-      showNonResil
-  });
-  
-    if (!graph) {
-      alert('Graph contains cycles - cannot create hierarchical layout');
-      return;
-    }
-    
-    setGraph(graph);
-  };
+  useEffect(() => {
+    window.addEventListener('paste', handlePaste);
+    return () => window.removeEventListener('paste', handlePaste);
+  }, [handlePaste]);
 
   const drawGraph = () => {
     if (!graph || !canvasRef.current) return;
@@ -336,26 +329,23 @@ const WoWGraphVisualizer = () => {
     }
 
     setTargetChar(parsed.charId);
-    buildGraph(parsed.charId);
 
     setZoom(1);
     setPan({ x: 0, y: 0 });
   };
 
-  // Rebuild graph when toggle changes
-  useEffect(() => {
-    if (targetChar) {
-      buildGraph(targetChar);
-    }
-  }, [showNonResil]);
+  // Rebuild graph when targetChar, season or key level changes
+  // (configuration change implies reload of edge data)
 
-  // Rebuild graph when season or key level changes
+  // but if a link is pasted for another region
+  // - it changes region first, redraws the graph once (fake graph)
+  // - then draws the right one
+  // but I think it was doing that before anyway
   useEffect(() => {
-    if (targetChar && dataLoaded) {
+    if (!targetChar || !dataLoaded) return;
 
-      buildGraph(targetChar);
-    }
-  }, [season, keyLevel, timestamps, downEdges, nonResilEdges]);
+    buildGraph(targetChar);
+  }, [targetChar, dataLoaded, buildGraph]);
 
   useEffect(() => {
     const handleKeyPress = (e) => {
@@ -382,7 +372,6 @@ const WoWGraphVisualizer = () => {
 
     if (e.button === 2 && hoveredNode) {
       setTargetChar(hoveredNode);
-      buildGraph(hoveredNode);
       setZoom(1);
       setPan({ x: 0, y: 0 });
       setSearchTerm(hoveredNode);
