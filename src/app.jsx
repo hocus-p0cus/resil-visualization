@@ -1,8 +1,11 @@
+import React, { useState, useRef, useEffect } from "react";
+
+import { useViridis } from "./hooks/useViridis";
+
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
 import { parseCharacterInput } from "./parseCharacterInput";
-import React, { useState, useRef, useEffect } from "react";
 
 // Inline SVG icons
 const Upload = ({ size = 24, ...props }) => (
@@ -81,7 +84,7 @@ const WoWGraphVisualizer = () => {
   const containerRef = useRef(null);
   const dataLoaded = timestamps && downEdges && nonResilEdges;
 
-  const [viridis256, setViridis256] = useState(null);
+  const { viridis: viridis256, error: viridisError } = useViridis();
 
   // Load slug mapping on mount
   useEffect(() => {
@@ -90,13 +93,6 @@ const WoWGraphVisualizer = () => {
       .then(data => setSlugMapping(data))
       .catch(err => console.error('Failed to load slug mapping:', err));
   }, []);
-
-  useEffect(() => {
-  fetch('/viridis256.json')
-    .then(res => res.json())
-    .then(data => setViridis256(data))
-    .catch(err => console.error('Failed to load viridis256.json:', err));
-}, []);
 
   // Discover available configurations on mount
   useEffect(() => {
