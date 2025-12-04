@@ -2,10 +2,7 @@ import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
 import { parseCharacterInput } from "./parseCharacterInput";
-import { findNode } from "./parseCharacterInput";
-
-// vibecoding was a mistake
-const { useState, useRef, useEffect } = React;
+import React, { useState, useRef, useEffect } from "react";
 
 // Inline SVG icons
 const Upload = ({ size = 24, ...props }) => (
@@ -82,19 +79,20 @@ const WoWGraphVisualizer = () => {
   const [edgeOptions, setEdgeOptions] = useState([]);
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
+  const dataLoaded = timestamps && downEdges && nonResilEdges;
 
   const [viridis256, setViridis256] = useState(null);
 
   // Load slug mapping on mount
   useEffect(() => {
-    fetch('slug_mapping.json')
+    fetch('/slug_mapping.json')
       .then(response => response.json())
       .then(data => setSlugMapping(data))
       .catch(err => console.error('Failed to load slug mapping:', err));
   }, []);
 
   useEffect(() => {
-  fetch('viridis256.json')
+  fetch('/viridis256.json')
     .then(res => res.json())
     .then(data => setViridis256(data))
     .catch(err => console.error('Failed to load viridis256.json:', err));
@@ -254,7 +252,6 @@ const WoWGraphVisualizer = () => {
       );
 
       if (parsed.region && parsed.region !== region) {
-        setRegion(parsed.region);
 
         const newRegion = parsed.region;
         setRegion(newRegion);
@@ -477,7 +474,7 @@ const WoWGraphVisualizer = () => {
   // Rebuild graph when season or key level changes
   useEffect(() => {
     if (targetChar && dataLoaded) {
-      const foundNode = findNode(targetChar, downEdges, nonResilEdges);
+      //const foundNode = findNode(targetChar, downEdges, nonResilEdges);
 
       // when did this happen ???
       // I think this had to do something re-drawing the graph on keylevel/season change
@@ -544,7 +541,7 @@ const WoWGraphVisualizer = () => {
     }
 
     if (hoveredNode) {
-      // Parse character name and realm from node format "CharName-Realm"
+      // Parse character name and realm from node format "charName-realm"
       const [characterName, ...realmParts] = hoveredNode.split('-');
       const realmName = realmParts.join('-'); // In case realm has hyphens
       
@@ -670,8 +667,6 @@ const WoWGraphVisualizer = () => {
     const delta = e.deltaY > 0 ? 0.9 : 1.1;
     setZoom(prev => Math.max(0.1, Math.min(5, prev * delta)));
   };
-
-  const dataLoaded = timestamps && downEdges && nonResilEdges;
 
   return (
     <div className="flex flex-col h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white">
@@ -1067,5 +1062,4 @@ const WoWGraphVisualizer = () => {
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<WoWGraphVisualizer />);
+export default WoWGraphVisualizer;
