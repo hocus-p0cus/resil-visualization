@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 
 export function useGraphData(region, season, keyLevel) {
-  const [timestamps, setTimestamps] = useState(null);
-  const [downEdges, setDownEdges] = useState(null);
-  const [nonResilEdges, setNonResilEdges] = useState(null);
-
+  const [data, setData] = useState({
+    timestamps: null,
+    downEdges: null,
+    nonResilEdges: null,
+  });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -18,50 +19,47 @@ export function useGraphData(region, season, keyLevel) {
       setError(null);
 
       const prefix = `${season}-${region}-resi${keyLevel}`;
-      const base = `/data/${region}/${season}`;
+      const basePath = `/data/${region}/${season}`;
 
       try {
-        const [tsRes, downRes, nonResRes] = await Promise.all([
-          fetch(`${base}/${prefix}_timestamps.json`),
-          fetch(`${base}/${prefix}_down_edges.json`),
-          fetch(`${base}/${prefix}_non_resil_edges.json`)
+        const [timestampsRes, downEdgesRes, nonResilEdgesRes] = await Promise.all([
+          fetch(`${basePath}/${prefix}_timestamps.json`),
+          fetch(`${basePath}/${prefix}_down_edges.json`),
+          fetch(`${basePath}/${prefix}_non_resil_edges.json`)
         ]);
 
-        if (!tsRes.ok || !downRes.ok || !nonResRes.ok) {
-          throw new Error("Failed loading graph data");
+        if (!timestampsRes.ok || !downEdgesRes.ok || !nonResilEdgesRes.ok) {
+          throw new Error('Failed to load one or more data files');
         }
 
-        const [tsData, downData, nonResData] = await Promise.all([
-          tsRes.json(),
-          downRes.json(),
-          nonResRes.json()
+        const [timestampsData, downEdgesData, nonResilEdgesData] = await Promise.all([
+          timestampsRes.json(),
+          downEdgesRes.json(),
+          nonResilEdgesRes.json()
         ]);
 
         if (cancelled) return;
 
-        setTimestamps(
-          Object.fromEntries(
-            Object.entries(tsData).map(([k, v]) => [k.toLowerCase(), v])
-          )
-        );
-
-        setDownEdges(
-          downData.map(e => ({
+        setData({
+          timestamps: Object.fromEntries(
+            Object.entries(timestampsData).map(([name, date]) => [
+              name.toLowerCase(),
+              date
+            ])
+          ),
+          downEdges: downEdgesData.map(e => ({
             source: e.source.toLowerCase(),
             target: e.target.toLowerCase(),
             labels: e.labels
-          }))
-        );
-
-        setNonResilEdges(
-          nonResData.map(e => ({
+          })),
+          nonResilEdges: nonResilEdgesData.map(e => ({
             source: e.source.toLowerCase(),
             target: e.target.toLowerCase(),
             labels: e.labels
-          }))
-        );
-
+          })),
+        });
         setLoading(false);
+
       } catch (err) {
         if (!cancelled) {
           setError(err.message);
@@ -72,14 +70,7 @@ export function useGraphData(region, season, keyLevel) {
 
     load();
     return () => { cancelled = true; };
-
   }, [region, season, keyLevel]);
 
-  return {
-    timestamps,
-    downEdges,
-    nonResilEdges,
-    loading,
-    error
-  };
+  return { ...data, loading, error };
 }

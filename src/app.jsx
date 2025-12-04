@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
 import { useConfig } from "./hooks/useConfig";
+import { useGraphData } from "./hooks/useGraphData";
 
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
@@ -64,11 +65,9 @@ const WoWGraphVisualizer = () => {
   };
   
   // Data state
-  const [timestamps, setTimestamps] = useState(null);
-  const [downEdges, setDownEdges] = useState(null);
-  const [nonResilEdges, setNonResilEdges] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [loadError, setLoadError] = useState(null);
+  const { timestamps, downEdges, nonResilEdges, loading: graphDataLoading, error: graphDataError } = useGraphData(region, season, keyLevel);
+
+  const dataLoaded = timestamps && downEdges && nonResilEdges;
   
   // UI state
   const [searchTerm, setSearchTerm] = useState('');
@@ -87,13 +86,19 @@ const WoWGraphVisualizer = () => {
   const [edgeOptions, setEdgeOptions] = useState([]);
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
-  const dataLoaded = timestamps && downEdges && nonResilEdges;
 
   const { slugMapping, error: slugError } = useSlugMapping();
   const { viridis: viridis256, error: viridisError } = useViridis();
 
+  const hasInitialized = useRef(false);
   useEffect(() => {
     if (!availableConfigs.regions.length) return;
+    if (!slugMapping) return;
+    if (!downEdges || !nonResilEdges) return;
+    // is there a race condition here somewhere ?
+
+    if (hasInitialized.current) return;
+    hasInitialized.current = true;
 
     const qp = readUrlParams();
 
@@ -120,65 +125,7 @@ const WoWGraphVisualizer = () => {
         buildGraph(targetId);
       }
     }
-  }, [availableConfigs, slugMapping]);
-
-  // Load data files when region/season/keyLevel changes
-  useEffect(() => {
-    if (!region || !season || !keyLevel) return;
-    
-    const loadData = async () => {
-      setLoading(true);
-      setLoadError(null);
-      
-      const prefix = `${season}-${region}-resi${keyLevel}`;
-      const basePath = `data/${region}/${season}`;
-      
-      try {
-        const [timestampsRes, downEdgesRes, nonResilEdgesRes] = await Promise.all([
-          fetch(`${basePath}/${prefix}_timestamps.json`),
-          fetch(`${basePath}/${prefix}_down_edges.json`),
-          fetch(`${basePath}/${prefix}_non_resil_edges.json`)
-        ]);
-        
-        if (!timestampsRes.ok || !downEdgesRes.ok || !nonResilEdgesRes.ok) {
-          throw new Error('Failed to load one or more data files');
-        }
-        
-        const [timestampsData, downEdgesData, nonResilEdgesData] = await Promise.all([
-          timestampsRes.json(),
-          downEdgesRes.json(),
-          nonResilEdgesRes.json()
-        ]);
-        
-        setTimestamps(
-          Object.fromEntries(
-            Object.entries(timestampsData).map(([name, date]) => [
-              name.toLowerCase(),
-              date
-            ])
-          )
-        );
-        setDownEdges(downEdgesData.map(e => ({
-          source: e.source.toLowerCase(),
-          target: e.target.toLowerCase(),
-          labels: e.labels
-        })));
-        setNonResilEdges(nonResilEdgesData.map(e => ({
-          source: e.source.toLowerCase(),
-          target: e.target.toLowerCase(),
-          labels: e.labels
-        })));
-
-        setLoading(false);
-      } catch (err) {
-        setLoadError(err.message);
-        setLoading(false);
-        console.error('Error loading data:', err);
-      }
-    };
-    
-    loadData();
-  }, [region, season, keyLevel]);
+  }, [availableConfigs, slugMapping, downEdges, nonResilEdges]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -435,19 +382,6 @@ const WoWGraphVisualizer = () => {
   // Rebuild graph when season or key level changes
   useEffect(() => {
     if (targetChar && dataLoaded) {
-      //const foundNode = findNode(targetChar, downEdges, nonResilEdges);
-
-      // when did this happen ???
-      // I think this had to do something re-drawing the graph on keylevel/season change
-      //if (foundNode) {
-
-      //  setTargetChar(foundNode);
-      //  buildGraph(foundNode);
-
-      //} else {
-
-      //  buildGraph(targetChar);
-      //}
 
       buildGraph(targetChar);
     }
@@ -748,15 +682,15 @@ const WoWGraphVisualizer = () => {
         </div>
 
         <div className="mb-4 h-5">
-          {loading && (
+          {graphDataLoading && (
             <div className="text-yellow-400 text-sm">Loading data...</div>
           )}
           
-          {!loading && loadError && (
-            <div className="text-red-400 text-sm">Error: {loadError}</div>
+          {!graphDataLoading && graphDataError && (
+            <div className="text-red-400 text-sm">Error: {graphDataError}</div>
           )}
           
-          {!loading && !loadError && dataLoaded && (
+          {!graphDataLoading && !graphDataError && dataLoaded && (
             <div className="text-green-400 text-xs">
               ✓ Data loaded for {region.toUpperCase()} - {season} - Level {keyLevel}
             </div>
