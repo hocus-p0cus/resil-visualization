@@ -1,15 +1,20 @@
 import { useState, useEffect } from "react";
 
 export function useConfig() {
-  const [availableConfigs, setAvailableConfigs] = useState({
-    regions: [],
-    seasons: {},
-    keyLevels: {}
+  const [config, setConfig] = useState({
+    availableConfigs: {
+      regions: [],
+      seasons: {},
+      keyLevels: {}
+    },
+    defaults: {
+      region: null,
+      season: null,
+      keyLevel: null,
+    },
+    loading: true,
+    error: null,
   });
-  const [defaultRegion, setDefaultRegion] = useState(null);
-  const [defaultSeason, setDefaultSeason] = useState(null);
-  const [defaultKeyLevel, setDefaultKeyLevel] = useState(null);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -19,24 +24,31 @@ export function useConfig() {
         const res = await fetch("/data/config.json");
         if (!res.ok) throw new Error("Failed to load config.json");
 
-        const config = await res.json();
+        const data = await res.json();
         if (cancelled) return;
 
-        setAvailableConfigs(config);
-
-        // Determine defaults
-        const region = config.regions[0] || null;
-        const season = region && config.seasons[region]?.[0] || null;
-        const key = (region && season) 
-          ? config.keyLevels[`${region}-${season}`]?.[0] 
+        const region = data.regions[0] || null;
+        const season = region && data.seasons[region]?.[0] || null;
+        const keyLevel = (region && season) 
+          ? data.keyLevels[`${region}-${season}`]?.[0] 
           : null;
 
-        setDefaultRegion(region);
-        setDefaultSeason(season);
-        setDefaultKeyLevel(key);
+        // Single state update
+        setConfig({
+          availableConfigs: data,
+          defaults: { region, season, keyLevel },
+          loading: false,
+          error: null,
+        });
 
       } catch (err) {
-        if (!cancelled) setError(err.message);
+        if (!cancelled) {
+          setConfig(prev => ({
+            ...prev,
+            loading: false,
+            error: err.message,
+          }));
+        }
       }
     }
 
@@ -44,11 +56,5 @@ export function useConfig() {
     return () => { cancelled = true; };
   }, []);
 
-  return {
-    availableConfigs,
-    defaultRegion,
-    defaultSeason,
-    defaultKeyLevel,
-    error
-  };
+  return config;
 }

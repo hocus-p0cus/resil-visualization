@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
+import { useConfig } from "./hooks/useConfig";
 
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
@@ -42,15 +43,19 @@ const Maximize2 = ({ size = 24, ...props }) => (
 
 const WoWGraphVisualizer = () => {
   // Configuration state
-  const [availableConfigs, setAvailableConfigs] = useState({
-    regions: [],
-    seasons: {},
-    keyLevels: {}
-  });
+  const { availableConfigs, defaults, loading: configLoading, error: configError } = useConfig();
   const [region, setRegion] = useState('');
   const [season, setSeason] = useState('');
   const [keyLevel, setKeyLevel] = useState(0);
   const [showNonResil, setShowNonResil] = useState(false);
+
+  useEffect(() => {
+    if (defaults.region) setRegion(defaults.region);
+    if (defaults.season) setSeason(defaults.season);
+    if (defaults.keyLevel) setKeyLevel(defaults.keyLevel);
+  }, [defaults]);
+
+  // one more effect to merge errors ?
   
   // Season slug mapping
   const seasonSlugs = {
@@ -86,39 +91,6 @@ const WoWGraphVisualizer = () => {
 
   const { slugMapping, error: slugError } = useSlugMapping();
   const { viridis: viridis256, error: viridisError } = useViridis();
-
-  // Discover available configurations on mount
-  useEffect(() => {
-    const discoverConfigs = async () => {
-      try {
-        const response = await fetch('data/config.json');
-        const config = await response.json();
-        
-        setAvailableConfigs(config);
-        
-        // Set defaults to first available options
-        if (config.regions.length > 0) {
-          const firstRegion = config.regions[0];
-          setRegion(firstRegion);
-          
-          if (config.seasons[firstRegion] && config.seasons[firstRegion].length > 0) {
-            const firstSeason = config.seasons[firstRegion][0];
-            setSeason(firstSeason);
-            
-            const key = `${firstRegion}-${firstSeason}`;
-            if (config.keyLevels[key] && config.keyLevels[key].length > 0) {
-              setKeyLevel(config.keyLevels[key][0]);
-            }
-          }
-        }
-      } catch (err) {
-        console.error('Failed to load config:', err);
-        setLoadError('Failed to load available configurations');
-      }
-    };
-    
-    discoverConfigs();
-  }, []);
 
   useEffect(() => {
     if (!availableConfigs.regions.length) return;
