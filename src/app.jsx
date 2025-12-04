@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import { useViridis } from "./hooks/useViridis";
+import { useSlugMapping } from "./hooks/useSlugMapping";
 
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
@@ -61,7 +62,6 @@ const WoWGraphVisualizer = () => {
   const [timestamps, setTimestamps] = useState(null);
   const [downEdges, setDownEdges] = useState(null);
   const [nonResilEdges, setNonResilEdges] = useState(null);
-  const [slugMapping, setSlugMapping] = useState(null);
   const [loading, setLoading] = useState(false);
   const [loadError, setLoadError] = useState(null);
   
@@ -84,15 +84,8 @@ const WoWGraphVisualizer = () => {
   const containerRef = useRef(null);
   const dataLoaded = timestamps && downEdges && nonResilEdges;
 
+  const { slugMapping, error: slugError } = useSlugMapping();
   const { viridis: viridis256, error: viridisError } = useViridis();
-
-  // Load slug mapping on mount
-  useEffect(() => {
-    fetch('/slug_mapping.json')
-      .then(response => response.json())
-      .then(data => setSlugMapping(data))
-      .catch(err => console.error('Failed to load slug mapping:', err));
-  }, []);
 
   // Discover available configurations on mount
   useEffect(() => {
