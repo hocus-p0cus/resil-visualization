@@ -4,8 +4,7 @@ import {
   parseCharacterInput,
   parseProfileURL,
   parseNameRealm,
-  resolveRealm,
-  findNode,
+  resolveRealm
 } from "../src/parseCharacterInput.js";
 
 // -----------------------------
@@ -112,27 +111,6 @@ describe("parseNameRealm", () => {
     expect(parseNameRealm("NnOgGiE-OuTlAnD")).toEqual({
       charId: "nnoggie-outland",
     });
-  });
-});
-
-// -------------------------------------------------------------
-// findNodeLowercase
-// -------------------------------------------------------------
-
-describe("findNode", () => {
-  test("returns matching node when present", () => {
-    downEdges = mkEdges([
-      ["a", "b"],
-      ["b", "c"],
-    ]);
-
-    const result = findNode("b", downEdges, []);
-    expect(result).toBe("b");
-  });
-
-  test("returns null when not found", () => {
-    downEdges = mkEdges([["a", "b"]]);
-    expect(findNode("x", downEdges, [])).toBeNull();
   });
 });
 

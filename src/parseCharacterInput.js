@@ -46,27 +46,6 @@ export function resolveRealm(slug, slugMapping) {
   return slug.replace(/-/g, " ");
 }
 
-/**
- * 4. Search for existing lowercase node in graph. 
- * Returns the matched ID or null.
- */
-export function findNode(id, downEdges, nonResilEdges) {
-  if (!downEdges || !nonResilEdges) return null;
-
-  const all = new Set();
-
-  downEdges.forEach(e => {
-    all.add(e.source);
-    all.add(e.target);
-  });
-  nonResilEdges.forEach(e => {
-    all.add(e.source);
-    all.add(e.target);
-  });
-
-  return Array.from(all).find(node => node === id) || null;
-}
-
 export function parseCharacterInput(rawInput, slugMapping, downEdges, nonResilEdges) {
   const input = rawInput.trim().toLowerCase();
 
@@ -80,11 +59,8 @@ export function parseCharacterInput(rawInput, slugMapping, downEdges, nonResilEd
   // Fallback: parse "name-realm" style input
   const { charId } = parseNameRealm(input);
 
-  // this will be removed later
-  const found = findNode(charId, downEdges, nonResilEdges);
-
   return {
-    charId: found || charId,
+    charId: charId,
     region: null,
   };
 }
