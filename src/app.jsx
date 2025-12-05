@@ -10,7 +10,7 @@ import { useGraphData } from "./hooks/useGraphData";
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
-import { parseCharacterInput } from "./parseCharacterInput";
+import { parseCharacterInput, isRioCharacterURL } from "./parseCharacterInput";
 
 
 const WoWGraphVisualizer = () => {
@@ -166,25 +166,24 @@ const WoWGraphVisualizer = () => {
     }
 
     const pastedText = e.clipboardData?.getData('text') || '';
-    const rioLinkPattern = /^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i;
+    if (!isRioCharacterURL(pastedText)) return;
     
-    if (rioLinkPattern.test(pastedText.trim())) {
-      e.preventDefault();
-      if (!dataLoaded) return;
-      
-      setSearchTerm(pastedText.trim());
-      const parsed = parseCharacterInput(
-        pastedText.trim(),
-        slugMapping,
-        downEdges,
-        nonResilEdges
-      );
+    e.preventDefault();
+    if (!dataLoaded) return;
+    
+    setSearchTerm(pastedText.trim());
+    const parsed = parseCharacterInput(
+      pastedText.trim(),
+      slugMapping,
+      downEdges,
+      nonResilEdges
+    );
 
-      updateConfig( { region: parsed.region } );
-      setTargetChar(parsed.charId);
-      setZoom(1);
-      setPan({ x: 0, y: 0 });
-    }
+    updateConfig( { region: parsed.region } );
+    setTargetChar(parsed.charId);
+    
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
   }, [
     dataLoaded,
     slugMapping,

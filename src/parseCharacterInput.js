@@ -1,10 +1,14 @@
 import { regionMapping } from "./regionMapping";
 
+const RIO_URL_REGEX = /^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i;
+
+export function isRioCharacterURL(input) {
+  return RIO_URL_REGEX.test(input.trim());
+}
+
 export function parseProfileURL(input) {
   // input is assumed to be lowercased
-  const pattern = /^(?:https?:\/\/)?raider\.io\/characters\/(eu|us)\/([^\/]+)\/([^\/?#]+)/i;
-  const match = input.match(pattern);
-
+  const match = input.match(RIO_URL_REGEX);
   if (!match) return null;
 
   const region = regionMapping[match[1].toLowerCase()] ?? null;
