@@ -11,6 +11,7 @@ import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
 import { parseCharacterInput, isRioCharacterURL } from "./parseCharacterInput";
+import { safeConfigState } from "./safeConfigState";
 
 
 const WoWGraphVisualizer = () => {
@@ -24,46 +25,9 @@ const WoWGraphVisualizer = () => {
   });
 
   const updateConfig = ({ region, season, keyLevel }) => {
-    setConfig(prev => {
-      let newRegion = region ?? prev.region;
-      let newSeason = season ?? prev.season;
-      let newKeyLevel = keyLevel ?? prev.keyLevel;
-
-      const validRegions = availableConfigs.regions;
-      if (!validRegions.includes(newRegion)) {
-        // fallback if invalid or undefined
-        newRegion = validRegions[0] ?? null;
-      }
-
-      // Fix season if invalid for this region
-      const availableSeasons = availableConfigs.seasons[newRegion] ?? [];
-      if (!availableSeasons.includes(newSeason)) {
-        // fallback order:
-        // a) previous season if valid
-        // b) otherwise first available
-        newSeason = availableSeasons.includes(newRegion)
-          ? prev.season
-          : availableSeasons[0] ?? null;
-      }
-
-      // Fix keyLevel if invalid for region+season
-      const key = `${newRegion}-${newSeason}`;
-      const availableLevels = availableConfigs.keyLevels[key] ?? [];
-      if (!availableLevels.includes(newKeyLevel)) {
-        // fallback:
-        // a) previous valid key level
-        // b) otherwise first available key level
-        newKeyLevel = availableLevels.includes(prev.keyLevel)
-          ? prev.keyLevel
-          : availableLevels[0] ?? null;
-      }
-
-      return {
-        region: newRegion,
-        season: newSeason,
-        keyLevel: newKeyLevel
-      };
-    });
+    setConfig(prev => 
+      safeConfigState(prev, availableConfigs, { region, season, keyLevel })
+    );
   };
 
   const [showNonResil, setShowNonResil] = useState(false);
@@ -352,7 +316,7 @@ const WoWGraphVisualizer = () => {
   // but if a link is pasted for another region
   // - it changes region first, redraws the graph once (fake graph)
   // - then draws the right one
-  // but I think it was doing that before anyway
+  // although I think it was doing that before anyway
   useEffect(() => {
     if (!targetChar || !dataLoaded) return;
 
