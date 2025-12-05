@@ -6,6 +6,6 @@ export function readUrlParams() {
     season: params.get("season")?.toLowerCase() || null,
     character: params.get("character")?.toLowerCase() || null,
     realm: params.get("realm")?.toLowerCase() || null,
-    level: params.get("level") ? Number(params.get("level")) : null,
+    keyLevel: params.get("level") ? Number(params.get("level")) : null,
   };
 }

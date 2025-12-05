@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-export function useGraphData(region, season, keyLevel) {
+export function useGraphData(config) {
+  const { region, season, keyLevel } = config;
   const [data, setData] = useState({
     timestamps: null,
     downEdges: null,

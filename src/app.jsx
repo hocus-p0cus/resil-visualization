@@ -16,15 +16,67 @@ import { parseCharacterInput } from "./parseCharacterInput";
 const WoWGraphVisualizer = () => {
   // Configuration state
   const { availableConfigs, defaults, loading: configLoading, error: configError } = useConfig();
-  const [region, setRegion] = useState('');
-  const [season, setSeason] = useState('');
-  const [keyLevel, setKeyLevel] = useState(0);
+
+  const [config, setConfig] = useState({
+    region: '',
+    season: '',
+    keyLevel: 0
+  });
+
+  const updateConfig = ({ region, season, keyLevel }) => {
+    setConfig(prev => {
+      let newRegion = region ?? prev.region;
+      let newSeason = season ?? prev.season;
+      let newKeyLevel = keyLevel ?? prev.keyLevel;
+
+      const validRegions = availableConfigs.regions;
+      if (!validRegions.includes(newRegion)) {
+        // fallback if invalid or undefined
+        newRegion = validRegions[0] ?? null;
+      }
+
+      // Fix season if invalid for this region
+      const availableSeasons = availableConfigs.seasons[newRegion] ?? [];
+      if (!availableSeasons.includes(newSeason)) {
+        // fallback order:
+        // a) previous season if valid
+        // b) otherwise first available
+        newSeason = availableSeasons.includes(newRegion)
+          ? prev.season
+          : availableSeasons[0] ?? null;
+      }
+
+      // Fix keyLevel if invalid for region+season
+      const key = `${newRegion}-${newSeason}`;
+      const availableLevels = availableConfigs.keyLevels[key] ?? [];
+      if (!availableLevels.includes(newKeyLevel)) {
+        // fallback:
+        // a) previous valid key level
+        // b) otherwise first available key level
+        newKeyLevel = availableLevels.includes(prev.keyLevel)
+          ? prev.keyLevel
+          : availableLevels[0] ?? null;
+      }
+
+      return {
+        region: newRegion,
+        season: newSeason,
+        keyLevel: newKeyLevel
+      };
+    });
+  };
+
   const [showNonResil, setShowNonResil] = useState(false);
 
   useEffect(() => {
-    if (defaults.region) setRegion(defaults.region);
-    if (defaults.season) setSeason(defaults.season);
-    if (defaults.keyLevel) setKeyLevel(defaults.keyLevel);
+    // do I even need this safeguard ?
+    if (!defaults.region || !defaults.season || !defaults.keyLevel) return;
+
+    setConfig({
+      region: defaults.region,
+      season: defaults.season,
+      keyLevel: defaults.keyLevel
+    });
   }, [defaults]);
 
   // one more effect to merge errors ?
@@ -36,7 +88,7 @@ const WoWGraphVisualizer = () => {
   };
   
   // Data state
-  const { timestamps, downEdges, nonResilEdges, loading: graphDataLoading, error: graphDataError } = useGraphData(region, season, keyLevel);
+  const { timestamps, downEdges, nonResilEdges, loading: graphDataLoading, error: graphDataError } = useGraphData(config);
 
   const dataLoaded = timestamps && downEdges && nonResilEdges;
   
@@ -62,12 +114,12 @@ const WoWGraphVisualizer = () => {
   const { viridis: viridis256, error: viridisError } = useViridis();
 
   const buildGraph = useCallback((target) => {
-  const graph = buildGraphCore({
-      target, 
-      downEdges, 
-      nonResilEdges, 
-      showNonResil
-  });
+    const graph = buildGraphCore({
+        target, 
+        downEdges, 
+        nonResilEdges, 
+        showNonResil
+    });
   
     if (!graph) {
       alert('Graph contains cycles - cannot create hierarchical layout');
@@ -79,7 +131,6 @@ const WoWGraphVisualizer = () => {
 
   const hasInitialized = useRef(false);
   useEffect(() => {
-      if (!availableConfigs.regions.length) return;
       if (!slugMapping) return;
       if (!downEdges || !nonResilEdges) return;
     // is there a race condition here somewhere ?
@@ -88,19 +139,7 @@ const WoWGraphVisualizer = () => {
     hasInitialized.current = true;
 
     const qp = readUrlParams();
-
-    if (qp.region && availableConfigs.regions.includes(qp.region)) {
-      setRegion(qp.region);
-    }
-
-    if (qp.season && availableConfigs.seasons[qp.region || region]?.includes(qp.season)) {
-      setSeason(qp.season);
-    }
-
-    const levelKey = `${qp.region || region}-${qp.season || season}`;
-    if (qp.level && availableConfigs.keyLevels[levelKey]?.includes(qp.level)) {
-      setKeyLevel(qp.level);
-    }
+    updateConfig(qp);
 
     if (qp.character && qp.realm) {
 
@@ -111,7 +150,7 @@ const WoWGraphVisualizer = () => {
         setTargetChar(targetId);
       }
     }
-  }, [availableConfigs, slugMapping, downEdges, nonResilEdges]);
+  }, [slugMapping, downEdges, nonResilEdges]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -143,30 +182,21 @@ const WoWGraphVisualizer = () => {
         nonResilEdges
       );
 
-      if (parsed.region && parsed.region !== region) {
-        const newRegion = parsed.region;
-        setRegion(newRegion);
-        const key = `${newRegion}-${season}`;
-        const availableLevels = availableConfigs.keyLevels[key] || [];
-        
-        if (!availableLevels.includes(keyLevel) && availableLevels.length > 0) {
-          setKeyLevel(availableLevels[0]);
-        }
-      }
-
+      updateConfig( { region: parsed.region } );
       setTargetChar(parsed.charId);
       setZoom(1);
       setPan({ x: 0, y: 0 });
     }
   }, [
-    region,
+    // should I remove season and key level here ?
+    config.region,
+    config.season,
+    config.keyLevel,
     dataLoaded,
     slugMapping,
     downEdges,
     nonResilEdges,
-    availableConfigs,
-    keyLevel,
-    season
+    availableConfigs
   ]);
 
   useEffect(() => {
@@ -323,11 +353,7 @@ const WoWGraphVisualizer = () => {
         nonResilEdges
       );
 
-    if (parsed.region && parsed.region !== region) {
-
-      setRegion(parsed.region);
-    }
-
+    updateConfig({ region: parsed.region });
     setTargetChar(parsed.charId);
 
     setZoom(1);
@@ -401,8 +427,8 @@ const WoWGraphVisualizer = () => {
       
       // Construct the URL with query parameters
       const params = new URLSearchParams({
-        region: region,
-        season: season,
+        region: config.region,
+        season: config.season,
         character: characterName,
         realm: realmName
       });
@@ -557,29 +583,10 @@ const WoWGraphVisualizer = () => {
           <div>
             <label className="block text-sm mb-1 text-slate-300">Region</label>
             <select
-              value={region}
+              value={config.region}
               onChange={(e) => {
                 const newRegion = e.target.value;
-                setRegion(newRegion);
-
-                const availableSeasons = availableConfigs.seasons[newRegion] || [];
-
-                if (availableSeasons.length === 0) return;
-
-                let newSeason = season;
-                if (!availableSeasons.includes(season)) {
-                  newSeason = availableSeasons[0];
-                }
-                setSeason(newSeason);
-
-                const key = `${newRegion}-${newSeason}`;
-                const availableLevels = availableConfigs.keyLevels[key] || [];
-
-                if (availableLevels.includes(keyLevel)) {
-                  setKeyLevel(keyLevel);
-                } else if (availableLevels.length > 0) {
-                  setKeyLevel(availableLevels[0]);
-                }
+                updateConfig({ region: newRegion });
               }}
               className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none"
             >
@@ -591,23 +598,15 @@ const WoWGraphVisualizer = () => {
           <div>
             <label className="block text-sm mb-1 text-slate-300">Season</label>
             <select
-              value={season}
+              value={config.season}
               onChange={(e) => {
                 const newSeason = e.target.value;
-                setSeason(newSeason);
-                
-                const key = `${region}-${newSeason}`;
-                const levels = availableConfigs.keyLevels[key] || [];
-                if (levels.includes(keyLevel)) {
-                  setKeyLevel(keyLevel);
-                } else if (levels.length > 0) {
-                  setKeyLevel(levels[0]);
-                }
+                updateConfig({ season: newSeason });
               }}
-              disabled={!region}
+              disabled={!config.region}
               className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
             >
-              {(availableConfigs.seasons[region] || []).map(s => (
+              {(availableConfigs.seasons[config.region] || []).map(s => (
                 <option key={s} value={s}>{s.toUpperCase()}</option>
               ))}
             </select>
@@ -615,12 +614,14 @@ const WoWGraphVisualizer = () => {
           <div>
             <label className="block text-sm mb-1 text-slate-300">Key Level</label>
             <select
-              value={keyLevel}
-              onChange={(e) => setKeyLevel(parseInt(e.target.value))}
-              disabled={!season}
+              value={config.keyLevel}
+              onChange={(e) => 
+                updateConfig({ keyLevel: parseInt(e.target.value) })
+              }
+              disabled={!config.season}
               className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
             >
-              {(availableConfigs.keyLevels[`${region}-${season}`] || []).map(level => (
+              {(availableConfigs.keyLevels[`${config.region}-${config.season}`] || []).map(level => (
                 <option key={level} value={level}>{level}</option>
               ))}
             </select>
@@ -651,7 +652,7 @@ const WoWGraphVisualizer = () => {
           
           {!graphDataLoading && !graphDataError && dataLoaded && (
             <div className="text-green-400 text-xs">
-              ✓ Data loaded for {region.toUpperCase()} - {season} - Level {keyLevel}
+              ✓ Data loaded for {config.region.toUpperCase()} - {config.season} - Level {config.keyLevel}
             </div>
           )}
         </div>
@@ -825,7 +826,7 @@ const WoWGraphVisualizer = () => {
                           const numericId = runId.includes('#') ? runId.split('#').pop().trim() : runId.trim();
 
                           const dungeonCode = getDungeonCode(runId);
-                          const seasonSlug = seasonSlugs[season] || season;
+                          const seasonSlug = seasonSlugs[config.season] || config.season;
                           const runUrl = `https://raider.io/mythic-plus-runs/${seasonSlug}/${numericId}`;
                           return (
                             <a
