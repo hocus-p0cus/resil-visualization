@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { readUrlParams } from "../readUrlParams";
 
 export function useConfig() {
   const [config, setConfig] = useState({
@@ -27,11 +28,23 @@ export function useConfig() {
         const data = await res.json();
         if (cancelled) return;
 
-        const region = data.regions[0] || null;
-        const season = region && data.seasons[region]?.[0] || null;
-        const keyLevel = (region && season) 
-          ? data.keyLevels[`${region}-${season}`]?.[0] 
-          : null;
+        const qp = readUrlParams();
+
+        let region = qp.region && data.regions.includes(qp.region)
+          ? qp.region
+          : data.regions[0] ?? null;
+
+        const availableSeasons = data.seasons[region] ?? [];
+        let season =
+          qp.season && availableSeasons.includes(qp.season)
+            ? qp.season
+            : availableSeasons[0] ?? null;
+        
+        const levels = data.keyLevels[`${region}-${season}`] ?? [];
+        let keyLevel =
+          qp.keyLevel && levels.includes(qp.keyLevel)
+            ? qp.keyLevel
+            : levels[0] ?? null;
 
         // Single state update
         setConfig({

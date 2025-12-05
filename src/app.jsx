@@ -69,8 +69,7 @@ const WoWGraphVisualizer = () => {
   const [showNonResil, setShowNonResil] = useState(false);
 
   useEffect(() => {
-    // do I even need this safeguard ?
-    if (!defaults.region || !defaults.season || !defaults.keyLevel) return;
+    if (configLoading) return;
 
     setConfig({
       region: defaults.region,
@@ -131,9 +130,8 @@ const WoWGraphVisualizer = () => {
 
   const hasInitialized = useRef(false);
   useEffect(() => {
-      if (!slugMapping) return;
-      if (!downEdges || !nonResilEdges) return;
-    // is there a race condition here somewhere ?
+    if (!slugMapping) return;
+    if (!downEdges || !nonResilEdges) return;
 
     if (hasInitialized.current) return;
     hasInitialized.current = true;
@@ -150,7 +148,7 @@ const WoWGraphVisualizer = () => {
         setTargetChar(targetId);
       }
     }
-  }, [slugMapping, downEdges, nonResilEdges]);
+  }, [slugMapping, downEdges, nonResilEdges]); // this edge dependency is hacky (maybe dataloaded instead ?)
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -188,15 +186,10 @@ const WoWGraphVisualizer = () => {
       setPan({ x: 0, y: 0 });
     }
   }, [
-    // should I remove season and key level here ?
-    config.region,
-    config.season,
-    config.keyLevel,
     dataLoaded,
     slugMapping,
     downEdges,
-    nonResilEdges,
-    availableConfigs
+    nonResilEdges
   ]);
 
   useEffect(() => {
