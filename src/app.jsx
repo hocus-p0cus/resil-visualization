@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect, useCallback, useReducer } from "react";
 
 import { Upload, Search, ZoomIn, ZoomOut, Maximize2 } from "./components/icons_index";
 
@@ -7,6 +7,7 @@ import { useSlugMapping } from "./hooks/useSlugMapping";
 import { useConfig } from "./hooks/useConfig";
 import { useGraphData } from "./hooks/useGraphData";
 
+import { interactionReducer, initialInteractionState } from "./interactionState";
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
@@ -58,18 +59,18 @@ const WoWGraphVisualizer = () => {
   // UI state
   const [searchTerm, setSearchTerm] = useState('');
   const [targetChar, setTargetChar] = useState('');
+
   const [graph, setGraph] = useState(null);
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
+
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
-  const [hoveredEdge, setHoveredEdge] = useState(null);
-  const [selectedEdge, setSelectedEdge] = useState(null);
-  const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
-  const [hoveredNode, setHoveredNode] = useState(null);
-  const [nodeTooltipPos, setNodeTooltipPos] = useState({ x: 0, y: 0 });
-  const [nearbyEdges, setNearbyEdges] = useState([]);
-  const [edgeOptions, setEdgeOptions] = useState([]);
+  const [interaction, dispatchInteraction] = useReducer(
+    interactionReducer,
+    initialInteractionState
+  );
+
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -335,9 +336,7 @@ const WoWGraphVisualizer = () => {
         e.preventDefault(); // Prevent page scroll
         setZoom(1);
         setPan({ x: 0, y: 0 });
-        setHoveredNode(null);
-        setHoveredEdge(null);
-        setNearbyEdges([]);
+        dispatchInteraction({ type: 'RESET' });
       }
     };
 
@@ -352,31 +351,37 @@ const WoWGraphVisualizer = () => {
       e.stopPropagation();
     }
 
-    if (e.button === 2 && hoveredNode) {
-      setTargetChar(hoveredNode);
-      setSearchTerm(hoveredNode);
+    if (e.button === 2 && interaction.hoveredNode) {
+      setTargetChar(interaction.hoveredNode);
+      setSearchTerm(interaction.hoveredNode);
 
-      setHoveredNode(null);
+      dispatchInteraction({ type: 'RESET' });
       return;
     }
 
-    if (nearbyEdges.length > 0 && e.button !== 2) {
+    if (interaction.nearbyEdges.length > 0 && e.button !== 2) {
       // Click on edge - open modal
       //setSelectedEdge(hoveredEdge);
 
-      if (nearbyEdges.length === 1) {
+      if (interaction.nearbyEdges.length === 1) {
         // Only one edge nearby → open its modal directly
-        setSelectedEdge(nearbyEdges[0]);
+        dispatchInteraction({
+          type: 'SELECT_EDGE',
+          edge: interaction.nearbyEdges[0],
+        });
       } else {
         // Multiple overlapping edges → show selection list
-        setEdgeOptions(nearbyEdges);
+        dispatchInteraction({
+          type: 'SHOW_EDGE_OPTIONS',
+          edges: interaction.nearbyEdges,
+        });
       }
       return;
     }
 
-    if (hoveredNode) {
+    if (interaction.hoveredNode) {
       // Parse character name and realm from node format "charName-realm"
-      const [characterName, ...realmParts] = hoveredNode.split('-');
+      const [characterName, ...realmParts] = interaction.hoveredNode.split('-');
       const realmName = realmParts.join('-'); // In case realm has hyphens
       
       // Construct the URL with query parameters
@@ -444,10 +449,12 @@ const WoWGraphVisualizer = () => {
     }
 
     if (foundNode) {
-      setHoveredNode(foundNode);
-      setHoveredEdge(null);
-      setNearbyEdges([]);
-      setNodeTooltipPos({ x: e.clientX, y: e.clientY });
+      dispatchInteraction({
+        type: 'HOVER_NODE',
+        node: foundNode,
+        x: e.clientX,
+        y: e.clientY,
+      });
       canvas.style.cursor = 'pointer';
       return;
     }
@@ -479,17 +486,18 @@ const WoWGraphVisualizer = () => {
     }
     
     if (edgesNear.length > 0) {
-      setHoveredEdge(edgesNear[0]);   // the closest one
-      setNearbyEdges(edgesNear);      // all nearby
-      setTooltipPos({ x: e.clientX, y: e.clientY });
+      dispatchInteraction({
+        type: 'HOVER_EDGE',
+        edge: edgesNear[0],
+        nearbyEdges: edgesNear,
+        x: e.clientX,
+        y: e.clientY,
+      });
       canvas.style.cursor = 'pointer';
-    } else {
-      setHoveredEdge(null);
-      setNearbyEdges([]);
-      canvas.style.cursor = isDragging ? 'grabbing' : 'grab';
+      return;
     }
-
-    setHoveredNode(null);
+    dispatchInteraction({ type: 'HOVER_NOTHING' });
+    canvas.style.cursor = isDragging ? 'grabbing' : 'grab';
   };
 
   const handleMouseUp = () => {
@@ -649,28 +657,28 @@ const WoWGraphVisualizer = () => {
             />
             
             {/* Hover Tooltip for edges*/}
-            {hoveredEdge && !selectedEdge && (
+            {interaction.hoveredEdge && !interaction.selectedEdge && (
               <div
                 className="fixed bg-slate-900/95 backdrop-blur border border-slate-600 rounded px-3 py-2 text-xs pointer-events-none z-50"
                 style={{
-                  left: tooltipPos.x + 15,
-                  top: tooltipPos.y + 15,
+                  left: interaction.tooltip.x + 15,
+                  top: interaction.tooltip.y + 15,
                 }}
               >
                 <div className="font-semibold mb-1">
-                  {hoveredEdge.from.split('-')[0]} → {hoveredEdge.to.split('-')[0]}
+                  {interaction.hoveredEdge.from.split('-')[0]} → {interaction.hoveredEdge.to.split('-')[0]}
                 </div>
                 <div className="text-slate-400 text-[10px]">Click to view runs</div>
               </div>
             )}
 
             {/* Hover Tooltip for Nodes */}
-            {hoveredNode && !selectedEdge && (
+            {interaction.hoveredNode && !interaction.selectedEdge && (
               <div
                 className="fixed bg-slate-900/95 backdrop-blur border border-slate-600 rounded px-3 py-2 text-xs pointer-events-none z-50"
                 style={{
-                  left: nodeTooltipPos.x + 15,
-                  top: nodeTooltipPos.y + 15,
+                  left: interaction.tooltip.x + 15,
+                  top: interaction.tooltip.y + 15,
                 }}
               >
                 <div className="font-semibold mb-1">
@@ -681,17 +689,12 @@ const WoWGraphVisualizer = () => {
             )}
             
             {/* Edge selection dropdown when multiple edges overlap */}
-            {!hoveredNode && edgeOptions.length > 0 && (
+            {!interaction.hoveredNode && interaction.edgeOptions.length > 0 && (
               <>
                 {/* Backdrop */}
                 <div
                   className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
-                  onClick={() => {
-                    setSelectedEdge(null);
-                    setHoveredEdge(null);
-                    setNearbyEdges([]);
-                    setEdgeOptions([])
-                  }}
+                  onClick={() => dispatchInteraction({ type: 'CLOSE_MODAL' })}
                 />
 
                 {/* Small centered selection box */}
@@ -701,12 +704,7 @@ const WoWGraphVisualizer = () => {
                   <div className="p-4 border-b border-slate-700 flex justify-between items-center">
                     <h3 className="text-lg font-semibold">Select an edge</h3>
                     <button
-                      onClick={() => {
-                          setSelectedEdge(null);
-                          setHoveredEdge(null);
-                          setNearbyEdges([]);
-                          setEdgeOptions([]);
-                      }}
+                      onClick={() => dispatchInteraction({ type: 'CLOSE_MODAL' })}
                       className="text-slate-400 hover:text-white text-2xl leading-none"
                     >
                       ×
@@ -714,14 +712,14 @@ const WoWGraphVisualizer = () => {
                   </div>
 
                   <div className="p-3 max-h-80 overflow-y-auto">
-                    {edgeOptions.map((edge, i) => (
+                    {interaction.edgeOptions.map((edge, i) => (
                       <div
                         key={i}
                         className="flex justify-between items-center px-3 py-2 mb-2 rounded-md border border-slate-700 hover:border-blue-500 hover:bg-slate-700/40 transition-colors cursor-pointer"
-                        onClick={() => {
-                          setSelectedEdge(edge);
-                          setEdgeOptions([]); // close selector
-                        }}
+                        onClick={() => dispatchInteraction({
+                          type: 'SELECT_EDGE',
+                          edge: edge,
+                        })}
                       >
                         <span className="font-medium">
                           {edge.from.split('-')[0]} → {edge.to.split('-')[0]}
@@ -737,16 +735,12 @@ const WoWGraphVisualizer = () => {
             )}
 
             {/* Modal for run links */}
-            {selectedEdge && (
+            {interaction.selectedEdge && (
               <>
                 {/* Backdrop */}
                 <div 
                   className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
-                  onClick={() => {
-                          setSelectedEdge(null);
-                          setHoveredEdge(null);
-                          setNearbyEdges([]);
-                  }}
+                  onClick={() => dispatchInteraction({ type: 'RESET' })}
                 />
                 
                 {/* Modal */}
@@ -754,28 +748,24 @@ const WoWGraphVisualizer = () => {
                   <div className="p-4 border-b border-slate-700">
                     <div className="flex items-center justify-between">
                       <h3 className="text-lg font-semibold">
-                        {selectedEdge.from.split('-')[0]} → {selectedEdge.to.split('-')[0]}
+                        {interaction.selectedEdge.from.split('-')[0]} → {interaction.selectedEdge.to.split('-')[0]}
                       </h3>
                       <button
-                        onClick={() => {
-                          setSelectedEdge(null);
-                          setHoveredEdge(null);
-                          setNearbyEdges([]);
-                        }}
+                        onClick={() => dispatchInteraction({ type: 'RESET' })}
                         className="text-slate-400 hover:text-white text-2xl leading-none"
                       >
                         ×
                       </button>
                     </div>
                     <div className="text-xs text-slate-400 mt-1">
-                      {selectedEdge.type === 'resil' ? 'Resilient' : 'Non-resilient'} edge
+                      {interaction.selectedEdge.type === 'resil' ? 'Resilient' : 'Non-resilient'} edge
                     </div>
                   </div>
                   
                   <div className="p-4 max-h-96 overflow-y-auto">
-                    {selectedEdge.labels && selectedEdge.labels.length > 0 ? (
+                    {interaction.selectedEdge.labels && interaction.selectedEdge.labels.length > 0 ? (
                       <div className="space-y-2">
-                        {selectedEdge.labels.map((runId, i) => {
+                        {interaction.selectedEdge.labels.map((runId, i) => {
 
                           const numericId = runId.includes('#') ? runId.split('#').pop().trim() : runId.trim();
 
