@@ -22,7 +22,7 @@ describe("readUrlParams", () => {
       season: "tww-s2",
       character: "graliboar",
       realm: "tarren-mill",
-      level: 20
+      keyLevel: 20
     });
   });
 
@@ -35,7 +35,7 @@ describe("readUrlParams", () => {
       season: "tww-s2",
       character: null,
       realm: null,
-      level: null
+      keyLevel: null
     });
   });
 
@@ -52,12 +52,12 @@ describe("readUrlParams", () => {
 
   test("numeric parsing of level", () => {
     setSearch("?level=19");
-    expect(readUrlParams().level).toBe(19);
+    expect(readUrlParams().keyLevel).toBe(19);
   });
 
   test("non-numeric level returns NaN", () => {
     setSearch("?level=abc");
-    expect(readUrlParams().level).toBeNaN();
+    expect(readUrlParams().keyLevel).toBeNaN();
   });
 
   test("URL-encoded characters decoded automatically", () => {

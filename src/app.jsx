@@ -181,9 +181,6 @@ const WoWGraphVisualizer = () => {
 
     updateConfig( { region: parsed.region } );
     setTargetChar(parsed.charId);
-    
-    setZoom(1);
-    setPan({ x: 0, y: 0 });
   }, [
     dataLoaded,
     slugMapping,
@@ -347,9 +344,6 @@ const WoWGraphVisualizer = () => {
 
     updateConfig({ region: parsed.region });
     setTargetChar(parsed.charId);
-
-    setZoom(1);
-    setPan({ x: 0, y: 0 });
   };
 
   // Rebuild graph when targetChar, season or key level changes
@@ -364,6 +358,12 @@ const WoWGraphVisualizer = () => {
 
     buildGraph(targetChar);
   }, [targetChar, dataLoaded, buildGraph]);
+
+  useEffect(() => {
+    if (!targetChar) return;
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
+  }, [targetChar]);
 
   useEffect(() => {
     const handleKeyPress = (e) => {
@@ -390,8 +390,6 @@ const WoWGraphVisualizer = () => {
 
     if (e.button === 2 && hoveredNode) {
       setTargetChar(hoveredNode);
-      setZoom(1);
-      setPan({ x: 0, y: 0 });
       setSearchTerm(hoveredNode);
 
       setHoveredNode(null);
