@@ -92,6 +92,7 @@ const WoWGraphVisualizer = () => {
     setGraph(graph);
   }, [downEdges, nonResilEdges, showNonResil]);
 
+  // runs only once, supposed to trigger a graph build for data from URL params
   const hasInitialized = useRef(false);
   useEffect(() => {
     if (!slugMapping) return;
@@ -101,7 +102,6 @@ const WoWGraphVisualizer = () => {
     hasInitialized.current = true;
 
     const qp = readUrlParams();
-    updateConfig(qp);
 
     if (qp.character && qp.realm) {
 
