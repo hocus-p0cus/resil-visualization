@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect, useCallback, useReducer } from "rea
 import { Upload, ZoomIn, ZoomOut, Maximize2 } from "./components/icons_index";
 import { SearchBar } from "./components/SearchBar";
 import { LoadingIndicator } from "./components/LoadingIndicator";
+import { ConfigurationPanel } from "./components/ConfigurationPanel";
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
@@ -538,68 +539,15 @@ const WoWGraphVisualizer = () => {
         </div>
         
         {/* Configuration Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mb-4">
-          <div>
-            <label className="block text-sm mb-1 text-slate-300">Region</label>
-            <select
-              value={config.region}
-              onChange={(e) => {
-                const newRegion = e.target.value;
-                updateConfig({ region: newRegion });
-              }}
-              className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none"
-            >
-              {availableConfigs.regions.map(r => (
-                <option key={r} value={r}>{r.toUpperCase()}</option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm mb-1 text-slate-300">Season</label>
-            <select
-              value={config.season}
-              onChange={(e) => {
-                const newSeason = e.target.value;
-                updateConfig({ season: newSeason });
-              }}
-              disabled={!config.region}
-              className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
-            >
-              {(availableConfigs.seasons[config.region] || []).map(s => (
-                <option key={s} value={s}>{s.toUpperCase()}</option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm mb-1 text-slate-300">Key Level</label>
-            <select
-              value={config.keyLevel}
-              onChange={(e) => 
-                updateConfig({ keyLevel: parseInt(e.target.value) })
-              }
-              disabled={!config.season}
-              className="w-full px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
-            >
-              {(availableConfigs.keyLevels[`${config.region}-${config.season}`] || []).map(level => (
-                <option key={level} value={level}>{level}</option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm mb-1 text-slate-300">Non-Resilient Nodes</label>
-            <button
-              onClick={() => setShowNonResil(!showNonResil)}
-              className={`w-full h-10 px-4 py-2 rounded border transition-colors ${
-                showNonResil 
-                  ? 'bg-blue-600 border-blue-600 text-white' 
-                  : 'bg-slate-700 border-slate-600 text-slate-400'
-              }`}
-            >
-              {showNonResil ? 'ON' : 'OFF'}
-            </button>
-          </div>
-        </div>
+        <ConfigurationPanel
+          config={config}
+          onConfigChange={updateConfig}
+          availableConfigs={availableConfigs}
+          showNonResil={showNonResil}
+          onToggleNonResil={() => setShowNonResil(!showNonResil)}
+        />
 
+        {/* Data Loading Text Status */}
         <LoadingIndicator
           loading={graphDataLoading}
           error={graphDataError}
