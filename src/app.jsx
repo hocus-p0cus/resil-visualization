@@ -300,11 +300,11 @@ const WoWGraphVisualizer = () => {
     if (!searchTerm.trim()) return;
 
     const parsed = parseCharacterInput(
-        searchTerm,
-        slugMapping,
-        downEdges,
-        nonResilEdges
-      );
+      searchTerm,
+      slugMapping,
+      downEdges,
+      nonResilEdges
+    );
 
     updateConfig({ region: parsed.region });
     setTargetChar(parsed.charId);
