@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback, useReducer } from "react";
 
-import { Upload } from "./components/icons_index";
 import { SearchBar } from "./components/SearchBar";
 import { LoadingIndicator } from "./components/LoadingIndicator";
 import { ConfigurationPanel } from "./components/ConfigurationPanel";
@@ -10,6 +9,7 @@ import { ZoomControls } from "./components/ZoomControls";
 import { Tooltip } from "./components/Tooltip";
 import { EdgeSelectionModal } from "./components/EdgeSelectionModal";
 import { RunLinksModal } from "./components/RunLinksModal";
+import { EmptyState } from "./components/EmptyState";
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
@@ -17,7 +17,6 @@ import { useConfig } from "./hooks/useConfig";
 import { useGraphData } from "./hooks/useGraphData";
 
 import { interactionReducer, initialInteractionState } from "./interactionState";
-import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
 import { parseCharacterInput, isRioCharacterURL, resolveRealm } from "./parseCharacterInput";
@@ -591,12 +590,7 @@ const WoWGraphVisualizer = () => {
             />
           </>
         ) : (
-          <div className="flex items-center justify-center h-full text-slate-400">  
-            <div className="text-center">
-              <Upload size={48} className="mx-auto mb-4 opacity-50" />
-              <p>Select region, season, and key level, then search for a character</p>
-            </div>
-          </div>
+          <EmptyState />
         )}
       </div>
     </div>
