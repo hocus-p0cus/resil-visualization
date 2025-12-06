@@ -7,6 +7,7 @@ import { ConfigurationPanel } from "./components/ConfigurationPanel";
 import { InfoBox } from "./components/InfoBox";
 import { GraphStats } from "./components/GraphStats"
 import { ZoomControls } from "./components/ZoomControls";
+import { Tooltip } from "./components/Tooltip";
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
@@ -561,37 +562,8 @@ const WoWGraphVisualizer = () => {
               onWheel={handleWheel}
             />
             
-            {/* Hover Tooltip for edges*/}
-            {interaction.hoveredEdge && !interaction.selectedEdge && (
-              <div
-                className="fixed bg-slate-900/95 backdrop-blur border border-slate-600 rounded px-3 py-2 text-xs pointer-events-none z-50"
-                style={{
-                  left: interaction.tooltip.x + 15,
-                  top: interaction.tooltip.y + 15,
-                }}
-              >
-                <div className="font-semibold mb-1">
-                  {interaction.hoveredEdge.from.split('-')[0]} → {interaction.hoveredEdge.to.split('-')[0]}
-                </div>
-                <div className="text-slate-400 text-[10px]">Click to view runs</div>
-              </div>
-            )}
-
-            {/* Hover Tooltip for Nodes */}
-            {interaction.hoveredNode && !interaction.selectedEdge && (
-              <div
-                className="fixed bg-slate-900/95 backdrop-blur border border-slate-600 rounded px-3 py-2 text-xs pointer-events-none z-50"
-                style={{
-                  left: interaction.tooltip.x + 15,
-                  top: interaction.tooltip.y + 15,
-                }}
-              >
-                <div className="font-semibold mb-1">
-                  Click to see character report
-                </div>
-                <div className="text-slate-400 text-[10px]">Is it resilient?</div>
-              </div>
-            )}
+            {/* Hover Tooltip */}
+            <Tooltip interaction={interaction} />
             
             {/* Edge selection dropdown when multiple edges overlap */}
             {!interaction.hoveredNode && interaction.edgeOptions.length > 0 && (
