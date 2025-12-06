@@ -1,5 +1,5 @@
 import React from 'react';
-import { ZoomIn, ZoomOut, Maximize2 } from './icons_index';
+import { ZoomIn, ZoomOut, Maximize2 } from './icons';
 
 export const ZoomControls = ({ onZoomIn, onZoomOut, onReset }) => {
   return (

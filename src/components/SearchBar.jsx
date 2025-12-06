@@ -1,6 +1,6 @@
 // src/components/SearchBar.jsx
 import React from 'react';
-import { Search } from '../components/icons_index';
+import { Search } from './icons';
 
 export const SearchBar = ({ 
   value,

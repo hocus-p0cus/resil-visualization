@@ -1,5 +1,5 @@
 import React from 'react';
-import { Upload } from './icons_index';
+import { Upload } from './icons';
 
 export const EmptyState = () => {
   return (
