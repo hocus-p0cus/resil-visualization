@@ -1,6 +1,6 @@
-// src/components/SearchBar.jsx
 import React from 'react';
 import { Search } from './icons';
+import { Button } from './ui/Button';
 
 export const SearchBar = ({ 
   value,
@@ -26,14 +26,13 @@ export const SearchBar = ({
         disabled={disabled}
         className="flex-1 px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
       />
-      <button
+      <Button
         onClick={onSearch}
         disabled={disabled || !value.trim()}
-        className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+        icon={Search}
       >
-        <Search size={18} />
         Visualize
-      </button>
+      </Button>
     </div>
   );
 };

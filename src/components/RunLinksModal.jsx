@@ -1,5 +1,6 @@
 import React from 'react';
 import { getDungeonCode } from '../getDungeonCode';
+import { Button } from './ui/Button';
 
 export const RunLinksModal = ({ 
   selectedEdge, 
@@ -32,12 +33,14 @@ export const RunLinksModal = ({
             <h3 className="text-lg font-semibold">
               {selectedEdge.from.split('-')[0]} → {selectedEdge.to.split('-')[0]}
             </h3>
-            <button
+            <Button 
+              variant="close" 
+              size="icon"
               onClick={onClose}
-              className="text-slate-400 hover:text-white text-2xl leading-none"
+              className="text-2xl leading-none"
             >
               ×
-            </button>
+            </Button>
           </div>
           <div className="text-xs text-slate-400 mt-1">
             {selectedEdge.type === 'resil' ? 'Resilient' : 'Non-resilient'} edge

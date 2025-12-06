@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from './ui/Button';
 
 export const EdgeSelectionModal = ({ 
   edgeOptions, 
@@ -25,12 +26,14 @@ export const EdgeSelectionModal = ({
                       z-50 max-w-sm w-full mx-4">
         <div className="p-4 border-b border-slate-700 flex justify-between items-center">
           <h3 className="text-lg font-semibold">Select an edge</h3>
-          <button
+          <Button 
+            variant="close" 
+            size="icon"
             onClick={onClose}
-            className="text-slate-400 hover:text-white text-2xl leading-none"
+            className="text-2xl leading-none"
           >
             ×
-          </button>
+          </Button>
         </div>
 
         <div className="p-3 max-h-80 overflow-y-auto">
