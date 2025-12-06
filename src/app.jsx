@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect, useCallback, useReducer } from "rea
 
 import { Upload, ZoomIn, ZoomOut, Maximize2 } from "./components/icons_index";
 import { SearchBar } from "./components/SearchBar";
+import { LoadingIndicator } from "./components/LoadingIndicator";
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
@@ -599,21 +600,12 @@ const WoWGraphVisualizer = () => {
           </div>
         </div>
 
-        <div className="mb-4 h-5">
-          {graphDataLoading && (
-            <div className="text-yellow-400 text-sm">Loading data...</div>
-          )}
-          
-          {!graphDataLoading && graphDataError && (
-            <div className="text-red-400 text-sm">Error: {graphDataError}</div>
-          )}
-          
-          {!graphDataLoading && !graphDataError && dataLoaded && (
-            <div className="text-green-400 text-xs">
-              ✓ Data loaded for {config.region.toUpperCase()} - {config.season} - Level {config.keyLevel}
-            </div>
-          )}
-        </div>
+        <LoadingIndicator
+          loading={graphDataLoading}
+          error={graphDataError}
+          dataLoaded={dataLoaded}
+          config={config}
+        />
 
         {/* Search Section */}
         <SearchBar
