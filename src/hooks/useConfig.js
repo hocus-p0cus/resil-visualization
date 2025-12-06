@@ -22,7 +22,8 @@ export function useConfig() {
 
     async function load() {
       try {
-        const res = await fetch("/data/config.json");
+        const base = import.meta.env.BASE_URL;
+        const res = await fetch(`${base}/data/config.json`);
         if (!res.ok) throw new Error("Failed to load config.json");
 
         const data = await res.json();

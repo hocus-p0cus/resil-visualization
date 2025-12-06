@@ -9,7 +9,8 @@ export function useSlugMapping() {
 
     async function load() {
       try {
-        const res = await fetch("/slug_mapping.json");
+        const base = import.meta.env.BASE_URL;
+        const res = await fetch(`${base}/slug_mapping.json`);
         if (!res.ok) throw new Error("Failed to load slug_mapping.json");
         const data = await res.json();
         if (!cancelled) setSlugMapping(data);

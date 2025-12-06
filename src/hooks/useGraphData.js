@@ -19,8 +19,9 @@ export function useGraphData(config) {
       setLoading(true);
       setError(null);
 
+      const base = import.meta.env.BASE_URL;
       const prefix = `${season}-${region}-resi${keyLevel}`;
-      const basePath = `/data/${region}/${season}`;
+      const basePath = `${base}/data/${region}/${season}`;
 
       try {
         const [timestampsRes, downEdgesRes, nonResilEdgesRes] = await Promise.all([

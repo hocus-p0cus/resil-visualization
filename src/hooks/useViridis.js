@@ -9,7 +9,8 @@ export function useViridis() {
 
     async function load() {
       try {
-        const res = await fetch("/viridis256.json");
+        const base = import.meta.env.BASE_URL;
+        const res = await fetch(`${base}/viridis256.json`);
         if (!res.ok) throw new Error("Failed to load viridis256.json");
         const data = await res.json();
         if (!cancelled) setViridis(data);
