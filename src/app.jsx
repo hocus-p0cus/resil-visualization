@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback, useReducer } from "react";
 
-import { Upload, Search, ZoomIn, ZoomOut, Maximize2 } from "./components/icons_index";
+import { Upload, ZoomIn, ZoomOut, Maximize2 } from "./components/icons_index";
+import { SearchBar } from "./components/SearchBar";
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
@@ -615,25 +616,12 @@ const WoWGraphVisualizer = () => {
         </div>
 
         {/* Search Section */}
-        <div className="flex gap-2">
-          <input
-            type="text"
-            placeholder="Paste RIO profile link or Character-Server (e.g., Graliboar-Outland)"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
-            disabled={!dataLoaded}
-            className="flex-1 px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
-          />
-          <button
-            onClick={handleSearch}
-            disabled={!dataLoaded || !searchTerm.trim()}
-            className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
-          >
-            <Search size={18} />
-            Visualize
-          </button>
-        </div>
+        <SearchBar
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onSearch={handleSearch}
+          disabled={!dataLoaded}
+        />
       </div>
 
       {/* Graph Area */}
