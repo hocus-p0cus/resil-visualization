@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect, useCallback, useReducer } from "react";
 
-import { Upload, ZoomIn, ZoomOut, Maximize2 } from "./components/icons_index";
+import { Upload } from "./components/icons_index";
 import { SearchBar } from "./components/SearchBar";
 import { LoadingIndicator } from "./components/LoadingIndicator";
 import { ConfigurationPanel } from "./components/ConfigurationPanel";
 import { InfoBox } from "./components/InfoBox";
 import { GraphStats } from "./components/GraphStats"
+import { ZoomControls } from "./components/ZoomControls";
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
@@ -718,29 +719,11 @@ const WoWGraphVisualizer = () => {
             )}
             
             {/* Controls */}
-            <div className="absolute top-4 right-4 flex flex-col gap-2">
-              <button
-                onClick={() => setZoom(prev => Math.min(5, prev * 1.2))}
-                className="p-2 bg-slate-800/80 backdrop-blur rounded hover:bg-slate-700"
-                title="Zoom In"
-              >
-                <ZoomIn size={20} />
-              </button>
-              <button
-                onClick={() => setZoom(prev => Math.max(0.1, prev / 1.2))}
-                className="p-2 bg-slate-800/80 backdrop-blur rounded hover:bg-slate-700"
-                title="Zoom Out"
-              >
-                <ZoomOut size={20} />
-              </button>
-              <button
-                onClick={() => { setZoom(1); setPan({ x: 0, y: 0 }); }}
-                className="p-2 bg-slate-800/80 backdrop-blur rounded hover:bg-slate-700"
-                title="Reset View"
-              >
-                <Maximize2 size={20} />
-              </button>
-            </div>
+            <ZoomControls
+              onZoomIn={() => setZoom(prev => Math.min(5, prev * 1.2))}
+              onZoomOut={() => setZoom(prev => Math.max(0.1, prev / 1.2))}
+              onReset={() => { setZoom(1); setPan({ x: 0, y: 0 }); }}
+            />
 
             {/* Stats */}
             <GraphStats
