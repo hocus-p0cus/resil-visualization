@@ -5,6 +5,7 @@ import { SearchBar } from "./components/SearchBar";
 import { LoadingIndicator } from "./components/LoadingIndicator";
 import { ConfigurationPanel } from "./components/ConfigurationPanel";
 import { InfoBox } from "./components/InfoBox";
+import { GraphStats } from "./components/GraphStats"
 
 import { useViridis } from "./hooks/useViridis";
 import { useSlugMapping } from "./hooks/useSlugMapping";
@@ -742,14 +743,11 @@ const WoWGraphVisualizer = () => {
             </div>
 
             {/* Stats */}
-            <div className="absolute bottom-4 left-4 bg-slate-800/80 backdrop-blur rounded px-4 py-2 z-10">
-              <div className="text-sm">
-                <span className="font-semibold">{targetChar}</span>
-                <div className="text-slate-300 text-xs mt-1">
-                  {graph.nodes.length} nodes • {graph.edges.length} edges
-                </div>
-              </div>
-            </div>
+            <GraphStats
+              targetChar={targetChar}
+              nodeCount={graph.nodes.length}
+              edgeCount={graph.edges.length}
+            />
           </>
         ) : (
           <div className="flex items-center justify-center h-full text-slate-400">  
