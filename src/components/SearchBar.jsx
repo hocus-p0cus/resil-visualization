@@ -1,6 +1,7 @@
 import React from 'react';
 import { Search } from './icons';
 import { Button } from './ui/Button';
+import { Input } from './ui/Input';
 
 export const SearchBar = ({ 
   value,
@@ -17,14 +18,13 @@ export const SearchBar = ({
 
   return (
     <div className="flex gap-2">
-      <input
-        type="text"
-        placeholder={placeholder}
+      <Input
         value={value}
         onChange={onChange}
         onKeyDown={handleKeyDown}
         disabled={disabled}
-        className="flex-1 px-4 py-2 bg-slate-700 rounded border border-slate-600 focus:border-blue-500 focus:outline-none disabled:opacity-50"
+        placeholder={placeholder}
+        className="flex-1"
       />
       <Button
         onClick={onSearch}
