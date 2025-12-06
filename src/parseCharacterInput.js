@@ -39,6 +39,7 @@ export function parseNameRealm(input) {
 /**
  * Resolve realm slug using slugMapping.
  * Does not alert. Returns fallback if not found.
+ * assumes slug is in LowerCase
  */
 export function resolveRealm(slug, slugMapping) {
   if (!slugMapping) return slug.replace(/-/g, " ");

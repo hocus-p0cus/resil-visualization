@@ -11,7 +11,7 @@ import { interactionReducer, initialInteractionState } from "./interactionState"
 import { getDungeonCode } from "./getDungeonCode";
 import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
-import { parseCharacterInput, isRioCharacterURL } from "./parseCharacterInput";
+import { parseCharacterInput, isRioCharacterURL, resolveRealm } from "./parseCharacterInput";
 import { safeConfigState } from "./safeConfigState";
 
 
@@ -86,7 +86,7 @@ const WoWGraphVisualizer = () => {
     });
   
     if (!graph) {
-      alert('Graph contains cycles - cannot create hierarchical layout');
+      alert('Graph contains cycles - cannot create hierarchical layout'); // if this ever triggers - something went really wrong
       return;
     }
     
@@ -104,15 +104,12 @@ const WoWGraphVisualizer = () => {
 
     const qp = readUrlParams();
 
-    if (qp.character && qp.realm) {
+    if (!qp.character || !qp.realm) return
 
-      if (slugMapping && slugMapping[qp.realm]) {
-        const realmName = slugMapping[qp.realm].toLowerCase();
-        const targetId = `${qp.character}-${realmName}`;
-        setSearchTerm(targetId);
-        setTargetChar(targetId);
-      }
-    }
+    const realmName = resolveRealm(qp.realm, slugMapping);
+    const targetId = `${qp.character}-${realmName}`;
+    setSearchTerm(targetId);
+    setTargetChar(targetId);
   }, [slugMapping, downEdges, nonResilEdges]); // this edge dependency is hacky (maybe dataloaded instead ?)
 
   useEffect(() => {
@@ -360,9 +357,8 @@ const WoWGraphVisualizer = () => {
     }
 
     if (interaction.nearbyEdges.length > 0 && e.button !== 2) {
-      // Click on edge - open modal
-      //setSelectedEdge(hoveredEdge);
 
+      // Click on edge - open modal
       if (interaction.nearbyEdges.length === 1) {
         // Only one edge nearby → open its modal directly
         dispatchInteraction({
@@ -384,7 +380,6 @@ const WoWGraphVisualizer = () => {
       const [characterName, ...realmParts] = interaction.hoveredNode.split('-');
       const realmName = realmParts.join('-'); // In case realm has hyphens
       
-      // Construct the URL with query parameters
       const params = new URLSearchParams({
         region: config.region,
         season: config.season,
@@ -421,7 +416,7 @@ const WoWGraphVisualizer = () => {
     const canvasX = (mouseX - rect.width / 2 - pan.x) / zoom;
     const canvasY = (mouseY - rect.height / 2 - pan.y) / zoom;
 
-     // Check for node hover first (higher priority)
+    // Check for node hover first (higher priority)
 
     let foundNode = null;
     for (const node of graph.nodes) {
@@ -459,7 +454,7 @@ const WoWGraphVisualizer = () => {
       return;
     }
     
-    // Check each edge
+    // Check each edge - this is horrible
     const edgesNear = [];
     const threshold = 10 / zoom; // Hit detection threshold
     
