@@ -12,6 +12,7 @@ export function useConfig() {
       region: null,
       season: null,
       keyLevel: null,
+      maxDistance: null,
     },
     loading: true,
     error: null,
@@ -47,10 +48,16 @@ export function useConfig() {
             ? qp.keyLevel
             : levels[0] ?? null;
 
+        let maxDistance = null;
+        if (qp.distance && qp.distance >= 1 && qp.distance <= 99) {
+          maxDistance = qp.distance;
+        }
+
+
         // Single state update
         setConfig({
           availableConfigs: data,
-          defaults: { region, season, keyLevel },
+          defaults: { region, season, keyLevel, maxDistance },
           loading: false,
           error: null,
         });

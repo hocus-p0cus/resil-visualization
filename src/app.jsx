@@ -41,6 +41,7 @@ const WoWGraphVisualizer = () => {
   };
 
   const [showNonResil, setShowNonResil] = useState(false);
+  const [maxDistance, setMaxDistance] = useState('');
 
   useEffect(() => {
     if (configLoading) return;
@@ -50,6 +51,8 @@ const WoWGraphVisualizer = () => {
       season: defaults.season,
       keyLevel: defaults.keyLevel
     });
+
+    setMaxDistance(defaults.maxDistance ? defaults.maxDistance.toString() : '');
   }, [defaults]);
 
   // one more effect to merge errors ?
@@ -81,11 +84,14 @@ const WoWGraphVisualizer = () => {
   const { viridis: viridis256, error: viridisError } = useViridis();
 
   const buildGraph = useCallback((target) => {
+    const maxDist = maxDistance === '' ? Infinity : parseInt(maxDistance, 10);
+
     const graph = buildGraphCore({
-        target, 
+        target,
         downEdges, 
         nonResilEdges, 
-        showNonResil
+        showNonResil,
+        maxDistance: maxDist
     });
   
     if (!graph) {
@@ -94,7 +100,7 @@ const WoWGraphVisualizer = () => {
     }
     
     setGraph(graph);
-  }, [downEdges, nonResilEdges, showNonResil]);
+  }, [downEdges, nonResilEdges, showNonResil, maxDistance]);
 
   // runs only once, supposed to trigger a graph build for data from URL params
   const hasInitialized = useRef(false);
@@ -524,6 +530,8 @@ const WoWGraphVisualizer = () => {
           availableConfigs={availableConfigs}
           showNonResil={showNonResil}
           onToggleNonResil={() => setShowNonResil(!showNonResil)}
+          maxDistance={maxDistance}
+          onMaxDistanceChange={setMaxDistance}
         />
 
         {/* Data Loading Text Status */}
