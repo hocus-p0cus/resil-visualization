@@ -5,7 +5,8 @@ export function buildGraphCore({
   target,
   downEdges,
   nonResilEdges,
-  showNonResil
+  showNonResil,
+  maxDistance = Infinity
 }) {
   if (!downEdges || !nonResilEdges || !target) return null;
 
@@ -16,13 +17,13 @@ export function buildGraphCore({
   const upNonResilEdges = nonResilEdgesList.map(([a, b]) => [b, a]);
 
   // When going up, always include both resilient and non-resilient edges
-  const upNodes = collectNodes(target, [...upEdges, ...upNonResilEdges]);
+  const upNodes = collectNodes(target, [...upEdges, ...upNonResilEdges], maxDistance);
   
   // When going down, conditionally include non-resilient edges based on toggle
   const downEdgesForCollection = showNonResil 
     ? [...downEdgesList, ...nonResilEdgesList]
     : downEdgesList;
-  const downNodes = collectNodes(target, downEdgesForCollection);
+  const downNodes = collectNodes(target, downEdgesForCollection, maxDistance);
   
   const allNodes = new Set([...upNodes, ...downNodes, target]);
 

@@ -14,7 +14,7 @@ describe("readUrlParams", () => {
   });
 
   test("parses full URL parameter set", () => {
-    setSearch("?region=EU&season=tww-s2&character=graliboar&realm=tarren-mill&level=20");
+    setSearch("?region=EU&season=tww-s2&character=graliboar&realm=tarren-mill&level=20&distance=2");
 
     const result = readUrlParams();
     expect(result).toEqual({
@@ -22,7 +22,8 @@ describe("readUrlParams", () => {
       season: "tww-s2",
       character: "graliboar",
       realm: "tarren-mill",
-      keyLevel: 20
+      keyLevel: 20,
+      distance: 2
     });
   });
 
@@ -35,7 +36,8 @@ describe("readUrlParams", () => {
       season: "tww-s2",
       character: null,
       realm: null,
-      keyLevel: null
+      keyLevel: null,
+      distance: null,
     });
   });
 
