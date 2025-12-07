@@ -1,3 +1,5 @@
+import { formatCharacterId } from "../formatCharacterId";
+
 export const Tooltip = ({ interaction }) => {
   if (interaction.selectedEdge || (!interaction.hoveredNode && !interaction.hoveredEdge)) {
     return null;
@@ -14,7 +16,7 @@ export const Tooltip = ({ interaction }) => {
       {interaction.tooltip.type === 'edge' && interaction.hoveredEdge && (
         <>
           <div className="font-semibold mb-1">
-            {interaction.hoveredEdge.from.split('-')[0]} → {interaction.hoveredEdge.to.split('-')[0]}
+            {formatCharacterId(interaction.hoveredEdge.from).name} → {formatCharacterId(interaction.hoveredEdge.to).name}
           </div>
           <div className="text-slate-400 text-[10px]">Click to view runs</div>
         </>

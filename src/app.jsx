@@ -21,6 +21,7 @@ import { readUrlParams } from "./readUrlParams";
 import { buildGraphCore } from "./buildGraphCore";
 import { parseCharacterInput, isRioCharacterURL, resolveRealm } from "./parseCharacterInput";
 import { safeConfigState } from "./safeConfigState";
+import { formatCharacterId } from "./formatCharacterId";
 
 
 const WoWGraphVisualizer = () => {
@@ -110,7 +111,7 @@ const WoWGraphVisualizer = () => {
 
     const realmName = resolveRealm(qp.realm, slugMapping);
     const targetId = `${qp.character}-${realmName}`;
-    setSearchTerm(targetId);
+    setSearchTerm(formatCharacterId(targetId).full);
     setTargetChar(targetId);
   }, [slugMapping, downEdges, nonResilEdges]); // this edge dependency is hacky (maybe dataloaded instead ?)
 
@@ -252,7 +253,7 @@ const WoWGraphVisualizer = () => {
 
     graph.nodes.forEach(node => {
       const pos = graph.positions[node];
-      const label = node.split('-')[0];
+      const label = formatCharacterId(node).name;
       const color = getColor(node);
       
       ctx.font = '12px sans-serif';
@@ -352,7 +353,7 @@ const WoWGraphVisualizer = () => {
 
     if (e.button === 2 && interaction.hoveredNode) {
       setTargetChar(interaction.hoveredNode);
-      setSearchTerm(interaction.hoveredNode);
+      setSearchTerm(formatCharacterId(interaction.hoveredNode).full);
 
       dispatchInteraction({ type: 'RESET' });
       return;
@@ -423,7 +424,7 @@ const WoWGraphVisualizer = () => {
     let foundNode = null;
     for (const node of graph.nodes) {
       const pos = graph.positions[node];
-      const label = node.split('-')[0];
+      const label = formatCharacterId(node).name;
 
       // Approximate node dimensions
       const ctx = canvas.getContext('2d');

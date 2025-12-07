@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal } from './ui/Modal';
+import { formatCharacterId } from '../formatCharacterId';
 
 export const EdgeSelectionModal = ({
   edgeOptions,
@@ -21,7 +22,7 @@ export const EdgeSelectionModal = ({
           onClick={() => onSelectEdge(edge)}
         >
           <span className="font-medium">
-            {edge.from.split('-')[0]} → {edge.to.split('-')[0]}
+            {formatCharacterId(edge.from).name} → {formatCharacterId(edge.to).name}
           </span>
           <span className="text-xs text-slate-400">
             {edge.type === 'resil' ? 'Resilient' : 'Non-resilient'}

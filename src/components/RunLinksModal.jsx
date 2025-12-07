@@ -1,5 +1,6 @@
 import React from 'react';
 import { getDungeonCode } from '../getDungeonCode';
+import { formatCharacterId } from '../formatCharacterId';
 import { Modal } from './ui/Modal';
 
 export const RunLinksModal = ({ 
@@ -15,8 +16,8 @@ export const RunLinksModal = ({
   };
 
   const seasonSlug = seasonSlugs[season] || season;
-  const fromLabel = selectedEdge.from.split('-')[0];
-  const toLabel = selectedEdge.to.split('-')[0];
+  const fromLabel = formatCharacterId(selectedEdge.from).name;
+  const toLabel = formatCharacterId(selectedEdge.to).name;
   const edgeTypeLabel =
     selectedEdge.type === 'resil' ? 'Resilient edge' : 'Non-resilient edge';
 
