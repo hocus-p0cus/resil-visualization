@@ -59,7 +59,7 @@ export function buildGraphCore({
   });
 
   const allEdgesForLayout = filteredEdges.map(e => [e.from, e.to]);
-  const layout = hierarchicalLayout(Array.from(allNodes), allEdgesForLayout);
+  const layout = hierarchicalLayout(Array.from(allNodes), allEdgesForLayout, target);
   
   if (!layout) {
     return null; // Caller handles the error (alert in UI, throw in tests, etc.)

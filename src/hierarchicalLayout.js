@@ -1,6 +1,6 @@
 import { topologicalSort } from "./topologicalSort";
 
-export function hierarchicalLayout(nodes, edges)  {
+export function hierarchicalLayout(nodes, edges, targetNode = null) {
   const sorted = topologicalSort(nodes, edges);
   if (!sorted) return null;
 
@@ -29,11 +29,15 @@ export function hierarchicalLayout(nodes, edges)  {
   const horizontalSpread = 120;
   const layerSpacing = 100;
   
+  const yOffset = targetNode && layerMap[targetNode] !== undefined
+    ? layerMap[targetNode] * layerSpacing
+    : 0;
+  
   Object.entries(layers).forEach(([layer, layerNodes]) => {
     const n = layerNodes.length;
     layerNodes.forEach((node, i) => {
       const x = (i - (n - 1) / 2) * horizontalSpread;
-      const y = parseInt(layer) * layerSpacing;
+      const y = parseInt(layer) * layerSpacing - yOffset;
       pos[node] = { x, y };
     });
   });
