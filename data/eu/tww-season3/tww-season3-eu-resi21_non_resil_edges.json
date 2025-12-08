@@ -123,7 +123,15 @@
     "source": "Oldgodx-Silvermoon",
     "target": "Alexi-Nemesis",
     "labels": [
-      "STRT#36817882"
+      "STRT#36817882",
+      "ECO#37836339"
+    ]
+  },
+  {
+    "source": "Deadlavy-Kazzak",
+    "target": "Alexi-Nemesis",
+    "labels": [
+      "ECO#37836339"
     ]
   },
   {
@@ -167,7 +175,8 @@
     "target": "Anfàwr-Archimonde",
     "labels": [
       "HoA#37679446",
-      "ARA#37686636"
+      "ARA#37686636",
+      "GMBT#37780594"
     ]
   },
   {
@@ -175,7 +184,9 @@
     "target": "Anfàwr-Archimonde",
     "labels": [
       "HoA#37679446",
-      "ARA#37686636"
+      "ARA#37686636",
+      "ECO#37812305",
+      "GMBT#37780594"
     ]
   },
   {
@@ -183,7 +194,8 @@
     "target": "Anfàwr-Archimonde",
     "labels": [
       "HoA#37679446",
-      "ARA#37686636"
+      "ARA#37686636",
+      "ECO#37812305"
     ]
   },
   {
@@ -192,7 +204,8 @@
     "labels": [
       "HoA#37679446",
       "STRT#37722508",
-      "ARA#37686636"
+      "ARA#37686636",
+      "GMBT#37780594"
     ]
   },
   {
@@ -206,7 +219,8 @@
     "source": "Imsobadxd-Kazzak",
     "target": "Anfàwr-Archimonde",
     "labels": [
-      "STRT#37722508"
+      "STRT#37722508",
+      "GMBT#37780594"
     ]
   },
   {
@@ -214,6 +228,13 @@
     "target": "Anfàwr-Archimonde",
     "labels": [
       "STRT#37722508"
+    ]
+  },
+  {
+    "source": "Ojix-Kazzak",
+    "target": "Anfàwr-Archimonde",
+    "labels": [
+      "ECO#37812305"
     ]
   },
   {
@@ -480,6 +501,20 @@
   },
   {
     "source": "Oldgodx-Silvermoon",
+    "target": "Balancedhunt-Tarren Mill",
+    "labels": [
+      "GMBT#37839007"
+    ]
+  },
+  {
+    "source": "Deadlavy-Kazzak",
+    "target": "Balancedhunt-Tarren Mill",
+    "labels": [
+      "GMBT#37839007"
+    ]
+  },
+  {
+    "source": "Oldgodx-Silvermoon",
     "target": "Bananatrap-Kazzak",
     "labels": [
       "ECO#36955885"
@@ -660,6 +695,27 @@
     ]
   },
   {
+    "source": "Sushihunt-Tarren Mill",
+    "target": "Bigchonker-Blackmoore",
+    "labels": [
+      "STRT#37834209"
+    ]
+  },
+  {
+    "source": "Oldgodx-Silvermoon",
+    "target": "Bigchonker-Blackmoore",
+    "labels": [
+      "STRT#37834209"
+    ]
+  },
+  {
+    "source": "Deadlavy-Kazzak",
+    "target": "Bigchonker-Blackmoore",
+    "labels": [
+      "STRT#37834209"
+    ]
+  },
+  {
     "source": "Теомаатрр-Howling Fjord",
     "target": "Bitas-Drak'thul",
     "labels": [
@@ -743,6 +799,7 @@
     "source": "Utsumi-Kazzak",
     "target": "Bluesilver-Blackhand",
     "labels": [
+      "ARA#37809584",
       "ECO#37515832",
       "GMBT#37511631"
     ]
@@ -751,6 +808,7 @@
     "source": "Dwarfthegoat-Kazzak",
     "target": "Bluesilver-Blackhand",
     "labels": [
+      "ARA#37809584",
       "ECO#37515832",
       "GMBT#37511631"
     ]
@@ -781,6 +839,20 @@
     "target": "Bluèsilvèr-Blackhand",
     "labels": [
       "STRT#37089379"
+    ]
+  },
+  {
+    "source": "Sushihunt-Tarren Mill",
+    "target": "Boogadk-Tarren Mill",
+    "labels": [
+      "HoA#37817658"
+    ]
+  },
+  {
+    "source": "Oldgodx-Silvermoon",
+    "target": "Boogadk-Tarren Mill",
+    "labels": [
+      "HoA#37817658"
     ]
   },
   {
@@ -941,13 +1013,6 @@
     "target": "Bráveheart-Kazzak",
     "labels": [
       "ECO#36802113"
-    ]
-  },
-  {
-    "source": "Sonnydruid-Aggra (Português)",
-    "target": "Bzkgodless-Hyjal",
-    "labels": [
-      "PSF#37625174"
     ]
   },
   {
@@ -1161,9 +1226,17 @@
     ]
   },
   {
+    "source": "Sushihunt-Tarren Mill",
+    "target": "Cheeseburro-Nemesis",
+    "labels": [
+      "HoA#37817658"
+    ]
+  },
+  {
     "source": "Oldgodx-Silvermoon",
     "target": "Cheeseburro-Nemesis",
     "labels": [
+      "HoA#37817658",
       "STRT#37077225"
     ]
   },
@@ -1515,6 +1588,37 @@
     ]
   },
   {
+    "source": "Nâmï-Silvermoon",
+    "target": "Darkmisoka-Hyjal",
+    "labels": [
+      "HoA#37837549",
+      "GMBT#37838906"
+    ]
+  },
+  {
+    "source": "Artasham-Ravencrest",
+    "target": "Darkmisoka-Hyjal",
+    "labels": [
+      "HoA#37837549",
+      "GMBT#37838906"
+    ]
+  },
+  {
+    "source": "Dwarfmanesh-Ravencrest",
+    "target": "Darkmisoka-Hyjal",
+    "labels": [
+      "HoA#37837549",
+      "GMBT#37838906"
+    ]
+  },
+  {
+    "source": "Nightvp-Kazzak",
+    "target": "Darkmisoka-Hyjal",
+    "labels": [
+      "GMBT#37838906"
+    ]
+  },
+  {
     "source": "Sonnydruid-Aggra (Português)",
     "target": "Daîlø-Hyjal",
     "labels": [
@@ -1599,6 +1703,27 @@
     ]
   },
   {
+    "source": "Oxiwar-Kazzak",
+    "target": "Demonvelle-Twisting Nether",
+    "labels": [
+      "ECO#37812138"
+    ]
+  },
+  {
+    "source": "Felkit-Tarren Mill",
+    "target": "Demonvelle-Twisting Nether",
+    "labels": [
+      "ECO#37812138"
+    ]
+  },
+  {
+    "source": "Deathevo-Tarren Mill",
+    "target": "Demonvelle-Twisting Nether",
+    "labels": [
+      "ECO#37812138"
+    ]
+  },
+  {
     "source": "Элслэйерх-Howling Fjord",
     "target": "Demonvelle-Twisting Nether",
     "labels": [
@@ -1673,6 +1798,20 @@
     "target": "Dkc-Kazzak",
     "labels": [
       "ECO#36960073"
+    ]
+  },
+  {
+    "source": "Элслэйерх-Howling Fjord",
+    "target": "Dlkeyshaman-Stormscale",
+    "labels": [
+      "ECO#37794557"
+    ]
+  },
+  {
+    "source": "Serejabanan-Silvermoon",
+    "target": "Dlkeyshaman-Stormscale",
+    "labels": [
+      "ECO#37794557"
     ]
   },
   {
@@ -2078,6 +2217,49 @@
     ]
   },
   {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Exco-Tarren Mill",
+    "labels": [
+      "STRT#37790218"
+    ]
+  },
+  {
+    "source": "Mandur-Hyjal",
+    "target": "Exco-Tarren Mill",
+    "labels": [
+      "STRT#37790218"
+    ]
+  },
+  {
+    "source": "Champdruid-Hyjal",
+    "target": "Exco-Tarren Mill",
+    "labels": [
+      "STRT#37790218",
+      "ECO#37824656"
+    ]
+  },
+  {
+    "source": "Bzkgodless-Hyjal",
+    "target": "Exco-Tarren Mill",
+    "labels": [
+      "ECO#37824656"
+    ]
+  },
+  {
+    "source": "Oinkoinkk-Archimonde",
+    "target": "Exco-Tarren Mill",
+    "labels": [
+      "ECO#37824656"
+    ]
+  },
+  {
+    "source": "Rayanclap-Ysondre",
+    "target": "Exco-Tarren Mill",
+    "labels": [
+      "ECO#37824656"
+    ]
+  },
+  {
     "source": "Whowar-Ravencrest",
     "target": "Exraze-Tarren Mill",
     "labels": [
@@ -2474,10 +2656,34 @@
     ]
   },
   {
+    "source": "Sonnydruid-Aggra (Português)",
+    "target": "Futter-Taerar",
+    "labels": [
+      "FLOOD#37803320"
+    ]
+  },
+  {
+    "source": "Sushihunt-Tarren Mill",
+    "target": "Fêng-Twisting Nether",
+    "labels": [
+      "STRT#37834209"
+    ]
+  },
+  {
     "source": "Oldgodx-Silvermoon",
     "target": "Fêng-Twisting Nether",
     "labels": [
-      "ECO#36955885"
+      "STRT#37834209",
+      "ECO#36955885",
+      "GMBT#37839007"
+    ]
+  },
+  {
+    "source": "Deadlavy-Kazzak",
+    "target": "Fêng-Twisting Nether",
+    "labels": [
+      "STRT#37834209",
+      "GMBT#37839007"
     ]
   },
   {
@@ -2569,6 +2775,27 @@
     ]
   },
   {
+    "source": "Ojix-Kazzak",
+    "target": "Gazija-Draenor",
+    "labels": [
+      "ECO#37812305"
+    ]
+  },
+  {
+    "source": "Andromedaw-Tarren Mill",
+    "target": "Gazija-Draenor",
+    "labels": [
+      "ECO#37812305"
+    ]
+  },
+  {
+    "source": "Waytoosick-Kazzak",
+    "target": "Gazija-Draenor",
+    "labels": [
+      "ECO#37812305"
+    ]
+  },
+  {
     "source": "Sadfrexa-Tarren Mill",
     "target": "Gazija-Draenor",
     "labels": [
@@ -2601,6 +2828,7 @@
     "target": "Goltc-Uldaman",
     "labels": [
       "HoA#37489819",
+      "DAWN#37830812",
       "ARA#37498353"
     ]
   },
@@ -2609,6 +2837,7 @@
     "target": "Goltc-Uldaman",
     "labels": [
       "HoA#37489819",
+      "DAWN#37830812",
       "ARA#37498353"
     ]
   },
@@ -2617,6 +2846,7 @@
     "target": "Goltc-Uldaman",
     "labels": [
       "HoA#37489819",
+      "DAWN#37830812",
       "ARA#37498353"
     ]
   },
@@ -2625,6 +2855,7 @@
     "target": "Goltc-Uldaman",
     "labels": [
       "HoA#37489819",
+      "DAWN#37830812",
       "ARA#37498353"
     ]
   },
@@ -2640,7 +2871,9 @@
     "target": "Griwyhuntx-Draenor",
     "labels": [
       "HoA#37591518",
+      "STRT#37833833",
       "PSF#37597178",
+      "DAWN#37828216",
       "FLOOD#37726549",
       "ECO#37712338",
       "GMBT#37586293"
@@ -2651,10 +2884,28 @@
     "target": "Griwyhuntx-Draenor",
     "labels": [
       "HoA#37591518",
+      "STRT#37833833",
       "PSF#37597178",
+      "DAWN#37828216",
       "FLOOD#37726549",
       "ECO#37712338",
       "GMBT#37586293"
+    ]
+  },
+  {
+    "source": "Hananah-Kazzak",
+    "target": "Griwyhuntx-Draenor",
+    "labels": [
+      "STRT#37833833",
+      "DAWN#37828216"
+    ]
+  },
+  {
+    "source": "Warchev-Twisting Nether",
+    "target": "Griwyhuntx-Draenor",
+    "labels": [
+      "STRT#37833833",
+      "DAWN#37828216"
     ]
   },
   {
@@ -3608,6 +3859,27 @@
     ]
   },
   {
+    "source": "Nâmï-Silvermoon",
+    "target": "Karvén-Twisting Nether",
+    "labels": [
+      "HoA#37790147"
+    ]
+  },
+  {
+    "source": "Artasham-Ravencrest",
+    "target": "Karvén-Twisting Nether",
+    "labels": [
+      "HoA#37790147"
+    ]
+  },
+  {
+    "source": "Dwarfmanesh-Ravencrest",
+    "target": "Karvén-Twisting Nether",
+    "labels": [
+      "HoA#37790147"
+    ]
+  },
+  {
     "source": "Sushihunt-Tarren Mill",
     "target": "Karvén-Twisting Nether",
     "labels": [
@@ -3747,6 +4019,13 @@
     "target": "Killinallday-Twilight's Hammer",
     "labels": [
       "ARA#36241739"
+    ]
+  },
+  {
+    "source": "Whowar-Ravencrest",
+    "target": "Kimilis-Stormscale",
+    "labels": [
+      "ECO#37830468"
     ]
   },
   {
@@ -4273,6 +4552,13 @@
     ]
   },
   {
+    "source": "Whowar-Ravencrest",
+    "target": "Maliydk-Blackmoore",
+    "labels": [
+      "ECO#37830468"
+    ]
+  },
+  {
     "source": "Xanadeath-Ragnaros",
     "target": "Mandemon-Al'Akir",
     "labels": [
@@ -4399,17 +4685,39 @@
     ]
   },
   {
-    "source": "Slasherwon-Doomhammer",
+    "source": "Bzkgodless-Hyjal",
     "target": "Melan-Sanguino",
     "labels": [
-      "ARA#37206079",
-      "ECO#37212688"
+      "STRT#37830489"
+    ]
+  },
+  {
+    "source": "Oinkoinkk-Archimonde",
+    "target": "Melan-Sanguino",
+    "labels": [
+      "STRT#37830489"
     ]
   },
   {
     "source": "Champdruid-Hyjal",
     "target": "Melan-Sanguino",
     "labels": [
+      "STRT#37830489",
+      "ECO#37212688"
+    ]
+  },
+  {
+    "source": "Rayanclap-Ysondre",
+    "target": "Melan-Sanguino",
+    "labels": [
+      "STRT#37830489"
+    ]
+  },
+  {
+    "source": "Slasherwon-Doomhammer",
+    "target": "Melan-Sanguino",
+    "labels": [
+      "ARA#37206079",
       "ECO#37212688"
     ]
   },
@@ -4453,6 +4761,8 @@
     "target": "Microlock-Terokkar",
     "labels": [
       "STRT#32799125",
+      "ARA#37790116",
+      "ECO#37794557",
       "GMBT#32623896"
     ]
   },
@@ -4461,7 +4771,30 @@
     "target": "Microlock-Terokkar",
     "labels": [
       "STRT#32799125",
+      "ARA#37790116",
+      "ECO#37794557",
       "GMBT#32623896"
+    ]
+  },
+  {
+    "source": "Dlkeydh-Stormscale",
+    "target": "Microlock-Terokkar",
+    "labels": [
+      "ARA#37790116"
+    ]
+  },
+  {
+    "source": "Элслэйерх-Howling Fjord",
+    "target": "Micronomic-Terokkar",
+    "labels": [
+      "GMBT#37798292"
+    ]
+  },
+  {
+    "source": "Serejabanan-Silvermoon",
+    "target": "Micronomic-Terokkar",
+    "labels": [
+      "GMBT#37798292"
     ]
   },
   {
@@ -4722,6 +5055,13 @@
     ]
   },
   {
+    "source": "Myzouth-Burning Legion",
+    "target": "Moosewr-Ragnaros",
+    "labels": [
+      "STRT#37785744"
+    ]
+  },
+  {
     "source": "Rstoshmn-Eredar",
     "target": "Moosewr-Ragnaros",
     "labels": [
@@ -4887,6 +5227,7 @@
     "source": "Теомаатрр-Howling Fjord",
     "target": "Møri-Ravencrest",
     "labels": [
+      "HoA#37780490",
       "STRT#37669326",
       "ECO#37664139"
     ]
@@ -5212,6 +5553,13 @@
     ]
   },
   {
+    "source": "Whowar-Ravencrest",
+    "target": "Nusse-The Maelstrom",
+    "labels": [
+      "ECO#37830468"
+    ]
+  },
+  {
     "source": "Vicentius-Silvermoon",
     "target": "Nómé-Drak'thul",
     "labels": [
@@ -5275,13 +5623,6 @@
     "target": "Oddis-Burning Legion",
     "labels": [
       "GMBT#37524797"
-    ]
-  },
-  {
-    "source": "Sonnydruid-Aggra (Português)",
-    "target": "Oinkoinkk-Archimonde",
-    "labels": [
-      "PSF#37625174"
     ]
   },
   {
@@ -5421,6 +5762,20 @@
     ]
   },
   {
+    "source": "Artasham-Ravencrest",
+    "target": "Pepsimanmyth-Stormscale",
+    "labels": [
+      "STRT#37814753"
+    ]
+  },
+  {
+    "source": "Dwarfmanesh-Ravencrest",
+    "target": "Pepsimanmyth-Stormscale",
+    "labels": [
+      "STRT#37814753"
+    ]
+  },
+  {
     "source": "Vicentius-Silvermoon",
     "target": "Pepsimexi-Tarren Mill",
     "labels": [
@@ -5442,6 +5797,13 @@
     "labels": [
       "STRT#35735238",
       "ECO#36793900"
+    ]
+  },
+  {
+    "source": "Myzouth-Burning Legion",
+    "target": "Piipoo-Hyjal",
+    "labels": [
+      "STRT#37785744"
     ]
   },
   {
@@ -5525,6 +5887,13 @@
     "target": "Potshots-Tarren Mill",
     "labels": [
       "STRT#34846879"
+    ]
+  },
+  {
+    "source": "Whowar-Ravencrest",
+    "target": "Potshots-Tarren Mill",
+    "labels": [
+      "ECO#37830468"
     ]
   },
   {
@@ -5820,6 +6189,13 @@
     ]
   },
   {
+    "source": "Myzouth-Burning Legion",
+    "target": "Raparotar-Hyjal",
+    "labels": [
+      "STRT#37785744"
+    ]
+  },
+  {
     "source": "Manga-Tarren Mill",
     "target": "Rasurgence-Draenor",
     "labels": [
@@ -5850,13 +6226,6 @@
     ]
   },
   {
-    "source": "Sonnydruid-Aggra (Português)",
-    "target": "Rayanclap-Ysondre",
-    "labels": [
-      "PSF#37625174"
-    ]
-  },
-  {
     "source": "Oldgodx-Silvermoon",
     "target": "Rayhunt-Stormscale",
     "labels": [
@@ -5882,6 +6251,7 @@
     "target": "Rebelloz-Draenor",
     "labels": [
       "HoA#33232944",
+      "DAWN#37822486",
       "ECO#32845222"
     ]
   },
@@ -5890,6 +6260,7 @@
     "target": "Rebelloz-Draenor",
     "labels": [
       "HoA#33232944",
+      "DAWN#37822486",
       "ECO#32845222"
     ]
   },
@@ -5897,7 +6268,8 @@
     "source": "Malegusdk-Twisting Nether",
     "target": "Rebelloz-Draenor",
     "labels": [
-      "HoA#33232944"
+      "HoA#33232944",
+      "DAWN#37822486"
     ]
   },
   {
@@ -5905,6 +6277,7 @@
     "target": "Rebelloz-Draenor",
     "labels": [
       "HoA#33232944",
+      "DAWN#37822486",
       "ECO#32845222"
     ]
   },
@@ -7417,6 +7790,27 @@
     ]
   },
   {
+    "source": "Nâmï-Silvermoon",
+    "target": "Trapsohn-Eredar",
+    "labels": [
+      "HoA#37790147"
+    ]
+  },
+  {
+    "source": "Artasham-Ravencrest",
+    "target": "Trapsohn-Eredar",
+    "labels": [
+      "HoA#37790147"
+    ]
+  },
+  {
+    "source": "Dwarfmanesh-Ravencrest",
+    "target": "Trapsohn-Eredar",
+    "labels": [
+      "HoA#37790147"
+    ]
+  },
+  {
     "source": "Manga-Tarren Mill",
     "target": "Trapsohn-Eredar",
     "labels": [
@@ -7469,7 +7863,15 @@
     "source": "Oldgodx-Silvermoon",
     "target": "Tylerone-Nemesis",
     "labels": [
-      "STRT#36817882"
+      "STRT#36817882",
+      "ECO#37836339"
+    ]
+  },
+  {
+    "source": "Deadlavy-Kazzak",
+    "target": "Tylerone-Nemesis",
+    "labels": [
+      "ECO#37836339"
     ]
   },
   {
@@ -8285,6 +8687,7 @@
     "source": "Теомаатрр-Howling Fjord",
     "target": "Yarrgidk-Kazzak",
     "labels": [
+      "HoA#37780490",
       "STRT#37669326",
       "ECO#37664139"
     ]
@@ -8381,6 +8784,13 @@
     "target": "Yorgasmic-Tarren Mill",
     "labels": [
       "ARA#37432262"
+    ]
+  },
+  {
+    "source": "Myzouth-Burning Legion",
+    "target": "Zerover-Ravencrest",
+    "labels": [
+      "STRT#37785744"
     ]
   },
   {
@@ -8940,14 +9350,16 @@
     "source": "Элслэйерх-Howling Fjord",
     "target": "Понакичх-Howling Fjord",
     "labels": [
-      "STRT#34969383"
+      "STRT#34969383",
+      "ARA#37790116"
     ]
   },
   {
     "source": "Serejabanan-Silvermoon",
     "target": "Понакичх-Howling Fjord",
     "labels": [
-      "STRT#34969383"
+      "STRT#34969383",
+      "ARA#37790116"
     ]
   },
   {
@@ -8955,6 +9367,13 @@
     "target": "Понакичх-Howling Fjord",
     "labels": [
       "STRT#34969383"
+    ]
+  },
+  {
+    "source": "Dlkeydh-Stormscale",
+    "target": "Понакичх-Howling Fjord",
+    "labels": [
+      "ARA#37790116"
     ]
   },
   {
