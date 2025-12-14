@@ -430,6 +430,7 @@
     "source": "Battantx-Area 52",
     "target": "Cartixo-Thrall",
     "labels": [
+      "HoA#38427511",
       "STRT#37715926",
       "ECO#37515509",
       "GMBT#37524342"
@@ -439,6 +440,7 @@
     "source": "Eluneqt-Thrall",
     "target": "Cartixo-Thrall",
     "labels": [
+      "HoA#38427511",
       "STRT#37715926",
       "ECO#37515509",
       "GMBT#37524342"
@@ -457,13 +459,22 @@
     "source": "Cafecita-Illidan",
     "target": "Catstring-Barthilas",
     "labels": [
+      "HoA#38396539",
       "ARA#38284371"
+    ]
+  },
+  {
+    "source": "Alenwarr-Area 52",
+    "target": "Catstring-Barthilas",
+    "labels": [
+      "HoA#38396539"
     ]
   },
   {
     "source": "Silzunë-Illidan",
     "target": "Catstring-Barthilas",
     "labels": [
+      "HoA#38396539",
       "ARA#38284371"
     ]
   },
@@ -471,6 +482,7 @@
     "source": "Vitchdk-Ragnaros",
     "target": "Catstring-Barthilas",
     "labels": [
+      "HoA#38396539",
       "ARA#38284371"
     ]
   },
@@ -897,6 +909,48 @@
     ]
   },
   {
+    "source": "Jdotbres-Illidan",
+    "target": "Jägermeistr-Illidan",
+    "labels": [
+      "FLOOD#38473789"
+    ]
+  },
+  {
+    "source": "Sparkhe-Stormrage",
+    "target": "Jägermeistr-Illidan",
+    "labels": [
+      "FLOOD#38473789"
+    ]
+  },
+  {
+    "source": "Frostyxo-Illidan",
+    "target": "Jägermeistr-Illidan",
+    "labels": [
+      "FLOOD#38473789"
+    ]
+  },
+  {
+    "source": "Jdotbres-Illidan",
+    "target": "Kctdk-Stormrage",
+    "labels": [
+      "FLOOD#38473789"
+    ]
+  },
+  {
+    "source": "Sparkhe-Stormrage",
+    "target": "Kctdk-Stormrage",
+    "labels": [
+      "FLOOD#38473789"
+    ]
+  },
+  {
+    "source": "Frostyxo-Illidan",
+    "target": "Kctdk-Stormrage",
+    "labels": [
+      "FLOOD#38473789"
+    ]
+  },
+  {
     "source": "Ryanlockwood-Illidan",
     "target": "Kigglypuff-Illidan",
     "labels": [
@@ -1000,6 +1054,7 @@
     "labels": [
       "HoA#37921622",
       "STRT#38113187",
+      "ARA#38473272",
       "ECO#37633376",
       "GMBT#37223124"
     ]
@@ -1020,6 +1075,7 @@
     "labels": [
       "HoA#37921622",
       "STRT#38113187",
+      "ARA#38473272",
       "ECO#37633376",
       "GMBT#37223124"
     ]
@@ -1032,6 +1088,13 @@
       "STRT#38113187",
       "ECO#37633376",
       "GMBT#37223124"
+    ]
+  },
+  {
+    "source": "Ryanlockwood-Illidan",
+    "target": "Maraxo-Mal'Ganis",
+    "labels": [
+      "ARA#38473272"
     ]
   },
   {
@@ -1210,6 +1273,7 @@
     "source": "Battantx-Area 52",
     "target": "Qpwarr-Area 52",
     "labels": [
+      "HoA#38427511",
       "STRT#37715926",
       "GMBT#37524342"
     ]
@@ -1218,6 +1282,7 @@
     "source": "Eluneqt-Thrall",
     "target": "Qpwarr-Area 52",
     "labels": [
+      "HoA#38427511",
       "STRT#37715926",
       "GMBT#37524342"
     ]
@@ -1425,6 +1490,55 @@
   },
   {
     "source": "Cartixd-Thrall",
+    "target": "Southerner-Area 52",
+    "labels": [
+      "STRT#38501558"
+    ]
+  },
+  {
+    "source": "Battantx-Area 52",
+    "target": "Southerner-Area 52",
+    "labels": [
+      "STRT#38501558"
+    ]
+  },
+  {
+    "source": "Eluneqt-Thrall",
+    "target": "Southerner-Area 52",
+    "labels": [
+      "STRT#38501558"
+    ]
+  },
+  {
+    "source": "Jdotbres-Illidan",
+    "target": "Southerner-Area 52",
+    "labels": [
+      "GMBT#38470364"
+    ]
+  },
+  {
+    "source": "Sparkhe-Stormrage",
+    "target": "Southerner-Area 52",
+    "labels": [
+      "GMBT#38470364"
+    ]
+  },
+  {
+    "source": "Frostyxo-Illidan",
+    "target": "Southerner-Area 52",
+    "labels": [
+      "GMBT#38470364"
+    ]
+  },
+  {
+    "source": "Cheekgripper-Area 52",
+    "target": "Southerner-Area 52",
+    "labels": [
+      "GMBT#38470364"
+    ]
+  },
+  {
+    "source": "Cartixd-Thrall",
     "target": "Sticcky-Tichondrius",
     "labels": [
       "GMBT#38345067"
@@ -1455,6 +1569,7 @@
     "source": "Cartixd-Thrall",
     "target": "Swëëtpizza-Tichondrius",
     "labels": [
+      "HoA#38493806",
       "STRT#37839884"
     ]
   },
@@ -1462,6 +1577,7 @@
     "source": "Battantx-Area 52",
     "target": "Swëëtpizza-Tichondrius",
     "labels": [
+      "HoA#38493806",
       "STRT#37839884"
     ]
   },
@@ -1469,6 +1585,7 @@
     "source": "Eluneqt-Thrall",
     "target": "Swëëtpizza-Tichondrius",
     "labels": [
+      "HoA#38493806",
       "STRT#37839884"
     ]
   },
@@ -1519,7 +1636,9 @@
     "target": "Terk-Proudmoore",
     "labels": [
       "HoA#38338372",
-      "ECO#38335524"
+      "STRT#38474717",
+      "ECO#38335524",
+      "GMBT#38487932"
     ]
   },
   {
@@ -1527,7 +1646,9 @@
     "target": "Terk-Proudmoore",
     "labels": [
       "HoA#38338372",
-      "ECO#38335524"
+      "STRT#38474717",
+      "ECO#38335524",
+      "GMBT#38487932"
     ]
   },
   {
@@ -1535,7 +1656,9 @@
     "target": "Terk-Proudmoore",
     "labels": [
       "HoA#38338372",
-      "ECO#38335524"
+      "STRT#38474717",
+      "ECO#38335524",
+      "GMBT#38487932"
     ]
   },
   {
@@ -1544,6 +1667,14 @@
     "labels": [
       "HoA#38338372",
       "ECO#38335524"
+    ]
+  },
+  {
+    "source": "Ryanlockwood-Illidan",
+    "target": "Terk-Proudmoore",
+    "labels": [
+      "STRT#38474717",
+      "GMBT#38487932"
     ]
   },
   {
@@ -1559,13 +1690,22 @@
     "source": "Cartixd-Thrall",
     "target": "Trashealer-Thrall",
     "labels": [
+      "ECO#38462632",
       "GMBT#38121595"
+    ]
+  },
+  {
+    "source": "Ryanlockwood-Illidan",
+    "target": "Trashealer-Thrall",
+    "labels": [
+      "ECO#38462632"
     ]
   },
   {
     "source": "Battantx-Area 52",
     "target": "Trashealer-Thrall",
     "labels": [
+      "ECO#38462632",
       "GMBT#38121595"
     ]
   },
