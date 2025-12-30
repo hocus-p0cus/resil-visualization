@@ -205,48 +205,6 @@
     ]
   },
   {
-    "source": "Frozztt-Zul'jin",
-    "target": "Acco-Mal'Ganis",
-    "labels": [
-      "HoA#36812487"
-    ]
-  },
-  {
-    "source": "Drimdogg-Area 52",
-    "target": "Acco-Mal'Ganis",
-    "labels": [
-      "PSF#39811965"
-    ]
-  },
-  {
-    "source": "Erosd-Sargeras",
-    "target": "Acco-Mal'Ganis",
-    "labels": [
-      "DAWN#37547278"
-    ]
-  },
-  {
-    "source": "Steelshade-Tichondrius",
-    "target": "Acco-Mal'Ganis",
-    "labels": [
-      "DAWN#37547278"
-    ]
-  },
-  {
-    "source": "Unosham-Thrall",
-    "target": "Acco-Mal'Ganis",
-    "labels": [
-      "ARA#36583934"
-    ]
-  },
-  {
-    "source": "Grozshock-Sargeras",
-    "target": "Acco-Mal'Ganis",
-    "labels": [
-      "ECO#36657878"
-    ]
-  },
-  {
     "source": "Landk-Frostmourne",
     "target": "Achrboda-Barthilas",
     "labels": [
@@ -1354,7 +1312,9 @@
     "source": "Desvoz-Barthilas",
     "target": "Akiruwu-Frostmourne",
     "labels": [
-      "HoA#39763645"
+      "HoA#39763645",
+      "DAWN#39934986",
+      "GMBT#39936884"
     ]
   },
   {
@@ -1363,7 +1323,17 @@
     "labels": [
       "HoA#39763645",
       "STRT#39744587",
-      "ECO#39754523"
+      "DAWN#39934986",
+      "ECO#39754523",
+      "GMBT#39936884"
+    ]
+  },
+  {
+    "source": "Kaldorelmoon-Frostmourne",
+    "target": "Akiruwu-Frostmourne",
+    "labels": [
+      "DAWN#39934986",
+      "GMBT#39936884"
     ]
   },
   {
@@ -1371,6 +1341,13 @@
     "target": "Akiruwu-Frostmourne",
     "labels": [
       "ECO#39754523"
+    ]
+  },
+  {
+    "source": "Milet-Barthilas",
+    "target": "Akiruwu-Frostmourne",
+    "labels": [
+      "GMBT#39936884"
     ]
   },
   {
@@ -1620,6 +1597,20 @@
     "target": "Almightie-Proudmoore",
     "labels": [
       "GMBT#31163325"
+    ]
+  },
+  {
+    "source": "Meowwowo-Illidan",
+    "target": "Aluadon-Area 52",
+    "labels": [
+      "STRT#39997840"
+    ]
+  },
+  {
+    "source": "Nobles-Illidan",
+    "target": "Aluadon-Area 52",
+    "labels": [
+      "STRT#39997840"
     ]
   },
   {
@@ -3922,6 +3913,27 @@
     ]
   },
   {
+    "source": "Healrstealr-Tichondrius",
+    "target": "Ashaeri-Aerie Peak",
+    "labels": [
+      "ECO#39984246"
+    ]
+  },
+  {
+    "source": "Nernu-Area 52",
+    "target": "Ashaeri-Aerie Peak",
+    "labels": [
+      "ECO#39984246"
+    ]
+  },
+  {
+    "source": "Yeena-Tichondrius",
+    "target": "Ashaeri-Aerie Peak",
+    "labels": [
+      "ECO#39984246"
+    ]
+  },
+  {
     "source": "Braindëadly-Area 52",
     "target": "Ashfrost-Tichondrius",
     "labels": [
@@ -4441,6 +4453,20 @@
     ]
   },
   {
+    "source": "Tahssa-Area 52",
+    "target": "Awfulmondays-Illidan",
+    "labels": [
+      "GMBT#39999028"
+    ]
+  },
+  {
+    "source": "Khall-Eldre'Thalas",
+    "target": "Awfulmondays-Illidan",
+    "labels": [
+      "GMBT#39999028"
+    ]
+  },
+  {
     "source": "Alphaqt-Sargeras",
     "target": "Awuacate-Ragnaros",
     "labels": [
@@ -4481,41 +4507,6 @@
     "target": "Axofa-Proudmoore",
     "labels": [
       "ECO#37355805"
-    ]
-  },
-  {
-    "source": "Attachedruid-Khaz'goroth",
-    "target": "Ayahuasca-Caelestrasz",
-    "labels": [
-      "PSF#37856843"
-    ]
-  },
-  {
-    "source": "Smorc-Frostmourne",
-    "target": "Ayahuasca-Caelestrasz",
-    "labels": [
-      "DAWN#37420413"
-    ]
-  },
-  {
-    "source": "Frigidam-Barthilas",
-    "target": "Ayahuasca-Caelestrasz",
-    "labels": [
-      "ARA#37400010"
-    ]
-  },
-  {
-    "source": "Gelly-Frostmourne",
-    "target": "Ayahuasca-Caelestrasz",
-    "labels": [
-      "GMBT#34936846"
-    ]
-  },
-  {
-    "source": "Somzilla-Frostmourne",
-    "target": "Ayahuasca-Caelestrasz",
-    "labels": [
-      "GMBT#34936846"
     ]
   },
   {
@@ -6898,7 +6889,8 @@
     "source": "Loquix-Ragnaros",
     "target": "Blast-Ragnaros",
     "labels": [
-      "PSF#39292720"
+      "PSF#39292720",
+      "DAWN#39962658"
     ]
   },
   {
@@ -6915,6 +6907,7 @@
       "STRT#39794712",
       "PSF#39814073",
       "DAWN#39798294",
+      "FLOOD#40001556",
       "GMBT#39789846"
     ]
   },
@@ -6925,6 +6918,7 @@
       "STRT#39794712",
       "PSF#39814073",
       "DAWN#39798294",
+      "FLOOD#40001556",
       "GMBT#39789846"
     ]
   },
@@ -6935,6 +6929,7 @@
       "STRT#39794712",
       "PSF#39814073",
       "DAWN#39798294",
+      "FLOOD#40001556",
       "ECO#39872938",
       "GMBT#39789846"
     ]
@@ -6946,6 +6941,7 @@
       "STRT#39794712",
       "PSF#39814073",
       "DAWN#39798294",
+      "FLOOD#40001556",
       "ECO#39872938",
       "GMBT#39789846"
     ]
@@ -8124,6 +8120,27 @@
     ]
   },
   {
+    "source": "Chugbug-Destromath",
+    "target": "Bonekrush-Bleeding Hollow",
+    "labels": [
+      "GMBT#39983715"
+    ]
+  },
+  {
+    "source": "Babaya-Proudmoore",
+    "target": "Bonekrush-Bleeding Hollow",
+    "labels": [
+      "GMBT#39983715"
+    ]
+  },
+  {
+    "source": "Efektt-Stormrage",
+    "target": "Bonekrush-Bleeding Hollow",
+    "labels": [
+      "GMBT#39983715"
+    ]
+  },
+  {
     "source": "Kaspion-Tichondrius",
     "target": "Bonezs-Frostmane",
     "labels": [
@@ -9005,6 +9022,27 @@
     ]
   },
   {
+    "source": "Chugbug-Destromath",
+    "target": "Bubbledaddy-Frostmourne",
+    "labels": [
+      "GMBT#39983715"
+    ]
+  },
+  {
+    "source": "Babaya-Proudmoore",
+    "target": "Bubbledaddy-Frostmourne",
+    "labels": [
+      "GMBT#39983715"
+    ]
+  },
+  {
+    "source": "Efektt-Stormrage",
+    "target": "Bubbledaddy-Frostmourne",
+    "labels": [
+      "GMBT#39983715"
+    ]
+  },
+  {
     "source": "AnonDDCBBD3-Anonymous",
     "target": "Bublzz-Illidan",
     "labels": [
@@ -9109,6 +9147,13 @@
     "target": "Bumrusher-Tichondrius",
     "labels": [
       "HoA#36586460"
+    ]
+  },
+  {
+    "source": "Knownflopper-Lightbringer",
+    "target": "Bumrusher-Tichondrius",
+    "labels": [
+      "STRT#39997977"
     ]
   },
   {
@@ -9567,6 +9612,34 @@
     "target": "Bünn-Stormrage",
     "labels": [
       "STRT#32929408"
+    ]
+  },
+  {
+    "source": "Healrstealr-Tichondrius",
+    "target": "Caicainiub-Illidan",
+    "labels": [
+      "GMBT#40007485"
+    ]
+  },
+  {
+    "source": "Lazárus-Sargeras",
+    "target": "Caicainiub-Illidan",
+    "labels": [
+      "GMBT#40007485"
+    ]
+  },
+  {
+    "source": "Yeena-Tichondrius",
+    "target": "Caicainiub-Illidan",
+    "labels": [
+      "GMBT#40007485"
+    ]
+  },
+  {
+    "source": "Liljellocup-Stormrage",
+    "target": "Caicainiub-Illidan",
+    "labels": [
+      "GMBT#40007485"
     ]
   },
   {
@@ -10182,6 +10255,20 @@
     "target": "Ceepal-Area 52",
     "labels": [
       "GMBT#34482718"
+    ]
+  },
+  {
+    "source": "Vozwar-Area 52",
+    "target": "Ceepo-Sargeras",
+    "labels": [
+      "GMBT#40003334"
+    ]
+  },
+  {
+    "source": "Casualdk-Tichondrius",
+    "target": "Ceepo-Sargeras",
+    "labels": [
+      "GMBT#40003334"
     ]
   },
   {
@@ -11544,6 +11631,13 @@
     ]
   },
   {
+    "source": "Chugbug-Destromath",
+    "target": "Clearsummer-Zul'jin",
+    "labels": [
+      "GMBT#39926617"
+    ]
+  },
+  {
     "source": "Forrestfists-Zul'jin",
     "target": "Cligga-Area 52",
     "labels": [
@@ -12834,6 +12928,27 @@
     ]
   },
   {
+    "source": "Zigzaq-Thrall",
+    "target": "Cranrazz-Proudmoore",
+    "labels": [
+      "PSF#39995012"
+    ]
+  },
+  {
+    "source": "Denorman-Stormrage",
+    "target": "Cranrazz-Proudmoore",
+    "labels": [
+      "PSF#39995012"
+    ]
+  },
+  {
+    "source": "Periétt-Stormrage",
+    "target": "Cranrazz-Proudmoore",
+    "labels": [
+      "PSF#39995012"
+    ]
+  },
+  {
     "source": "Africy-Area 52",
     "target": "Cranrazz-Proudmoore",
     "labels": [
@@ -13610,6 +13725,34 @@
     ]
   },
   {
+    "source": "Kadolin-Dalaran",
+    "target": "Cóffin-Illidan",
+    "labels": [
+      "PSF#39984462"
+    ]
+  },
+  {
+    "source": "Dalarel-Dalaran",
+    "target": "Cóffin-Illidan",
+    "labels": [
+      "PSF#39984462"
+    ]
+  },
+  {
+    "source": "Bigbluebelly-Dalaran",
+    "target": "Cóffin-Illidan",
+    "labels": [
+      "PSF#39984462"
+    ]
+  },
+  {
+    "source": "Kerridru-Illidan",
+    "target": "Cóffin-Illidan",
+    "labels": [
+      "PSF#39984462"
+    ]
+  },
+  {
     "source": "Hojitas-Area 52",
     "target": "Cóffin-Illidan",
     "labels": [
@@ -13705,48 +13848,6 @@
     "target": "Cølestin-Illidan",
     "labels": [
       "DAWN#38036532"
-    ]
-  },
-  {
-    "source": "Sarisaran-Emerald Dream",
-    "target": "Dabroski-Tichondrius",
-    "labels": [
-      "HoA#33786443"
-    ]
-  },
-  {
-    "source": "Nickqt-Zul'jin",
-    "target": "Dabroski-Tichondrius",
-    "labels": [
-      "HoA#33786443"
-    ]
-  },
-  {
-    "source": "Wellogue-Sargeras",
-    "target": "Dabroski-Tichondrius",
-    "labels": [
-      "STRT#30707228"
-    ]
-  },
-  {
-    "source": "Maxcarte-Area 52",
-    "target": "Dabroski-Tichondrius",
-    "labels": [
-      "PSF#33580350"
-    ]
-  },
-  {
-    "source": "Dunê-Stormrage",
-    "target": "Dabroski-Tichondrius",
-    "labels": [
-      "DAWN#33593140"
-    ]
-  },
-  {
-    "source": "Samchidk-Frostmourne",
-    "target": "Dabroski-Tichondrius",
-    "labels": [
-      "ARA#32567498"
     ]
   },
   {
@@ -13880,6 +13981,13 @@
     "labels": [
       "ECO#34132389",
       "GMBT#32885422"
+    ]
+  },
+  {
+    "source": "Dxmdru-Area 52",
+    "target": "Daieon-Emerald Dream",
+    "labels": [
+      "PSF#39997198"
     ]
   },
   {
@@ -14472,6 +14580,27 @@
     "target": "Daviddai-Illidan",
     "labels": [
       "STRT#39771623"
+    ]
+  },
+  {
+    "source": "Babytickle-Illidan",
+    "target": "Daviddai-Illidan",
+    "labels": [
+      "DAWN#39992599"
+    ]
+  },
+  {
+    "source": "Softèar-Illidan",
+    "target": "Daviddai-Illidan",
+    "labels": [
+      "DAWN#39992599"
+    ]
+  },
+  {
+    "source": "Meowpunch-Illidan",
+    "target": "Daviddai-Illidan",
+    "labels": [
+      "DAWN#39992599"
     ]
   },
   {
@@ -15673,79 +15802,6 @@
     ]
   },
   {
-    "source": "Knon-Tichondrius",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "HoA#32585591",
-      "ECO#31563485"
-    ]
-  },
-  {
-    "source": "Kastrophyc-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "STRT#31508272",
-      "ARA#32941234"
-    ]
-  },
-  {
-    "source": "Yamatekudasi-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "STRT#31508272"
-    ]
-  },
-  {
-    "source": "Sooniiz-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "STRT#31508272",
-      "ARA#32941234"
-    ]
-  },
-  {
-    "source": "Flawss-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "PSF#39640625"
-    ]
-  },
-  {
-    "source": "Plantman-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "PSF#39640625"
-    ]
-  },
-  {
-    "source": "Necrofrost-Barthilas",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "PSF#39640625"
-    ]
-  },
-  {
-    "source": "Faifagreen-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "PSF#39640625"
-    ]
-  },
-  {
-    "source": "Landk-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "DAWN#30438232"
-    ]
-  },
-  {
-    "source": "Infliktd-Frostmourne",
-    "target": "Deniro-Frostmourne",
-    "labels": [
-      "ARA#32941234"
-    ]
-  },
-  {
     "source": "Maybecovid-Frostmourne",
     "target": "Dentee-Frostmourne",
     "labels": [
@@ -15944,44 +16000,6 @@
     "target": "Deshan-Ysondre",
     "labels": [
       "GMBT#36189920"
-    ]
-  },
-  {
-    "source": "Drexen-Zul'jin",
-    "target": "Deshgloomer-Sargeras",
-    "labels": [
-      "HoA#39907048"
-    ]
-  },
-  {
-    "source": "Hanarat-Stormrage",
-    "target": "Deshgloomer-Sargeras",
-    "labels": [
-      "HoA#39907048",
-      "ARA#39911783"
-    ]
-  },
-  {
-    "source": "Jimin-Rivendare",
-    "target": "Deshgloomer-Sargeras",
-    "labels": [
-      "HoA#39907048",
-      "ARA#39911783"
-    ]
-  },
-  {
-    "source": "Thrashrain-Hyjal",
-    "target": "Deshgloomer-Sargeras",
-    "labels": [
-      "HoA#39907048",
-      "ARA#39911783"
-    ]
-  },
-  {
-    "source": "Acoutie-Area 52",
-    "target": "Deshgloomer-Sargeras",
-    "labels": [
-      "ARA#39911783"
     ]
   },
   {
@@ -16733,6 +16751,13 @@
     ]
   },
   {
+    "source": "Knownflopper-Lightbringer",
+    "target": "Dixlen-Sargeras",
+    "labels": [
+      "STRT#39997977"
+    ]
+  },
+  {
     "source": "Nobles-Illidan",
     "target": "Dixlen-Sargeras",
     "labels": [
@@ -17311,6 +17336,13 @@
     "target": "Dormammoo-Kel'Thuzad",
     "labels": [
       "ECO#30337107"
+    ]
+  },
+  {
+    "source": "Dxmdru-Area 52",
+    "target": "Dorp-Area 52",
+    "labels": [
+      "PSF#39997198"
     ]
   },
   {
@@ -19071,6 +19103,27 @@
     ]
   },
   {
+    "source": "Kixdk-Illidan",
+    "target": "Eegroll-Antonidas",
+    "labels": [
+      "PSF#39991244"
+    ]
+  },
+  {
+    "source": "Abusershamy-Illidan",
+    "target": "Eegroll-Antonidas",
+    "labels": [
+      "PSF#39991244"
+    ]
+  },
+  {
+    "source": "Mykahunt-Area 52",
+    "target": "Eegroll-Antonidas",
+    "labels": [
+      "PSF#39991244"
+    ]
+  },
+  {
     "source": "Phrantks-Area 52",
     "target": "Eegroll-Antonidas",
     "labels": [
@@ -19379,7 +19432,8 @@
     "source": "Pegazus-Frostmourne",
     "target": "Eletaria-Frostmourne",
     "labels": [
-      "HoA#39590482"
+      "HoA#39590482",
+      "DAWN#39950910"
     ]
   },
   {
@@ -21900,62 +21954,6 @@
     ]
   },
   {
-    "source": "Oligopoly-Area 52",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "HoA#36125996"
-    ]
-  },
-  {
-    "source": "Vozwar-Area 52",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "HoA#36125996"
-    ]
-  },
-  {
-    "source": "Menawarrior-Sargeras",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "STRT#34865246"
-    ]
-  },
-  {
-    "source": "AnonD9284C2-Anonymous",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "PSF#37452609"
-    ]
-  },
-  {
-    "source": "Jokrr-Zul'jin",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "ARA#37220423"
-    ]
-  },
-  {
-    "source": "Myrrddin-Emerald Dream",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "ECO#36692579"
-    ]
-  },
-  {
-    "source": "Marksmanhunt-Sargeras",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "ECO#36692579"
-    ]
-  },
-  {
-    "source": "Carty-Tichondrius",
-    "target": "Fiallodh-Tichondrius",
-    "labels": [
-      "GMBT#36703202"
-    ]
-  },
-  {
     "source": "Schudru-Stormrage",
     "target": "Fiendachoo-Illidan",
     "labels": [
@@ -22652,6 +22650,13 @@
     "target": "Floppytoppy-Dalaran",
     "labels": [
       "ARA#33057046"
+    ]
+  },
+  {
+    "source": "Dxmdru-Area 52",
+    "target": "Floreon-Tichondrius",
+    "labels": [
+      "PSF#39997198"
     ]
   },
   {
@@ -23639,6 +23644,13 @@
     ]
   },
   {
+    "source": "Loquix-Ragnaros",
+    "target": "Frisbyorkfc-Sargeras",
+    "labels": [
+      "DAWN#39962658"
+    ]
+  },
+  {
     "source": "Pallyneir-Illidan",
     "target": "Frisbyorkfc-Sargeras",
     "labels": [
@@ -24021,6 +24033,13 @@
     "target": "Furiousrow-Tichondrius",
     "labels": [
       "ARA#39307599"
+    ]
+  },
+  {
+    "source": "Flawss-Frostmourne",
+    "target": "Furiousrow-Tichondrius",
+    "labels": [
+      "FLOOD#39949570"
     ]
   },
   {
@@ -24656,6 +24675,20 @@
     ]
   },
   {
+    "source": "Meowwowo-Illidan",
+    "target": "Ghosttrain-Illidan",
+    "labels": [
+      "STRT#39997840"
+    ]
+  },
+  {
+    "source": "Nobles-Illidan",
+    "target": "Ghosttrain-Illidan",
+    "labels": [
+      "STRT#39997840"
+    ]
+  },
+  {
     "source": "AnonEB8B3BC-Anonymous",
     "target": "Ghosttrain-Illidan",
     "labels": [
@@ -25156,6 +25189,13 @@
     "target": "Gooddog-Moon Guard",
     "labels": [
       "PSF#39724635"
+    ]
+  },
+  {
+    "source": "Chaotic-Thrall",
+    "target": "Gooddog-Moon Guard",
+    "labels": [
+      "ARA#39991150"
     ]
   },
   {
@@ -25821,6 +25861,27 @@
     "target": "Grommaxe-Ragnaros",
     "labels": [
       "PSF#39294691"
+    ]
+  },
+  {
+    "source": "Babytickle-Illidan",
+    "target": "Grommaxe-Ragnaros",
+    "labels": [
+      "DAWN#39992599"
+    ]
+  },
+  {
+    "source": "Softèar-Illidan",
+    "target": "Grommaxe-Ragnaros",
+    "labels": [
+      "DAWN#39992599"
+    ]
+  },
+  {
+    "source": "Meowpunch-Illidan",
+    "target": "Grommaxe-Ragnaros",
+    "labels": [
+      "DAWN#39992599"
     ]
   },
   {
@@ -27439,6 +27500,20 @@
     ]
   },
   {
+    "source": "Twigsnapper-Zul'jin",
+    "target": "Hellgrazerr-Khaz'goroth",
+    "labels": [
+      "STRT#39926214"
+    ]
+  },
+  {
+    "source": "Fotem-Zul'jin",
+    "target": "Hellgrazerr-Khaz'goroth",
+    "labels": [
+      "STRT#39926214"
+    ]
+  },
+  {
     "source": "Higharch-Thrall",
     "target": "Helxiia-Zul'jin",
     "labels": [
@@ -27893,7 +27968,8 @@
       "HoA#39169917",
       "DAWN#38819018",
       "FLOOD#39297489",
-      "ECO#38817455"
+      "ECO#38817455",
+      "GMBT#39990442"
     ]
   },
   {
@@ -27930,14 +28006,16 @@
     "labels": [
       "DAWN#38819018",
       "FLOOD#39297489",
-      "ECO#38817455"
+      "ECO#38817455",
+      "GMBT#39990442"
     ]
   },
   {
     "source": "Stizzyy-Illidan",
     "target": "Holgo-Grizzly Hills",
     "labels": [
-      "FLOOD#39297489"
+      "FLOOD#39297489",
+      "GMBT#39990442"
     ]
   },
   {
@@ -27945,6 +28023,13 @@
     "target": "Holgo-Grizzly Hills",
     "labels": [
       "ECO#38817455"
+    ]
+  },
+  {
+    "source": "Meowkii-Moon Guard",
+    "target": "Holgo-Grizzly Hills",
+    "labels": [
+      "GMBT#39990442"
     ]
   },
   {
@@ -28258,6 +28343,34 @@
     ]
   },
   {
+    "source": "Ravindrannor-Saurfang",
+    "target": "Hoponosrs-Frostmourne",
+    "labels": [
+      "HoA#39941853"
+    ]
+  },
+  {
+    "source": "Plantman-Frostmourne",
+    "target": "Hoponosrs-Frostmourne",
+    "labels": [
+      "HoA#39941853"
+    ]
+  },
+  {
+    "source": "Aurorafive-Barthilas",
+    "target": "Hoponosrs-Frostmourne",
+    "labels": [
+      "HoA#39941853"
+    ]
+  },
+  {
+    "source": "Warpep-Frostmourne",
+    "target": "Hoponosrs-Frostmourne",
+    "labels": [
+      "HoA#39941853"
+    ]
+  },
+  {
     "source": "Pioopi-Area 52",
     "target": "Hoponosrs-Frostmourne",
     "labels": [
@@ -28421,6 +28534,27 @@
     ]
   },
   {
+    "source": "Spiritlínx-Tichondrius",
+    "target": "Houdihunt-Zul'jin",
+    "labels": [
+      "ARA#39987921"
+    ]
+  },
+  {
+    "source": "Balhaasdk-Stormrage",
+    "target": "Houdihunt-Zul'jin",
+    "labels": [
+      "ARA#39987921"
+    ]
+  },
+  {
+    "source": "Periétt-Stormrage",
+    "target": "Houdihunt-Zul'jin",
+    "labels": [
+      "ARA#39987921"
+    ]
+  },
+  {
     "source": "Lzylizzerd-Illidan",
     "target": "Howtoplayret-Ragnaros",
     "labels": [
@@ -28502,6 +28636,13 @@
     "target": "Hugesubpoena-Tichondrius",
     "labels": [
       "STRT#36229836"
+    ]
+  },
+  {
+    "source": "Loquix-Ragnaros",
+    "target": "Hugesubpoena-Tichondrius",
+    "labels": [
+      "DAWN#39962658"
     ]
   },
   {
@@ -28756,6 +28897,13 @@
     "target": "Huntxdou-Tichondrius",
     "labels": [
       "DAWN#38720665"
+    ]
+  },
+  {
+    "source": "Chaotic-Thrall",
+    "target": "Huntxdou-Tichondrius",
+    "labels": [
+      "ARA#39991150"
     ]
   },
   {
@@ -32480,6 +32628,27 @@
     ]
   },
   {
+    "source": "Chugbug-Destromath",
+    "target": "Jtundeekey-Illidan",
+    "labels": [
+      "DAWN#39986586"
+    ]
+  },
+  {
+    "source": "Babaya-Proudmoore",
+    "target": "Jtundeekey-Illidan",
+    "labels": [
+      "DAWN#39986586"
+    ]
+  },
+  {
+    "source": "Efektt-Stormrage",
+    "target": "Jtundeekey-Illidan",
+    "labels": [
+      "DAWN#39986586"
+    ]
+  },
+  {
     "source": "Demethies-Area 52",
     "target": "Jtundeekey-Illidan",
     "labels": [
@@ -35338,7 +35507,15 @@
     "source": "Khall-Eldre'Thalas",
     "target": "Konifur-Stormrage",
     "labels": [
-      "STRT#39456157"
+      "STRT#39456157",
+      "GMBT#39999028"
+    ]
+  },
+  {
+    "source": "Tahssa-Area 52",
+    "target": "Konifur-Stormrage",
+    "labels": [
+      "GMBT#39999028"
     ]
   },
   {
@@ -35418,6 +35595,27 @@
     "target": "Koyúki-Moon Guard",
     "labels": [
       "STRT#38496100"
+    ]
+  },
+  {
+    "source": "Wellogue-Sargeras",
+    "target": "Koyúki-Moon Guard",
+    "labels": [
+      "PSF#40000157"
+    ]
+  },
+  {
+    "source": "Defiancé-Illidan",
+    "target": "Koyúki-Moon Guard",
+    "labels": [
+      "PSF#40000157"
+    ]
+  },
+  {
+    "source": "Wildreaver-Hyjal",
+    "target": "Koyúki-Moon Guard",
+    "labels": [
+      "PSF#40000157"
     ]
   },
   {
@@ -35591,6 +35789,36 @@
     "target": "Kripticdruid-Tichondrius",
     "labels": [
       "GMBT#39194681"
+    ]
+  },
+  {
+    "source": "Healrstealr-Tichondrius",
+    "target": "Kromgol-Malfurion",
+    "labels": [
+      "ECO#39984246",
+      "GMBT#39979766"
+    ]
+  },
+  {
+    "source": "Nernu-Area 52",
+    "target": "Kromgol-Malfurion",
+    "labels": [
+      "ECO#39984246"
+    ]
+  },
+  {
+    "source": "Yeena-Tichondrius",
+    "target": "Kromgol-Malfurion",
+    "labels": [
+      "ECO#39984246",
+      "GMBT#39979766"
+    ]
+  },
+  {
+    "source": "Lazárus-Sargeras",
+    "target": "Kromgol-Malfurion",
+    "labels": [
+      "GMBT#39979766"
     ]
   },
   {
@@ -38432,6 +38660,15 @@
     ]
   },
   {
+    "source": "Pegazus-Frostmourne",
+    "target": "Linus-Dreadmaul",
+    "labels": [
+      "HoA#39939102",
+      "DAWN#39950910",
+      "ECO#39943964"
+    ]
+  },
+  {
     "source": "Grimshunter-Illidan",
     "target": "Lionelpessi-Tichondrius",
     "labels": [
@@ -41018,6 +41255,27 @@
     ]
   },
   {
+    "source": "Saladglove-Thrall",
+    "target": "Mandlebrot-Stormrage",
+    "labels": [
+      "FLOOD#39999623"
+    ]
+  },
+  {
+    "source": "Kinsington-Stormrage",
+    "target": "Mandlebrot-Stormrage",
+    "labels": [
+      "FLOOD#39999623"
+    ]
+  },
+  {
+    "source": "Eddieiwnl-Area 52",
+    "target": "Mandlebrot-Stormrage",
+    "labels": [
+      "FLOOD#39999623"
+    ]
+  },
+  {
     "source": "Leradh-Sargeras",
     "target": "Mandlebrot-Stormrage",
     "labels": [
@@ -42501,6 +42759,13 @@
     ]
   },
   {
+    "source": "Knownflopper-Lightbringer",
+    "target": "Mezukí-Illidan",
+    "labels": [
+      "STRT#39997977"
+    ]
+  },
+  {
     "source": "Joshie-Tichondrius",
     "target": "Mheefeon-Proudmoore",
     "labels": [
@@ -42952,44 +43217,6 @@
     "target": "Mikehaawk-Sargeras",
     "labels": [
       "ECO#36748693"
-    ]
-  },
-  {
-    "source": "Sharpknife-Dreadmaul",
-    "target": "Milet-Barthilas",
-    "labels": [
-      "HoA#37861610"
-    ]
-  },
-  {
-    "source": "Desvoz-Barthilas",
-    "target": "Milet-Barthilas",
-    "labels": [
-      "HoA#37861610",
-      "PSF#37962262",
-      "ARA#37957373",
-      "FLOOD#37958655",
-      "ECO#38052202"
-    ]
-  },
-  {
-    "source": "Mowcool-Barthilas",
-    "target": "Milet-Barthilas",
-    "labels": [
-      "PSF#37962262",
-      "ARA#37957373",
-      "FLOOD#37958655",
-      "ECO#38052202"
-    ]
-  },
-  {
-    "source": "Notoriousdrd-Illidan",
-    "target": "Milet-Barthilas",
-    "labels": [
-      "PSF#37962262",
-      "ARA#37957373",
-      "FLOOD#37958655",
-      "ECO#38052202"
     ]
   },
   {
@@ -44399,6 +44626,13 @@
     ]
   },
   {
+    "source": "Dxmdru-Area 52",
+    "target": "Mumenrîder-Tichondrius",
+    "labels": [
+      "PSF#39997198"
+    ]
+  },
+  {
     "source": "Itwillcleave-Mal'Ganis",
     "target": "Mumenrîder-Tichondrius",
     "labels": [
@@ -44990,7 +45224,8 @@
     "source": "Pegazus-Frostmourne",
     "target": "Nariaz-Frostmourne",
     "labels": [
-      "HoA#39590482"
+      "HoA#39590482",
+      "DAWN#39950910"
     ]
   },
   {
@@ -48742,6 +48977,34 @@
     ]
   },
   {
+    "source": "Milím-Frostmourne",
+    "target": "Oneo-Nagrand",
+    "labels": [
+      "DAWN#39948194"
+    ]
+  },
+  {
+    "source": "Silkyqt-Frostmourne",
+    "target": "Oneo-Nagrand",
+    "labels": [
+      "DAWN#39948194"
+    ]
+  },
+  {
+    "source": "Attachedruid-Khaz'goroth",
+    "target": "Oneo-Nagrand",
+    "labels": [
+      "DAWN#39948194"
+    ]
+  },
+  {
+    "source": "Chugbug-Destromath",
+    "target": "Oneo-Nagrand",
+    "labels": [
+      "DAWN#39948194"
+    ]
+  },
+  {
     "source": "Izayaclap-Frostmourne",
     "target": "Oneo-Nagrand",
     "labels": [
@@ -51898,6 +52161,27 @@
     ]
   },
   {
+    "source": "Healrstealr-Tichondrius",
+    "target": "Pochaccob-Mannoroth",
+    "labels": [
+      "GMBT#39979766"
+    ]
+  },
+  {
+    "source": "Lazárus-Sargeras",
+    "target": "Pochaccob-Mannoroth",
+    "labels": [
+      "GMBT#39979766"
+    ]
+  },
+  {
+    "source": "Yeena-Tichondrius",
+    "target": "Pochaccob-Mannoroth",
+    "labels": [
+      "GMBT#39979766"
+    ]
+  },
+  {
     "source": "Rosilia-Stormrage",
     "target": "Pocketwong-Sargeras",
     "labels": [
@@ -52508,6 +52792,20 @@
     ]
   },
   {
+    "source": "Twigsnapper-Zul'jin",
+    "target": "Prodigyloyd-Khaz'goroth",
+    "labels": [
+      "STRT#39926214"
+    ]
+  },
+  {
+    "source": "Fotem-Zul'jin",
+    "target": "Prodigyloyd-Khaz'goroth",
+    "labels": [
+      "STRT#39926214"
+    ]
+  },
+  {
     "source": "Streetcheat-Barthilas",
     "target": "Prodigyloyd-Khaz'goroth",
     "labels": [
@@ -52873,6 +53171,27 @@
     "target": "Pudgyshaman-Area 52",
     "labels": [
       "ARA#39794862"
+    ]
+  },
+  {
+    "source": "Atanx-Area 52",
+    "target": "Pudgyshaman-Area 52",
+    "labels": [
+      "ECO#39987659"
+    ]
+  },
+  {
+    "source": "Meowkii-Moon Guard",
+    "target": "Pudgyshaman-Area 52",
+    "labels": [
+      "ECO#39987659"
+    ]
+  },
+  {
+    "source": "Stizzyy-Illidan",
+    "target": "Pudgyshaman-Area 52",
+    "labels": [
+      "ECO#39987659"
     ]
   },
   {
@@ -55432,6 +55751,34 @@
     ]
   },
   {
+    "source": "Healrstealr-Tichondrius",
+    "target": "Rjay-Area 52",
+    "labels": [
+      "ARA#40003997"
+    ]
+  },
+  {
+    "source": "Ellsi-Stormrage",
+    "target": "Rjay-Area 52",
+    "labels": [
+      "ARA#40003997"
+    ]
+  },
+  {
+    "source": "Yeena-Tichondrius",
+    "target": "Rjay-Area 52",
+    "labels": [
+      "ARA#40003997"
+    ]
+  },
+  {
+    "source": "Liljellocup-Stormrage",
+    "target": "Rjay-Area 52",
+    "labels": [
+      "ARA#40003997"
+    ]
+  },
+  {
     "source": "Vzbychkayu-Frostmourne",
     "target": "Rjdh-Frostmourne",
     "labels": [
@@ -55764,45 +56111,6 @@
     "target": "Rosalesdk-Sargeras",
     "labels": [
       "ECO#36582994"
-    ]
-  },
-  {
-    "source": "Oukiibrew-Stormrage",
-    "target": "Rotdotexe-Illidan",
-    "labels": [
-      "HoA#35618744",
-      "GMBT#35448625"
-    ]
-  },
-  {
-    "source": "Blackboyleon-Stormrage",
-    "target": "Rotdotexe-Illidan",
-    "labels": [
-      "HoA#35618744",
-      "STRT#35202287",
-      "GMBT#35448625"
-    ]
-  },
-  {
-    "source": "Xalxixinhadk-Illidan",
-    "target": "Rotdotexe-Illidan",
-    "labels": [
-      "PSF#39787732"
-    ]
-  },
-  {
-    "source": "Fouginn-Illidan",
-    "target": "Rotdotexe-Illidan",
-    "labels": [
-      "PSF#39787732"
-    ]
-  },
-  {
-    "source": "Konstanze-Stormrage",
-    "target": "Rotdotexe-Illidan",
-    "labels": [
-      "DAWN#35799412",
-      "GMBT#35448625"
     ]
   },
   {
@@ -57111,7 +57419,8 @@
     "source": "Pegazus-Frostmourne",
     "target": "Savagewifez-Frostmourne",
     "labels": [
-      "HoA#39590482"
+      "HoA#39590482",
+      "DAWN#39950910"
     ]
   },
   {
@@ -57602,6 +57911,13 @@
     "target": "Scowarzo-Sargeras",
     "labels": [
       "STRT#39815720"
+    ]
+  },
+  {
+    "source": "Chaotic-Thrall",
+    "target": "Scowarzo-Sargeras",
+    "labels": [
+      "ARA#39991150"
     ]
   },
   {
@@ -59421,6 +59737,13 @@
     ]
   },
   {
+    "source": "Chugbug-Destromath",
+    "target": "Sickø-Illidan",
+    "labels": [
+      "GMBT#39926617"
+    ]
+  },
+  {
     "source": "Parano-Area 52",
     "target": "Sidohx-Hyjal",
     "labels": [
@@ -60052,6 +60375,13 @@
     "target": "Skyr-Azralon",
     "labels": [
       "STRT#36029044"
+    ]
+  },
+  {
+    "source": "Knownflopper-Lightbringer",
+    "target": "Skyêshot-Illidan",
+    "labels": [
+      "STRT#39997977"
     ]
   },
   {
@@ -61148,6 +61478,34 @@
     "target": "Soomii-Illidan",
     "labels": [
       "HoA#30380885"
+    ]
+  },
+  {
+    "source": "Whitemanqt-Frostmourne",
+    "target": "Soomii-Illidan",
+    "labels": [
+      "STRT#39926290"
+    ]
+  },
+  {
+    "source": "Elwhy-Frostmourne",
+    "target": "Soomii-Illidan",
+    "labels": [
+      "STRT#39926290"
+    ]
+  },
+  {
+    "source": "Jink-Frostmourne",
+    "target": "Soomii-Illidan",
+    "labels": [
+      "STRT#39926290"
+    ]
+  },
+  {
+    "source": "Shd-Frostmourne",
+    "target": "Soomii-Illidan",
+    "labels": [
+      "STRT#39926290"
     ]
   },
   {
@@ -62810,6 +63168,27 @@
     "target": "Subjectdh-Zul'jin",
     "labels": [
       "STRT#37127196"
+    ]
+  },
+  {
+    "source": "Chugbug-Destromath",
+    "target": "Subjectdh-Zul'jin",
+    "labels": [
+      "DAWN#39986586"
+    ]
+  },
+  {
+    "source": "Babaya-Proudmoore",
+    "target": "Subjectdh-Zul'jin",
+    "labels": [
+      "DAWN#39986586"
+    ]
+  },
+  {
+    "source": "Efektt-Stormrage",
+    "target": "Subjectdh-Zul'jin",
+    "labels": [
+      "DAWN#39986586"
     ]
   },
   {
@@ -67234,6 +67613,20 @@
     ]
   },
   {
+    "source": "Vozwar-Area 52",
+    "target": "Turtlejoe-Mannoroth",
+    "labels": [
+      "GMBT#40003334"
+    ]
+  },
+  {
+    "source": "Casualdk-Tichondrius",
+    "target": "Turtlejoe-Mannoroth",
+    "labels": [
+      "GMBT#40003334"
+    ]
+  },
+  {
     "source": "Nobles-Illidan",
     "target": "Tuskx-Sargeras",
     "labels": [
@@ -67474,6 +67867,13 @@
     ]
   },
   {
+    "source": "Chugbug-Destromath",
+    "target": "Tyrobinson-Stormrage",
+    "labels": [
+      "GMBT#39926617"
+    ]
+  },
+  {
     "source": "Roxyrshox-Area 52",
     "target": "Tyzon-Skullcrusher",
     "labels": [
@@ -67697,7 +68097,15 @@
     "source": "Streetcheat-Barthilas",
     "target": "Ulikebigchoc-Frostmourne",
     "labels": [
+      "ECO#40005421",
       "GMBT#39390001"
+    ]
+  },
+  {
+    "source": "Drush-Frostmourne",
+    "target": "Ulikebigchoc-Frostmourne",
+    "labels": [
+      "ECO#40005421"
     ]
   },
   {
@@ -68666,6 +69074,20 @@
     "target": "Vasaacdh-Illidan",
     "labels": [
       "FLOOD#29896717"
+    ]
+  },
+  {
+    "source": "Moneybagsh-Frostmourne",
+    "target": "Vashe-Frostmourne",
+    "labels": [
+      "STRT#40005241"
+    ]
+  },
+  {
+    "source": "Gorgpelladin-Frostmourne",
+    "target": "Vashe-Frostmourne",
+    "labels": [
+      "STRT#40005241"
     ]
   },
   {
@@ -69638,27 +70060,6 @@
     ]
   },
   {
-    "source": "Cafecita-Illidan",
-    "target": "Vitchh-Ragnaros",
-    "labels": [
-      "HoA#31104885"
-    ]
-  },
-  {
-    "source": "Alenwarr-Area 52",
-    "target": "Vitchh-Ragnaros",
-    "labels": [
-      "HoA#31104885"
-    ]
-  },
-  {
-    "source": "Silzunë-Illidan",
-    "target": "Vitchh-Ragnaros",
-    "labels": [
-      "HoA#31104885"
-    ]
-  },
-  {
     "source": "Pepperblind-Illidan",
     "target": "Viviany-Illidan",
     "labels": [
@@ -69939,6 +70340,20 @@
     "target": "Voteforkanye-Illidan",
     "labels": [
       "ECO#30812609"
+    ]
+  },
+  {
+    "source": "Twigsnapper-Zul'jin",
+    "target": "Vrapvrap-Thrall",
+    "labels": [
+      "STRT#39926214"
+    ]
+  },
+  {
+    "source": "Fotem-Zul'jin",
+    "target": "Vrapvrap-Thrall",
+    "labels": [
+      "STRT#39926214"
     ]
   },
   {
@@ -70400,13 +70815,6 @@
     "target": "Vøidwalker-Sargeras",
     "labels": [
       "GMBT#39918557"
-    ]
-  },
-  {
-    "source": "Forrestclaps-Zul'jin",
-    "target": "Waghoba-Anvilmar",
-    "labels": [
-      "STRT#38716778"
     ]
   },
   {
@@ -70945,90 +71353,6 @@
     ]
   },
   {
-    "source": "Kigonplague-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "HoA#39044762"
-    ]
-  },
-  {
-    "source": "Pakurior-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "HoA#39044762",
-      "STRT#39031923"
-    ]
-  },
-  {
-    "source": "Fudd-Tichondrius",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "HoA#39044762",
-      "STRT#39031923",
-      "GMBT#38994108"
-    ]
-  },
-  {
-    "source": "Izayaclap-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "ARA#39333336",
-      "ECO#37637764"
-    ]
-  },
-  {
-    "source": "Foxshots-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "ARA#39333336"
-    ]
-  },
-  {
-    "source": "Elffi-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "ARA#39333336",
-      "FLOOD#38269664",
-      "ECO#37637764"
-    ]
-  },
-  {
-    "source": "Temjin-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "ARA#39333336",
-      "ECO#37637764"
-    ]
-  },
-  {
-    "source": "Golbacky-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "FLOOD#38269664"
-    ]
-  },
-  {
-    "source": "Demoninsight-Frostmourne",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "FLOOD#38269664"
-    ]
-  },
-  {
-    "source": "Streetcheat-Barthilas",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "GMBT#38994108"
-    ]
-  },
-  {
-    "source": "AnonDDCBBD3-Anonymous",
-    "target": "Wesz-Frostmourne",
-    "labels": [
-      "GMBT#38994108"
-    ]
-  },
-  {
     "source": "Nillclaps-Area 52",
     "target": "Whakisøba-Zul'jin",
     "labels": [
@@ -71508,6 +71832,27 @@
     "target": "Wickzxd-Zul'jin",
     "labels": [
       "STRT#30896279"
+    ]
+  },
+  {
+    "source": "Kixdk-Illidan",
+    "target": "Wickzxd-Zul'jin",
+    "labels": [
+      "PSF#39991244"
+    ]
+  },
+  {
+    "source": "Abusershamy-Illidan",
+    "target": "Wickzxd-Zul'jin",
+    "labels": [
+      "PSF#39991244"
+    ]
+  },
+  {
+    "source": "Mykahunt-Area 52",
+    "target": "Wickzxd-Zul'jin",
+    "labels": [
+      "PSF#39991244"
     ]
   },
   {
@@ -73683,64 +74028,6 @@
     "target": "Ying-Tichondrius",
     "labels": [
       "ECO#34355040"
-    ]
-  },
-  {
-    "source": "Míra-Icecrown",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "HoA#36831475"
-    ]
-  },
-  {
-    "source": "Abdul-Illidan",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "STRT#34721134"
-    ]
-  },
-  {
-    "source": "Defiancé-Illidan",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "DAWN#37119360"
-    ]
-  },
-  {
-    "source": "Kiyozug-Illidan",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "DAWN#37119360"
-    ]
-  },
-  {
-    "source": "Bøifantasma-Azralon",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "ARA#37813230",
-      "FLOOD#37838697"
-    ]
-  },
-  {
-    "source": "Ramdois-Azralon",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "ARA#37813230",
-      "FLOOD#37838697"
-    ]
-  },
-  {
-    "source": "Minotril-Illidan",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "ECO#35605441"
-    ]
-  },
-  {
-    "source": "Overdoøse-Azralon",
-    "target": "Yitimo-Mal'Ganis",
-    "labels": [
-      "ECO#35605441"
     ]
   },
   {
@@ -75942,6 +76229,13 @@
     ]
   },
   {
+    "source": "Loquix-Ragnaros",
+    "target": "Zulex-Bleeding Hollow",
+    "labels": [
+      "DAWN#39962658"
+    ]
+  },
+  {
     "source": "Chugbug-Destromath",
     "target": "Zulex-Bleeding Hollow",
     "labels": [
@@ -76022,7 +76316,15 @@
     "source": "Gorgpelladin-Frostmourne",
     "target": "Zuugma-Frostmourne",
     "labels": [
-      "HoA#39489988"
+      "HoA#39489988",
+      "STRT#40005241"
+    ]
+  },
+  {
+    "source": "Moneybagsh-Frostmourne",
+    "target": "Zuugma-Frostmourne",
+    "labels": [
+      "STRT#40005241"
     ]
   },
   {
@@ -76542,6 +76844,20 @@
     "target": "Äraxus-Stormrage",
     "labels": [
       "GMBT#34480871"
+    ]
+  },
+  {
+    "source": "Tahssa-Area 52",
+    "target": "Årdentmeta-Mannoroth",
+    "labels": [
+      "GMBT#39999028"
+    ]
+  },
+  {
+    "source": "Khall-Eldre'Thalas",
+    "target": "Årdentmeta-Mannoroth",
+    "labels": [
+      "GMBT#39999028"
     ]
   },
   {
