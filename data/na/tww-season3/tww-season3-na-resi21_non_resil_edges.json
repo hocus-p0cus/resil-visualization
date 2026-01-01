@@ -720,6 +720,20 @@
     ]
   },
   {
+    "source": "Flippyg-Frostmourne",
+    "target": "Chanibad-Frostmourne",
+    "labels": [
+      "GMBT#40146045"
+    ]
+  },
+  {
+    "source": "Muz-Frostmourne",
+    "target": "Chanibad-Frostmourne",
+    "labels": [
+      "GMBT#40146045"
+    ]
+  },
+  {
     "source": "Battantx-Area 52",
     "target": "Chargefordie-Illidan",
     "labels": [
@@ -807,6 +821,20 @@
     "target": "Chnu-Illidan",
     "labels": [
       "ARA#39368985"
+    ]
+  },
+  {
+    "source": "Vitalitie-Area 52",
+    "target": "Chunguns-Illidan",
+    "labels": [
+      "ARA#40157193"
+    ]
+  },
+  {
+    "source": "Ròòszy-Alleria",
+    "target": "Chunguns-Illidan",
+    "labels": [
+      "ARA#40157193"
     ]
   },
   {
@@ -947,6 +975,20 @@
       "STRT#39792316",
       "ECO#39712983",
       "GMBT#39366269"
+    ]
+  },
+  {
+    "source": "Flippyg-Frostmourne",
+    "target": "Damthree-Frostmourne",
+    "labels": [
+      "GMBT#40146045"
+    ]
+  },
+  {
+    "source": "Muz-Frostmourne",
+    "target": "Damthree-Frostmourne",
+    "labels": [
+      "GMBT#40146045"
     ]
   },
   {
@@ -1228,6 +1270,7 @@
     "source": "Garronan-Icecrown",
     "target": "Feenfr-Tichondrius",
     "labels": [
+      "STRT#40158007",
       "GMBT#39994912"
     ]
   },
@@ -1235,6 +1278,7 @@
     "source": "Dennaim-Area 52",
     "target": "Feenfr-Tichondrius",
     "labels": [
+      "STRT#40158007",
       "GMBT#39994912"
     ]
   },
@@ -1357,7 +1401,8 @@
     "target": "Haakai-Tichondrius",
     "labels": [
       "HoA#39530835",
-      "ARA#39528953"
+      "ARA#39528953",
+      "ECO#40119471"
     ]
   },
   {
@@ -1366,6 +1411,13 @@
     "labels": [
       "HoA#39530835",
       "ARA#39528953"
+    ]
+  },
+  {
+    "source": "Vitalitie-Area 52",
+    "target": "Haakai-Tichondrius",
+    "labels": [
+      "ECO#40119471"
     ]
   },
   {
@@ -1649,6 +1701,13 @@
     ]
   },
   {
+    "source": "Sparkhe-Stormrage",
+    "target": "Joebow-Illidan",
+    "labels": [
+      "ECO#40153643"
+    ]
+  },
+  {
     "source": "Dennaim-Area 52",
     "target": "Joobei-Tichondrius",
     "labels": [
@@ -1814,7 +1873,15 @@
     "source": "Vitalitie-Area 52",
     "target": "Kurler-Illidan",
     "labels": [
+      "ARA#40157193",
       "GMBT#40092609"
+    ]
+  },
+  {
+    "source": "Ròòszy-Alleria",
+    "target": "Kurler-Illidan",
+    "labels": [
+      "ARA#40157193"
     ]
   },
   {
@@ -1961,6 +2028,20 @@
     "labels": [
       "ARA#39711342",
       "GMBT#39633880"
+    ]
+  },
+  {
+    "source": "Vitalitie-Area 52",
+    "target": "Låyne-Area 52",
+    "labels": [
+      "ARA#40157193"
+    ]
+  },
+  {
+    "source": "Ròòszy-Alleria",
+    "target": "Låyne-Area 52",
+    "labels": [
+      "ARA#40157193"
     ]
   },
   {
@@ -2281,9 +2362,17 @@
     ]
   },
   {
+    "source": "Deepps-Mal'Ganis",
+    "target": "Plastiki-Arthas",
+    "labels": [
+      "ECO#40119471"
+    ]
+  },
+  {
     "source": "Vitalitie-Area 52",
     "target": "Plastiki-Arthas",
     "labels": [
+      "ECO#40119471",
       "GMBT#39994657"
     ]
   },
@@ -2669,18 +2758,20 @@
     "source": "Garronan-Icecrown",
     "target": "Sherwindk-Stormrage",
     "labels": [
-      "GMBT#39625725"
-    ]
-  },
-  {
-    "source": "Greenashen-Stormrage",
-    "target": "Sherwindk-Stormrage",
-    "labels": [
+      "STRT#40158007",
       "GMBT#39625725"
     ]
   },
   {
     "source": "Dennaim-Area 52",
+    "target": "Sherwindk-Stormrage",
+    "labels": [
+      "STRT#40158007",
+      "GMBT#39625725"
+    ]
+  },
+  {
+    "source": "Greenashen-Stormrage",
     "target": "Sherwindk-Stormrage",
     "labels": [
       "GMBT#39625725"
@@ -3106,6 +3197,7 @@
     "source": "Garronan-Icecrown",
     "target": "Toixic-Icecrown",
     "labels": [
+      "STRT#40158007",
       "GMBT#39994912"
     ]
   },
@@ -3113,6 +3205,7 @@
     "source": "Dennaim-Area 52",
     "target": "Toixic-Icecrown",
     "labels": [
+      "STRT#40158007",
       "GMBT#39994912"
     ]
   },
@@ -3444,7 +3537,8 @@
     "target": "Zevn-Area 52",
     "labels": [
       "HoA#38677893",
-      "STRT#38106821"
+      "STRT#38106821",
+      "ECO#40153643"
     ]
   },
   {
