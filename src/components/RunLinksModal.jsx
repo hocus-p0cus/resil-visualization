@@ -48,7 +48,7 @@ export const RunLinksModal = ({
               >
                 {dungeonCode && (
                   <img
-                    src={`images/${dungeonCode}.jpg`}
+                    src={`images/${dungeonCode}.webp`}
                     alt={dungeonCode}
                     className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
                     onError={(e) => {
