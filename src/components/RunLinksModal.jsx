@@ -1,6 +1,7 @@
 import React from 'react';
 import { getDungeonCode } from '../getDungeonCode';
 import { formatCharacterId } from '../formatCharacterId';
+import { toRaiderIoSlug } from '../toRIOSlug';
 import { Modal } from './ui/Modal';
 
 export const RunLinksModal = ({ 
@@ -10,12 +11,7 @@ export const RunLinksModal = ({
 }) => {
   if (!selectedEdge) return null;
 
-  const seasonSlugs = {
-    'tww-season2': 'season-tww-2',
-    'tww-season3': 'season-tww-3',
-  };
-
-  const seasonSlug = seasonSlugs[season] || season;
+  const seasonSlug = toRaiderIoSlug(season);
   const fromLabel = formatCharacterId(selectedEdge.from).name;
   const toLabel = formatCharacterId(selectedEdge.to).name;
   const edgeTypeLabel =
