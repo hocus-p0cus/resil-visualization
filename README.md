@@ -4,8 +4,7 @@ This web app provides a visual exploration of relations between WoW characters i
 
 #### 📊 Data Summary
  - **Regions**: EU and NA
- - **Seasons**: *The War Within* (TWW) Season 2 and Season 3  
- - **Keystone levels**: 18 and above  
+ - **Seasons**: *The War Within* (TWW) Season 2 and Season 3, *Midnight* (MN) Season 1 
  - DAG edge data is automatically updated once a day from exported Raider.IO leaderboards
 
  ### 🕹️ Features
