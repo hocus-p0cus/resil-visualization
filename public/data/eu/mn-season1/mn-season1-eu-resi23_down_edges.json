@@ -116,7 +116,7 @@
     ]
   },
   {
-    "source": "Vividrd-Tarren Mill",
+    "source": "Vividrd-Sylvanas",
     "target": "Sipdk-Silvermoon",
     "labels": [
       "ACAD#34024502"
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "source": "Vividrd-Tarren Mill",
+    "source": "Vividrd-Sylvanas",
     "target": "Specithick-Silvermoon",
     "labels": [
       "ACAD#34024502"
@@ -401,7 +401,7 @@
     ]
   },
   {
-    "source": "Vividrd-Tarren Mill",
+    "source": "Vividrd-Sylvanas",
     "target": "Jinx-Blackrock",
     "labels": [
       "SEAT#36521794",
@@ -448,7 +448,24 @@
     ]
   },
   {
-    "source": "Vividrd-Tarren Mill",
+    "source": "Vickmanfotm-Tarren Mill",
+    "target": "Bippa-Twisting Nether",
+    "labels": [
+      "ACAD#35346778",
+      "SEAT#35571659",
+      "SKY#36988927"
+    ]
+  },
+  {
+    "source": "Nightclaws-Nemesis",
+    "target": "Bippa-Twisting Nether",
+    "labels": [
+      "SEAT#35571659",
+      "SKY#36988927"
+    ]
+  },
+  {
+    "source": "Vividrd-Sylvanas",
     "target": "Pve-Stormscale",
     "labels": [
       "ACAD#34024502"
@@ -897,6 +914,23 @@
     ]
   },
   {
+    "source": "Vickmanfotm-Tarren Mill",
+    "target": "Lexoble-Tarren Mill",
+    "labels": [
+      "ACAD#35346778",
+      "SEAT#35571659",
+      "SKY#36988927"
+    ]
+  },
+  {
+    "source": "Nightclaws-Nemesis",
+    "target": "Lexoble-Tarren Mill",
+    "labels": [
+      "SEAT#35571659",
+      "SKY#36988927"
+    ]
+  },
+  {
     "source": "Kyomaog-Burning Legion",
     "target": "Juura-Kazzak",
     "labels": [
@@ -997,7 +1031,7 @@
   },
   {
     "source": "Arxesdh-Tarren Mill",
-    "target": "Vividrd-Tarren Mill",
+    "target": "Vividrd-Sylvanas",
     "labels": [
       "ACAD#33155408",
       "SEAT#32059681",
@@ -1006,14 +1040,14 @@
   },
   {
     "source": "Ajsiege-Twisting Nether",
-    "target": "Vividrd-Tarren Mill",
+    "target": "Vividrd-Sylvanas",
     "labels": [
       "ACAD#33155408"
     ]
   },
   {
     "source": "Kronafotm-Tarren Mill",
-    "target": "Vividrd-Tarren Mill",
+    "target": "Vividrd-Sylvanas",
     "labels": [
       "ACAD#33155408"
     ]
@@ -1290,7 +1324,7 @@
     ]
   },
   {
-    "source": "Vividrd-Tarren Mill",
+    "source": "Vividrd-Sylvanas",
     "target": "Jetskimonk-Tarren Mill",
     "labels": [
       "ACAD#34024502"
@@ -1305,6 +1339,16 @@
       "SKY#32910885",
       "SPIRE#33405768",
       "MAG#33887908"
+    ]
+  },
+  {
+    "source": "Zefirdudu-Twisting Nether",
+    "target": "Iarnir-Silvermoon",
+    "labels": [
+      "ACAD#37072841",
+      "SEAT#37072094",
+      "NEXUS#37072846",
+      "SPIRE#36044762"
     ]
   },
   {
@@ -1501,7 +1545,7 @@
     ]
   },
   {
-    "source": "Vividrd-Tarren Mill",
+    "source": "Vividrd-Sylvanas",
     "target": "Yarrgidk-Kazzak",
     "labels": [
       "ACAD#36527526",
@@ -1624,6 +1668,76 @@
     "target": "Yapigodx-Silvermoon",
     "labels": [
       "ACAD#33135170"
+    ]
+  },
+  {
+    "source": "Drtreantino-Ragnaros",
+    "target": "Mistmoad-Draenor",
+    "labels": [
+      "ACAD#35420507",
+      "SEAT#36476141",
+      "NEXUS#32754126",
+      "SKY#37084228",
+      "SPIRE#33684728",
+      "MSC#36310382",
+      "MAG#35879634",
+      "PoS#35879598"
+    ]
+  },
+  {
+    "source": "Voluxar-Tarren Mill",
+    "target": "Mistmoad-Draenor",
+    "labels": [
+      "ACAD#35420507",
+      "SEAT#36476141",
+      "SKY#37084228",
+      "MAG#35879634",
+      "PoS#35879598"
+    ]
+  },
+  {
+    "source": "Speedk-Twisting Nether",
+    "target": "Mistmoad-Draenor",
+    "labels": [
+      "ACAD#35420507",
+      "SKY#37084228",
+      "MSC#36310382",
+      "MAG#35879634",
+      "PoS#35879598"
+    ]
+  },
+  {
+    "source": "Nnoggiedk-Tarren Mill",
+    "target": "Mistmoad-Draenor",
+    "labels": [
+      "SEAT#36476141",
+      "NEXUS#32754126",
+      "SPIRE#33684728"
+    ]
+  },
+  {
+    "source": "Khaeltdh-Sylvanas",
+    "target": "Mistmoad-Draenor",
+    "labels": [
+      "NEXUS#32754126",
+      "SPIRE#33684728"
+    ]
+  },
+  {
+    "source": "Sjelelele-Twisting Nether",
+    "target": "Mistmoad-Draenor",
+    "labels": [
+      "SKY#37084228",
+      "MSC#36310382",
+      "MAG#35879634",
+      "PoS#35879598"
+    ]
+  },
+  {
+    "source": "Crìms-Draenor",
+    "target": "Mistmoad-Draenor",
+    "labels": [
+      "MSC#36310382"
     ]
   },
   {
