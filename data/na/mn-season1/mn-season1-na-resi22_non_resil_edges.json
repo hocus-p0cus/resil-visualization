@@ -813,6 +813,7 @@
     "target": "Gnaark-Bleeding Hollow",
     "labels": [
       "NEXUS#38205351",
+      "SPIRE#39106379",
       "MAG#38205345"
     ]
   },
@@ -821,6 +822,7 @@
     "target": "Gnaark-Bleeding Hollow",
     "labels": [
       "NEXUS#38205351",
+      "SPIRE#39106379",
       "MAG#38205345"
     ]
   },
@@ -828,7 +830,8 @@
     "source": "Deshgloomer-Sargeras",
     "target": "Gnaark-Bleeding Hollow",
     "labels": [
-      "NEXUS#38205351"
+      "NEXUS#38205351",
+      "SPIRE#39106379"
     ]
   },
   {
@@ -843,36 +846,6 @@
     "target": "Oulonglong-Illidan",
     "labels": [
       "NEXUS#32103646"
-    ]
-  },
-  {
-    "source": "Bearity-Area 52",
-    "target": "Vv-Lightninghoof",
-    "labels": [
-      "ACAD#38975021",
-      "NEXUS#38975022"
-    ]
-  },
-  {
-    "source": "Coolgamerx-Area 52",
-    "target": "Vv-Lightninghoof",
-    "labels": [
-      "ACAD#38975021",
-      "NEXUS#38975022"
-    ]
-  },
-  {
-    "source": "Galathyra-Stormrage",
-    "target": "Vv-Lightninghoof",
-    "labels": [
-      "NEXUS#38975022"
-    ]
-  },
-  {
-    "source": "Funhaver-Thrall",
-    "target": "Vv-Lightninghoof",
-    "labels": [
-      "NEXUS#38975022"
     ]
   },
   {
@@ -1114,6 +1087,21 @@
     ]
   },
   {
+    "source": "Austin-Icecrown",
+    "target": "Frendz-Tichondrius",
+    "labels": [
+      "ACAD#39114565"
+    ]
+  },
+  {
+    "source": "Nofoamlatte-Thrall",
+    "target": "Frendz-Tichondrius",
+    "labels": [
+      "ACAD#39114565",
+      "PoS#36732647"
+    ]
+  },
+  {
     "source": "Gatomias-Stormrage",
     "target": "Frendz-Tichondrius",
     "labels": [
@@ -1125,13 +1113,6 @@
     "target": "Frendz-Tichondrius",
     "labels": [
       "MAG#33736892"
-    ]
-  },
-  {
-    "source": "Nofoamlatte-Thrall",
-    "target": "Frendz-Tichondrius",
-    "labels": [
-      "PoS#36732647"
     ]
   },
   {
@@ -1645,6 +1626,7 @@
     "source": "Brewbykin-Area 52",
     "target": "Deathcen-Thrall",
     "labels": [
+      "SEAT#39106071",
       "MSC#38978445"
     ]
   },
@@ -1652,6 +1634,7 @@
     "source": "Beemw-Area 52",
     "target": "Deathcen-Thrall",
     "labels": [
+      "SEAT#39106071",
       "MSC#38978445"
     ]
   },
@@ -1674,6 +1657,13 @@
     "target": "Oxcórd-Illidan",
     "labels": [
       "NEXUS#37873939"
+    ]
+  },
+  {
+    "source": "Imitlol-Alexstrasza",
+    "target": "Blanket-Exodar",
+    "labels": [
+      "SEAT#39119701"
     ]
   },
   {
@@ -2235,6 +2225,13 @@
     ]
   },
   {
+    "source": "Immortallity-Stormrage",
+    "target": "Jamcakes-Illidan",
+    "labels": [
+      "SEAT#39106235"
+    ]
+  },
+  {
     "source": "Lemmyd-Emerald Dream",
     "target": "Jamcakes-Illidan",
     "labels": [
@@ -2379,45 +2376,6 @@
     "target": "Silentlock-Proudmoore",
     "labels": [
       "MAG#36507038"
-    ]
-  },
-  {
-    "source": "Dynabol-Blade's Edge",
-    "target": "Daradhas-Area 52",
-    "labels": [
-      "SEAT#37565974"
-    ]
-  },
-  {
-    "source": "Aluraye-Zul'jin",
-    "target": "Daradhas-Area 52",
-    "labels": [
-      "SKY#37424816"
-    ]
-  },
-  {
-    "source": "Hahabeamxd-Illidan",
-    "target": "Daradhas-Area 52",
-    "labels": [
-      "MSC#37253993"
-    ]
-  },
-  {
-    "source": "Vokerzone-Area 52",
-    "target": "Daradhas-Area 52",
-    "labels": [
-      "MAG#37705354"
-    ]
-  },
-  {
-    "source": "Vokerzone-Area 52",
-    "target": "Metapiggy-Turalyon",
-    "labels": [
-      "SEAT#38966380",
-      "SKY#37709662",
-      "SPIRE#37726549",
-      "MSC#37882917",
-      "MAG#37705354"
     ]
   },
   {
@@ -2849,42 +2807,6 @@
     ]
   },
   {
-    "source": "Voal-Illidan",
-    "target": "Dukkie-Area 52",
-    "labels": [
-      "SEAT#37391068",
-      "SKY#37567007"
-    ]
-  },
-  {
-    "source": "Immortallity-Stormrage",
-    "target": "Dukkie-Area 52",
-    "labels": [
-      "NEXUS#37888745"
-    ]
-  },
-  {
-    "source": "Brookspupper-Thrall",
-    "target": "Dukkie-Area 52",
-    "labels": [
-      "SKY#37567007"
-    ]
-  },
-  {
-    "source": "Lokumfour-Stormrage",
-    "target": "Dukkie-Area 52",
-    "labels": [
-      "SPIRE#36382523"
-    ]
-  },
-  {
-    "source": "Manatsuvu-Ragnaros",
-    "target": "Dukkie-Area 52",
-    "labels": [
-      "MSC#38090640"
-    ]
-  },
-  {
     "source": "Dontkissgirl-Area 52",
     "target": "Fairdh-Tichondrius",
     "labels": [
@@ -3162,7 +3084,8 @@
     "source": "Eleikobear-Mal'Ganis",
     "target": "Glassknight-Area 52",
     "labels": [
-      "SEAT#39100514"
+      "SEAT#39100514",
+      "PoS#39105242"
     ]
   },
   {
@@ -3642,6 +3565,13 @@
     "target": "Reldragon-Tichondrius",
     "labels": [
       "PoS#37402636"
+    ]
+  },
+  {
+    "source": "Immortallity-Stormrage",
+    "target": "Nyzsanne-Area 52",
+    "labels": [
+      "SEAT#39106235"
     ]
   },
   {
@@ -4643,6 +4573,27 @@
     ]
   },
   {
+    "source": "Wuhanxd-Tichondrius",
+    "target": "Jordh-Bleeding Hollow",
+    "labels": [
+      "NEXUS#39123776"
+    ]
+  },
+  {
+    "source": "Yo-Thunderhorn",
+    "target": "Jordh-Bleeding Hollow",
+    "labels": [
+      "SPIRE#39115732"
+    ]
+  },
+  {
+    "source": "Greenishspit-Illidan",
+    "target": "Jordh-Bleeding Hollow",
+    "labels": [
+      "SPIRE#39115732"
+    ]
+  },
+  {
     "source": "Mortdk-Stormrage",
     "target": "Jordh-Bleeding Hollow",
     "labels": [
@@ -5188,6 +5139,20 @@
     ]
   },
   {
+    "source": "Dalbear-Area 52",
+    "target": "Zoleo-Zul'jin",
+    "labels": [
+      "SKY#39132178"
+    ]
+  },
+  {
+    "source": "Talkevo-Zul'jin",
+    "target": "Zoleo-Zul'jin",
+    "labels": [
+      "SKY#39132178"
+    ]
+  },
+  {
     "source": "Tides-Bonechewer",
     "target": "Zoleo-Zul'jin",
     "labels": [
@@ -5406,6 +5371,13 @@
     "target": "Abhu-Area 52",
     "labels": [
       "MAG#35426882"
+    ]
+  },
+  {
+    "source": "Imitlol-Alexstrasza",
+    "target": "Nightpeekies-Proudmoore",
+    "labels": [
+      "SEAT#39119701"
     ]
   },
   {
@@ -6166,10 +6138,32 @@
     ]
   },
   {
+    "source": "Wuhanxd-Tichondrius",
+    "target": "Abcmusic-Illidan",
+    "labels": [
+      "SEAT#39131680",
+      "NEXUS#39123776"
+    ]
+  },
+  {
     "source": "Ebidevo-Area 52",
     "target": "Abcmusic-Illidan",
     "labels": [
       "MAG#38231763"
+    ]
+  },
+  {
+    "source": "Dalbear-Area 52",
+    "target": "Sckãrr-Illidan",
+    "labels": [
+      "SEAT#39126428"
+    ]
+  },
+  {
+    "source": "Talkevo-Zul'jin",
+    "target": "Sckãrr-Illidan",
+    "labels": [
+      "SEAT#39126428"
     ]
   },
   {
@@ -6311,21 +6305,24 @@
     "labels": [
       "SKY#38841833",
       "SPIRE#38474904",
-      "MAG#37871639"
+      "MAG#37871639",
+      "PoS#39127790"
     ]
   },
   {
     "source": "Forrestmoose-Zul'jin",
     "target": "Messerknecht-Area 52",
     "labels": [
-      "SPIRE#38474904"
+      "SPIRE#38474904",
+      "PoS#39127790"
     ]
   },
   {
     "source": "Noxiv-Zul'jin",
     "target": "Messerknecht-Area 52",
     "labels": [
-      "SPIRE#38474904"
+      "SPIRE#38474904",
+      "PoS#39127790"
     ]
   },
   {
@@ -6839,6 +6836,13 @@
     ]
   },
   {
+    "source": "Smoovey-Frostmourne",
+    "target": "Appowulf-Saurfang",
+    "labels": [
+      "PoS#39123586"
+    ]
+  },
+  {
     "source": "Aluraye-Zul'jin",
     "target": "Xyldh-Frostmourne",
     "labels": [
@@ -7179,6 +7183,13 @@
     ]
   },
   {
+    "source": "Imitlol-Alexstrasza",
+    "target": "Shavlann-Mal'Ganis",
+    "labels": [
+      "SEAT#39119701"
+    ]
+  },
+  {
     "source": "Milkcha-Illidan",
     "target": "Shavlann-Mal'Ganis",
     "labels": [
@@ -7240,14 +7251,6 @@
     "target": "Amantevirgem-Sargeras",
     "labels": [
       "MAG#32945343"
-    ]
-  },
-  {
-    "source": "Windweavers-Tichondrius",
-    "target": "Twinktopper-Tichondrius",
-    "labels": [
-      "SEAT#37715552",
-      "NEXUS#38094991"
     ]
   },
   {
@@ -8300,8 +8303,18 @@
     "source": "Treybrew-Illidan",
     "target": "Bayses-Sargeras",
     "labels": [
+      "ACAD#39110422",
       "SEAT#38700509",
+      "SKY#39104901",
       "PoS#38569750"
+    ]
+  },
+  {
+    "source": "Dwagondeeznu-Tichondrius",
+    "target": "Bayses-Sargeras",
+    "labels": [
+      "ACAD#39110422",
+      "SKY#39104901"
     ]
   },
   {
@@ -9255,6 +9268,13 @@
     ]
   },
   {
+    "source": "Wuhanxd-Tichondrius",
+    "target": "Megå-Illidan",
+    "labels": [
+      "SEAT#39131680"
+    ]
+  },
+  {
     "source": "Ybludok-Stormrage",
     "target": "Megå-Illidan",
     "labels": [
@@ -9478,6 +9498,7 @@
     "target": "Buldrokastee-Tichondrius",
     "labels": [
       "ACAD#38706513",
+      "NEXUS#39116798",
       "SPIRE#37905634"
     ]
   },
@@ -9503,14 +9524,22 @@
     ]
   },
   {
-    "source": "Slunks-Tichondrius",
+    "source": "Skedragon-Emerald Dream",
     "target": "Buldrokastee-Tichondrius",
     "labels": [
+      "NEXUS#39116798",
       "MSC#36379768"
     ]
   },
   {
-    "source": "Skedragon-Emerald Dream",
+    "source": "Dhzilong-Nazjatar",
+    "target": "Buldrokastee-Tichondrius",
+    "labels": [
+      "NEXUS#39116798"
+    ]
+  },
+  {
+    "source": "Slunks-Tichondrius",
     "target": "Buldrokastee-Tichondrius",
     "labels": [
       "MSC#36379768"
@@ -9583,10 +9612,18 @@
     "source": "Tuskarbored-Illidan",
     "target": "Duridinn-Tichondrius",
     "labels": [
+      "SEAT#39113576",
       "NEXUS#35192284",
       "MSC#36378056",
       "MAG#34238627",
       "PoS#36381089"
+    ]
+  },
+  {
+    "source": "Dhfault-Area 52",
+    "target": "Duridinn-Tichondrius",
+    "labels": [
+      "SEAT#39113576"
     ]
   },
   {
@@ -10046,6 +10083,20 @@
     ]
   },
   {
+    "source": "Jespar-Mal'Ganis",
+    "target": "Minotril-Illidan",
+    "labels": [
+      "SEAT#39121369"
+    ]
+  },
+  {
+    "source": "Hahabeamxd-Illidan",
+    "target": "Minotril-Illidan",
+    "labels": [
+      "SEAT#39121369"
+    ]
+  },
+  {
     "source": "Jtp-Area 52",
     "target": "Minotril-Illidan",
     "labels": [
@@ -10335,7 +10386,8 @@
     "source": "Imitlol-Alexstrasza",
     "target": "Khawarr-Zul'jin",
     "labels": [
-      "ACAD#39092597"
+      "ACAD#39092597",
+      "SEAT#39119701"
     ]
   },
   {
@@ -10813,20 +10865,28 @@
     ]
   },
   {
-    "source": "Hazzikostion-Hyjal",
+    "source": "Austin-Icecrown",
     "target": "Boogiebomber-Thrall",
     "labels": [
-      "SEAT#36465313"
+      "ACAD#39114565"
     ]
   },
   {
     "source": "Nofoamlatte-Thrall",
     "target": "Boogiebomber-Thrall",
     "labels": [
+      "ACAD#39114565",
       "SEAT#36465313",
       "MSC#36734387",
       "MAG#36246807",
       "PoS#36732647"
+    ]
+  },
+  {
+    "source": "Hazzikostion-Hyjal",
+    "target": "Boogiebomber-Thrall",
+    "labels": [
+      "SEAT#36465313"
     ]
   },
   {
@@ -11771,6 +11831,22 @@
     ]
   },
   {
+    "source": "Dalbear-Area 52",
+    "target": "Teeonis-Sargeras",
+    "labels": [
+      "SEAT#39126428",
+      "SKY#39132178"
+    ]
+  },
+  {
+    "source": "Talkevo-Zul'jin",
+    "target": "Teeonis-Sargeras",
+    "labels": [
+      "SEAT#39126428",
+      "SKY#39132178"
+    ]
+  },
+  {
     "source": "Youngtakes-Zul'jin",
     "target": "Teeonis-Sargeras",
     "labels": [
@@ -11943,6 +12019,13 @@
     "target": "Zensy-Area 52",
     "labels": [
       "PoS#38186738"
+    ]
+  },
+  {
+    "source": "Hahabeamxd-Illidan",
+    "target": "Relaksendk-Area 52",
+    "labels": [
+      "MAG#39116523"
     ]
   },
   {
@@ -12331,6 +12414,20 @@
     ]
   },
   {
+    "source": "Dalbear-Area 52",
+    "target": "Isirys-Sargeras",
+    "labels": [
+      "SKY#39132178"
+    ]
+  },
+  {
+    "source": "Talkevo-Zul'jin",
+    "target": "Isirys-Sargeras",
+    "labels": [
+      "SKY#39132178"
+    ]
+  },
+  {
     "source": "Boomyqty-Illidan",
     "target": "Isirys-Sargeras",
     "labels": [
@@ -12349,6 +12446,13 @@
     "target": "Isirys-Sargeras",
     "labels": [
       "PoS#37871650"
+    ]
+  },
+  {
+    "source": "Wuhanxd-Tichondrius",
+    "target": "Success-Tichondrius",
+    "labels": [
+      "NEXUS#39123776"
     ]
   },
   {
@@ -12536,14 +12640,16 @@
     "source": "Danrobee-Frostmourne",
     "target": "Tokkiie-Barthilas",
     "labels": [
-      "NEXUS#36825194"
+      "NEXUS#36825194",
+      "PoS#39140191"
     ]
   },
   {
     "source": "Tyàkc-Tichondrius",
     "target": "Tokkiie-Barthilas",
     "labels": [
-      "SKY#39022991"
+      "SKY#39022991",
+      "PoS#39140191"
     ]
   },
   {
@@ -13246,6 +13352,14 @@
     ]
   },
   {
+    "source": "Wuhanxd-Tichondrius",
+    "target": "Kìnglee-Sargeras",
+    "labels": [
+      "SEAT#39131680",
+      "NEXUS#39123776"
+    ]
+  },
+  {
     "source": "Bigbloom-Illidan",
     "target": "Arthúrdayne-Stormrage",
     "labels": [
@@ -13433,11 +13547,19 @@
     "source": "Tuskarbored-Illidan",
     "target": "Egochecker-Hyjal",
     "labels": [
+      "SEAT#39113576",
       "NEXUS#35192284",
       "SPIRE#35706076",
       "MSC#36378056",
       "MAG#36721623",
       "PoS#36381089"
+    ]
+  },
+  {
+    "source": "Dhfault-Area 52",
+    "target": "Egochecker-Hyjal",
+    "labels": [
+      "SEAT#39113576"
     ]
   },
   {
@@ -13642,9 +13764,19 @@
     "source": "Treybrew-Illidan",
     "target": "Protogroot-Tichondrius",
     "labels": [
+      "ACAD#39110422",
       "SEAT#38700509",
+      "SKY#39104901",
       "SPIRE#38675911",
       "PoS#38569750"
+    ]
+  },
+  {
+    "source": "Dwagondeeznu-Tichondrius",
+    "target": "Protogroot-Tichondrius",
+    "labels": [
+      "ACAD#39110422",
+      "SKY#39104901"
     ]
   },
   {
@@ -14661,6 +14793,7 @@
     "target": "Erosm-Sargeras",
     "labels": [
       "SEAT#38970673",
+      "NEXUS#39116798",
       "SPIRE#38830723",
       "MSC#38977549"
     ]
@@ -14669,7 +14802,15 @@
     "source": "Laryfsherman-Tichondrius",
     "target": "Erosm-Sargeras",
     "labels": [
+      "NEXUS#39116798",
       "MSC#38977549"
+    ]
+  },
+  {
+    "source": "Dhzilong-Nazjatar",
+    "target": "Erosm-Sargeras",
+    "labels": [
+      "NEXUS#39116798"
     ]
   },
   {
@@ -14691,6 +14832,27 @@
     "target": "Xiayuaug-Illidan",
     "labels": [
       "MAG#38704107"
+    ]
+  },
+  {
+    "source": "Creativezd-Rivendare",
+    "target": "Coofu-Tichondrius",
+    "labels": [
+      "PoS#39119988"
+    ]
+  },
+  {
+    "source": "Drimdogg-Area 52",
+    "target": "Coofu-Tichondrius",
+    "labels": [
+      "PoS#39119988"
+    ]
+  },
+  {
+    "source": "Ryujinsimp-Stormscale",
+    "target": "Coofu-Tichondrius",
+    "labels": [
+      "PoS#39119988"
     ]
   },
   {
@@ -15069,22 +15231,6 @@
     ]
   },
   {
-    "source": "Pbreak-Area 52",
-    "target": "Mododude-Illidan",
-    "labels": [
-      "ACAD#38989632",
-      "SEAT#38985032",
-      "NEXUS#38460144"
-    ]
-  },
-  {
-    "source": "Ryandemon-Illidan",
-    "target": "Mododude-Illidan",
-    "labels": [
-      "SKY#38994744"
-    ]
-  },
-  {
     "source": "Staypoordk-Frostmourne",
     "target": "Pyronius-Frostmourne",
     "labels": [
@@ -15328,6 +15474,13 @@
     "target": "Ashbur-Area 52",
     "labels": [
       "SPIRE#37021246"
+    ]
+  },
+  {
+    "source": "Immortallity-Stormrage",
+    "target": "Odera-Zul'jin",
+    "labels": [
+      "SEAT#39106235"
     ]
   },
   {
@@ -15588,22 +15741,6 @@
     ]
   },
   {
-    "source": "Pbreak-Area 52",
-    "target": "Stepdormu-Illidan",
-    "labels": [
-      "ACAD#38989632",
-      "SEAT#38985032",
-      "NEXUS#38987988"
-    ]
-  },
-  {
-    "source": "Ryandemon-Illidan",
-    "target": "Stepdormu-Illidan",
-    "labels": [
-      "SKY#38994744"
-    ]
-  },
-  {
     "source": "Drimdogg-Area 52",
     "target": "Ikickfatkids-Area 52",
     "labels": [
@@ -15729,6 +15866,13 @@
     ]
   },
   {
+    "source": "Stinkycorpse-Area 52",
+    "target": "Shakemw-Area 52",
+    "labels": [
+      "SEAT#39117401"
+    ]
+  },
+  {
     "source": "Xonkamonk-Illidan",
     "target": "Bíù-Illidan",
     "labels": [
@@ -15786,9 +15930,17 @@
     ]
   },
   {
+    "source": "Austin-Icecrown",
+    "target": "Fenoker-Thrall",
+    "labels": [
+      "ACAD#39114565"
+    ]
+  },
+  {
     "source": "Nofoamlatte-Thrall",
     "target": "Fenoker-Thrall",
     "labels": [
+      "ACAD#39114565",
       "MSC#36734387",
       "PoS#36732647"
     ]
@@ -15954,7 +16106,8 @@
     "target": "Iamgroot-Barthilas",
     "labels": [
       "NEXUS#38714767",
-      "MSC#38714766"
+      "MSC#38714766",
+      "MAG#39123402"
     ]
   },
   {
@@ -15978,6 +16131,27 @@
     "target": "Iamgroot-Barthilas",
     "labels": [
       "NEXUS#38714767"
+    ]
+  },
+  {
+    "source": "Cuddlesbear-Frostmourne",
+    "target": "Iamgroot-Barthilas",
+    "labels": [
+      "MAG#39123402"
+    ]
+  },
+  {
+    "source": "Jordodk-Frostmourne",
+    "target": "Iamgroot-Barthilas",
+    "labels": [
+      "MAG#39123402"
+    ]
+  },
+  {
+    "source": "Immoaura-Illidan",
+    "target": "Iamgroot-Barthilas",
+    "labels": [
+      "MAG#39123402"
     ]
   },
   {
@@ -16387,6 +16561,13 @@
     "target": "Jacobydh-Illidan",
     "labels": [
       "PoS#38805379"
+    ]
+  },
+  {
+    "source": "Wuhanxd-Tichondrius",
+    "target": "Hyve-Thaurissan",
+    "labels": [
+      "SEAT#39131680"
     ]
   },
   {
@@ -16821,6 +17002,34 @@
     ]
   },
   {
+    "source": "Creativezd-Rivendare",
+    "target": "Tinyraptor-Area 52",
+    "labels": [
+      "PoS#39115764"
+    ]
+  },
+  {
+    "source": "Drimdogg-Area 52",
+    "target": "Tinyraptor-Area 52",
+    "labels": [
+      "PoS#39115764"
+    ]
+  },
+  {
+    "source": "Ryujinsimp-Stormscale",
+    "target": "Tinyraptor-Area 52",
+    "labels": [
+      "PoS#39115764"
+    ]
+  },
+  {
+    "source": "Starbanger-Area 52",
+    "target": "Tinyraptor-Area 52",
+    "labels": [
+      "PoS#39115764"
+    ]
+  },
+  {
     "source": "Eleikobear-Mal'Ganis",
     "target": "Hdyeroc-Area 52",
     "labels": [
@@ -16986,6 +17195,13 @@
     "target": "Enamoose-Area 52",
     "labels": [
       "MSC#38570885"
+    ]
+  },
+  {
+    "source": "Hahabeamxd-Illidan",
+    "target": "Enamoose-Area 52",
+    "labels": [
+      "MAG#39116523"
     ]
   },
   {
@@ -17298,6 +17514,13 @@
     "target": "Archixx-Tichondrius",
     "labels": [
       "PoS#36213311"
+    ]
+  },
+  {
+    "source": "Evilowl-Tichondrius",
+    "target": "Mistfan-Tichondrius",
+    "labels": [
+      "MAG#39110527"
     ]
   },
   {
@@ -18141,6 +18364,13 @@
     ]
   },
   {
+    "source": "Evilowl-Tichondrius",
+    "target": "Wuyaowang-Frostmourne",
+    "labels": [
+      "MAG#39110527"
+    ]
+  },
+  {
     "source": "Emobolg-Tichondrius",
     "target": "Ddoeydruid-Area 52",
     "labels": [
@@ -18151,6 +18381,7 @@
     "source": "Hantasmoker-Thrall",
     "target": "Tïza-Thrall",
     "labels": [
+      "NEXUS#39108133",
       "SPIRE#38815287",
       "MAG#38988162"
     ]
@@ -18159,6 +18390,7 @@
     "source": "Drizzitea-Thrall",
     "target": "Tïza-Thrall",
     "labels": [
+      "NEXUS#39108133",
       "SPIRE#38815287",
       "MAG#38988162"
     ]
@@ -18167,6 +18399,7 @@
     "source": "Revokerz-Thrall",
     "target": "Tïza-Thrall",
     "labels": [
+      "NEXUS#39108133",
       "SPIRE#38815287",
       "MAG#38988162"
     ]
@@ -18175,6 +18408,7 @@
     "source": "Biggestbird-Thrall",
     "target": "Tïza-Thrall",
     "labels": [
+      "NEXUS#39108133",
       "SPIRE#38815287",
       "MAG#38988162"
     ]
@@ -18308,6 +18542,13 @@
     ]
   },
   {
+    "source": "Smoovey-Frostmourne",
+    "target": "Kaloo-Barthilas",
+    "labels": [
+      "PoS#39123586"
+    ]
+  },
+  {
     "source": "Swiftmend-The Forgotten Coast",
     "target": "Essos-Spirestone",
     "labels": [
@@ -18362,6 +18603,13 @@
     "target": "Dirtywap-Mal'Ganis",
     "labels": [
       "MSC#38357463"
+    ]
+  },
+  {
+    "source": "Evilowl-Tichondrius",
+    "target": "Yelelfera-Tichondrius",
+    "labels": [
+      "MAG#39110527"
     ]
   },
   {
@@ -19285,10 +19533,20 @@
     ]
   },
   {
+    "source": "Yo-Thunderhorn",
+    "target": "Turnip-Thunderhorn",
+    "labels": [
+      "SEAT#39106124",
+      "SPIRE#39115732"
+    ]
+  },
+  {
     "source": "Greenishspit-Illidan",
     "target": "Turnip-Thunderhorn",
     "labels": [
+      "SEAT#39106124",
       "SKY#38470255",
+      "SPIRE#39115732",
       "MSC#38472569",
       "PoS#38697016"
     ]
@@ -19297,7 +19555,15 @@
     "source": "Tyàkc-Tichondrius",
     "target": "Cartagra-Frostmourne",
     "labels": [
-      "SKY#39022991"
+      "SKY#39022991",
+      "PoS#39140191"
+    ]
+  },
+  {
+    "source": "Danrobee-Frostmourne",
+    "target": "Cartagra-Frostmourne",
+    "labels": [
+      "PoS#39140191"
     ]
   },
   {
@@ -19618,10 +19884,20 @@
     ]
   },
   {
+    "source": "Yo-Thunderhorn",
+    "target": "Dkneir-Illidan",
+    "labels": [
+      "SEAT#39106124",
+      "SPIRE#39115732"
+    ]
+  },
+  {
     "source": "Greenishspit-Illidan",
     "target": "Dkneir-Illidan",
     "labels": [
+      "SEAT#39106124",
       "SKY#38470255",
+      "SPIRE#39115732",
       "MSC#38472569"
     ]
   },
@@ -19790,6 +20066,20 @@
     "target": "Nassoweezy-Illidan",
     "labels": [
       "NEXUS#38844289"
+    ]
+  },
+  {
+    "source": "Tuskarbored-Illidan",
+    "target": "Sawedx-Illidan",
+    "labels": [
+      "SEAT#39113576"
+    ]
+  },
+  {
+    "source": "Dhfault-Area 52",
+    "target": "Sawedx-Illidan",
+    "labels": [
+      "SEAT#39113576"
     ]
   },
   {
@@ -20767,9 +21057,17 @@
     ]
   },
   {
+    "source": "Tranqx-Drak'thul",
+    "target": "Niipplëts-Sen'jin",
+    "labels": [
+      "ACAD#39114297"
+    ]
+  },
+  {
     "source": "Vokerzone-Area 52",
     "target": "Niipplëts-Sen'jin",
     "labels": [
+      "ACAD#39114297",
       "SEAT#38966380",
       "NEXUS#37718523",
       "SKY#37709662",
@@ -20860,6 +21158,13 @@
     "target": "Mabreezy-Bleeding Hollow",
     "labels": [
       "PoS#36862818"
+    ]
+  },
+  {
+    "source": "Evilowl-Tichondrius",
+    "target": "Jkdragone-Tichondrius",
+    "labels": [
+      "MAG#39110527"
     ]
   },
   {
@@ -21192,6 +21497,21 @@
     ]
   },
   {
+    "source": "Jespar-Mal'Ganis",
+    "target": "Onlyrolls-Stormrage",
+    "labels": [
+      "SEAT#39121369"
+    ]
+  },
+  {
+    "source": "Hahabeamxd-Illidan",
+    "target": "Onlyrolls-Stormrage",
+    "labels": [
+      "SEAT#39121369",
+      "MAG#39116523"
+    ]
+  },
+  {
     "source": "Ahrilia-Stormrage",
     "target": "Staticdragon-Bleeding Hollow",
     "labels": [
@@ -21356,6 +21676,27 @@
     ]
   },
   {
+    "source": "Cuckcurll-Tortheldrin",
+    "target": "Hurri-Mal'Ganis",
+    "labels": [
+      "SKY#39123548"
+    ]
+  },
+  {
+    "source": "Littlepook-Area 52",
+    "target": "Hurri-Mal'Ganis",
+    "labels": [
+      "SKY#39123548"
+    ]
+  },
+  {
+    "source": "Phizz-Rivendare",
+    "target": "Hurri-Mal'Ganis",
+    "labels": [
+      "SKY#39123548"
+    ]
+  },
+  {
     "source": "Bilydaecyrus-Frostmourne",
     "target": "Kyrukedh-Frostmourne",
     "labels": [
@@ -21420,6 +21761,28 @@
     ]
   },
   {
+    "source": "Immortallity-Stormrage",
+    "target": "Denddk-Illidan",
+    "labels": [
+      "ACAD#39120923",
+      "SEAT#39106235"
+    ]
+  },
+  {
+    "source": "Brookspupper-Thrall",
+    "target": "Denddk-Illidan",
+    "labels": [
+      "ACAD#39120923"
+    ]
+  },
+  {
+    "source": "Augsystems-Area 52",
+    "target": "Denddk-Illidan",
+    "labels": [
+      "ACAD#39120923"
+    ]
+  },
+  {
     "source": "Sayntd-Stormrage",
     "target": "Denddk-Illidan",
     "labels": [
@@ -21452,6 +21815,7 @@
     "target": "Bunngf-Moon Guard",
     "labels": [
       "ACAD#36239254",
+      "SPIRE#39116097",
       "MSC#35657508"
     ]
   },
@@ -21466,7 +21830,8 @@
     "source": "Idiot-Bleeding Hollow",
     "target": "Bunngf-Moon Guard",
     "labels": [
-      "SKY#38971918"
+      "SKY#38971918",
+      "SPIRE#39116097"
     ]
   },
   {
@@ -21480,8 +21845,16 @@
     "source": "Catgf-Sargeras",
     "target": "Bunngf-Moon Guard",
     "labels": [
+      "SPIRE#39116097",
       "MSC#35657508",
       "MAG#35875972"
+    ]
+  },
+  {
+    "source": "Chandemon-Mal'Ganis",
+    "target": "Bunngf-Moon Guard",
+    "labels": [
+      "SPIRE#39116097"
     ]
   },
   {
@@ -21898,6 +22271,20 @@
     ]
   },
   {
+    "source": "Stinkycorpse-Area 52",
+    "target": "Zephyrevo-Area 52",
+    "labels": [
+      "SEAT#39117401"
+    ]
+  },
+  {
+    "source": "Stinkycorpse-Area 52",
+    "target": "Poetry-Area 52",
+    "labels": [
+      "SEAT#39117401"
+    ]
+  },
+  {
     "source": "Treedweller-Sargeras",
     "target": "Todeshahn-Area 52",
     "labels": [
@@ -21915,6 +22302,7 @@
     "source": "Brewbykin-Area 52",
     "target": "Koderatre-Area 52",
     "labels": [
+      "SEAT#39106071",
       "MSC#38978445"
     ]
   },
@@ -21922,6 +22310,7 @@
     "source": "Beemw-Area 52",
     "target": "Koderatre-Area 52",
     "labels": [
+      "SEAT#39106071",
       "MSC#38978445",
       "MAG#38598680"
     ]
@@ -22248,6 +22637,13 @@
     ]
   },
   {
+    "source": "Smoovey-Frostmourne",
+    "target": "Buzzedmonk-Frostmourne",
+    "labels": [
+      "PoS#39123586"
+    ]
+  },
+  {
     "source": "Mavamoon-Illidan",
     "target": "Diceshamo-Zul'jin",
     "labels": [
@@ -22560,7 +22956,8 @@
     "labels": [
       "SKY#38841833",
       "SPIRE#38474904",
-      "MSC#38466741"
+      "MSC#38466741",
+      "PoS#39127790"
     ]
   },
   {
@@ -22568,7 +22965,8 @@
     "target": "Loloup-Zul'jin",
     "labels": [
       "SPIRE#38474904",
-      "MSC#38466741"
+      "MSC#38466741",
+      "PoS#39127790"
     ]
   },
   {
@@ -22576,7 +22974,8 @@
     "target": "Loloup-Zul'jin",
     "labels": [
       "SPIRE#38474904",
-      "MSC#38466741"
+      "MSC#38466741",
+      "PoS#39127790"
     ]
   },
   {
@@ -22651,6 +23050,7 @@
     "target": "Dakedames-Area 52",
     "labels": [
       "SEAT#37946492",
+      "SKY#39123548",
       "MSC#37946568",
       "MAG#38579706"
     ]
@@ -22661,6 +23061,7 @@
     "labels": [
       "SEAT#37946492",
       "NEXUS#38343625",
+      "SKY#39123548",
       "MSC#37946568",
       "MAG#38579706",
       "PoS#37409238"
@@ -22674,17 +23075,18 @@
     ]
   },
   {
-    "source": "Preodk-Area 52",
+    "source": "Littlepook-Area 52",
     "target": "Dakedames-Area 52",
     "labels": [
-      "MSC#37946568",
+      "SKY#39123548",
       "PoS#37409238"
     ]
   },
   {
-    "source": "Littlepook-Area 52",
+    "source": "Preodk-Area 52",
     "target": "Dakedames-Area 52",
     "labels": [
+      "MSC#37946568",
       "PoS#37409238"
     ]
   },
@@ -22843,6 +23245,22 @@
     "labels": [
       "SKY#38690497",
       "PoS#38698720"
+    ]
+  },
+  {
+    "source": "Treybrew-Illidan",
+    "target": "Jtpk-Area 52",
+    "labels": [
+      "ACAD#39110422",
+      "SKY#39104901"
+    ]
+  },
+  {
+    "source": "Dwagondeeznu-Tichondrius",
+    "target": "Jtpk-Area 52",
+    "labels": [
+      "ACAD#39110422",
+      "SKY#39104901"
     ]
   },
   {
@@ -23169,6 +23587,13 @@
     ]
   },
   {
+    "source": "Stinkycorpse-Area 52",
+    "target": "Serendruid-Illidan",
+    "labels": [
+      "SEAT#39117401"
+    ]
+  },
+  {
     "source": "Gwozz-Illidan",
     "target": "Bobbydemons-Tichondrius",
     "labels": [
@@ -23469,6 +23894,7 @@
     "source": "Brewbykin-Area 52",
     "target": "Hobofists-Area 52",
     "labels": [
+      "SEAT#39106071",
       "MSC#38978445"
     ]
   },
@@ -23476,6 +23902,7 @@
     "source": "Beemw-Area 52",
     "target": "Hobofists-Area 52",
     "labels": [
+      "SEAT#39106071",
       "MSC#38978445"
     ]
   },
@@ -23693,6 +24120,27 @@
     ]
   },
   {
+    "source": "Creativezd-Rivendare",
+    "target": "Scarrend-Mal'Ganis",
+    "labels": [
+      "PoS#39119988"
+    ]
+  },
+  {
+    "source": "Drimdogg-Area 52",
+    "target": "Scarrend-Mal'Ganis",
+    "labels": [
+      "PoS#39119988"
+    ]
+  },
+  {
+    "source": "Ryujinsimp-Stormscale",
+    "target": "Scarrend-Mal'Ganis",
+    "labels": [
+      "PoS#39119988"
+    ]
+  },
+  {
     "source": "Goontoelune-Frostmourne",
     "target": "Jarem-Frostmourne",
     "labels": [
@@ -23824,6 +24272,13 @@
     "target": "Backday-Mal'Ganis",
     "labels": [
       "MAG#39091415"
+    ]
+  },
+  {
+    "source": "Vokerzone-Area 52",
+    "target": "Dzdk-Zul'jin",
+    "labels": [
+      "SPIRE#39110228"
     ]
   }
 ]
