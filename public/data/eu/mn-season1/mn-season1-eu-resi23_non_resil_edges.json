@@ -410,6 +410,13 @@
     ]
   },
   {
+    "source": "Daîlo-Hyjal",
+    "target": "Repláy-Blackrock",
+    "labels": [
+      "SPIRE#41508120"
+    ]
+  },
+  {
     "source": "Poznasme-Draenor",
     "target": "Roams-Draenor",
     "labels": [
@@ -595,42 +602,6 @@
     ]
   },
   {
-    "source": "Zacdruid-Hyjal",
-    "target": "Mandur-Hyjal",
-    "labels": [
-      "ACAD#40748292",
-      "SEAT#40744102",
-      "SKY#41310057"
-    ]
-  },
-  {
-    "source": "Titiquemonk-Ysondre",
-    "target": "Mandur-Hyjal",
-    "labels": [
-      "ACAD#40748292",
-      "SEAT#40744102",
-      "SKY#41310057"
-    ]
-  },
-  {
-    "source": "Nikovoker-Ysondre",
-    "target": "Mandur-Hyjal",
-    "labels": [
-      "ACAD#40748292",
-      "SEAT#40744102",
-      "SKY#41310057"
-    ]
-  },
-  {
-    "source": "Nzangellips-Hyjal",
-    "target": "Mandur-Hyjal",
-    "labels": [
-      "ACAD#40748292",
-      "SEAT#40744102",
-      "SKY#41310057"
-    ]
-  },
-  {
     "source": "Poznasme-Draenor",
     "target": "Galiro-Ravencrest",
     "labels": [
@@ -660,6 +631,27 @@
     "target": "Mathraevo-Blackhand",
     "labels": [
       "ACAD#40601661"
+    ]
+  },
+  {
+    "source": "Dvigo-Drak'thul",
+    "target": "Mathraevo-Blackhand",
+    "labels": [
+      "SEAT#41544405"
+    ]
+  },
+  {
+    "source": "Prevismonk-Tarren Mill",
+    "target": "Mathraevo-Blackhand",
+    "labels": [
+      "SEAT#41544405"
+    ]
+  },
+  {
+    "source": "Dxh-Tarren Mill",
+    "target": "Mathraevo-Blackhand",
+    "labels": [
+      "SEAT#41544405"
     ]
   },
   {
@@ -710,6 +702,13 @@
     "target": "Natìon-Blackhand",
     "labels": [
       "PoS#40320983"
+    ]
+  },
+  {
+    "source": "Гвинвелис-Gordunni",
+    "target": "Cadivoker-Tarren Mill",
+    "labels": [
+      "NEXUS#41550998"
     ]
   },
   {
@@ -862,6 +861,13 @@
     "target": "Sngmtokos-Twisting Nether",
     "labels": [
       "SPIRE#40628729"
+    ]
+  },
+  {
+    "source": "Ekodnight-Kazzak",
+    "target": "Sngmtokos-Twisting Nether",
+    "labels": [
+      "MAG#41564995"
     ]
   },
   {
@@ -1152,7 +1158,9 @@
     "labels": [
       "NEXUS#41387340",
       "SPIRE#41394887",
-      "MAG#41380140"
+      "MSC#41505394",
+      "MAG#41380140",
+      "PoS#41507214"
     ]
   },
   {
@@ -1161,7 +1169,9 @@
     "labels": [
       "NEXUS#41387340",
       "SPIRE#41394887",
-      "MAG#41380140"
+      "MSC#41505394",
+      "MAG#41380140",
+      "PoS#41507214"
     ]
   },
   {
@@ -1170,7 +1180,9 @@
     "labels": [
       "NEXUS#41387340",
       "SPIRE#41394887",
-      "MAG#41380140"
+      "MSC#41505394",
+      "MAG#41380140",
+      "PoS#41507214"
     ]
   },
   {
@@ -1179,7 +1191,9 @@
     "labels": [
       "NEXUS#41387340",
       "SPIRE#41394887",
-      "MAG#41380140"
+      "MSC#41505394",
+      "MAG#41380140",
+      "PoS#41507214"
     ]
   },
   {
@@ -1325,6 +1339,13 @@
     "target": "Fullmeme-Ragnaros",
     "labels": [
       "MAG#38426833"
+    ]
+  },
+  {
+    "source": "Stkk-Sanguino",
+    "target": "Панакичх-Howling Fjord",
+    "labels": [
+      "PoS#41568931"
     ]
   },
   {
@@ -1508,21 +1529,6 @@
     ]
   },
   {
-    "source": "Fíxhavoc-Draenor",
-    "target": "Aaeonaxx-Blackrock",
-    "labels": [
-      "ACAD#41436277",
-      "SEAT#41261292"
-    ]
-  },
-  {
-    "source": "Ratoxd-Argent Dawn",
-    "target": "Aaeonaxx-Blackrock",
-    "labels": [
-      "SPIRE#40818346"
-    ]
-  },
-  {
     "source": "Khrunw-Sylvanas",
     "target": "Dohnsen-Blackrock",
     "labels": [
@@ -1692,32 +1698,6 @@
     ]
   },
   {
-    "source": "Xephyris-Blackrock",
-    "target": "Chosampal-Blackrock",
-    "labels": [
-      "ACAD#40509247",
-      "NEXUS#40496560",
-      "SKY#40504645",
-      "SPIRE#40494226",
-      "MSC#40485879",
-      "MAG#39937935",
-      "PoS#39951550"
-    ]
-  },
-  {
-    "source": "Xephyris-Blackrock",
-    "target": "Bearyuu-Blackrock",
-    "labels": [
-      "ACAD#40509247",
-      "NEXUS#40496560",
-      "SKY#40504645",
-      "SPIRE#40494226",
-      "MSC#40485879",
-      "MAG#39937935",
-      "PoS#39951550"
-    ]
-  },
-  {
     "source": "Vicatius-Silvermoon",
     "target": "Mocpapiezadk-Burning Legion",
     "labels": [
@@ -1810,27 +1790,6 @@
     "target": "Алоддх-Howling Fjord",
     "labels": [
       "SKY#41170025"
-    ]
-  },
-  {
-    "source": "Dailo-Hyjal",
-    "target": "Sapspyro-Blackmoore",
-    "labels": [
-      "SEAT#39999995"
-    ]
-  },
-  {
-    "source": "Nightclaws-Nemesis",
-    "target": "Sapspyro-Blackmoore",
-    "labels": [
-      "NEXUS#39953465"
-    ]
-  },
-  {
-    "source": "Oldbearx-Silvermoon",
-    "target": "Sapspyro-Blackmoore",
-    "labels": [
-      "SKY#40792036"
     ]
   },
   {
@@ -2099,6 +2058,13 @@
     ]
   },
   {
+    "source": "Zorandor-Taerar",
+    "target": "Tuckii-Burning Legion",
+    "labels": [
+      "SPIRE#41548223"
+    ]
+  },
+  {
     "source": "Sulfiusbjorn-Tarren Mill",
     "target": "Pumpepik-Sylvanas",
     "labels": [
@@ -2340,7 +2306,8 @@
     "labels": [
       "NEXUS#40293169",
       "SKY#40849975",
-      "SPIRE#40293160"
+      "SPIRE#40293160",
+      "MAG#41513133"
     ]
   },
   {
@@ -2548,6 +2515,13 @@
     ]
   },
   {
+    "source": "Rainydaysx-Silvermoon",
+    "target": "Участковая-Howling Fjord",
+    "labels": [
+      "PoS#41553385"
+    ]
+  },
+  {
     "source": "Filthypiggie-Tarren Mill",
     "target": "Liiripom-Silvermoon",
     "labels": [
@@ -2661,9 +2635,32 @@
     ]
   },
   {
+    "source": "Banggeer-Burning Legion",
+    "target": "Shampea-Tarren Mill",
+    "labels": [
+      "MAG#41493192"
+    ]
+  },
+  {
+    "source": "Huntoker-Twisting Nether",
+    "target": "Shampea-Tarren Mill",
+    "labels": [
+      "MAG#41493192"
+    ]
+  },
+  {
+    "source": "Juura-Kazzak",
+    "target": "Shampea-Tarren Mill",
+    "labels": [
+      "MAG#41493192"
+    ]
+  },
+  {
     "source": "Luciabeli-Dalaran",
     "target": "Macho-Dalaran",
     "labels": [
+      "SKY#41519050",
+      "MSC#41533263",
       "PoS#41179732"
     ]
   },
@@ -2672,6 +2669,7 @@
     "target": "Barneydk-Blackhand",
     "labels": [
       "ACAD#41403476",
+      "SPIRE#41538507",
       "MSC#41367894",
       "PoS#41280284"
     ]
@@ -2691,10 +2689,24 @@
     ]
   },
   {
+    "source": "Healú-Tarren Mill",
+    "target": "Barneydk-Blackhand",
+    "labels": [
+      "SPIRE#41538507"
+    ]
+  },
+  {
     "source": "Slavezz-Silvermoon",
     "target": "Barneydk-Blackhand",
     "labels": [
       "PoS#41280284"
+    ]
+  },
+  {
+    "source": "Mackaveli-Draenor",
+    "target": "Apomonk-Blackrock",
+    "labels": [
+      "SKY#41522549"
     ]
   },
   {
@@ -2959,6 +2971,14 @@
     ]
   },
   {
+    "source": "Grootkin-Eredar",
+    "target": "Hofidh-Eredar",
+    "labels": [
+      "NEXUS#41545974",
+      "SPIRE#41545870"
+    ]
+  },
+  {
     "source": "Dailo-Hyjal",
     "target": "Viraliadk-Tarren Mill",
     "labels": [
@@ -3009,7 +3029,7 @@
   },
   {
     "source": "Vicatius-Silvermoon",
-    "target": "Rollingz-Draenor",
+    "target": "Criplegs-Draenor",
     "labels": [
       "ACAD#39833419",
       "SEAT#39825817",
@@ -3021,7 +3041,7 @@
   },
   {
     "source": "Kyomaog-Burning Legion",
-    "target": "Rollingz-Draenor",
+    "target": "Criplegs-Draenor",
     "labels": [
       "ACAD#39833419",
       "SEAT#39825817",
@@ -3033,7 +3053,7 @@
   },
   {
     "source": "Rafliskoev-Burning Legion",
-    "target": "Rollingz-Draenor",
+    "target": "Criplegs-Draenor",
     "labels": [
       "ACAD#39833419",
       "SEAT#39825817",
@@ -3045,7 +3065,7 @@
   },
   {
     "source": "Myrtdh-Tarren Mill",
-    "target": "Rollingz-Draenor",
+    "target": "Criplegs-Draenor",
     "labels": [
       "ACAD#39833419",
       "SEAT#39825817",
@@ -3165,6 +3185,13 @@
     "target": "Démonbulka-Silvermoon",
     "labels": [
       "PoS#40952126"
+    ]
+  },
+  {
+    "source": "Spin-Sanguino",
+    "target": "Draked-Archimonde",
+    "labels": [
+      "SPIRE#41482943"
     ]
   },
   {
@@ -3561,6 +3588,13 @@
     ]
   },
   {
+    "source": "Слоутуман-Gordunni",
+    "target": "Blindmarker-Silvermoon",
+    "labels": [
+      "MSC#41461832"
+    ]
+  },
+  {
     "source": "Zaichique-Silvermoon",
     "target": "Xayevo-Burning Legion",
     "labels": [
@@ -3606,6 +3640,13 @@
     ]
   },
   {
+    "source": "Daîlo-Hyjal",
+    "target": "Tacocute-Hyjal",
+    "labels": [
+      "SPIRE#41508120"
+    ]
+  },
+  {
     "source": "Zacdruid-Hyjal",
     "target": "Tacocute-Hyjal",
     "labels": [
@@ -3617,6 +3658,21 @@
     "target": "Metovchyk-Burning Legion",
     "labels": [
       "SPIRE#41391806"
+    ]
+  },
+  {
+    "source": "Araviz-Kazzak",
+    "target": "Metovchyk-Burning Legion",
+    "labels": [
+      "MSC#41484508",
+      "MAG#41544744"
+    ]
+  },
+  {
+    "source": "Stonedru-Laughing Skull",
+    "target": "Metovchyk-Burning Legion",
+    "labels": [
+      "MAG#41544744"
     ]
   },
   {
@@ -3854,6 +3910,7 @@
     "source": "Mnolomafiozo-Twisting Nether",
     "target": "Maginã-Tarren Mill",
     "labels": [
+      "SEAT#41558985",
       "SKY#41363657",
       "SPIRE#41063068",
       "MSC#41399642"
@@ -4411,7 +4468,8 @@
     "target": "Raretimber-Silvermoon",
     "labels": [
       "ACAD#41060280",
-      "SKY#40748068"
+      "SKY#40748068",
+      "MSC#41461832"
     ]
   },
   {
@@ -4420,6 +4478,20 @@
     "labels": [
       "SEAT#38832548",
       "SPIRE#38798394"
+    ]
+  },
+  {
+    "source": "Banggeer-Burning Legion",
+    "target": "Yummienjoyer-Burning Legion",
+    "labels": [
+      "SKY#41532190"
+    ]
+  },
+  {
+    "source": "Kyomaog-Burning Legion",
+    "target": "Yummienjoyer-Burning Legion",
+    "labels": [
+      "SKY#41532190"
     ]
   },
   {
@@ -4470,6 +4542,13 @@
     "target": "Morgeinez-Twisting Nether",
     "labels": [
       "MSC#39543852"
+    ]
+  },
+  {
+    "source": "Luciabeli-Dalaran",
+    "target": "Nusse-The Maelstrom",
+    "labels": [
+      "MSC#41533263"
     ]
   },
   {
@@ -4541,6 +4620,13 @@
     "target": "Lingur-Twisting Nether",
     "labels": [
       "MSC#39878333"
+    ]
+  },
+  {
+    "source": "Юна-Booty Bay",
+    "target": "Nutzmonk-Blackmoore",
+    "labels": [
+      "MSC#41519310"
     ]
   },
   {
@@ -4654,6 +4740,13 @@
     ]
   },
   {
+    "source": "Юна-Booty Bay",
+    "target": "Robsne-Blackrock",
+    "labels": [
+      "MSC#41519310"
+    ]
+  },
+  {
     "source": "Malishkameow-Kazzak",
     "target": "Misukken-Ravencrest",
     "labels": [
@@ -4704,6 +4797,13 @@
     "target": "Hearthjackss-Kazzak",
     "labels": [
       "SEAT#36999367"
+    ]
+  },
+  {
+    "source": "Daîlo-Hyjal",
+    "target": "Grimgriddle-Stormscale",
+    "labels": [
+      "SPIRE#41508120"
     ]
   },
   {
@@ -4862,6 +4962,34 @@
     ]
   },
   {
+    "source": "Uglybabyphd-Argent Dawn",
+    "target": "Lfam-Kazzak",
+    "labels": [
+      "SPIRE#41554432"
+    ]
+  },
+  {
+    "source": "Uglyhumi-Twisting Nether",
+    "target": "Lfam-Kazzak",
+    "labels": [
+      "SPIRE#41554432"
+    ]
+  },
+  {
+    "source": "Anxieyex-Silvermoon",
+    "target": "Lfam-Kazzak",
+    "labels": [
+      "SPIRE#41554432"
+    ]
+  },
+  {
+    "source": "Jisoodc-Tarren Mill",
+    "target": "Lfam-Kazzak",
+    "labels": [
+      "SPIRE#41554432"
+    ]
+  },
+  {
     "source": "Grizzmachine-Burning Legion",
     "target": "Lfam-Kazzak",
     "labels": [
@@ -4923,7 +5051,20 @@
     "source": "Майкидруид-Howling Fjord",
     "target": "Uglymylf-Twisting Nether",
     "labels": [
+      "SEAT#41563249",
+      "SKY#41563242",
       "SPIRE#40279785"
+    ]
+  },
+  {
+    "source": "Девоуреркала-Howling Fjord",
+    "target": "Uglymylf-Twisting Nether",
+    "labels": [
+      "SEAT#41563249",
+      "SKY#41563242",
+      "SPIRE#40279785",
+      "MSC#40281359",
+      "PoS#40794840"
     ]
   },
   {
@@ -4940,15 +5081,6 @@
     "labels": [
       "SPIRE#40279785",
       "MSC#40281359"
-    ]
-  },
-  {
-    "source": "Девоуреркала-Howling Fjord",
-    "target": "Uglymylf-Twisting Nether",
-    "labels": [
-      "SPIRE#40279785",
-      "MSC#40281359",
-      "PoS#40794840"
     ]
   },
   {
@@ -4987,6 +5119,13 @@
     ]
   },
   {
+    "source": "Topoviygus-Ravencrest",
+    "target": "Zhukoed-Draenor",
+    "labels": [
+      "ACAD#41567717"
+    ]
+  },
+  {
     "source": "Vickmanfotm-Tarren Mill",
     "target": "Zhukoed-Draenor",
     "labels": [
@@ -4997,7 +5136,16 @@
     "source": "Araviz-Kazzak",
     "target": "Méòw-Tarren Mill",
     "labels": [
-      "NEXUS#38421890"
+      "NEXUS#38421890",
+      "MSC#41484508",
+      "MAG#41544744"
+    ]
+  },
+  {
+    "source": "Stonedru-Laughing Skull",
+    "target": "Méòw-Tarren Mill",
+    "labels": [
+      "MAG#41544744"
     ]
   },
   {
@@ -5575,6 +5723,13 @@
     ]
   },
   {
+    "source": "Rayvoker-Stormscale",
+    "target": "Nytherion-Sanguino",
+    "labels": [
+      "ACAD#41511261"
+    ]
+  },
+  {
     "source": "Baelroug-Ragnaros",
     "target": "Nytherion-Sanguino",
     "labels": [
@@ -5653,32 +5808,6 @@
     ]
   },
   {
-    "source": "Xephyris-Blackrock",
-    "target": "Gladge-Blackrock",
-    "labels": [
-      "ACAD#40509247",
-      "NEXUS#40496560",
-      "SKY#40504645",
-      "SPIRE#40494226",
-      "MSC#40485879",
-      "MAG#39937935",
-      "PoS#39951550"
-    ]
-  },
-  {
-    "source": "Xephyris-Blackrock",
-    "target": "Yikers-Blackrock",
-    "labels": [
-      "ACAD#40509247",
-      "NEXUS#40496560",
-      "SKY#40504645",
-      "SPIRE#40494226",
-      "MSC#40485879",
-      "MAG#39937935",
-      "PoS#39951550"
-    ]
-  },
-  {
     "source": "Søvka-Twisting Nether",
     "target": "Tryaskalight-Kazzak",
     "labels": [
@@ -5718,6 +5847,27 @@
     "target": "Autismbreath-Turalyon",
     "labels": [
       "MSC#37820160"
+    ]
+  },
+  {
+    "source": "Zefirdudu-Twisting Nether",
+    "target": "Trendk-Stormreaver",
+    "labels": [
+      "ACAD#41563217"
+    ]
+  },
+  {
+    "source": "Laszlovoker-Tarren Mill",
+    "target": "Trendk-Stormreaver",
+    "labels": [
+      "ACAD#41563217"
+    ]
+  },
+  {
+    "source": "Блэйфи-Howling Fjord",
+    "target": "Trendk-Stormreaver",
+    "labels": [
+      "ACAD#41563217"
     ]
   },
   {
@@ -5999,6 +6149,13 @@
     ]
   },
   {
+    "source": "Maprro-Kazzak",
+    "target": "Biffenjutsu-Twisting Nether",
+    "labels": [
+      "MSC#41546588"
+    ]
+  },
+  {
     "source": "Cenzychi-Twisting Nether",
     "target": "Mýthriel-Blackrock",
     "labels": [
@@ -6132,7 +6289,30 @@
     "source": "Кукурузка-Howling Fjord",
     "target": "Выходсзади-Howling Fjord",
     "labels": [
-      "NEXUS#40500527"
+      "NEXUS#40500527",
+      "SKY#41533680",
+      "SPIRE#41501011"
+    ]
+  },
+  {
+    "source": "Zorandor-Taerar",
+    "target": "Выходсзади-Howling Fjord",
+    "labels": [
+      "SKY#41533680"
+    ]
+  },
+  {
+    "source": "Aldredd-Tarren Mill",
+    "target": "Выходсзади-Howling Fjord",
+    "labels": [
+      "SPIRE#41501011"
+    ]
+  },
+  {
+    "source": "Übercool-Blackhand",
+    "target": "Выходсзади-Howling Fjord",
+    "labels": [
+      "SPIRE#41501011"
     ]
   },
   {
@@ -6439,7 +6619,8 @@
     "target": "Wepaly-Twisting Nether",
     "labels": [
       "SEAT#41250734",
-      "SKY#41265155"
+      "SKY#41265155",
+      "SPIRE#41553650"
     ]
   },
   {
@@ -6447,7 +6628,8 @@
     "target": "Wepaly-Twisting Nether",
     "labels": [
       "SEAT#41250734",
-      "SKY#41265155"
+      "SKY#41265155",
+      "SPIRE#41553650"
     ]
   },
   {
@@ -6455,7 +6637,8 @@
     "target": "Wepaly-Twisting Nether",
     "labels": [
       "SEAT#41250734",
-      "SKY#41265155"
+      "SKY#41265155",
+      "SPIRE#41553650"
     ]
   },
   {
@@ -6487,6 +6670,13 @@
     ]
   },
   {
+    "source": "Skyaug-Draenor",
+    "target": "Wepaly-Twisting Nether",
+    "labels": [
+      "SPIRE#41553650"
+    ]
+  },
+  {
     "source": "Sêrâmonk-Antonidas",
     "target": "Neirunic-Tarren Mill",
     "labels": [
@@ -6504,6 +6694,7 @@
     "source": "Грипстанкилл-Gordunni",
     "target": "Яндексрезист-Howling Fjord",
     "labels": [
+      "SEAT#41557769",
       "NEXUS#41156450"
     ]
   },
@@ -6696,6 +6887,20 @@
     "target": "Xyes-Tarren Mill",
     "labels": [
       "PoS#39503195"
+    ]
+  },
+  {
+    "source": "Zorandor-Taerar",
+    "target": "Naddaf-Silvermoon",
+    "labels": [
+      "SKY#41533680"
+    ]
+  },
+  {
+    "source": "Кукурузка-Howling Fjord",
+    "target": "Naddaf-Silvermoon",
+    "labels": [
+      "SKY#41533680"
     ]
   },
   {
@@ -6938,83 +7143,6 @@
     ]
   },
   {
-    "source": "Nrzy-Silvermoon",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "ACAD#41322011"
-    ]
-  },
-  {
-    "source": "Eskaonlypma-Kazzak",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "ACAD#41322011"
-    ]
-  },
-  {
-    "source": "Spinxd-Sylvanas",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "ACAD#41322011"
-    ]
-  },
-  {
-    "source": "Fazo-Twisting Nether",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "ACAD#41322011"
-    ]
-  },
-  {
-    "source": "Howdysx-Argent Dawn",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "NEXUS#40374289"
-    ]
-  },
-  {
-    "source": "Buffey-Kazzak",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "SKY#41060291"
-    ]
-  },
-  {
-    "source": "Nightclaws-Nemesis",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "SPIRE#40617567"
-    ]
-  },
-  {
-    "source": "Cenzychi-Twisting Nether",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "SPIRE#40617567"
-    ]
-  },
-  {
-    "source": "Swelaut-Silvermoon",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "MSC#40378719"
-    ]
-  },
-  {
-    "source": "Nookeydr-Antonidas",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "MAG#39149004"
-    ]
-  },
-  {
-    "source": "Scythespells-Tarren Mill",
-    "target": "Литтлсджефф-Howling Fjord",
-    "labels": [
-      "PoS#39546508"
-    ]
-  },
-  {
     "source": "Ivernotp-Zul'jin",
     "target": "Фехо-Gordunni",
     "labels": [
@@ -7068,6 +7196,20 @@
     "target": "Merlindh-Draenor",
     "labels": [
       "SPIRE#39968741"
+    ]
+  },
+  {
+    "source": "Shasdudu-Twisting Nether",
+    "target": "Gaminggamer-Kazzak",
+    "labels": [
+      "MSC#41553612"
+    ]
+  },
+  {
+    "source": "Daveydk-Twisting Nether",
+    "target": "Gaminggamer-Kazzak",
+    "labels": [
+      "MSC#41553612"
     ]
   },
   {
@@ -7512,6 +7654,7 @@
     "target": "Valqyrie-Ravencrest",
     "labels": [
       "SPIRE#41152998",
+      "MSC#41544807",
       "MAG#41160899"
     ]
   },
@@ -7520,6 +7663,7 @@
     "target": "Valqyrie-Ravencrest",
     "labels": [
       "SPIRE#41152998",
+      "MSC#41544807",
       "MAG#41160899"
     ]
   },
@@ -7528,6 +7672,7 @@
     "target": "Valqyrie-Ravencrest",
     "labels": [
       "SPIRE#41152998",
+      "MSC#41544807",
       "MAG#41160899"
     ]
   },
@@ -7590,6 +7735,13 @@
     ]
   },
   {
+    "source": "Rainydaysx-Silvermoon",
+    "target": "Hews-Kazzak",
+    "labels": [
+      "SKY#41548445"
+    ]
+  },
+  {
     "source": "Aldredd-Tarren Mill",
     "target": "Hews-Kazzak",
     "labels": [
@@ -7608,6 +7760,26 @@
     "target": "Hews-Kazzak",
     "labels": [
       "PoS#40251778"
+    ]
+  },
+  {
+    "source": "Вокант-Gordunni",
+    "target": "Giglangy-Stormscale",
+    "labels": [
+      "SEAT#41493995",
+      "NEXUS#41555196",
+      "SKY#41536222",
+      "MAG#41538652"
+    ]
+  },
+  {
+    "source": "Сквернапля-Gordunni",
+    "target": "Giglangy-Stormscale",
+    "labels": [
+      "SEAT#41493995",
+      "NEXUS#41555196",
+      "SKY#41536222",
+      "MAG#41538652"
     ]
   },
   {
@@ -7633,6 +7805,7 @@
     "target": "Наташагрешна-Gordunni",
     "labels": [
       "SEAT#39681176",
+      "NEXUS#41550998",
       "MAG#40268843"
     ]
   },
@@ -7691,56 +7864,6 @@
     "target": "Scaliemommy-Tarren Mill",
     "labels": [
       "MAG#41274137"
-    ]
-  },
-  {
-    "source": "Spinkaputt-Tarren Mill",
-    "target": "Rodax-Dalaran",
-    "labels": [
-      "ACAD#41294088"
-    ]
-  },
-  {
-    "source": "Sonnymonk-Aggra (Português)",
-    "target": "Rodax-Dalaran",
-    "labels": [
-      "SEAT#41066157"
-    ]
-  },
-  {
-    "source": "Nialyah-Tarren Mill",
-    "target": "Rodax-Dalaran",
-    "labels": [
-      "SEAT#41066157"
-    ]
-  },
-  {
-    "source": "Maprro-Kazzak",
-    "target": "Rodax-Dalaran",
-    "labels": [
-      "NEXUS#40828466"
-    ]
-  },
-  {
-    "source": "Bähamüt-Hyjal",
-    "target": "Rodax-Dalaran",
-    "labels": [
-      "SPIRE#40739165"
-    ]
-  },
-  {
-    "source": "Howdysx-Argent Dawn",
-    "target": "Rodax-Dalaran",
-    "labels": [
-      "MSC#40056776",
-      "PoS#39970841"
-    ]
-  },
-  {
-    "source": "Idepletekey-Silvermoon",
-    "target": "Rodax-Dalaran",
-    "labels": [
-      "MAG#40619842"
     ]
   },
   {
@@ -7828,6 +7951,13 @@
     "target": "Slashevo-Kazzak",
     "labels": [
       "NEXUS#39926299"
+    ]
+  },
+  {
+    "source": "Rayvoker-Stormscale",
+    "target": "Celié-Draenor",
+    "labels": [
+      "ACAD#41511261"
     ]
   },
   {
@@ -8164,6 +8294,20 @@
     ]
   },
   {
+    "source": "Вокант-Gordunni",
+    "target": "Philagain-Ragnaros",
+    "labels": [
+      "SKY#41536222"
+    ]
+  },
+  {
+    "source": "Сквернапля-Gordunni",
+    "target": "Philagain-Ragnaros",
+    "labels": [
+      "SKY#41536222"
+    ]
+  },
+  {
     "source": "Cármy-Draenor",
     "target": "Philagain-Ragnaros",
     "labels": [
@@ -8231,6 +8375,13 @@
     "target": "Babaadh-Archimonde",
     "labels": [
       "SPIRE#40477737"
+    ]
+  },
+  {
+    "source": "Mackaveli-Draenor",
+    "target": "Danksimp-Tarren Mill",
+    "labels": [
+      "SKY#41522549"
     ]
   },
   {
@@ -8594,6 +8745,13 @@
     ]
   },
   {
+    "source": "Oldbearx-Silvermoon",
+    "target": "Fêng-Twisting Nether",
+    "labels": [
+      "PoS#41530679"
+    ]
+  },
+  {
     "source": "Blumbe-Argent Dawn",
     "target": "Skeptå-Ravencrest",
     "labels": [
@@ -8650,6 +8808,13 @@
       "NEXUS#41022574",
       "SKY#41181705",
       "MSC#40150635"
+    ]
+  },
+  {
+    "source": "Mackaveli-Draenor",
+    "target": "Twennyeight-Tarren Mill",
+    "labels": [
+      "SKY#41522549"
     ]
   },
   {
@@ -8799,6 +8964,13 @@
     ]
   },
   {
+    "source": "Alignmonk-Stormscale",
+    "target": "Rosallynee-Draenor",
+    "labels": [
+      "SPIRE#41497913"
+    ]
+  },
+  {
     "source": "Sulfiusbjorn-Tarren Mill",
     "target": "Rosallynee-Draenor",
     "labels": [
@@ -8837,8 +9009,23 @@
     "source": "Vicatius-Silvermoon",
     "target": "Scarladin-Tarren Mill",
     "labels": [
+      "SPIRE#41539093",
       "MSC#39302308",
       "PoS#40243393"
+    ]
+  },
+  {
+    "source": "Deervarev-Burning Legion",
+    "target": "Scarladin-Tarren Mill",
+    "labels": [
+      "SPIRE#41539093"
+    ]
+  },
+  {
+    "source": "Myrtdh-Tarren Mill",
+    "target": "Scarladin-Tarren Mill",
+    "labels": [
+      "SPIRE#41539093"
     ]
   },
   {
@@ -8965,9 +9152,20 @@
     "source": "Nightvp-Kazzak",
     "target": "Harrie-Silvermoon",
     "labels": [
+      "SEAT#41562101",
       "NEXUS#41309970",
       "SPIRE#41444350",
       "MSC#41309969",
+      "MAG#41282933",
+      "PoS#41309964"
+    ]
+  },
+  {
+    "source": "Robinchoan-Ravencrest",
+    "target": "Harrie-Silvermoon",
+    "labels": [
+      "SEAT#41562101",
+      "SPIRE#41444350",
       "MAG#41282933",
       "PoS#41309964"
     ]
@@ -8976,18 +9174,10 @@
     "source": "Namiaug-Ravencrest",
     "target": "Harrie-Silvermoon",
     "labels": [
+      "SEAT#41562101",
       "NEXUS#41309970",
       "SPIRE#41444350",
       "MSC#41309969",
-      "PoS#41309964"
-    ]
-  },
-  {
-    "source": "Robinchoan-Ravencrest",
-    "target": "Harrie-Silvermoon",
-    "labels": [
-      "SPIRE#41444350",
-      "MAG#41282933",
       "PoS#41309964"
     ]
   },
@@ -9278,25 +9468,6 @@
     ]
   },
   {
-    "source": "Gawmonk-Kazzak",
-    "target": "Dhnet-Kazzak",
-    "labels": [
-      "ACAD#40601661",
-      "MSC#40146468"
-    ]
-  },
-  {
-    "source": "Idepletekey-Silvermoon",
-    "target": "Dhnet-Kazzak",
-    "labels": [
-      "NEXUS#40929882",
-      "SKY#40510740",
-      "SPIRE#40354645",
-      "MAG#40373148",
-      "PoS#40923584"
-    ]
-  },
-  {
     "source": "Alexbebishin-Kazzak",
     "target": "Dripdrop-Frostwolf",
     "labels": [
@@ -9364,6 +9535,30 @@
     "target": "Manipulater-Kazzak",
     "labels": [
       "MSC#41004654"
+    ]
+  },
+  {
+    "source": "Dvigo-Drak'thul",
+    "target": "Toallodk-Silvermoon",
+    "labels": [
+      "SEAT#41544405",
+      "SPIRE#41550642"
+    ]
+  },
+  {
+    "source": "Prevismonk-Tarren Mill",
+    "target": "Toallodk-Silvermoon",
+    "labels": [
+      "SEAT#41544405",
+      "SPIRE#41550642"
+    ]
+  },
+  {
+    "source": "Dxh-Tarren Mill",
+    "target": "Toallodk-Silvermoon",
+    "labels": [
+      "SEAT#41544405",
+      "SPIRE#41550642"
     ]
   },
   {
@@ -9542,6 +9737,20 @@
     "target": "Fakhridk-Draenor",
     "labels": [
       "MSC#40007557"
+    ]
+  },
+  {
+    "source": "Spinxd-Sylvanas",
+    "target": "Grafsi-Burning Legion",
+    "labels": [
+      "SEAT#41494278"
+    ]
+  },
+  {
+    "source": "Ararara-Blackhand",
+    "target": "Grafsi-Burning Legion",
+    "labels": [
+      "SEAT#41494278"
     ]
   },
   {
@@ -9841,14 +10050,29 @@
     ]
   },
   {
-    "source": "Uglyclown-Draenor",
+    "source": "Uglybabyphd-Argent Dawn",
     "target": "Dzonatwo-Draenor",
     "labels": [
-      "PoS#40248628"
+      "SPIRE#41537806"
     ]
   },
   {
     "source": "Anxieyex-Silvermoon",
+    "target": "Dzonatwo-Draenor",
+    "labels": [
+      "SPIRE#41537806",
+      "PoS#40248628"
+    ]
+  },
+  {
+    "source": "Jisoodc-Tarren Mill",
+    "target": "Dzonatwo-Draenor",
+    "labels": [
+      "SPIRE#41537806"
+    ]
+  },
+  {
+    "source": "Uglyclown-Draenor",
     "target": "Dzonatwo-Draenor",
     "labels": [
       "PoS#40248628"
@@ -9974,6 +10198,36 @@
     ]
   },
   {
+    "source": "Rajk-Kazzak",
+    "target": "Evokrah-Draenor",
+    "labels": [
+      "NEXUS#41557550",
+      "SPIRE#41545646"
+    ]
+  },
+  {
+    "source": "Neemspin-Tarren Mill",
+    "target": "Evokrah-Draenor",
+    "labels": [
+      "NEXUS#41557550",
+      "SPIRE#41545646"
+    ]
+  },
+  {
+    "source": "Xodruidxo-Kazzak",
+    "target": "Evokrah-Draenor",
+    "labels": [
+      "SPIRE#41545646"
+    ]
+  },
+  {
+    "source": "Bevv-Kazzak",
+    "target": "Evokrah-Draenor",
+    "labels": [
+      "SPIRE#41545646"
+    ]
+  },
+  {
     "source": "Youdadruid-Drak'thul",
     "target": "Evokrah-Draenor",
     "labels": [
@@ -10070,56 +10324,6 @@
     "target": "Reaçh-Ravencrest",
     "labels": [
       "MSC#40317048"
-    ]
-  },
-  {
-    "source": "Igrys-Tarren Mill",
-    "target": "Reimist-Argent Dawn",
-    "labels": [
-      "SEAT#40569316"
-    ]
-  },
-  {
-    "source": "Puukiee-Draenor",
-    "target": "Reimist-Argent Dawn",
-    "labels": [
-      "NEXUS#39265266"
-    ]
-  },
-  {
-    "source": "Uglyhumi-Twisting Nether",
-    "target": "Reimist-Argent Dawn",
-    "labels": [
-      "SKY#40378480",
-      "MAG#37214932"
-    ]
-  },
-  {
-    "source": "Demonrin-Tarren Mill",
-    "target": "Reimist-Argent Dawn",
-    "labels": [
-      "SKY#40378480"
-    ]
-  },
-  {
-    "source": "Marvdh-Tarren Mill",
-    "target": "Reimist-Argent Dawn",
-    "labels": [
-      "SPIRE#39210623"
-    ]
-  },
-  {
-    "source": "Uglyclown-Draenor",
-    "target": "Reimist-Argent Dawn",
-    "labels": [
-      "MAG#37214932"
-    ]
-  },
-  {
-    "source": "Jisoodc-Twisting Nether",
-    "target": "Reimist-Argent Dawn",
-    "labels": [
-      "MAG#37214932"
     ]
   },
   {
@@ -10574,6 +10778,13 @@
     ]
   },
   {
+    "source": "Stkk-Sanguino",
+    "target": "Fazon-Draenor",
+    "labels": [
+      "PoS#41568931"
+    ]
+  },
+  {
     "source": "Metashift-Stormscale",
     "target": "Sementics-Draenor",
     "labels": [
@@ -10670,7 +10881,22 @@
     "target": "Mysticevoker-Kazzak",
     "labels": [
       "MSC#40948924",
-      "MAG#41257495"
+      "MAG#41257495",
+      "PoS#41559126"
+    ]
+  },
+  {
+    "source": "Нимбмэйн-Soulflayer",
+    "target": "Mysticevoker-Kazzak",
+    "labels": [
+      "PoS#41559126"
+    ]
+  },
+  {
+    "source": "Даркнэсс-Soulflayer",
+    "target": "Mysticevoker-Kazzak",
+    "labels": [
+      "PoS#41559126"
     ]
   },
   {
@@ -10895,69 +11121,6 @@
     ]
   },
   {
-    "source": "Navinna-Tarren Mill",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "SEAT#40839834"
-    ]
-  },
-  {
-    "source": "Freezixdruid-Hyjal",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "NEXUS#40172980"
-    ]
-  },
-  {
-    "source": "Bähamüt-Hyjal",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "NEXUS#40172980"
-    ]
-  },
-  {
-    "source": "Kksh-Tarren Mill",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "SKY#40637441"
-    ]
-  },
-  {
-    "source": "Taraskbear-Twisting Nether",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "MSC#39711906"
-    ]
-  },
-  {
-    "source": "Saygexe-Draenor",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "MSC#39711906"
-    ]
-  },
-  {
-    "source": "Tharkaydk-Blackhand",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "MAG#39274666"
-    ]
-  },
-  {
-    "source": "Sulfiusbjorn-Tarren Mill",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "PoS#39645875"
-    ]
-  },
-  {
-    "source": "Tatsunamii-Silvermoon",
-    "target": "Кармогоса-Howling Fjord",
-    "labels": [
-      "PoS#39645875"
-    ]
-  },
-  {
     "source": "Spammingg-Silvermoon",
     "target": "Monkina-Khaz Modan",
     "labels": [
@@ -11039,10 +11202,38 @@
     ]
   },
   {
+    "source": "Вокант-Gordunni",
+    "target": "Edusait-Ravencrest",
+    "labels": [
+      "NEXUS#41555196"
+    ]
+  },
+  {
+    "source": "Сквернапля-Gordunni",
+    "target": "Edusait-Ravencrest",
+    "labels": [
+      "NEXUS#41555196"
+    ]
+  },
+  {
     "source": "Kolebro-Kazzak",
     "target": "Edusait-Ravencrest",
     "labels": [
       "SPIRE#41447036"
+    ]
+  },
+  {
+    "source": "Nhaji-Tarren Mill",
+    "target": "Edusait-Ravencrest",
+    "labels": [
+      "MAG#41538777"
+    ]
+  },
+  {
+    "source": "Reytwq-Kazzak",
+    "target": "Edusait-Ravencrest",
+    "labels": [
+      "MAG#41538777"
     ]
   },
   {
@@ -11162,49 +11353,6 @@
     "target": "Söuleater-Silvermoon",
     "labels": [
       "SPIRE#40249820"
-    ]
-  },
-  {
-    "source": "Побафаем-Soulflayer",
-    "target": "Jailbreaker-Tarren Mill",
-    "labels": [
-      "ACAD#39699670",
-      "SKY#41294215",
-      "MSC#39689946",
-      "MAG#40381792"
-    ]
-  },
-  {
-    "source": "Сквернапля-Gordunni",
-    "target": "Jailbreaker-Tarren Mill",
-    "labels": [
-      "ACAD#39699670",
-      "SKY#41294215",
-      "SPIRE#39950134",
-      "MSC#39689946"
-    ]
-  },
-  {
-    "source": "Вокант-Gordunni",
-    "target": "Jailbreaker-Tarren Mill",
-    "labels": [
-      "SKY#41294215",
-      "SPIRE#39950134",
-      "MAG#40381792"
-    ]
-  },
-  {
-    "source": "Legolem-Blackhand",
-    "target": "Jailbreaker-Tarren Mill",
-    "labels": [
-      "PoS#40853935"
-    ]
-  },
-  {
-    "source": "Ömsendh-Silvermoon",
-    "target": "Jailbreaker-Tarren Mill",
-    "labels": [
-      "PoS#40853935"
     ]
   },
   {
@@ -11932,6 +12080,13 @@
     ]
   },
   {
+    "source": "Bingling-Tarren Mill",
+    "target": "Chicuck-Kazzak",
+    "labels": [
+      "SEAT#41549572"
+    ]
+  },
+  {
     "source": "Ayrasa-Thrall",
     "target": "Chicuck-Kazzak",
     "labels": [
@@ -12127,6 +12282,13 @@
     ]
   },
   {
+    "source": "Lfliladhd-Draenor",
+    "target": "Pikhogrip-Kazzak",
+    "labels": [
+      "SPIRE#41553343"
+    ]
+  },
+  {
     "source": "Shalidh-Silvermoon",
     "target": "Unførgivenz-Kazzak",
     "labels": [
@@ -12265,6 +12427,13 @@
     ]
   },
   {
+    "source": "Kolebro-Kazzak",
+    "target": "Snuskisxd-Tarren Mill",
+    "labels": [
+      "ACAD#41563219"
+    ]
+  },
+  {
     "source": "Солярадруид-Howling Fjord",
     "target": "Snuskisxd-Tarren Mill",
     "labels": [
@@ -12326,7 +12495,9 @@
     "target": "Twoeightdh-Blackmoore",
     "labels": [
       "ACAD#41311173",
-      "SKY#40806239"
+      "SEAT#41512669",
+      "SKY#40806239",
+      "MSC#41546588"
     ]
   },
   {
@@ -12468,6 +12639,20 @@
     "target": "Delanu-Blackrock",
     "labels": [
       "PoS#40005632"
+    ]
+  },
+  {
+    "source": "Zorandor-Taerar",
+    "target": "Neskouykmonk-Hyjal",
+    "labels": [
+      "SKY#41533680"
+    ]
+  },
+  {
+    "source": "Кукурузка-Howling Fjord",
+    "target": "Neskouykmonk-Hyjal",
+    "labels": [
+      "SKY#41533680"
     ]
   },
   {
@@ -12631,72 +12816,6 @@
     "target": "Jiudc-Kazzak",
     "labels": [
       "PoS#37827937"
-    ]
-  },
-  {
-    "source": "Malegusdk-Twisting Nether",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "ACAD#41294304",
-      "SEAT#41371888"
-    ]
-  },
-  {
-    "source": "Tabazkarate-Kazzak",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "ACAD#41294304",
-      "SEAT#41371888"
-    ]
-  },
-  {
-    "source": "Shavvrone-Tarren Mill",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "ACAD#41294304",
-      "SEAT#41371888"
-    ]
-  },
-  {
-    "source": "Legolem-Blackhand",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "NEXUS#41059505"
-    ]
-  },
-  {
-    "source": "Rataucigasa-Silvermoon",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "SKY#41146012"
-    ]
-  },
-  {
-    "source": "Pcnjoyboy-Drak'thul",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "MAG#40861193"
-    ]
-  },
-  {
-    "source": "Iarnir-Silvermoon",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "PoS#40732009"
-    ]
-  },
-  {
-    "source": "Спэрмобак-Howling Fjord",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "PoS#40732009"
-    ]
-  },
-  {
-    "source": "Блэйфи-Howling Fjord",
-    "target": "Метаслат-Blackscar",
-    "labels": [
-      "PoS#40732009"
     ]
   },
   {
@@ -13003,6 +13122,14 @@
     ]
   },
   {
+    "source": "Bingling-Tarren Mill",
+    "target": "Razerzqti-Kazzak",
+    "labels": [
+      "SEAT#41549572",
+      "SPIRE#41045126"
+    ]
+  },
+  {
     "source": "Cadanver-Kazzak",
     "target": "Razerzqti-Kazzak",
     "labels": [
@@ -13016,13 +13143,6 @@
       "NEXUS#39918058",
       "SKY#39904399",
       "MSC#40146468"
-    ]
-  },
-  {
-    "source": "Bingling-Tarren Mill",
-    "target": "Razerzqti-Kazzak",
-    "labels": [
-      "SPIRE#41045126"
     ]
   },
   {
@@ -13408,6 +13528,7 @@
     "target": "Microlock-Tarren Mill",
     "labels": [
       "SEAT#41441353",
+      "SPIRE#41538605",
       "PoS#41436925"
     ]
   },
@@ -13416,6 +13537,7 @@
     "target": "Microlock-Tarren Mill",
     "labels": [
       "SEAT#41441353",
+      "SPIRE#41538605",
       "PoS#41436925"
     ]
   },
@@ -13424,6 +13546,7 @@
     "target": "Microlock-Tarren Mill",
     "labels": [
       "SEAT#41441353",
+      "SPIRE#41538605",
       "PoS#41436925"
     ]
   },
@@ -13596,6 +13719,13 @@
     ]
   },
   {
+    "source": "Lfliladhd-Draenor",
+    "target": "Mangocider-Kazzak",
+    "labels": [
+      "SPIRE#41553343"
+    ]
+  },
+  {
     "source": "Tankierzdru-Burning Legion",
     "target": "Sphero-Kazzak",
     "labels": [
@@ -13751,43 +13881,6 @@
     "target": "Buffdk-Nozdormu",
     "labels": [
       "SPIRE#40954339"
-    ]
-  },
-  {
-    "source": "Mudim-Sylvanas",
-    "target": "Kirodrood-Blackhand",
-    "labels": [
-      "ACAD#41246694",
-      "SKY#41380529"
-    ]
-  },
-  {
-    "source": "Chandraa-Blackrock",
-    "target": "Kirodrood-Blackhand",
-    "labels": [
-      "ACAD#41246694",
-      "SKY#41380529"
-    ]
-  },
-  {
-    "source": "Peggsdh-Kazzak",
-    "target": "Kirodrood-Blackhand",
-    "labels": [
-      "NEXUS#40386956"
-    ]
-  },
-  {
-    "source": "Spinwook-Tarren Mill",
-    "target": "Kirodrood-Blackhand",
-    "labels": [
-      "MSC#39576976"
-    ]
-  },
-  {
-    "source": "Rotiyo-Burning Legion",
-    "target": "Kirodrood-Blackhand",
-    "labels": [
-      "PoS#40732165"
     ]
   },
   {
@@ -13947,10 +14040,31 @@
     ]
   },
   {
+    "source": "Rayvoker-Stormscale",
+    "target": "Maevmeowdy-Tarren Mill",
+    "labels": [
+      "ACAD#41511261"
+    ]
+  },
+  {
     "source": "Navvaldrag-Twisting Nether",
     "target": "Maevmeowdy-Tarren Mill",
     "labels": [
       "MAG#40389595"
+    ]
+  },
+  {
+    "source": "Zorandor-Taerar",
+    "target": "Lunaadk-Kazzak",
+    "labels": [
+      "NEXUS#41511670"
+    ]
+  },
+  {
+    "source": "Quagvoker-Draenor",
+    "target": "Lunaadk-Kazzak",
+    "labels": [
+      "NEXUS#41511670"
     ]
   },
   {
@@ -14264,9 +14378,24 @@
     ]
   },
   {
+    "source": "Zefirdudu-Twisting Nether",
+    "target": "Youraltushka-Twisting Nether",
+    "labels": [
+      "ACAD#41563217"
+    ]
+  },
+  {
+    "source": "Laszlovoker-Tarren Mill",
+    "target": "Youraltushka-Twisting Nether",
+    "labels": [
+      "ACAD#41563217"
+    ]
+  },
+  {
     "source": "Блэйфи-Howling Fjord",
     "target": "Youraltushka-Twisting Nether",
     "labels": [
+      "ACAD#41563217",
       "NEXUS#40252055",
       "MAG#40358068",
       "PoS#40074802"
@@ -14322,6 +14451,27 @@
     ]
   },
   {
+    "source": "Catamiaou-Sylvanas",
+    "target": "Cricridk-Kael'thas",
+    "labels": [
+      "ACAD#41564128"
+    ]
+  },
+  {
+    "source": "Превозмонк-Howling Fjord",
+    "target": "Cricridk-Kael'thas",
+    "labels": [
+      "ACAD#41564128"
+    ]
+  },
+  {
+    "source": "Warcvoker-Kazzak",
+    "target": "Cricridk-Kael'thas",
+    "labels": [
+      "ACAD#41564128"
+    ]
+  },
+  {
     "source": "Paydh-Twisting Nether",
     "target": "Cricridk-Kael'thas",
     "labels": [
@@ -14371,11 +14521,19 @@
     ]
   },
   {
+    "source": "Bingling-Tarren Mill",
+    "target": "Augrey-Ravencrest",
+    "labels": [
+      "SEAT#41549572"
+    ]
+  },
+  {
     "source": "Kostomonk-Blackrock",
     "target": "Lodeknas-Draenor",
     "labels": [
       "SKY#40849975",
-      "SPIRE#40293160"
+      "SPIRE#40293160",
+      "MAG#41513133"
     ]
   },
   {
@@ -14647,6 +14805,7 @@
     "source": "Kolebro-Kazzak",
     "target": "Hivanexd-Kazzak",
     "labels": [
+      "ACAD#41563219",
       "SPIRE#41447036"
     ]
   },
@@ -14748,6 +14907,13 @@
     "target": "Durmécour-Hyjal",
     "labels": [
       "PoS#36294616"
+    ]
+  },
+  {
+    "source": "Jailbreaker-Tarren Mill",
+    "target": "Thepromise-Neptulon",
+    "labels": [
+      "PoS#41558063"
     ]
   },
   {
@@ -14878,6 +15044,7 @@
     "source": "Maprro-Kazzak",
     "target": "Kravmagia-Kazzak",
     "labels": [
+      "SEAT#41512669",
       "SKY#40806239"
     ]
   },
@@ -14919,6 +15086,20 @@
     ]
   },
   {
+    "source": "Грипстанкилл-Gordunni",
+    "target": "Elto-Ysondre",
+    "labels": [
+      "SEAT#41557769"
+    ]
+  },
+  {
+    "source": "Luciabeli-Dalaran",
+    "target": "Elto-Ysondre",
+    "labels": [
+      "SKY#41519050"
+    ]
+  },
+  {
     "source": "Formes-Silvermoon",
     "target": "Elto-Ysondre",
     "labels": [
@@ -14926,10 +15107,24 @@
     ]
   },
   {
+    "source": "Грипстанкилл-Gordunni",
+    "target": "Lèfist-Blackmoore",
+    "labels": [
+      "SEAT#41557769"
+    ]
+  },
+  {
     "source": "Ratoxd-Argent Dawn",
     "target": "Lèfist-Blackmoore",
     "labels": [
       "NEXUS#40364028"
+    ]
+  },
+  {
+    "source": "Lfliladhd-Draenor",
+    "target": "Lèfist-Blackmoore",
+    "labels": [
+      "SPIRE#41553343"
     ]
   },
   {
@@ -15005,76 +15200,6 @@
     "labels": [
       "MAG#39831029",
       "PoS#39811569"
-    ]
-  },
-  {
-    "source": "Rickymank-Kazzak",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "ACAD#41054425"
-    ]
-  },
-  {
-    "source": "Кукурузка-Howling Fjord",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "NEXUS#40500527"
-    ]
-  },
-  {
-    "source": "Uwumiao-Twisting Nether",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "SKY#41311414"
-    ]
-  },
-  {
-    "source": "Duffdk-Hyjal",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "SPIRE#40973600"
-    ]
-  },
-  {
-    "source": "Maprro-Kazzak",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "MSC#40266305"
-    ]
-  },
-  {
-    "source": "Qldurtms-Kazzak",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "MAG#40071398"
-    ]
-  },
-  {
-    "source": "Mstwvr-Eredar",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "MAG#40071398"
-    ]
-  },
-  {
-    "source": "Aintnowayy-Tarren Mill",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "MAG#40071398"
-    ]
-  },
-  {
-    "source": "Namelessxo-Draenor",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "MAG#40071398"
-    ]
-  },
-  {
-    "source": "Thyi-Tarren Mill",
-    "target": "Feelspoonman-Kazzak",
-    "labels": [
-      "PoS#40258699"
     ]
   },
   {
@@ -15454,6 +15579,13 @@
     ]
   },
   {
+    "source": "Метаслат-Blackscar",
+    "target": "Gräsdh-Stormscale",
+    "labels": [
+      "ACAD#41564016"
+    ]
+  },
+  {
     "source": "Kksh-Tarren Mill",
     "target": "Gräsdh-Stormscale",
     "labels": [
@@ -15723,6 +15855,7 @@
     "source": "Грипстанкилл-Gordunni",
     "target": "Закзакдх-Soulflayer",
     "labels": [
+      "SEAT#41557769",
       "NEXUS#41156450"
     ]
   },
@@ -15821,6 +15954,27 @@
     ]
   },
   {
+    "source": "Вокант-Gordunni",
+    "target": "Zubear-Archimonde",
+    "labels": [
+      "NEXUS#41555196"
+    ]
+  },
+  {
+    "source": "Сквернапля-Gordunni",
+    "target": "Zubear-Archimonde",
+    "labels": [
+      "NEXUS#41555196"
+    ]
+  },
+  {
+    "source": "Hanserhardt-Blackrock",
+    "target": "Zubear-Archimonde",
+    "labels": [
+      "PoS#41494128"
+    ]
+  },
+  {
     "source": "Banggeer-Burning Legion",
     "target": "Puv-Ravencrest",
     "labels": [
@@ -15845,7 +15999,8 @@
     "source": "Kostomonk-Blackrock",
     "target": "Surtakdru-Blackmoore",
     "labels": [
-      "SKY#40849975"
+      "SKY#40849975",
+      "MAG#41513133"
     ]
   },
   {
@@ -15909,6 +16064,13 @@
     "target": "Aïrx-Sanguino",
     "labels": [
       "SPIRE#40235731"
+    ]
+  },
+  {
+    "source": "Юна-Booty Bay",
+    "target": "Thesolid-Kazzak",
+    "labels": [
+      "MSC#41519310"
     ]
   },
   {
@@ -15998,7 +16160,8 @@
     "source": "Hanserhardt-Blackrock",
     "target": "Tacocopter-Kazzak",
     "labels": [
-      "SEAT#41372603"
+      "SEAT#41372603",
+      "PoS#41494128"
     ]
   },
   {
@@ -16077,6 +16240,34 @@
     "target": "Реоникдру-Howling Fjord",
     "labels": [
       "NEXUS#41010666"
+    ]
+  },
+  {
+    "source": "Diffw-Ravencrest",
+    "target": "Blexxtron-Blackhand",
+    "labels": [
+      "PoS#41550361"
+    ]
+  },
+  {
+    "source": "Feraldruid-Draenor",
+    "target": "Blexxtron-Blackhand",
+    "labels": [
+      "PoS#41550361"
+    ]
+  },
+  {
+    "source": "Artmir-Draenor",
+    "target": "Blexxtron-Blackhand",
+    "labels": [
+      "PoS#41550361"
+    ]
+  },
+  {
+    "source": "Serotime-Ravencrest",
+    "target": "Blexxtron-Blackhand",
+    "labels": [
+      "PoS#41550361"
     ]
   },
   {
@@ -16276,6 +16467,13 @@
     ]
   },
   {
+    "source": "Topoviygus-Ravencrest",
+    "target": "Лфгэнджойер-Howling Fjord",
+    "labels": [
+      "ACAD#41567717"
+    ]
+  },
+  {
     "source": "Кукурузка-Howling Fjord",
     "target": "Лфгэнджойер-Howling Fjord",
     "labels": [
@@ -16432,9 +16630,24 @@
     "source": "Mnolomafiozo-Twisting Nether",
     "target": "Bearmínimum-Twisting Nether",
     "labels": [
+      "SEAT#41558985",
       "SKY#41363657",
       "SPIRE#41063068",
       "MSC#41399642"
+    ]
+  },
+  {
+    "source": "Rajk-Kazzak",
+    "target": "Bearmínimum-Twisting Nether",
+    "labels": [
+      "NEXUS#41557550"
+    ]
+  },
+  {
+    "source": "Neemspin-Tarren Mill",
+    "target": "Bearmínimum-Twisting Nether",
+    "labels": [
+      "NEXUS#41557550"
     ]
   },
   {
@@ -16519,6 +16732,27 @@
     "labels": [
       "MSC#39010983",
       "MAG#38618397"
+    ]
+  },
+  {
+    "source": "Catamiaou-Sylvanas",
+    "target": "Лучшийкореш-Gordunni",
+    "labels": [
+      "ACAD#41564128"
+    ]
+  },
+  {
+    "source": "Превозмонк-Howling Fjord",
+    "target": "Лучшийкореш-Gordunni",
+    "labels": [
+      "ACAD#41564128"
+    ]
+  },
+  {
+    "source": "Warcvoker-Kazzak",
+    "target": "Лучшийкореш-Gordunni",
+    "labels": [
+      "ACAD#41564128"
     ]
   },
   {
@@ -16621,6 +16855,20 @@
     ]
   },
   {
+    "source": "Banggeer-Burning Legion",
+    "target": "Jadestomp-Twisting Nether",
+    "labels": [
+      "MSC#41495277"
+    ]
+  },
+  {
+    "source": "Huntoker-Twisting Nether",
+    "target": "Jadestomp-Twisting Nether",
+    "labels": [
+      "MSC#41495277"
+    ]
+  },
+  {
     "source": "Кукурузка-Howling Fjord",
     "target": "Jadestomp-Twisting Nether",
     "labels": [
@@ -16667,6 +16915,20 @@
     "target": "Solesvoker-Kazzak",
     "labels": [
       "NEXUS#41450605"
+    ]
+  },
+  {
+    "source": "Healú-Tarren Mill",
+    "target": "Solesvoker-Kazzak",
+    "labels": [
+      "SPIRE#41538507"
+    ]
+  },
+  {
+    "source": "Baelroug-Ragnaros",
+    "target": "Solesvoker-Kazzak",
+    "labels": [
+      "SPIRE#41538507"
     ]
   },
   {
@@ -16845,6 +17107,27 @@
     ]
   },
   {
+    "source": "Vicatius-Silvermoon",
+    "target": "Jawst-Al'Akir",
+    "labels": [
+      "SEAT#41547560"
+    ]
+  },
+  {
+    "source": "Deervarev-Burning Legion",
+    "target": "Jawst-Al'Akir",
+    "labels": [
+      "SEAT#41547560"
+    ]
+  },
+  {
+    "source": "Myrtdh-Tarren Mill",
+    "target": "Jawst-Al'Akir",
+    "labels": [
+      "SEAT#41547560"
+    ]
+  },
+  {
     "source": "Dottybuff-Kirin Tor",
     "target": "Jawst-Al'Akir",
     "labels": [
@@ -16891,27 +17174,6 @@
     "target": "Stuffi-Darkspear",
     "labels": [
       "SKY#40059610"
-    ]
-  },
-  {
-    "source": "Nightclaws-Nemesis",
-    "target": "Kld-Kazzak",
-    "labels": [
-      "ACAD#41305821"
-    ]
-  },
-  {
-    "source": "Tomasdrak-Burning Blade",
-    "target": "Kld-Kazzak",
-    "labels": [
-      "ACAD#41305821"
-    ]
-  },
-  {
-    "source": "Aldredd-Tarren Mill",
-    "target": "Kld-Kazzak",
-    "labels": [
-      "MSC#41004654"
     ]
   },
   {
@@ -17005,16 +17267,10 @@
     ]
   },
   {
-    "source": "Fíxhavoc-Draenor",
-    "target": "Nootsmonk-Silvermoon",
+    "source": "Luciabeli-Dalaran",
+    "target": "Rozeen-Tarren Mill",
     "labels": [
-      "ACAD#41436277",
-      "SEAT#40259128",
-      "SKY#40846940",
-      "SPIRE#41039147",
-      "MSC#39638193",
-      "MAG#40069766",
-      "PoS#39297272"
+      "MSC#41533263"
     ]
   },
   {
@@ -17672,6 +17928,13 @@
     ]
   },
   {
+    "source": "Гвинвелис-Gordunni",
+    "target": "Натуральныйх-Gordunni",
+    "labels": [
+      "NEXUS#41550998"
+    ]
+  },
+  {
     "source": "Mariosping-Zul'jin",
     "target": "Натуральныйх-Gordunni",
     "labels": [
@@ -17686,14 +17949,22 @@
     ]
   },
   {
-    "source": "Побафаем-Soulflayer",
+    "source": "Вокант-Gordunni",
     "target": "Натуральныйх-Gordunni",
     "labels": [
-      "PoS#40993624"
+      "MAG#41538652"
     ]
   },
   {
     "source": "Сквернапля-Gordunni",
+    "target": "Натуральныйх-Gordunni",
+    "labels": [
+      "MAG#41538652",
+      "PoS#40993624"
+    ]
+  },
+  {
+    "source": "Побафаем-Soulflayer",
     "target": "Натуральныйх-Gordunni",
     "labels": [
       "PoS#40993624"
@@ -17704,6 +17975,13 @@
     "target": "Rainywind-Stormscale",
     "labels": [
       "SPIRE#41067931"
+    ]
+  },
+  {
+    "source": "Spinkaputt-Tarren Mill",
+    "target": "Utojr-Sargeras",
+    "labels": [
+      "MAG#41528163"
     ]
   },
   {
@@ -17732,6 +18010,13 @@
     "target": "Hustleweave-Draenor",
     "labels": [
       "SKY#40386176"
+    ]
+  },
+  {
+    "source": "Copiumgrip-Teldrassil",
+    "target": "Woragondh-Blackrock",
+    "labels": [
+      "MSC#41491915"
     ]
   },
   {
@@ -17795,6 +18080,13 @@
     "target": "Kaminàri-Archimonde",
     "labels": [
       "PoS#41179402"
+    ]
+  },
+  {
+    "source": "Maprro-Kazzak",
+    "target": "Bawlzz-Ysondre",
+    "labels": [
+      "SEAT#41512669"
     ]
   },
   {
@@ -17905,6 +18197,20 @@
     ]
   },
   {
+    "source": "Spinkaputt-Tarren Mill",
+    "target": "Drakewho-Kazzak",
+    "labels": [
+      "SKY#41484995"
+    ]
+  },
+  {
+    "source": "Marvdh-Tarren Mill",
+    "target": "Drakewho-Kazzak",
+    "labels": [
+      "SKY#41484995"
+    ]
+  },
+  {
     "source": "Stonedru-Laughing Skull",
     "target": "Drakewho-Kazzak",
     "labels": [
@@ -17962,6 +18268,13 @@
     ]
   },
   {
+    "source": "Mackaveli-Draenor",
+    "target": "Olirea-Kazzak",
+    "labels": [
+      "SKY#41522549"
+    ]
+  },
+  {
     "source": "Spectwil-Kazzak",
     "target": "Vegitodh-Kazzak",
     "labels": [
@@ -17979,9 +18292,17 @@
     "source": "Mnolomafiozo-Twisting Nether",
     "target": "Spingoesbrr-Dentarg",
     "labels": [
+      "SEAT#41558985",
       "SKY#41363657",
       "SPIRE#41063068",
       "MSC#41399642"
+    ]
+  },
+  {
+    "source": "Buffey-Kazzak",
+    "target": "Desiredgon-Twisting Nether",
+    "labels": [
+      "ACAD#41563218"
     ]
   },
   {
@@ -18212,9 +18533,17 @@
     ]
   },
   {
+    "source": "Alignmonk-Stormscale",
+    "target": "Rickydk-Twisting Nether",
+    "labels": [
+      "MSC#41477463"
+    ]
+  },
+  {
     "source": "Uwumiao-Twisting Nether",
     "target": "Rickydk-Twisting Nether",
     "labels": [
+      "MSC#41477463",
       "MAG#41289193"
     ]
   },
@@ -18352,6 +18681,20 @@
     ]
   },
   {
+    "source": "Bustamovesx-Twisting Nether",
+    "target": "Ichîrrö-Hyjal",
+    "labels": [
+      "MAG#41502277"
+    ]
+  },
+  {
+    "source": "Mistovic-Tarren Mill",
+    "target": "Ichîrrö-Hyjal",
+    "labels": [
+      "MAG#41502277"
+    ]
+  },
+  {
     "source": "ßainebeer-Silvermoon",
     "target": "Ichîrrö-Hyjal",
     "labels": [
@@ -18440,6 +18783,13 @@
     ]
   },
   {
+    "source": "Grootkin-Eredar",
+    "target": "Sarthia-Burning Legion",
+    "labels": [
+      "SPIRE#41545870"
+    ]
+  },
+  {
     "source": "Maprro-Kazzak",
     "target": "Sarthia-Burning Legion",
     "labels": [
@@ -18475,6 +18825,20 @@
     ]
   },
   {
+    "source": "Healú-Tarren Mill",
+    "target": "Bislibonk-Ragnaros",
+    "labels": [
+      "SPIRE#41538507"
+    ]
+  },
+  {
+    "source": "Baelroug-Ragnaros",
+    "target": "Bislibonk-Ragnaros",
+    "labels": [
+      "SPIRE#41538507"
+    ]
+  },
+  {
     "source": "Alubear-Dalaran",
     "target": "Bislibonk-Ragnaros",
     "labels": [
@@ -18485,7 +18849,16 @@
     "source": "Critimmune-Kazzak",
     "target": "Лаймхейз-Howling Fjord",
     "labels": [
+      "SEAT#41563232",
+      "SKY#41563238",
       "SPIRE#41060888"
+    ]
+  },
+  {
+    "source": "Slaboemist-Silvermoon",
+    "target": "Лаймхейз-Howling Fjord",
+    "labels": [
+      "SKY#41563238"
     ]
   },
   {
@@ -18576,6 +18949,7 @@
     "source": "Critimmune-Kazzak",
     "target": "Spinxdxd-Tarren Mill",
     "labels": [
+      "SEAT#41563232",
       "NEXUS#39748320",
       "SPIRE#41060888",
       "MSC#41060380",
@@ -18594,6 +18968,20 @@
     "target": "Кега-Gordunni",
     "labels": [
       "PoS#41257467"
+    ]
+  },
+  {
+    "source": "Copiumgrip-Teldrassil",
+    "target": "Benweave-Blackmoore",
+    "labels": [
+      "MSC#41491915"
+    ]
+  },
+  {
+    "source": "Kolebro-Kazzak",
+    "target": "Taxyclaw-Tarren Mill",
+    "labels": [
+      "ACAD#41563219"
     ]
   },
   {
@@ -18654,6 +19042,20 @@
     ]
   },
   {
+    "source": "Pomino-Silvermoon",
+    "target": "Phoenixdk-Twisting Nether",
+    "labels": [
+      "MAG#41542164"
+    ]
+  },
+  {
+    "source": "Kekr-Ravencrest",
+    "target": "Phoenixdk-Twisting Nether",
+    "labels": [
+      "MAG#41542164"
+    ]
+  },
+  {
     "source": "Daveydk-Twisting Nether",
     "target": "Yuumienjoyer-Darksorrow",
     "labels": [
@@ -18672,14 +19074,16 @@
     "source": "Bustamovesx-Twisting Nether",
     "target": "Yuumienjoyer-Darksorrow",
     "labels": [
-      "SEAT#40804645"
+      "SEAT#40804645",
+      "MAG#41502277"
     ]
   },
   {
     "source": "Mistovic-Tarren Mill",
     "target": "Yuumienjoyer-Darksorrow",
     "labels": [
-      "SEAT#40804645"
+      "SEAT#40804645",
+      "MAG#41502277"
     ]
   },
   {
@@ -18848,6 +19252,27 @@
     "target": "Legiondk-Blackrock",
     "labels": [
       "MAG#41111896"
+    ]
+  },
+  {
+    "source": "Zainahdr-Draenor",
+    "target": "Rifdh-Blackhand",
+    "labels": [
+      "NEXUS#41516529"
+    ]
+  },
+  {
+    "source": "Mudim-Sylvanas",
+    "target": "Rifdh-Blackhand",
+    "labels": [
+      "NEXUS#41516529"
+    ]
+  },
+  {
+    "source": "Chandraa-Blackrock",
+    "target": "Rifdh-Blackhand",
+    "labels": [
+      "NEXUS#41516529"
     ]
   },
   {
@@ -19076,7 +19501,17 @@
     "source": "Spinxd-Sylvanas",
     "target": "Heated-Blackrock",
     "labels": [
+      "SEAT#41494278",
       "NEXUS#40210769",
+      "SPIRE#40998905",
+      "PoS#40785781"
+    ]
+  },
+  {
+    "source": "Ararara-Blackhand",
+    "target": "Heated-Blackrock",
+    "labels": [
+      "SEAT#41494278",
       "SPIRE#40998905",
       "PoS#40785781"
     ]
@@ -19086,14 +19521,6 @@
     "target": "Heated-Blackrock",
     "labels": [
       "SPIRE#40998905"
-    ]
-  },
-  {
-    "source": "Ararara-Blackhand",
-    "target": "Heated-Blackrock",
-    "labels": [
-      "SPIRE#40998905",
-      "PoS#40785781"
     ]
   },
   {
@@ -19295,48 +19722,6 @@
     "target": "Vshady-Twisting Nether",
     "labels": [
       "MAG#41185798"
-    ]
-  },
-  {
-    "source": "Элуани-Howling Fjord",
-    "target": "Therys-Nemesis",
-    "labels": [
-      "SEAT#40639977"
-    ]
-  },
-  {
-    "source": "Сэксорка-Howling Fjord",
-    "target": "Therys-Nemesis",
-    "labels": [
-      "SEAT#40639977"
-    ]
-  },
-  {
-    "source": "Kókushibò-Archimonde",
-    "target": "Therys-Nemesis",
-    "labels": [
-      "NEXUS#39846229"
-    ]
-  },
-  {
-    "source": "Garõõna-Silvermoon",
-    "target": "Therys-Nemesis",
-    "labels": [
-      "SKY#40748122"
-    ]
-  },
-  {
-    "source": "Scythespells-Tarren Mill",
-    "target": "Therys-Nemesis",
-    "labels": [
-      "MAG#40044006"
-    ]
-  },
-  {
-    "source": "Thyi-Tarren Mill",
-    "target": "Therys-Nemesis",
-    "labels": [
-      "PoS#40258699"
     ]
   },
   {
@@ -19550,6 +19935,7 @@
       "NEXUS#40647188",
       "SKY#40748068",
       "SPIRE#40394461",
+      "MSC#41461832",
       "MAG#40307810",
       "PoS#40848097"
     ]
@@ -19689,9 +20075,24 @@
     "target": "Yuyahunt-Blackmoore",
     "labels": [
       "NEXUS#38035706",
+      "SPIRE#41537806",
       "MSC#39183243",
       "MAG#39272836",
       "PoS#38772680"
+    ]
+  },
+  {
+    "source": "Uglybabyphd-Argent Dawn",
+    "target": "Yuyahunt-Blackmoore",
+    "labels": [
+      "SPIRE#41537806"
+    ]
+  },
+  {
+    "source": "Jisoodc-Tarren Mill",
+    "target": "Yuyahunt-Blackmoore",
+    "labels": [
+      "SPIRE#41537806"
     ]
   },
   {
@@ -19805,6 +20206,7 @@
       "ACAD#41419146",
       "NEXUS#41313857",
       "SKY#41440616",
+      "MAG#41538777",
       "PoS#41164210"
     ]
   },
@@ -19827,6 +20229,13 @@
     "target": "Terribledh-Draenor",
     "labels": [
       "MSC#41447008"
+    ]
+  },
+  {
+    "source": "Nhaji-Tarren Mill",
+    "target": "Terribledh-Draenor",
+    "labels": [
+      "MAG#41538777"
     ]
   },
   {
@@ -19994,6 +20403,41 @@
     "labels": [
       "MAG#41317696",
       "PoS#41010050"
+    ]
+  },
+  {
+    "source": "Malegusdk-Twisting Nether",
+    "target": "Maxibeer-Archimonde",
+    "labels": [
+      "ACAD#41537087",
+      "NEXUS#41537110",
+      "SKY#41467916",
+      "MAG#41467924"
+    ]
+  },
+  {
+    "source": "Tabazkarate-Kazzak",
+    "target": "Maxibeer-Archimonde",
+    "labels": [
+      "ACAD#41537087",
+      "NEXUS#41537110",
+      "MAG#41467924"
+    ]
+  },
+  {
+    "source": "Namelessxo-Draenor",
+    "target": "Maxibeer-Archimonde",
+    "labels": [
+      "ACAD#41537087",
+      "NEXUS#41537110"
+    ]
+  },
+  {
+    "source": "Девоуреркала-Howling Fjord",
+    "target": "Maxibeer-Archimonde",
+    "labels": [
+      "SKY#41467916",
+      "MAG#41467924"
     ]
   },
   {
@@ -20339,6 +20783,13 @@
     ]
   },
   {
+    "source": "Rainydaysx-Silvermoon",
+    "target": "Monkiza-Kazzak",
+    "labels": [
+      "PoS#41553385"
+    ]
+  },
+  {
     "source": "Zorandor-Taerar",
     "target": "Illidoncarne-Taerar",
     "labels": [
@@ -20387,6 +20838,13 @@
     "target": "Vadandk-Kazzak",
     "labels": [
       "MSC#34537678"
+    ]
+  },
+  {
+    "source": "Buffey-Kazzak",
+    "target": "Robinbig-Ragnaros",
+    "labels": [
+      "ACAD#41563218"
     ]
   },
   {
@@ -20514,6 +20972,20 @@
     ]
   },
   {
+    "source": "Kershbear-Silvermoon",
+    "target": "Moonkq-Silvermoon",
+    "labels": [
+      "MAG#41489777"
+    ]
+  },
+  {
+    "source": "Dawnreaper-Silvermoon",
+    "target": "Moonkq-Silvermoon",
+    "labels": [
+      "MAG#41489777"
+    ]
+  },
+  {
     "source": "Eskaonlypma-Kazzak",
     "target": "Bucketisback-Ysondre",
     "labels": [
@@ -20634,6 +21106,13 @@
     ]
   },
   {
+    "source": "Spinkaputt-Tarren Mill",
+    "target": "Qunarion-Argent Dawn",
+    "labels": [
+      "MAG#41528163"
+    ]
+  },
+  {
     "source": "Healú-Tarren Mill",
     "target": "Vandeer-Tarren Mill",
     "labels": [
@@ -20674,6 +21153,13 @@
     ]
   },
   {
+    "source": "Rayvoker-Stormscale",
+    "target": "Zmunk-Twisting Nether",
+    "labels": [
+      "ACAD#41511261"
+    ]
+  },
+  {
     "source": "Pcnjoyboy-Drak'thul",
     "target": "Zmunk-Twisting Nether",
     "labels": [
@@ -20685,6 +21171,20 @@
     "target": "Zmunk-Twisting Nether",
     "labels": [
       "SPIRE#41032349"
+    ]
+  },
+  {
+    "source": "Pomino-Silvermoon",
+    "target": "Zmunk-Twisting Nether",
+    "labels": [
+      "MAG#41542164"
+    ]
+  },
+  {
+    "source": "Kekr-Ravencrest",
+    "target": "Zmunk-Twisting Nether",
+    "labels": [
+      "MAG#41542164"
     ]
   },
   {
@@ -20778,6 +21278,13 @@
     ]
   },
   {
+    "source": "Copiumgrip-Teldrassil",
+    "target": "Bënnys-Tarren Mill",
+    "labels": [
+      "MSC#41491915"
+    ]
+  },
+  {
     "source": "Jjl-Blackhand",
     "target": "Àxana-Antonidas",
     "labels": [
@@ -20805,6 +21312,7 @@
     "source": "Mnolomafiozo-Twisting Nether",
     "target": "Necrokitty-Tarren Mill",
     "labels": [
+      "SEAT#41558985",
       "SKY#41363657",
       "SPIRE#41063068",
       "MSC#41399642"
@@ -20849,10 +21357,31 @@
     ]
   },
   {
+    "source": "Kershbear-Silvermoon",
+    "target": "Sahlmonk-Tarren Mill",
+    "labels": [
+      "MSC#41524302"
+    ]
+  },
+  {
+    "source": "Dawnreaper-Silvermoon",
+    "target": "Sahlmonk-Tarren Mill",
+    "labels": [
+      "MSC#41524302"
+    ]
+  },
+  {
     "source": "Uwunyasha-Ravencrest",
     "target": "Sahlmonk-Tarren Mill",
     "labels": [
       "MAG#41111896"
+    ]
+  },
+  {
+    "source": "Raydonovan-Twisting Nether",
+    "target": "Shymone-Ragnaros",
+    "labels": [
+      "MAG#41560960"
     ]
   },
   {
@@ -20972,6 +21501,13 @@
     ]
   },
   {
+    "source": "Stkk-Sanguino",
+    "target": "Разбасовочка-Gordunni",
+    "labels": [
+      "PoS#41568931"
+    ]
+  },
+  {
     "source": "Cenzychi-Twisting Nether",
     "target": "Síndel-Kazzak",
     "labels": [
@@ -20979,10 +21515,25 @@
     ]
   },
   {
+    "source": "Raydonovan-Twisting Nether",
+    "target": "Síndel-Kazzak",
+    "labels": [
+      "SPIRE#41563531"
+    ]
+  },
+  {
     "source": "Applefruit-Draenor",
     "target": "Síndel-Kazzak",
     "labels": [
+      "SPIRE#41563531",
       "MSC#40569215"
+    ]
+  },
+  {
+    "source": "Pcnjoyboy-Drak'thul",
+    "target": "Síndel-Kazzak",
+    "labels": [
+      "SPIRE#41563531"
     ]
   },
   {
@@ -21411,6 +21962,39 @@
     ]
   },
   {
+    "source": "Banggeer-Burning Legion",
+    "target": "Chîcken-Blackrock",
+    "labels": [
+      "SKY#41532190",
+      "MSC#41495277",
+      "MAG#41493192",
+      "PoS#41511913"
+    ]
+  },
+  {
+    "source": "Kyomaog-Burning Legion",
+    "target": "Chîcken-Blackrock",
+    "labels": [
+      "SKY#41532190"
+    ]
+  },
+  {
+    "source": "Huntoker-Twisting Nether",
+    "target": "Chîcken-Blackrock",
+    "labels": [
+      "MSC#41495277",
+      "MAG#41493192",
+      "PoS#41511913"
+    ]
+  },
+  {
+    "source": "Juura-Kazzak",
+    "target": "Chîcken-Blackrock",
+    "labels": [
+      "MAG#41493192"
+    ]
+  },
+  {
     "source": "Twistingcat-Tarren Mill",
     "target": "Gangstha-Tarren Mill",
     "labels": [
@@ -21538,6 +22122,13 @@
     ]
   },
   {
+    "source": "Zorandor-Taerar",
+    "target": "Paarthurnnax-Drak'thul",
+    "labels": [
+      "SPIRE#41548223"
+    ]
+  },
+  {
     "source": "Buffey-Kazzak",
     "target": "Paarthurnnax-Drak'thul",
     "labels": [
@@ -21626,6 +22217,27 @@
     ]
   },
   {
+    "source": "Luciferdruid-Ragnaros",
+    "target": "Lillyallen-Twisting Nether",
+    "labels": [
+      "MAG#41549385"
+    ]
+  },
+  {
+    "source": "Outis-Stormscale",
+    "target": "Lillyallen-Twisting Nether",
+    "labels": [
+      "MAG#41549385"
+    ]
+  },
+  {
+    "source": "Unförgivenz-Kazzak",
+    "target": "Lillyallen-Twisting Nether",
+    "labels": [
+      "MAG#41549385"
+    ]
+  },
+  {
     "source": "Healú-Tarren Mill",
     "target": "Dethrakdva-Drak'thul",
     "labels": [
@@ -21665,6 +22277,20 @@
     "target": "Yrerbear-Silvermoon",
     "labels": [
       "NEXUS#40385384"
+    ]
+  },
+  {
+    "source": "Вокант-Gordunni",
+    "target": "Yrerbear-Silvermoon",
+    "labels": [
+      "SKY#41536222"
+    ]
+  },
+  {
+    "source": "Сквернапля-Gordunni",
+    "target": "Yrerbear-Silvermoon",
+    "labels": [
+      "SKY#41536222"
     ]
   },
   {
@@ -21744,11 +22370,49 @@
     ]
   },
   {
+    "source": "Buffey-Kazzak",
+    "target": "Julefeijoa-Ragnaros",
+    "labels": [
+      "ACAD#41563218"
+    ]
+  },
+  {
     "source": "Thepplo-Draenor",
     "target": "Chilledruid-Ragnaros",
     "labels": [
       "MSC#41062746",
       "MAG#40854474"
+    ]
+  },
+  {
+    "source": "Borisbearov-Kazzak",
+    "target": "Augestdk-Kazzak",
+    "labels": [
+      "NEXUS#41508042",
+      "PoS#41559126"
+    ]
+  },
+  {
+    "source": "Нимбмэйн-Soulflayer",
+    "target": "Augestdk-Kazzak",
+    "labels": [
+      "NEXUS#41508042",
+      "PoS#41559126"
+    ]
+  },
+  {
+    "source": "Метеорбласт-Soulflayer",
+    "target": "Augestdk-Kazzak",
+    "labels": [
+      "NEXUS#41508042"
+    ]
+  },
+  {
+    "source": "Даркнэсс-Soulflayer",
+    "target": "Augestdk-Kazzak",
+    "labels": [
+      "NEXUS#41508042",
+      "PoS#41559126"
     ]
   },
   {
@@ -21935,6 +22599,13 @@
     ]
   },
   {
+    "source": "Rainydaysx-Silvermoon",
+    "target": "Xerol-Twisting Nether",
+    "labels": [
+      "PoS#41553385"
+    ]
+  },
+  {
     "source": "Biomontevkr-Twisting Nether",
     "target": "Shadeof-Twisting Nether",
     "labels": [
@@ -22072,6 +22743,35 @@
     ]
   },
   {
+    "source": "Гвинвелис-Gordunni",
+    "target": "Jyne-Blackmoore",
+    "labels": [
+      "NEXUS#41550998"
+    ]
+  },
+  {
+    "source": "Araviz-Kazzak",
+    "target": "Jyne-Blackmoore",
+    "labels": [
+      "MSC#41484508",
+      "MAG#41544744"
+    ]
+  },
+  {
+    "source": "Stonedru-Laughing Skull",
+    "target": "Jyne-Blackmoore",
+    "labels": [
+      "MAG#41544744"
+    ]
+  },
+  {
+    "source": "Jailbreaker-Tarren Mill",
+    "target": "Jyne-Blackmoore",
+    "labels": [
+      "PoS#41558063"
+    ]
+  },
+  {
     "source": "Crìms-Draenor",
     "target": "Didzilcat-Kazzak",
     "labels": [
@@ -22118,6 +22818,20 @@
     "target": "Volrot-Nazjatar",
     "labels": [
       "PoS#38729063"
+    ]
+  },
+  {
+    "source": "Blumbe-Argent Dawn",
+    "target": "Domidomdom-Ysondre",
+    "labels": [
+      "MSC#41533598"
+    ]
+  },
+  {
+    "source": "Kyokiryu-Tarren Mill",
+    "target": "Domidomdom-Ysondre",
+    "labels": [
+      "MSC#41533598"
     ]
   },
   {
@@ -22277,6 +22991,27 @@
     ]
   },
   {
+    "source": "Decaymenance-Draenor",
+    "target": "Kevkehunter-Blackmoore",
+    "labels": [
+      "SKY#41500033"
+    ]
+  },
+  {
+    "source": "Outis-Stormscale",
+    "target": "Kevkehunter-Blackmoore",
+    "labels": [
+      "SKY#41500033"
+    ]
+  },
+  {
+    "source": "Unförgivenz-Kazzak",
+    "target": "Kevkehunter-Blackmoore",
+    "labels": [
+      "SKY#41500033"
+    ]
+  },
+  {
     "source": "Понакох-Howling Fjord",
     "target": "Kevkehunter-Blackmoore",
     "labels": [
@@ -22374,6 +23109,20 @@
     ]
   },
   {
+    "source": "Elragar-Kazzak",
+    "target": "Ashmix-Kazzak",
+    "labels": [
+      "SPIRE#41557776"
+    ]
+  },
+  {
+    "source": "ßainebeer-Silvermoon",
+    "target": "Ashmix-Kazzak",
+    "labels": [
+      "SPIRE#41557776"
+    ]
+  },
+  {
     "source": "Foltard-Archimonde",
     "target": "Ashmix-Kazzak",
     "labels": [
@@ -22381,10 +23130,38 @@
     ]
   },
   {
+    "source": "Aldredd-Tarren Mill",
+    "target": "Aurasolar-Twisting Nether",
+    "labels": [
+      "SPIRE#41501011"
+    ]
+  },
+  {
+    "source": "Übercool-Blackhand",
+    "target": "Aurasolar-Twisting Nether",
+    "labels": [
+      "SPIRE#41501011"
+    ]
+  },
+  {
+    "source": "Кукурузка-Howling Fjord",
+    "target": "Aurasolar-Twisting Nether",
+    "labels": [
+      "SPIRE#41501011"
+    ]
+  },
+  {
     "source": "Subaruu-Blackmoore",
     "target": "Aurasolar-Twisting Nether",
     "labels": [
       "MAG#41407867"
+    ]
+  },
+  {
+    "source": "Copiumgrip-Teldrassil",
+    "target": "Uncixz-Blackhand",
+    "labels": [
+      "MSC#41491915"
     ]
   },
   {
@@ -22423,6 +23200,13 @@
     ]
   },
   {
+    "source": "Howdysx-Argent Dawn",
+    "target": "Mavmonk-Kazzak",
+    "labels": [
+      "MAG#41549019"
+    ]
+  },
+  {
     "source": "Tankierzdru-Burning Legion",
     "target": "Mavmonk-Kazzak",
     "labels": [
@@ -22441,6 +23225,20 @@
     "target": "Mavmonk-Kazzak",
     "labels": [
       "PoS#40730996"
+    ]
+  },
+  {
+    "source": "Вокант-Gordunni",
+    "target": "Summerbreeze-Twisting Nether",
+    "labels": [
+      "SEAT#41493995"
+    ]
+  },
+  {
+    "source": "Сквернапля-Gordunni",
+    "target": "Summerbreeze-Twisting Nether",
+    "labels": [
+      "SEAT#41493995"
     ]
   },
   {
@@ -22801,6 +23599,13 @@
     ]
   },
   {
+    "source": "Rainydaysx-Silvermoon",
+    "target": "Syoker-Blackrock",
+    "labels": [
+      "SKY#41548445"
+    ]
+  },
+  {
     "source": "Pjdruid-Blackmoore",
     "target": "Syoker-Blackrock",
     "labels": [
@@ -23036,10 +23841,19 @@
     "source": "Critimmune-Kazzak",
     "target": "Darthplagues-Kazzak",
     "labels": [
+      "SEAT#41563232",
       "NEXUS#39748320",
+      "SKY#41563238",
       "SPIRE#41060888",
       "MSC#41060380",
       "PoS#40323914"
+    ]
+  },
+  {
+    "source": "Slaboemist-Silvermoon",
+    "target": "Darthplagues-Kazzak",
+    "labels": [
+      "SKY#41563238"
     ]
   },
   {
@@ -23313,6 +24127,13 @@
     ]
   },
   {
+    "source": "Maprro-Kazzak",
+    "target": "Hotpinkx-Twisting Nether",
+    "labels": [
+      "SEAT#41512669"
+    ]
+  },
+  {
     "source": "Yursh-Sylvanas",
     "target": "Hotpinkx-Twisting Nether",
     "labels": [
@@ -23353,6 +24174,46 @@
     "labels": [
       "ACAD#40373162",
       "NEXUS#40373019"
+    ]
+  },
+  {
+    "source": "Vicatius-Silvermoon",
+    "target": "Scotticus-Silvermoon",
+    "labels": [
+      "SEAT#41547560",
+      "SKY#41553683",
+      "SPIRE#41539093"
+    ]
+  },
+  {
+    "source": "Deervarev-Burning Legion",
+    "target": "Scotticus-Silvermoon",
+    "labels": [
+      "SEAT#41547560",
+      "SKY#41553683",
+      "SPIRE#41539093"
+    ]
+  },
+  {
+    "source": "Myrtdh-Tarren Mill",
+    "target": "Scotticus-Silvermoon",
+    "labels": [
+      "SEAT#41547560",
+      "SPIRE#41539093"
+    ]
+  },
+  {
+    "source": "Myrtdecay-Tarren Mill",
+    "target": "Scotticus-Silvermoon",
+    "labels": [
+      "SKY#41553683"
+    ]
+  },
+  {
+    "source": "Hazardh-Sylvanas",
+    "target": "Scotticus-Silvermoon",
+    "labels": [
+      "SKY#41553683"
     ]
   },
   {
@@ -23431,6 +24292,20 @@
     "target": "Nypdk-Kazzak",
     "labels": [
       "PoS#41294354"
+    ]
+  },
+  {
+    "source": "Malegusdk-Twisting Nether",
+    "target": "Healxd-Twisting Nether",
+    "labels": [
+      "SKY#41467916"
+    ]
+  },
+  {
+    "source": "Девоуреркала-Howling Fjord",
+    "target": "Healxd-Twisting Nether",
+    "labels": [
+      "SKY#41467916"
     ]
   },
   {
@@ -23678,6 +24553,13 @@
     ]
   },
   {
+    "source": "Spin-Sanguino",
+    "target": "Littlebuns-Tarren Mill",
+    "labels": [
+      "SPIRE#41482943"
+    ]
+  },
+  {
     "source": "Даняпятка-Gordunni",
     "target": "Littlebuns-Tarren Mill",
     "labels": [
@@ -23704,6 +24586,13 @@
     "target": "Кактусшмик-Howling Fjord",
     "labels": [
       "PoS#41015160"
+    ]
+  },
+  {
+    "source": "Luciabeli-Dalaran",
+    "target": "Ninjadh-Laughing Skull",
+    "labels": [
+      "SKY#41519050"
     ]
   },
   {
@@ -23823,21 +24712,31 @@
     "source": "Вокант-Gordunni",
     "target": "Augly-Silvermoon",
     "labels": [
-      "SPIRE#39950134"
+      "SPIRE#39950134",
+      "MAG#41538652"
     ]
   },
   {
     "source": "Сквернапля-Gordunni",
     "target": "Augly-Silvermoon",
     "labels": [
-      "SPIRE#39950134"
+      "SPIRE#39950134",
+      "MAG#41538652"
+    ]
+  },
+  {
+    "source": "Jailbreaker-Tarren Mill",
+    "target": "Augly-Silvermoon",
+    "labels": [
+      "PoS#41558063"
     ]
   },
   {
     "source": "Rainydaysx-Silvermoon",
     "target": "Lazerdk-Antonidas",
     "labels": [
-      "NEXUS#40950600"
+      "NEXUS#40950600",
+      "SKY#41548445"
     ]
   },
   {
@@ -23872,34 +24771,6 @@
     ]
   },
   {
-    "source": "Orreckspin-Hyjal",
-    "target": "Mheh-Moonglade",
-    "labels": [
-      "SEAT#40782147"
-    ]
-  },
-  {
-    "source": "Legolem-Blackhand",
-    "target": "Mheh-Moonglade",
-    "labels": [
-      "NEXUS#41059505"
-    ]
-  },
-  {
-    "source": "Rataucigasa-Silvermoon",
-    "target": "Mheh-Moonglade",
-    "labels": [
-      "SKY#41146012"
-    ]
-  },
-  {
-    "source": "Navinna-Tarren Mill",
-    "target": "Mheh-Moonglade",
-    "labels": [
-      "SPIRE#41038751"
-    ]
-  },
-  {
     "source": "Darksêttsu-Ravencrest",
     "target": "Dpsdecreaser-Silvermoon",
     "labels": [
@@ -23912,6 +24783,13 @@
     "target": "Májesty-Silvermoon",
     "labels": [
       "NEXUS#41293469"
+    ]
+  },
+  {
+    "source": "Alignmonk-Stormscale",
+    "target": "Ралатил-Gordunni",
+    "labels": [
+      "SPIRE#41497913"
     ]
   },
   {
@@ -23929,6 +24807,13 @@
     "target": "Мэссорасу-Gordunni",
     "labels": [
       "NEXUS#40252055"
+    ]
+  },
+  {
+    "source": "Topoviygus-Ravencrest",
+    "target": "Venzer-Tarren Mill",
+    "labels": [
+      "ACAD#41567717"
     ]
   },
   {
@@ -24072,9 +24957,17 @@
     "target": "Nourdeen-Kazzak",
     "labels": [
       "NEXUS#39748320",
+      "SKY#41563238",
       "SPIRE#41060888",
       "MSC#41060380",
       "PoS#40323914"
+    ]
+  },
+  {
+    "source": "Slaboemist-Silvermoon",
+    "target": "Nourdeen-Kazzak",
+    "labels": [
+      "SKY#41563238"
     ]
   },
   {
@@ -24237,53 +25130,6 @@
     "target": "Ooxxo-Kazzak",
     "labels": [
       "PoS#40828950"
-    ]
-  },
-  {
-    "source": "Boreasxd-Kazzak",
-    "target": "Luciferdruid-Ragnaros",
-    "labels": [
-      "ACAD#39660515",
-      "SKY#39633910"
-    ]
-  },
-  {
-    "source": "Outis-Stormscale",
-    "target": "Luciferdruid-Ragnaros",
-    "labels": [
-      "ACAD#39660515",
-      "SEAT#41178051"
-    ]
-  },
-  {
-    "source": "Рэйвмейв-Howling Fjord",
-    "target": "Luciferdruid-Ragnaros",
-    "labels": [
-      "ACAD#39660515",
-      "SKY#39633910",
-      "MSC#39382022",
-      "PoS#39170368"
-    ]
-  },
-  {
-    "source": "Unförgivenz-Kazzak",
-    "target": "Luciferdruid-Ragnaros",
-    "labels": [
-      "SEAT#41178051"
-    ]
-  },
-  {
-    "source": "Cheveubleu-Archimonde",
-    "target": "Luciferdruid-Ragnaros",
-    "labels": [
-      "NEXUS#38258499"
-    ]
-  },
-  {
-    "source": "Pve-Stormscale",
-    "target": "Luciferdruid-Ragnaros",
-    "labels": [
-      "MAG#38521610"
     ]
   },
   {
@@ -24563,6 +25409,13 @@
     "target": "Shõ-Antonidas",
     "labels": [
       "NEXUS#41145631"
+    ]
+  },
+  {
+    "source": "Rainydaysx-Silvermoon",
+    "target": "Shõ-Antonidas",
+    "labels": [
+      "SKY#41548445"
     ]
   },
   {
@@ -25054,6 +25907,13 @@
     ]
   },
   {
+    "source": "Luciabeli-Dalaran",
+    "target": "Blitaaxdk-Sanguino",
+    "labels": [
+      "SKY#41519050"
+    ]
+  },
+  {
     "source": "Healú-Tarren Mill",
     "target": "Blitaaxdk-Sanguino",
     "labels": [
@@ -25299,6 +26159,13 @@
     ]
   },
   {
+    "source": "Topoviygus-Ravencrest",
+    "target": "Ipullyoutank-Kazzak",
+    "labels": [
+      "ACAD#41567717"
+    ]
+  },
+  {
     "source": "Rainydaysx-Silvermoon",
     "target": "Akaysius-Silvermoon",
     "labels": [
@@ -25311,57 +26178,6 @@
     "labels": [
       "MSC#39932776",
       "MAG#40069766"
-    ]
-  },
-  {
-    "source": "Steaweed-Tarren Mill",
-    "target": "Razzvoker-Kazzak",
-    "labels": [
-      "ACAD#41420590"
-    ]
-  },
-  {
-    "source": "Zaichique-Silvermoon",
-    "target": "Razzvoker-Kazzak",
-    "labels": [
-      "ACAD#41420590"
-    ]
-  },
-  {
-    "source": "Hazardh-Sylvanas",
-    "target": "Razzvoker-Kazzak",
-    "labels": [
-      "ACAD#41420590"
-    ]
-  },
-  {
-    "source": "Subaruu-Blackmoore",
-    "target": "Razzvoker-Kazzak",
-    "labels": [
-      "NEXUS#40717784",
-      "SKY#40728488",
-      "MAG#41407867"
-    ]
-  },
-  {
-    "source": "Ayrasa-Thrall",
-    "target": "Razzvoker-Kazzak",
-    "labels": [
-      "SKY#40728488"
-    ]
-  },
-  {
-    "source": "Applefruit-Draenor",
-    "target": "Razzvoker-Kazzak",
-    "labels": [
-      "MSC#40569215"
-    ]
-  },
-  {
-    "source": "Cenzychi-Twisting Nether",
-    "target": "Razzvoker-Kazzak",
-    "labels": [
-      "PoS#40826937"
     ]
   },
   {
@@ -25512,6 +26328,20 @@
     ]
   },
   {
+    "source": "Elragar-Kazzak",
+    "target": "Zamvoker-Draenor",
+    "labels": [
+      "SPIRE#41557776"
+    ]
+  },
+  {
+    "source": "ßainebeer-Silvermoon",
+    "target": "Zamvoker-Draenor",
+    "labels": [
+      "SPIRE#41557776"
+    ]
+  },
+  {
     "source": "Tankierzdru-Burning Legion",
     "target": "Lùnæry-Hyjal",
     "labels": [
@@ -25585,6 +26415,13 @@
     ]
   },
   {
+    "source": "Raydonovan-Twisting Nether",
+    "target": "Rudik-Ravencrest",
+    "labels": [
+      "MAG#41560960"
+    ]
+  },
+  {
     "source": "Nazoker-Tarren Mill",
     "target": "Chickendk-Tarren Mill",
     "labels": [
@@ -25653,24 +26490,6 @@
     ]
   },
   {
-    "source": "Reytwq-Kazzak",
-    "target": "Kalecgus-Ragnaros",
-    "labels": [
-      "ACAD#41419146"
-    ]
-  },
-  {
-    "source": "Fíxhavoc-Draenor",
-    "target": "Kalecgus-Ragnaros",
-    "labels": [
-      "SEAT#40259128",
-      "SKY#40846940",
-      "SPIRE#41039147",
-      "MSC#40351432",
-      "MAG#40370191"
-    ]
-  },
-  {
     "source": "Relocate-Kazzak",
     "target": "Sofars-Kazzak",
     "labels": [
@@ -25717,6 +26536,20 @@
     "target": "Chattedivine-Hyjal",
     "labels": [
       "PoS#39640151"
+    ]
+  },
+  {
+    "source": "Spinkaputt-Tarren Mill",
+    "target": "Mediocrity-Silvermoon",
+    "labels": [
+      "NEXUS#41544050"
+    ]
+  },
+  {
+    "source": "Marvdh-Tarren Mill",
+    "target": "Mediocrity-Silvermoon",
+    "labels": [
+      "NEXUS#41544050"
     ]
   },
   {
@@ -26200,8 +27033,11 @@
     "target": "Wbwser-Silvermoon",
     "labels": [
       "NEXUS#41417377",
+      "SKY#41532190",
       "SPIRE#41377957",
-      "MAG#41392107"
+      "MSC#41495277",
+      "MAG#41392107",
+      "PoS#41511913"
     ]
   },
   {
@@ -26209,6 +27045,13 @@
     "target": "Wbwser-Silvermoon",
     "labels": [
       "NEXUS#41417377"
+    ]
+  },
+  {
+    "source": "Kyomaog-Burning Legion",
+    "target": "Wbwser-Silvermoon",
+    "labels": [
+      "SKY#41532190"
     ]
   },
   {
@@ -26223,7 +27066,16 @@
     "target": "Wbwser-Silvermoon",
     "labels": [
       "SPIRE#41377957",
-      "MAG#41392107"
+      "MSC#41495277",
+      "MAG#41392107",
+      "PoS#41511913"
+    ]
+  },
+  {
+    "source": "Quankk-Blackhand",
+    "target": "Wavedash-Blackmoore",
+    "labels": [
+      "NEXUS#41547784"
     ]
   },
   {
@@ -26444,14 +27296,16 @@
     "source": "Grizzmachine-Burning Legion",
     "target": "Nhejì-Nemesis",
     "labels": [
-      "MSC#40961191"
+      "MSC#40961191",
+      "PoS#41477183"
     ]
   },
   {
     "source": "Ekodnight-Kazzak",
     "target": "Nhejì-Nemesis",
     "labels": [
-      "MSC#40961191"
+      "MSC#40961191",
+      "PoS#41477183"
     ]
   },
   {
@@ -26459,6 +27313,13 @@
     "target": "Nhejì-Nemesis",
     "labels": [
       "MSC#40961191"
+    ]
+  },
+  {
+    "source": "ßainebeer-Silvermoon",
+    "target": "Nhejì-Nemesis",
+    "labels": [
+      "PoS#41477183"
     ]
   },
   {
@@ -26527,6 +27388,23 @@
     ]
   },
   {
+    "source": "Zefirdudu-Twisting Nether",
+    "target": "Joyßoy-Twisting Nether",
+    "labels": [
+      "SEAT#41563234",
+      "MAG#39772656"
+    ]
+  },
+  {
+    "source": "Девоуреркала-Howling Fjord",
+    "target": "Joyßoy-Twisting Nether",
+    "labels": [
+      "SEAT#41563234",
+      "SPIRE#39574703",
+      "MAG#39772656"
+    ]
+  },
+  {
     "source": "Кукульдру-Gordunni",
     "target": "Joyßoy-Twisting Nether",
     "labels": [
@@ -26566,21 +27444,6 @@
     ]
   },
   {
-    "source": "Девоуреркала-Howling Fjord",
-    "target": "Joyßoy-Twisting Nether",
-    "labels": [
-      "SPIRE#39574703",
-      "MAG#39772656"
-    ]
-  },
-  {
-    "source": "Zefirdudu-Twisting Nether",
-    "target": "Joyßoy-Twisting Nether",
-    "labels": [
-      "MAG#39772656"
-    ]
-  },
-  {
     "source": "Dlkeyvoker-Stormscale",
     "target": "Joyßoy-Twisting Nether",
     "labels": [
@@ -26592,6 +27455,13 @@
     "target": "Joyßoy-Twisting Nether",
     "labels": [
       "PoS#39437554"
+    ]
+  },
+  {
+    "source": "Юна-Booty Bay",
+    "target": "Ezhot-Kazzak",
+    "labels": [
+      "MSC#41519310"
     ]
   },
   {
@@ -26795,7 +27665,8 @@
     "labels": [
       "SKY#40160202",
       "SPIRE#40157324",
-      "MSC#40010755"
+      "MSC#40010755",
+      "MAG#41467924"
     ]
   },
   {
@@ -26810,6 +27681,27 @@
     "target": "Kaggabreath-Kazzak",
     "labels": [
       "MSC#40010755"
+    ]
+  },
+  {
+    "source": "Malegusdk-Twisting Nether",
+    "target": "Kaggabreath-Kazzak",
+    "labels": [
+      "MAG#41467924"
+    ]
+  },
+  {
+    "source": "Девоуреркала-Howling Fjord",
+    "target": "Kaggabreath-Kazzak",
+    "labels": [
+      "MAG#41467924"
+    ]
+  },
+  {
+    "source": "Buffey-Kazzak",
+    "target": "Karashdk-Tarren Mill",
+    "labels": [
+      "ACAD#41563218"
     ]
   },
   {
@@ -26849,14 +27741,45 @@
     "source": "Outis-Stormscale",
     "target": "Tojidk-Burning Legion",
     "labels": [
-      "NEXUS#41410364"
+      "NEXUS#41410364",
+      "SPIRE#41519656",
+      "MSC#41544126",
+      "MAG#41549385",
+      "PoS#41533168"
     ]
   },
   {
     "source": "Unförgivenz-Kazzak",
     "target": "Tojidk-Burning Legion",
     "labels": [
-      "NEXUS#41410364"
+      "NEXUS#41410364",
+      "SPIRE#41519656",
+      "MSC#41544126",
+      "MAG#41549385",
+      "PoS#41533168"
+    ]
+  },
+  {
+    "source": "Midnaj-Twisting Nether",
+    "target": "Tojidk-Burning Legion",
+    "labels": [
+      "SPIRE#41519656"
+    ]
+  },
+  {
+    "source": "Luciferdruid-Ragnaros",
+    "target": "Tojidk-Burning Legion",
+    "labels": [
+      "MSC#41544126",
+      "MAG#41549385",
+      "PoS#41533168"
+    ]
+  },
+  {
+    "source": "Borhyjka-Drak'thul",
+    "target": "Tojidk-Burning Legion",
+    "labels": [
+      "PoS#41533168"
     ]
   },
   {
@@ -26976,6 +27899,13 @@
     ]
   },
   {
+    "source": "Ekodnight-Kazzak",
+    "target": "Oxifang-Kazzak",
+    "labels": [
+      "MAG#41564995"
+    ]
+  },
+  {
     "source": "Elragar-Kazzak",
     "target": "Pandamonkk-Ravencrest",
     "labels": [
@@ -27081,6 +28011,13 @@
     ]
   },
   {
+    "source": "Ekodnight-Kazzak",
+    "target": "Nikachi-Ravencrest",
+    "labels": [
+      "MAG#41564995"
+    ]
+  },
+  {
     "source": "Пандазаврик-Gordunni",
     "target": "Kitsuwings-Tarren Mill",
     "labels": [
@@ -27099,6 +28036,13 @@
     "target": "Kitsuwings-Tarren Mill",
     "labels": [
       "MSC#40846325"
+    ]
+  },
+  {
+    "source": "Ekodnight-Kazzak",
+    "target": "Kitsuwings-Tarren Mill",
+    "labels": [
+      "MAG#41564995"
     ]
   },
   {
@@ -27447,6 +28391,28 @@
     ]
   },
   {
+    "source": "Zefirdudu-Twisting Nether",
+    "target": "Drakenyasha-Tarren Mill",
+    "labels": [
+      "SEAT#41563234"
+    ]
+  },
+  {
+    "source": "Девоуреркала-Howling Fjord",
+    "target": "Drakenyasha-Tarren Mill",
+    "labels": [
+      "SEAT#41563234",
+      "SKY#41563242"
+    ]
+  },
+  {
+    "source": "Майкидруид-Howling Fjord",
+    "target": "Drakenyasha-Tarren Mill",
+    "labels": [
+      "SKY#41563242"
+    ]
+  },
+  {
     "source": "Кукульдру-Gordunni",
     "target": "Drakenyasha-Tarren Mill",
     "labels": [
@@ -27521,6 +28487,13 @@
     "target": "Augestv-Twisting Nether",
     "labels": [
       "MAG#41158587"
+    ]
+  },
+  {
+    "source": "Grootkin-Eredar",
+    "target": "Bârzille-Blackmoore",
+    "labels": [
+      "NEXUS#41545974"
     ]
   }
 ]
