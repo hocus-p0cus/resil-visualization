@@ -224,14 +224,23 @@
     "source": "Yükí-Ravencrest",
     "target": "Daosh-Nemesis",
     "labels": [
-      "RLP#24602291"
+      "RLP#24602291",
+      "VSA#25296519"
     ]
   },
   {
     "source": "Buttermuffin-Tarren Mill",
     "target": "Daosh-Nemesis",
     "labels": [
-      "BV#23924311"
+      "BV#23924311",
+      "VSA#25296519"
+    ]
+  },
+  {
+    "source": "Driptinus-Argent Dawn",
+    "target": "Daosh-Nemesis",
+    "labels": [
+      "VSA#25296519"
     ]
   },
   {
@@ -295,6 +304,7 @@
     "source": "Pokester-Draenor",
     "target": "Dzonamvp-Draenor",
     "labels": [
+      "AOF#25299794",
       "DON#24857849",
       "VSA#23894835"
     ]
@@ -524,42 +534,6 @@
     ]
   },
   {
-    "source": "Egsotic-Burning Legion",
-    "target": "Ivetomaina-Kazzak",
-    "labels": [
-      "RLP#24817243"
-    ]
-  },
-  {
-    "source": "Kaggabane-Tarren Mill",
-    "target": "Ivetomaina-Kazzak",
-    "labels": [
-      "RLP#24817243",
-      "VSA#23525888"
-    ]
-  },
-  {
-    "source": "Sjelemental-Twisting Nether",
-    "target": "Ivetomaina-Kazzak",
-    "labels": [
-      "TOS#23725301"
-    ]
-  },
-  {
-    "source": "Buttermuffin-Tarren Mill",
-    "target": "Ivetomaina-Kazzak",
-    "labels": [
-      "BV#24349276"
-    ]
-  },
-  {
-    "source": "Spingødxx-Draenor",
-    "target": "Ivetomaina-Kazzak",
-    "labels": [
-      "BV#24349276"
-    ]
-  },
-  {
     "source": "Defilé-Drak'thul",
     "target": "Zheenm-Twisting Nether",
     "labels": [
@@ -719,29 +693,41 @@
     ]
   },
   {
-    "source": "Иутир-Howling Fjord",
+    "source": "Diffw-Ravencrest",
     "target": "Аэрит-Howling Fjord",
     "labels": [
-      "MR#25066975",
-      "RLP#25182385"
+      "AOF#25294129",
+      "VSA#25291832"
     ]
   },
   {
     "source": "Салатисос-Howling Fjord",
     "target": "Аэрит-Howling Fjord",
     "labels": [
+      "AOF#25294129",
       "MR#25066975",
       "RLP#25182385",
-      "BV#25036314"
+      "BV#25036314",
+      "VSA#25291832"
     ]
   },
   {
     "source": "Rinen-Kazzak",
     "target": "Аэрит-Howling Fjord",
     "labels": [
+      "AOF#25294129",
       "MR#25066975",
       "RLP#25182385",
-      "BV#25036314"
+      "BV#25036314",
+      "VSA#25291832"
+    ]
+  },
+  {
+    "source": "Иутир-Howling Fjord",
+    "target": "Аэрит-Howling Fjord",
+    "labels": [
+      "MR#25066975",
+      "RLP#25182385"
     ]
   },
   {
@@ -1178,6 +1164,20 @@
     ]
   },
   {
+    "source": "Kaggabane-Tarren Mill",
+    "target": "Fanatìk-Kazzak",
+    "labels": [
+      "AOF#25297848"
+    ]
+  },
+  {
+    "source": "Xhanon-Kazzak",
+    "target": "Fanatìk-Kazzak",
+    "labels": [
+      "AOF#25297848"
+    ]
+  },
+  {
     "source": "Spongêbob-Blackrock",
     "target": "Fanatìk-Kazzak",
     "labels": [
@@ -1480,6 +1480,7 @@
     "source": "Pokester-Draenor",
     "target": "Tokýo-Silvermoon",
     "labels": [
+      "AOF#25299794",
       "DON#24857849"
     ]
   },
@@ -1799,14 +1800,15 @@
     ]
   },
   {
-    "source": "Uglybabi-Draenor",
+    "source": "Pokester-Draenor",
     "target": "Jisoozuha-Tarren Mill",
     "labels": [
+      "AOF#25299794",
       "KR#24546891"
     ]
   },
   {
-    "source": "Pokester-Draenor",
+    "source": "Uglybabi-Draenor",
     "target": "Jisoozuha-Tarren Mill",
     "labels": [
       "KR#24546891"
@@ -1969,6 +1971,20 @@
   },
   {
     "source": "Салатисос-Howling Fjord",
+    "target": "Рофлкек-Gordunni",
+    "labels": [
+      "DON#25252286"
+    ]
+  },
+  {
+    "source": "Rinen-Kazzak",
+    "target": "Рофлкек-Gordunni",
+    "labels": [
+      "DON#25252286"
+    ]
+  },
+  {
+    "source": "Салатисос-Howling Fjord",
     "target": "Warx-Ravencrest",
     "labels": [
       "BV#25036314"
@@ -1986,6 +2002,30 @@
     "target": "Kleptomane-Blackrock",
     "labels": [
       "DON#24842528"
+    ]
+  },
+  {
+    "source": "Diffw-Ravencrest",
+    "target": "Beaconmvd-Tarren Mill",
+    "labels": [
+      "AOF#25294129",
+      "VSA#25291832"
+    ]
+  },
+  {
+    "source": "Салатисос-Howling Fjord",
+    "target": "Beaconmvd-Tarren Mill",
+    "labels": [
+      "AOF#25294129",
+      "VSA#25291832"
+    ]
+  },
+  {
+    "source": "Rinen-Kazzak",
+    "target": "Beaconmvd-Tarren Mill",
+    "labels": [
+      "AOF#25294129",
+      "VSA#25291832"
     ]
   },
   {
@@ -2022,7 +2062,8 @@
     "labels": [
       "DON#24960603",
       "KR#25071633",
-      "MR#25074517"
+      "MR#25074517",
+      "RLP#25299605"
     ]
   },
   {
@@ -2031,7 +2072,8 @@
     "labels": [
       "DON#24960603",
       "KR#25071633",
-      "MR#25074517"
+      "MR#25074517",
+      "RLP#25299605"
     ]
   },
   {
@@ -2039,18 +2081,27 @@
     "target": "Royjonesjr-Silvermoon",
     "labels": [
       "KR#25071633",
-      "MR#25074517"
-    ]
-  },
-  {
-    "source": "Egsotic-Burning Legion",
-    "target": "Lonelý-Kazzak",
-    "labels": [
-      "RLP#24817243"
+      "MR#25074517",
+      "RLP#25299605"
     ]
   },
   {
     "source": "Kaggabane-Tarren Mill",
+    "target": "Lonelý-Kazzak",
+    "labels": [
+      "AOF#25297848",
+      "RLP#24817243"
+    ]
+  },
+  {
+    "source": "Xhanon-Kazzak",
+    "target": "Lonelý-Kazzak",
+    "labels": [
+      "AOF#25297848"
+    ]
+  },
+  {
+    "source": "Egsotic-Burning Legion",
     "target": "Lonelý-Kazzak",
     "labels": [
       "RLP#24817243"
@@ -2350,21 +2401,24 @@
     "source": "Dwarftheban-Kazzak",
     "target": "Yukibang-Kazzak",
     "labels": [
-      "MR#25074517"
+      "MR#25074517",
+      "RLP#25299605"
     ]
   },
   {
     "source": "Virusdruid-Silvermoon",
     "target": "Yukibang-Kazzak",
     "labels": [
-      "MR#25074517"
+      "MR#25074517",
+      "RLP#25299605"
     ]
   },
   {
     "source": "Shalixone-Silvermoon",
     "target": "Yukibang-Kazzak",
     "labels": [
-      "MR#25074517"
+      "MR#25074517",
+      "RLP#25299605"
     ]
   },
   {
@@ -2436,6 +2490,13 @@
     "target": "Single-Kazzak",
     "labels": [
       "DON#24948860"
+    ]
+  },
+  {
+    "source": "Pokester-Draenor",
+    "target": "Alvendruid-Silvermoon",
+    "labels": [
+      "AOF#25299794"
     ]
   },
   {
@@ -2571,9 +2632,18 @@
     ]
   },
   {
+    "source": "Иутир-Howling Fjord",
+    "target": "Трэшари-Howling Fjord",
+    "labels": [
+      "AOF#25275538",
+      "MR#24286115"
+    ]
+  },
+  {
     "source": "Салатисос-Howling Fjord",
     "target": "Трэшари-Howling Fjord",
     "labels": [
+      "AOF#25275538",
       "DON#24390146",
       "MR#24286115"
     ]
@@ -2582,20 +2652,15 @@
     "source": "Rinen-Kazzak",
     "target": "Трэшари-Howling Fjord",
     "labels": [
+      "AOF#25275538",
       "DON#24390146"
     ]
   },
   {
-    "source": "Иутир-Howling Fjord",
-    "target": "Трэшари-Howling Fjord",
-    "labels": [
-      "MR#24286115"
-    ]
-  },
-  {
     "source": "Салатисос-Howling Fjord",
     "target": "Steroidsrumi-Tarren Mill",
     "labels": [
+      "DON#25252286",
       "KR#24937615"
     ]
   },
@@ -2603,6 +2668,7 @@
     "source": "Rinen-Kazzak",
     "target": "Steroidsrumi-Tarren Mill",
     "labels": [
+      "DON#25252286",
       "KR#24937615"
     ]
   },
@@ -2610,6 +2676,7 @@
     "source": "Иутир-Howling Fjord",
     "target": "Мортрэд-Gordunni",
     "labels": [
+      "AOF#25275538",
       "MR#24525964",
       "RLP#25182385"
     ]
@@ -2618,6 +2685,7 @@
     "source": "Салатисос-Howling Fjord",
     "target": "Мортрэд-Gordunni",
     "labels": [
+      "AOF#25275538",
       "MR#24525964",
       "RLP#25182385"
     ]
@@ -2626,6 +2694,7 @@
     "source": "Rinen-Kazzak",
     "target": "Мортрэд-Gordunni",
     "labels": [
+      "AOF#25275538",
       "MR#24525964",
       "RLP#25182385"
     ]
