@@ -15,8 +15,36 @@
     "labels": [
       "KR#25083896",
       "MR#24969732",
+      "RLP#25502409",
       "TOS#25086045",
       "BV#24966693"
+    ]
+  },
+  {
+    "source": "Lagbugdc-Frostmourne",
+    "target": "Lexiahx-Frostmourne",
+    "labels": [
+      "KR#25547540",
+      "RLP#25547543",
+      "BV#25547535"
+    ]
+  },
+  {
+    "source": "Skylarkeddn-Frostmourne",
+    "target": "Lexiahx-Frostmourne",
+    "labels": [
+      "KR#25547540",
+      "RLP#25547543",
+      "BV#25547535"
+    ]
+  },
+  {
+    "source": "Damastius-Frostmourne",
+    "target": "Lexiahx-Frostmourne",
+    "labels": [
+      "KR#25547540",
+      "RLP#25547543",
+      "BV#25547535"
     ]
   },
   {
@@ -44,6 +72,7 @@
     "labels": [
       "KR#25083896",
       "MR#24969732",
+      "RLP#25502409",
       "TOS#25086045",
       "BV#24966693"
     ]
@@ -68,6 +97,7 @@
     "labels": [
       "KR#25083896",
       "MR#24969732",
+      "RLP#25502409",
       "TOS#25086045",
       "BV#24966693"
     ]
@@ -202,46 +232,6 @@
     ]
   },
   {
-    "source": "Squishvegan-Area 52",
-    "target": "Gillick-Tichondrius",
-    "labels": [
-      "AOF#25106649",
-      "KR#25106650",
-      "MR#25210792",
-      "RLP#25210793",
-      "BV#25214192",
-      "VSA#25106651"
-    ]
-  },
-  {
-    "source": "Khumi-Ragnaros",
-    "target": "Gillick-Tichondrius",
-    "labels": [
-      "KR#25106650",
-      "MR#25210792",
-      "RLP#25210793",
-      "BV#25214192"
-    ]
-  },
-  {
-    "source": "Mortíz-Stormrage",
-    "target": "Gillick-Tichondrius",
-    "labels": [
-      "KR#25106650",
-      "MR#25210792",
-      "RLP#25210793",
-      "BV#25214192"
-    ]
-  },
-  {
-    "source": "Wildzaps-Hyjal",
-    "target": "Gillick-Tichondrius",
-    "labels": [
-      "KR#25106650",
-      "BV#25214192"
-    ]
-  },
-  {
     "source": "Mortíz-Stormrage",
     "target": "Cixxmonk-Area 52",
     "labels": [
@@ -269,7 +259,9 @@
       "AOF#25460646",
       "KR#24944722",
       "RLP#24843732",
-      "TOS#25462491"
+      "TOS#25462491",
+      "BV#25556476",
+      "VSA#25557952"
     ]
   },
   {
@@ -284,14 +276,9 @@
     "source": "Gatogato-Azralon",
     "target": "Sicksevenx-Illidan",
     "labels": [
-      "TOS#25462491"
-    ]
-  },
-  {
-    "source": "Elunelol-Elune",
-    "target": "Leaffallew-Illidan",
-    "labels": [
-      "AOF#25460646"
+      "TOS#25462491",
+      "BV#25556476",
+      "VSA#25557952"
     ]
   },
   {
@@ -363,6 +350,7 @@
     "labels": [
       "KR#25083896",
       "MR#24969732",
+      "RLP#25502409",
       "TOS#25086045",
       "BV#24966693"
     ]
@@ -494,6 +482,7 @@
     "source": "Elunelol-Elune",
     "target": "Horoyoii-Proudmoore",
     "labels": [
+      "AOF#25547811",
       "DON#23588180",
       "KR#24944722",
       "MR#23944565",
@@ -506,12 +495,20 @@
     "source": "Cartidk-Area 52",
     "target": "Horoyoii-Proudmoore",
     "labels": [
+      "AOF#25547811",
       "DON#23588180",
       "KR#24944722",
       "MR#23944565",
       "RLP#24843732",
       "TOS#24602777",
       "BV#24305857"
+    ]
+  },
+  {
+    "source": "Gatogato-Azralon",
+    "target": "Horoyoii-Proudmoore",
+    "labels": [
+      "AOF#25547811"
     ]
   },
   {
@@ -552,82 +549,35 @@
     ]
   },
   {
+    "source": "Lagbugdc-Frostmourne",
+    "target": "Yamatekudasi-Frostmourne",
+    "labels": [
+      "KR#25547540",
+      "RLP#25547543"
+    ]
+  },
+  {
+    "source": "Skylarkeddn-Frostmourne",
+    "target": "Yamatekudasi-Frostmourne",
+    "labels": [
+      "KR#25547540",
+      "RLP#25547543"
+    ]
+  },
+  {
+    "source": "Damastius-Frostmourne",
+    "target": "Yamatekudasi-Frostmourne",
+    "labels": [
+      "KR#25547540",
+      "RLP#25547543"
+    ]
+  },
+  {
     "source": "Vaesarir-Bleeding Hollow",
     "target": "Zellarah-Sargeras",
     "labels": [
       "MR#24487503",
       "RLP#23618577"
-    ]
-  },
-  {
-    "source": "Elunelol-Elune",
-    "target": "Pangrip-Illidan",
-    "labels": [
-      "AOF#25460646",
-      "MR#25293848",
-      "TOS#25462491"
-    ]
-  },
-  {
-    "source": "Gadriel-Aerie Peak",
-    "target": "Pangrip-Illidan",
-    "labels": [
-      "MR#25293848"
-    ]
-  },
-  {
-    "source": "Gatogato-Azralon",
-    "target": "Pangrip-Illidan",
-    "labels": [
-      "TOS#25462491"
-    ]
-  },
-  {
-    "source": "Gwozz-Illidan",
-    "target": "Costcoglizze-Illidan",
-    "labels": [
-      "DON#25491396",
-      "KR#25212781",
-      "MR#25216599",
-      "RLP#25210586",
-      "TOS#24963365",
-      "BV#24867126",
-      "VSA#25206403"
-    ]
-  },
-  {
-    "source": "Rangedbad-Area 52",
-    "target": "Costcoglizze-Illidan",
-    "labels": [
-      "DON#25491396",
-      "KR#25212781",
-      "MR#25216599",
-      "RLP#25210586",
-      "TOS#24963365",
-      "BV#24867126",
-      "VSA#25206403"
-    ]
-  },
-  {
-    "source": "Vashezzo-Arthas",
-    "target": "Costcoglizze-Illidan",
-    "labels": [
-      "DON#25491396",
-      "KR#25212781",
-      "MR#25216599",
-      "RLP#25210586",
-      "TOS#24963365",
-      "BV#24867126",
-      "VSA#25206403"
-    ]
-  },
-  {
-    "source": "Charrend-Mal'Ganis",
-    "target": "Costcoglizze-Illidan",
-    "labels": [
-      "KR#25212781",
-      "MR#25216599",
-      "RLP#25210586"
     ]
   },
   {
@@ -648,6 +598,7 @@
     "source": "Elunelol-Elune",
     "target": "Sickosa-Illidan",
     "labels": [
+      "AOF#25547811",
       "DON#24853193",
       "KR#25293843",
       "MR#23943479",
@@ -658,9 +609,17 @@
     "source": "Cartidk-Area 52",
     "target": "Sickosa-Illidan",
     "labels": [
+      "AOF#25547811",
       "DON#24853193",
       "KR#25293843",
       "TOS#24602777"
+    ]
+  },
+  {
+    "source": "Gatogato-Azralon",
+    "target": "Sickosa-Illidan",
+    "labels": [
+      "AOF#25547811"
     ]
   },
   {
@@ -718,45 +677,6 @@
     "labels": [
       "DON#25215971",
       "MR#25395932"
-    ]
-  },
-  {
-    "source": "Gwozz-Illidan",
-    "target": "Exxiw-Moon Guard",
-    "labels": [
-      "DON#25491396",
-      "KR#25486578",
-      "MR#25312396",
-      "RLP#25487706",
-      "TOS#24963365",
-      "BV#24867126",
-      "VSA#25206403"
-    ]
-  },
-  {
-    "source": "Rangedbad-Area 52",
-    "target": "Exxiw-Moon Guard",
-    "labels": [
-      "DON#25491396",
-      "KR#25486578",
-      "MR#25312396",
-      "RLP#25487706",
-      "TOS#24963365",
-      "BV#24867126",
-      "VSA#25206403"
-    ]
-  },
-  {
-    "source": "Vashezzo-Arthas",
-    "target": "Exxiw-Moon Guard",
-    "labels": [
-      "DON#25491396",
-      "KR#25486578",
-      "MR#25312396",
-      "RLP#25487706",
-      "TOS#24963365",
-      "BV#24867126",
-      "VSA#25206403"
     ]
   },
   {
