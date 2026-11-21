@@ -237,20 +237,6 @@
     ]
   },
   {
-    "source": "Xehmpest-Area 52",
-    "target": "Alendk-Illidan",
-    "labels": [
-      "AOF#26077402"
-    ]
-  },
-  {
-    "source": "Xehmpest-Area 52",
-    "target": "Coffeecita-Illidan",
-    "labels": [
-      "AOF#26077402"
-    ]
-  },
-  {
     "source": "Elunelol-Elune",
     "target": "Preparedr-Kul Tiras",
     "labels": [
@@ -543,18 +529,30 @@
     "source": "Elunelol-Elune",
     "target": "Chiwan-Illidan",
     "labels": [
+      "AOF#26138063",
       "DON#25293836",
       "KR#25293843",
-      "MR#25293852"
+      "MR#25293852",
+      "TOS#26138072"
     ]
   },
   {
     "source": "Cartidk-Area 52",
     "target": "Chiwan-Illidan",
     "labels": [
+      "AOF#26138063",
       "DON#25293836",
       "KR#25293843",
-      "MR#25293852"
+      "MR#25293852",
+      "TOS#26138072"
+    ]
+  },
+  {
+    "source": "Gatogato-Azralon",
+    "target": "Chiwan-Illidan",
+    "labels": [
+      "AOF#26138063",
+      "TOS#26138072"
     ]
   },
   {
@@ -569,6 +567,14 @@
     "target": "Skyshocks-Stormrage",
     "labels": [
       "MR#24613753"
+    ]
+  },
+  {
+    "source": "Cheeklord-Area 52",
+    "target": "Yodafotm-Illidan",
+    "labels": [
+      "MR#26141121",
+      "TOS#26137343"
     ]
   },
   {
@@ -752,10 +758,40 @@
     ]
   },
   {
+    "source": "Cheeklord-Area 52",
+    "target": "Shenbiren-Illidan",
+    "labels": [
+      "MR#26141121"
+    ]
+  },
+  {
     "source": "Xehmpest-Area 52",
     "target": "Silzunë-Stormrage",
     "labels": [
-      "AOF#26077402"
+      "AOF#26077402",
+      "KR#26130741",
+      "VSA#26130738"
+    ]
+  },
+  {
+    "source": "Moximus-Frostmourne",
+    "target": "Harushear-Aman'Thul",
+    "labels": [
+      "TOS#26148803"
+    ]
+  },
+  {
+    "source": "Elwhy-Frostmourne",
+    "target": "Harushear-Aman'Thul",
+    "labels": [
+      "TOS#26148803"
+    ]
+  },
+  {
+    "source": "Elmmerfud-Tichondrius",
+    "target": "Harushear-Aman'Thul",
+    "labels": [
+      "TOS#26148803"
     ]
   },
   {
@@ -817,13 +853,6 @@
     ]
   },
   {
-    "source": "Xehmpest-Area 52",
-    "target": "Vitch-Ragnaros",
-    "labels": [
-      "AOF#26077402"
-    ]
-  },
-  {
     "source": "Vaesarir-Bleeding Hollow",
     "target": "Milkcha-Illidan",
     "labels": [
@@ -878,6 +907,30 @@
     "labels": [
       "MR#24487503",
       "RLP#23618577"
+    ]
+  },
+  {
+    "source": "Elunelol-Elune",
+    "target": "Nonglobal-Area 52",
+    "labels": [
+      "DON#26138058",
+      "BV#26138056"
+    ]
+  },
+  {
+    "source": "Cartidk-Area 52",
+    "target": "Nonglobal-Area 52",
+    "labels": [
+      "DON#26138058",
+      "BV#26138056"
+    ]
+  },
+  {
+    "source": "Gatogato-Azralon",
+    "target": "Nonglobal-Area 52",
+    "labels": [
+      "DON#26138058",
+      "BV#26138056"
     ]
   },
   {
@@ -974,7 +1027,8 @@
       "DON#24853193",
       "KR#25293843",
       "MR#23943479",
-      "TOS#24602777"
+      "TOS#24602777",
+      "BV#26138056"
     ]
   },
   {
@@ -984,14 +1038,16 @@
       "AOF#25547811",
       "DON#24853193",
       "KR#25293843",
-      "TOS#24602777"
+      "TOS#24602777",
+      "BV#26138056"
     ]
   },
   {
     "source": "Gatogato-Azralon",
     "target": "Sickosa-Illidan",
     "labels": [
-      "AOF#25547811"
+      "AOF#25547811",
+      "BV#26138056"
     ]
   },
   {
@@ -1042,7 +1098,8 @@
     "target": "Zèlt-Frostmourne",
     "labels": [
       "AOF#25905114",
-      "KR#26088229"
+      "KR#26088229",
+      "TOS#26148803"
     ]
   },
   {
@@ -1059,7 +1116,15 @@
     "labels": [
       "AOF#25905114",
       "KR#26088229",
+      "TOS#26148803",
       "BV#25968208"
+    ]
+  },
+  {
+    "source": "Moximus-Frostmourne",
+    "target": "Zèlt-Frostmourne",
+    "labels": [
+      "TOS#26148803"
     ]
   },
   {
@@ -1097,7 +1162,8 @@
     "target": "Uzami-Hyjal",
     "labels": [
       "DON#25215971",
-      "MR#25395932"
+      "MR#25395932",
+      "TOS#26137343"
     ]
   },
   {
@@ -1140,6 +1206,14 @@
       "MR#25734948",
       "RLP#25645915",
       "TOS#25739517"
+    ]
+  },
+  {
+    "source": "Cheeklord-Area 52",
+    "target": "Seraphinexd-Illidan",
+    "labels": [
+      "MR#26141121",
+      "TOS#26137343"
     ]
   }
 ]
