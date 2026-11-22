@@ -149,7 +149,9 @@
     "source": "Kevylx-Frostmourne",
     "target": "Executionèr-Hyjal",
     "labels": [
-      "MR#25911370"
+      "MR#25911370",
+      "RLP#26156119",
+      "BV#26162494"
     ]
   },
   {
@@ -157,7 +159,9 @@
     "target": "Executionèr-Hyjal",
     "labels": [
       "MR#25911370",
+      "RLP#26156119",
       "TOS#25758359",
+      "BV#26162494",
       "VSA#25668162"
     ]
   },
@@ -165,7 +169,17 @@
     "source": "Moximus-Frostmourne",
     "target": "Executionèr-Hyjal",
     "labels": [
+      "RLP#26156119",
+      "BV#26162494",
       "VSA#25668162"
+    ]
+  },
+  {
+    "source": "Yamatekudasi-Frostmourne",
+    "target": "Executionèr-Hyjal",
+    "labels": [
+      "RLP#26156119",
+      "BV#26162494"
     ]
   },
   {
@@ -322,7 +336,8 @@
       "KR#26085644",
       "MR#25734948",
       "RLP#25645915",
-      "TOS#25739517"
+      "TOS#25739517",
+      "BV#26215198"
     ]
   },
   {
@@ -595,7 +610,22 @@
     "source": "Elmmerfud-Tichondrius",
     "target": "Adlawd-Frostmourne",
     "labels": [
-      "RLP#26028315"
+      "RLP#26028315",
+      "TOS#26170611"
+    ]
+  },
+  {
+    "source": "Kevylx-Frostmourne",
+    "target": "Adlawd-Frostmourne",
+    "labels": [
+      "TOS#26170611"
+    ]
+  },
+  {
+    "source": "Yamatekudasi-Frostmourne",
+    "target": "Adlawd-Frostmourne",
+    "labels": [
+      "TOS#26170611"
     ]
   },
   {
@@ -964,10 +994,12 @@
     "source": "Cheeklord-Area 52",
     "target": "Cyn-Hyjal",
     "labels": [
+      "DON#26205862",
       "KR#26085644",
       "MR#25734948",
       "RLP#25645915",
-      "TOS#25739517"
+      "TOS#25739517",
+      "BV#26215198"
     ]
   },
   {
@@ -1003,6 +1035,20 @@
     "target": "Xiaara-Illidan",
     "labels": [
       "DON#25636479"
+    ]
+  },
+  {
+    "source": "Xehmpest-Area 52",
+    "target": "Kyraz-Dentarg",
+    "labels": [
+      "MR#26212004"
+    ]
+  },
+  {
+    "source": "Elmmerfud-Tichondrius",
+    "target": "Kyraz-Dentarg",
+    "labels": [
+      "MR#26212004"
     ]
   },
   {
@@ -1188,7 +1234,8 @@
       "KR#26085644",
       "MR#25734948",
       "RLP#25645915",
-      "TOS#25739517"
+      "TOS#25739517",
+      "BV#26215198"
     ]
   },
   {
@@ -1202,10 +1249,12 @@
     "source": "Cheeklord-Area 52",
     "target": "Sanctuàry-Hyjal",
     "labels": [
+      "DON#26205862",
       "KR#26085644",
       "MR#25734948",
       "RLP#25645915",
-      "TOS#25739517"
+      "TOS#25739517",
+      "BV#26215198"
     ]
   },
   {
