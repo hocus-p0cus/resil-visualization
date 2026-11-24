@@ -42,6 +42,14 @@
     ]
   },
   {
+    "source": "Poznasme-Draenor",
+    "target": "Wazocutie-Silvermoon",
+    "labels": [
+      "KR#26343843",
+      "BV#26340265"
+    ]
+  },
+  {
     "source": "Pjdruid-Blackmoore",
     "target": "Repláy-Blackrock",
     "labels": [
@@ -170,19 +178,27 @@
     ]
   },
   {
-    "source": "Diffw-Ravencrest",
+    "source": "Monsterabuse-Drak'thul",
     "target": "Turbogronil-Archimonde",
     "labels": [
-      "KR#23603641"
+      "AOF#26343145"
     ]
   },
   {
     "source": "Roams-Draenor",
     "target": "Turbogronil-Archimonde",
     "labels": [
+      "AOF#26343145",
       "MR#25714013",
       "RLP#26118171",
       "BV#25949291"
+    ]
+  },
+  {
+    "source": "Diffw-Ravencrest",
+    "target": "Turbogronil-Archimonde",
+    "labels": [
+      "KR#23603641"
     ]
   },
   {
@@ -260,9 +276,17 @@
     ]
   },
   {
+    "source": "Monsterabuse-Drak'thul",
+    "target": "Sunaris-Tichondrius",
+    "labels": [
+      "AOF#26343145"
+    ]
+  },
+  {
     "source": "Roams-Draenor",
     "target": "Sunaris-Tichondrius",
     "labels": [
+      "AOF#26343145",
       "KR#25715791",
       "MR#25714013",
       "RLP#26118171",
@@ -411,6 +435,13 @@
     "target": "Ragish-Twisting Nether",
     "labels": [
       "TOS#25544556"
+    ]
+  },
+  {
+    "source": "Poznasme-Draenor",
+    "target": "Ragish-Twisting Nether",
+    "labels": [
+      "BV#26340265"
     ]
   },
   {
@@ -860,6 +891,7 @@
     "source": "Onewog-Tarren Mill",
     "target": "Humrair-Kazzak",
     "labels": [
+      "AOF#26348400",
       "DON#26289821",
       "BV#25949640"
     ]
@@ -884,6 +916,13 @@
     "labels": [
       "RLP#26137058",
       "BV#26109701"
+    ]
+  },
+  {
+    "source": "Zorandor-Taerar",
+    "target": "Hajshirogue-Thrall",
+    "labels": [
+      "TOS#26346434"
     ]
   },
   {
@@ -1092,6 +1131,7 @@
     "target": "Кимулона-Howling Fjord",
     "labels": [
       "TOS#26055985",
+      "BV#26337502",
       "VSA#26277258"
     ]
   },
@@ -1203,7 +1243,8 @@
     "labels": [
       "DON#26060496",
       "RLP#26014477",
-      "TOS#26055985"
+      "TOS#26055985",
+      "BV#26337502"
     ]
   },
   {
@@ -1615,6 +1656,20 @@
     ]
   },
   {
+    "source": "Yolojix-Kazzak",
+    "target": "Majcin-Draenor",
+    "labels": [
+      "AOF#26346739"
+    ]
+  },
+  {
+    "source": "Soothexe-Kazzak",
+    "target": "Majcin-Draenor",
+    "labels": [
+      "AOF#26346739"
+    ]
+  },
+  {
     "source": "Syrealpal-Kazzak",
     "target": "Majcin-Draenor",
     "labels": [
@@ -1891,6 +1946,13 @@
   },
   {
     "source": "Poznasme-Draenor",
+    "target": "Twísting-Tarren Mill",
+    "labels": [
+      "BV#26340265"
+    ]
+  },
+  {
+    "source": "Poznasme-Draenor",
     "target": "Zêndaya-Tarren Mill",
     "labels": [
       "DON#26139892"
@@ -2004,6 +2066,13 @@
     "labels": [
       "KR#25174090",
       "MR#25163667"
+    ]
+  },
+  {
+    "source": "Zorandor-Taerar",
+    "target": "Erekwarr-Twisting Nether",
+    "labels": [
+      "TOS#26346434"
     ]
   },
   {
@@ -2176,7 +2245,23 @@
     "source": "Poznasme-Draenor",
     "target": "Roguemachine-Draenor",
     "labels": [
-      "DON#26139892"
+      "DON#26139892",
+      "KR#26343843",
+      "BV#26340265"
+    ]
+  },
+  {
+    "source": "Monsterabuse-Drak'thul",
+    "target": "Kongscandikk-Ragnaros",
+    "labels": [
+      "AOF#26343145"
+    ]
+  },
+  {
+    "source": "Roams-Draenor",
+    "target": "Kongscandikk-Ragnaros",
+    "labels": [
+      "AOF#26343145"
     ]
   },
   {
@@ -2346,13 +2431,6 @@
     "target": "Waalpen-Ragnaros",
     "labels": [
       "AOF#25945065"
-    ]
-  },
-  {
-    "source": "Soothexe-Kazzak",
-    "target": "Stormwrath-Ravencrest",
-    "labels": [
-      "TOS#25878238"
     ]
   },
   {
@@ -2527,6 +2605,7 @@
     "source": "Onewog-Tarren Mill",
     "target": "Léxomage-Tarren Mill",
     "labels": [
+      "AOF#26348400",
       "DON#26289821",
       "BV#25949640"
     ]
@@ -2596,41 +2675,6 @@
     "labels": [
       "RLP#24928653",
       "BV#24928607"
-    ]
-  },
-  {
-    "source": "Jisserafim-Tarren Mill",
-    "target": "Isquaregoat-Ravencrest",
-    "labels": [
-      "AOF#26292108"
-    ]
-  },
-  {
-    "source": "Âra-Blackhand",
-    "target": "Isquaregoat-Ravencrest",
-    "labels": [
-      "DON#23038322"
-    ]
-  },
-  {
-    "source": "Needcr-Tarren Mill",
-    "target": "Isquaregoat-Ravencrest",
-    "labels": [
-      "KR#26064045"
-    ]
-  },
-  {
-    "source": "Dinosmash-Argent Dawn",
-    "target": "Isquaregoat-Ravencrest",
-    "labels": [
-      "RLP#26014477"
-    ]
-  },
-  {
-    "source": "Mahnito-Tarren Mill",
-    "target": "Isquaregoat-Ravencrest",
-    "labels": [
-      "VSA#26183975"
     ]
   },
   {
@@ -2953,6 +2997,14 @@
     ]
   },
   {
+    "source": "Onewog-Tarren Mill",
+    "target": "Spicybun-Tarren Mill",
+    "labels": [
+      "AOF#26348400",
+      "BV#25949640"
+    ]
+  },
+  {
     "source": "Roams-Draenor",
     "target": "Spicybun-Tarren Mill",
     "labels": [
@@ -2971,13 +3023,6 @@
     "target": "Spicybun-Tarren Mill",
     "labels": [
       "TOS#24841287"
-    ]
-  },
-  {
-    "source": "Onewog-Tarren Mill",
-    "target": "Spicybun-Tarren Mill",
-    "labels": [
-      "BV#25949640"
     ]
   },
   {
@@ -3013,7 +3058,8 @@
     "labels": [
       "AOF#25886483",
       "RLP#25934524",
-      "TOS#26055985"
+      "TOS#26055985",
+      "BV#26337502"
     ]
   },
   {
@@ -3332,6 +3378,20 @@
     ]
   },
   {
+    "source": "Yolojix-Kazzak",
+    "target": "Hndrixx-Sylvanas",
+    "labels": [
+      "AOF#26346739"
+    ]
+  },
+  {
+    "source": "Soothexe-Kazzak",
+    "target": "Hndrixx-Sylvanas",
+    "labels": [
+      "AOF#26346739"
+    ]
+  },
+  {
     "source": "Fuzedsham-Twisting Nether",
     "target": "Ralêz-Silvermoon",
     "labels": [
@@ -3371,6 +3431,7 @@
     "source": "Onewog-Tarren Mill",
     "target": "Sayrahs-Twisting Nether",
     "labels": [
+      "AOF#26348400",
       "DON#26289821"
     ]
   },
@@ -3435,6 +3496,13 @@
     "target": "Venomspells-Tarren Mill",
     "labels": [
       "TOS#25384784"
+    ]
+  },
+  {
+    "source": "Dinosmash-Argent Dawn",
+    "target": "Gangstha-Tarren Mill",
+    "labels": [
+      "BV#26337502"
     ]
   },
   {
@@ -4040,6 +4108,60 @@
       "TOS#26166668",
       "BV#26013780",
       "VSA#26013784"
+    ]
+  },
+  {
+    "source": "Dlkeyrogue-Tarren Mill",
+    "target": "Madenivozduh-Silvermoon",
+    "labels": [
+      "DON#26320837",
+      "KR#26314187",
+      "MR#26327006"
+    ]
+  },
+  {
+    "source": "Петко-Eversong",
+    "target": "Madenivozduh-Silvermoon",
+    "labels": [
+      "DON#26320837",
+      "KR#26314187",
+      "MR#26327006"
+    ]
+  },
+  {
+    "source": "Dlkeyrogue-Tarren Mill",
+    "target": "Тееомаатр-Howling Fjord",
+    "labels": [
+      "DON#26320837",
+      "KR#26314187",
+      "MR#26327006"
+    ]
+  },
+  {
+    "source": "Петко-Eversong",
+    "target": "Тееомаатр-Howling Fjord",
+    "labels": [
+      "DON#26320837",
+      "KR#26314187",
+      "MR#26327006"
+    ]
+  },
+  {
+    "source": "Dlkeyrogue-Tarren Mill",
+    "target": "Maikydk-Tarren Mill",
+    "labels": [
+      "DON#26320837",
+      "KR#26314187",
+      "MR#26327006"
+    ]
+  },
+  {
+    "source": "Петко-Eversong",
+    "target": "Maikydk-Tarren Mill",
+    "labels": [
+      "DON#26320837",
+      "KR#26314187",
+      "MR#26327006"
     ]
   }
 ]
